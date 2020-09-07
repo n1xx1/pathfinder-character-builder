@@ -1,0 +1,5140 @@
+{
+    "acid splash": {
+        "name": "acid splash",
+        "traits": [
+            "Acid",
+            "Attack",
+            "Cantrip",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "chill touch": {
+        "name": "chill touch",
+        "traits": [
+            "Cantrip",
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "dancing lights": {
+        "name": "dancing lights",
+        "traits": [
+            "Cantrip",
+            "Evocation",
+            "Light"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "daze": {
+        "name": "daze",
+        "traits": [
+            "Cantrip",
+            "Enchantment",
+            "Mental",
+            "Nonlethal"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "detect magic": {
+        "name": "detect magic",
+        "traits": [
+            "Cantrip",
+            "Detection",
+            "Divination"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "disrupt undead": {
+        "name": "disrupt undead",
+        "traits": [
+            "Cantrip",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 0,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "divine lance": {
+        "name": "divine lance",
+        "traits": [
+            "Attack",
+            "Cantrip",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "electric arc": {
+        "name": "electric arc",
+        "traits": [
+            "Cantrip",
+            "Electricity",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "forbidding ward": {
+        "name": "forbidding ward",
+        "traits": [
+            "Abjuration",
+            "Cantrip"
+        ],
+        "level": 0,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "ghost sound": {
+        "name": "ghost sound",
+        "traits": [
+            "Auditory",
+            "Cantrip",
+            "Illusion"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "guidance": {
+        "name": "guidance",
+        "traits": [
+            "Cantrip",
+            "Divination"
+        ],
+        "level": 0,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "join pasts": {
+        "name": "join pasts",
+        "traits": [
+            "Uncommon",
+            "Cantrip",
+            "Divination",
+            "Mental"
+        ],
+        "level": 0,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "know direction": {
+        "name": "know direction",
+        "traits": [
+            "Cantrip",
+            "Detection",
+            "Divination"
+        ],
+        "level": 0,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "light": {
+        "name": "light",
+        "traits": [
+            "Cantrip",
+            "Evocation",
+            "Light"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "mage hand": {
+        "name": "mage hand",
+        "traits": [
+            "Cantrip",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "message": {
+        "name": "message",
+        "traits": [
+            "Auditory",
+            "Cantrip",
+            "Illusion",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "prestidigitation": {
+        "name": "prestidigitation",
+        "traits": [
+            "Cantrip",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "produce flame": {
+        "name": "produce flame",
+        "traits": [
+            "Attack",
+            "Cantrip",
+            "Evocation",
+            "Fire"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "ray of frost": {
+        "name": "ray of frost",
+        "traits": [
+            "Attack",
+            "Cantrip",
+            "Cold",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "read aura": {
+        "name": "read aura",
+        "traits": [
+            "Cantrip",
+            "Detection",
+            "Divination"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "shield": {
+        "name": "shield",
+        "traits": [
+            "Abjuration",
+            "Cantrip",
+            "Force"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "sigil": {
+        "name": "sigil",
+        "traits": [
+            "Cantrip",
+            "Transmutation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "stabilize": {
+        "name": "stabilize",
+        "traits": [
+            "Cantrip",
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 0,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "tanglefoot": {
+        "name": "tanglefoot",
+        "traits": [
+            "Cantrip",
+            "Conjuration",
+            "Plant"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "telekinetic projectile": {
+        "name": "telekinetic projectile",
+        "traits": [
+            "Attack",
+            "Cantrip",
+            "Evocation"
+        ],
+        "level": 0,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "air bubble": {
+        "name": "air bubble",
+        "traits": [
+            "Air",
+            "Conjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "alarm": {
+        "name": "alarm",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "ant haul": {
+        "name": "ant haul",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "bane": {
+        "name": "bane",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "bless": {
+        "name": "bless",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "burning hands": {
+        "name": "burning hands",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "charm": {
+        "name": "charm",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "color spray": {
+        "name": "color spray",
+        "traits": [
+            "Illusion",
+            "Incapacitation",
+            "Visual"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "command": {
+        "name": "command",
+        "traits": [
+            "Auditory",
+            "Enchantment",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "create water": {
+        "name": "create water",
+        "traits": [
+            "Conjuration",
+            "Water"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "detect alignment": {
+        "name": "detect alignment",
+        "traits": [
+            "Uncommon",
+            "Detection",
+            "Divination"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "detect poison": {
+        "name": "detect poison",
+        "traits": [
+            "Uncommon",
+            "Detection",
+            "Divination"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "disrupting weapons": {
+        "name": "disrupting weapons",
+        "traits": [
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "exchange image": {
+        "name": "exchange image",
+        "traits": [
+            "Uncommon",
+            "Illusion",
+            "Visual"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "fear": {
+        "name": "fear",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Fear",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "feather fall": {
+        "name": "feather fall",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "fleet step": {
+        "name": "fleet step",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "floating disk": {
+        "name": "floating disk",
+        "traits": [
+            "Conjuration",
+            "Force"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "goblin pox": {
+        "name": "goblin pox",
+        "traits": [
+            "Disease",
+            "Necromancy"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "grease": {
+        "name": "grease",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "grim tendrils": {
+        "name": "grim tendrils",
+        "traits": [
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "gust of wind": {
+        "name": "gust of wind",
+        "traits": [
+            "Air",
+            "Evocation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "harm": {
+        "name": "harm",
+        "traits": [
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "heal": {
+        "name": "heal",
+        "traits": [
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "hydraulic push": {
+        "name": "hydraulic push",
+        "traits": [
+            "Attack",
+            "Evocation",
+            "Water"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "illusory disguise": {
+        "name": "illusory disguise",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "illusory object": {
+        "name": "illusory object",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "imprint message": {
+        "name": "imprint message",
+        "traits": [
+            "Uncommon",
+            "Divination"
+        ],
+        "level": 1,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "item facade": {
+        "name": "item facade",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "jump": {
+        "name": "jump",
+        "traits": [
+            "Move",
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "lock": {
+        "name": "lock",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "longstrider": {
+        "name": "longstrider",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "mage armor": {
+        "name": "mage armor",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "magic aura": {
+        "name": "magic aura",
+        "traits": [
+            "Uncommon",
+            "Illusion"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "magic fang": {
+        "name": "magic fang",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "magic missile": {
+        "name": "magic missile",
+        "traits": [
+            "Evocation",
+            "Force"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "magic weapon": {
+        "name": "magic weapon",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "mending": {
+        "name": "mending",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "mindlink": {
+        "name": "mindlink",
+        "traits": [
+            "Divination",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "negate aroma": {
+        "name": "negate aroma",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "object reading": {
+        "name": "object reading",
+        "traits": [
+            "Uncommon",
+            "Divination"
+        ],
+        "level": 1,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "pass without trace": {
+        "name": "pass without trace",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "pest form": {
+        "name": "pest form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "phantom pain": {
+        "name": "phantom pain",
+        "traits": [
+            "Illusion",
+            "Mental",
+            "Nonlethal"
+        ],
+        "level": 1,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "protection": {
+        "name": "protection",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "purify food and drink": {
+        "name": "purify food and drink",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "ray of enfeeblement": {
+        "name": "ray of enfeeblement",
+        "traits": [
+            "Attack",
+            "Necromancy"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "sanctuary": {
+        "name": "sanctuary",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shillelagh": {
+        "name": "shillelagh",
+        "traits": [
+            "Plant",
+            "Transmutation"
+        ],
+        "level": 1,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "shocking grasp": {
+        "name": "shocking grasp",
+        "traits": [
+            "Attack",
+            "Electricity",
+            "Evocation"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "sleep": {
+        "name": "sleep",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Mental",
+            "Sleep"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "snowball": {
+        "name": "snowball",
+        "traits": [
+            "Attack",
+            "Cold",
+            "Evocation",
+            "Water"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "soothe": {
+        "name": "soothe",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Healing",
+            "Mental"
+        ],
+        "level": 1,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "spider sting": {
+        "name": "spider sting",
+        "traits": [
+            "Necromancy",
+            "Poison"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "spirit link": {
+        "name": "spirit link",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 1,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "summon animal": {
+        "name": "summon animal",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "summon construct": {
+        "name": "summon construct",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "summon fey": {
+        "name": "summon fey",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "summon plant or fungus": {
+        "name": "summon plant or fungus",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 1,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "true strike": {
+        "name": "true strike",
+        "traits": [
+            "Divination",
+            "Fortune"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "unseen servant": {
+        "name": "unseen servant",
+        "traits": [
+            "Conjuration",
+            "No Alignment",
+            "Medium",
+            "Mindless"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "ventriloquism": {
+        "name": "ventriloquism",
+        "traits": [
+            "Auditory",
+            "Illusion"
+        ],
+        "level": 1,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "acid arrow": {
+        "name": "acid arrow",
+        "traits": [
+            "Acid",
+            "Attack",
+            "Evocation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "animal form": {
+        "name": "animal form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "animal messenger": {
+        "name": "animal messenger",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "augury": {
+        "name": "augury",
+        "traits": [
+            "Divination",
+            "Prediction"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "barkskin": {
+        "name": "barkskin",
+        "traits": [
+            "Abjuration",
+            "Plant"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "blur": {
+        "name": "blur",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "calm emotions": {
+        "name": "calm emotions",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "comprehend language": {
+        "name": "comprehend language",
+        "traits": [
+            "Divination"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "continual flame": {
+        "name": "continual flame",
+        "traits": [
+            "Evocation",
+            "Light"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "create food": {
+        "name": "create food",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "darkness": {
+        "name": "darkness",
+        "traits": [
+            "Darkness",
+            "Evocation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "darkvision": {
+        "name": "darkvision",
+        "traits": [
+            "Divination"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "deafness": {
+        "name": "deafness",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "death knell": {
+        "name": "death knell",
+        "traits": [
+            "Death",
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "dispel magic": {
+        "name": "dispel magic",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "endure elements": {
+        "name": "endure elements",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "enhance victuals": {
+        "name": "enhance victuals",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "enlarge": {
+        "name": "enlarge",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "entangle": {
+        "name": "entangle",
+        "traits": [
+            "Plant",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "faerie fire": {
+        "name": "faerie fire",
+        "traits": [
+            "Evocation",
+            "Light"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "false life": {
+        "name": "false life",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "flaming sphere": {
+        "name": "flaming sphere",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "gentle repose": {
+        "name": "gentle repose",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "ghoulish cravings": {
+        "name": "ghoulish cravings",
+        "traits": [
+            "Disease",
+            "Evil",
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "glitterdust": {
+        "name": "glitterdust",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "hideous laughter": {
+        "name": "hideous laughter",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "humanoid form": {
+        "name": "humanoid form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "illusory creature": {
+        "name": "illusory creature",
+        "traits": [
+            "Auditory",
+            "Illusion",
+            "Visual"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "invisibility": {
+        "name": "invisibility",
+        "traits": [
+            "Illusion"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "knock": {
+        "name": "knock",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "magic mouth": {
+        "name": "magic mouth",
+        "traits": [
+            "Auditory",
+            "Illusion",
+            "Visual"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "mirror image": {
+        "name": "mirror image",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "misdirection": {
+        "name": "misdirection",
+        "traits": [
+            "Illusion"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "obscuring mist": {
+        "name": "obscuring mist",
+        "traits": [
+            "Conjuration",
+            "Water"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "paranoia": {
+        "name": "paranoia",
+        "traits": [
+            "Illusion",
+            "Mental"
+        ],
+        "level": 2,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "phantom steed": {
+        "name": "phantom steed",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "remove fear": {
+        "name": "remove fear",
+        "traits": [
+            "Enchantment"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "remove paralysis": {
+        "name": "remove paralysis",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "resist energy": {
+        "name": "resist energy",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "restoration": {
+        "name": "restoration",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "restore senses": {
+        "name": "restore senses",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "see invisibility": {
+        "name": "see invisibility",
+        "traits": [
+            "Divination",
+            "Revelation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shape wood": {
+        "name": "shape wood",
+        "traits": [
+            "Plant",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "shatter": {
+        "name": "shatter",
+        "traits": [
+            "Evocation",
+            "Sonic"
+        ],
+        "level": 2,
+        "traditions": [
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "shield other": {
+        "name": "shield other",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "shrink": {
+        "name": "shrink",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "silence": {
+        "name": "silence",
+        "traits": [
+            "Illusion"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "sound burst": {
+        "name": "sound burst",
+        "traits": [
+            "Evocation",
+            "Sonic"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "speak with animals": {
+        "name": "speak with animals",
+        "traits": [
+            "Divination"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "spectral hand": {
+        "name": "spectral hand",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spider climb": {
+        "name": "spider climb",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "spiritual weapon": {
+        "name": "spiritual weapon",
+        "traits": [
+            "Attack",
+            "Evocation",
+            "Force"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "status": {
+        "name": "status",
+        "traits": [
+            "Detection",
+            "Divination"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "summon elemental": {
+        "name": "summon elemental",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "telekinetic maneuver": {
+        "name": "telekinetic maneuver",
+        "traits": [
+            "Attack",
+            "Evocation",
+            "Force"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "touch of idiocy": {
+        "name": "touch of idiocy",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "tree shape": {
+        "name": "tree shape",
+        "traits": [
+            "Plant",
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "undetectable alignment": {
+        "name": "undetectable alignment",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "water breathing": {
+        "name": "water breathing",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "water walk": {
+        "name": "water walk",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "web": {
+        "name": "web",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 2,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "animal vision": {
+        "name": "animal vision",
+        "traits": [
+            "Divination",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "bind undead": {
+        "name": "bind undead",
+        "traits": [
+            "Necromancy"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "blindness": {
+        "name": "blindness",
+        "traits": [
+            "Incapacitation",
+            "Necromancy"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "chilling darkness": {
+        "name": "chilling darkness",
+        "traits": [
+            "Attack",
+            "Cold",
+            "Darkness",
+            "Evil",
+            "Evocation"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "circle of protection": {
+        "name": "circle of protection",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "clairaudience": {
+        "name": "clairaudience",
+        "traits": [
+            "Divination",
+            "Scrying"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "crisis of faith": {
+        "name": "crisis of faith",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "dream message": {
+        "name": "dream message",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "earthbind": {
+        "name": "earthbind",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "enthrall": {
+        "name": "enthrall",
+        "traits": [
+            "Auditory",
+            "Emotion",
+            "Enchantment"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "feet to fins": {
+        "name": "feet to fins",
+        "traits": [
+            "Morph",
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "fireball": {
+        "name": "fireball",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "ghostly weapon": {
+        "name": "ghostly weapon",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "glyph of warding": {
+        "name": "glyph of warding",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "haste": {
+        "name": "haste",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "heroism": {
+        "name": "heroism",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "hypercognition": {
+        "name": "hypercognition",
+        "traits": [
+            "Divination"
+        ],
+        "level": 3,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "hypnotic pattern": {
+        "name": "hypnotic pattern",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "insect form": {
+        "name": "insect form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "invisibility sphere": {
+        "name": "invisibility sphere",
+        "traits": [
+            "Illusion"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "levitate": {
+        "name": "levitate",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "lightning bolt": {
+        "name": "lightning bolt",
+        "traits": [
+            "Electricity",
+            "Evocation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "locate": {
+        "name": "locate",
+        "traits": [
+            "Uncommon",
+            "Detection",
+            "Divination"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "meld into stone": {
+        "name": "meld into stone",
+        "traits": [
+            "Earth",
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "mind reading": {
+        "name": "mind reading",
+        "traits": [
+            "Uncommon",
+            "Detection",
+            "Divination",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "neutralize poison": {
+        "name": "neutralize poison",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "nondetection": {
+        "name": "nondetection",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "paralyze": {
+        "name": "paralyze",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "remove disease": {
+        "name": "remove disease",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "sanctified ground": {
+        "name": "sanctified ground",
+        "traits": [
+            "Abjuration",
+            "Consecration"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "searing light": {
+        "name": "searing light",
+        "traits": [
+            "Attack",
+            "Evocation",
+            "Fire",
+            "Good",
+            "Light"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "secret page": {
+        "name": "secret page",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shrink item": {
+        "name": "shrink item",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "slow": {
+        "name": "slow",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "stinking cloud": {
+        "name": "stinking cloud",
+        "traits": [
+            "Conjuration",
+            "Poison"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "vampiric touch": {
+        "name": "vampiric touch",
+        "traits": [
+            "Death",
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "wall of thorns": {
+        "name": "wall of thorns",
+        "traits": [
+            "Conjuration",
+            "Plant"
+        ],
+        "level": 3,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "wall of wind": {
+        "name": "wall of wind",
+        "traits": [
+            "Air",
+            "Evocation"
+        ],
+        "level": 3,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "wanderer's guide": {
+        "name": "wanderer's guide",
+        "traits": [
+            "Divination"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "zone of truth": {
+        "name": "zone of truth",
+        "traits": [
+            "Uncommon",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 3,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "aerial form": {
+        "name": "aerial form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "air walk": {
+        "name": "air walk",
+        "traits": [
+            "Air",
+            "Transmutation"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "anathematic reprisal": {
+        "name": "anathematic reprisal",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "blink": {
+        "name": "blink",
+        "traits": [
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "clairvoyance": {
+        "name": "clairvoyance",
+        "traits": [
+            "Divination",
+            "Scrying"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "confusion": {
+        "name": "confusion",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "creation": {
+        "name": "creation",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "detect scrying": {
+        "name": "detect scrying",
+        "traits": [
+            "Uncommon",
+            "Detection",
+            "Divination"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "dimension door": {
+        "name": "dimension door",
+        "traits": [
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "dimensional anchor": {
+        "name": "dimensional anchor",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "dinosaur form": {
+        "name": "dinosaur form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 4,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "discern lies": {
+        "name": "discern lies",
+        "traits": [
+            "Uncommon",
+            "Divination",
+            "Mental",
+            "Revelation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "divine wrath": {
+        "name": "divine wrath",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "fire shield": {
+        "name": "fire shield",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "fly": {
+        "name": "fly",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "forgotten lines": {
+        "name": "forgotten lines",
+        "traits": [
+            "Rare",
+            "Divination"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "freedom of movement": {
+        "name": "freedom of movement",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "gaseous form": {
+        "name": "gaseous form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "glibness": {
+        "name": "glibness",
+        "traits": [
+            "Uncommon",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "globe of invulnerability": {
+        "name": "globe of invulnerability",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "hallucinatory terrain": {
+        "name": "hallucinatory terrain",
+        "traits": [
+            "Uncommon",
+            "Illusion"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "holy cascade": {
+        "name": "holy cascade",
+        "traits": [
+            "Evocation",
+            "Good",
+            "Positive",
+            "Water"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "hydraulic torrent": {
+        "name": "hydraulic torrent",
+        "traits": [
+            "Evocation",
+            "Water"
+        ],
+        "level": 4,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "modify memory": {
+        "name": "modify memory",
+        "traits": [
+            "Uncommon",
+            "Divination",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "nightmare": {
+        "name": "nightmare",
+        "traits": [
+            "Illusion",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "outcast's curse": {
+        "name": "outcast's curse",
+        "traits": [
+            "Curse",
+            "Enchantment",
+            "Mental",
+            "Misfortune"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "phantasmal killer": {
+        "name": "phantasmal killer",
+        "traits": [
+            "Death",
+            "Emotion",
+            "Fear",
+            "Illusion",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "private sanctum": {
+        "name": "private sanctum",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "read omens": {
+        "name": "read omens",
+        "traits": [
+            "Uncommon",
+            "Divination",
+            "Prediction"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "remove curse": {
+        "name": "remove curse",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "resilient sphere": {
+        "name": "resilient sphere",
+        "traits": [
+            "Abjuration",
+            "Force"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "rope trick": {
+        "name": "rope trick",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Extradimensional"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shape stone": {
+        "name": "shape stone",
+        "traits": [
+            "Earth",
+            "Transmutation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "solid fog": {
+        "name": "solid fog",
+        "traits": [
+            "Conjuration",
+            "Water"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "speak with plants": {
+        "name": "speak with plants",
+        "traits": [
+            "Divination",
+            "Plant"
+        ],
+        "level": 4,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "spell immunity": {
+        "name": "spell immunity",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spiritual anamnesis": {
+        "name": "spiritual anamnesis",
+        "traits": [
+            "Uncommon",
+            "Mental",
+            "Necromancy"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "stoneskin": {
+        "name": "stoneskin",
+        "traits": [
+            "Abjuration",
+            "Earth"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "suggestion": {
+        "name": "suggestion",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "talking corpse": {
+        "name": "talking corpse",
+        "traits": [
+            "Uncommon",
+            "Necromancy"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "telepathy": {
+        "name": "telepathy",
+        "traits": [
+            "Divination",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "veil": {
+        "name": "veil",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "vital beacon": {
+        "name": "vital beacon",
+        "traits": [
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "wall of fire": {
+        "name": "wall of fire",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "weapon storm": {
+        "name": "weapon storm",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 4,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "abyssal plague": {
+        "name": "abyssal plague",
+        "traits": [
+            "Chaotic",
+            "Disease",
+            "Evil",
+            "Necromancy"
+        ],
+        "level": 4,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "banishment": {
+        "name": "banishment",
+        "traits": [
+            "Abjuration",
+            "Incapacitation"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "black tentacles": {
+        "name": "black tentacles",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "breath of life": {
+        "name": "breath of life",
+        "traits": [
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "chromatic wall": {
+        "name": "chromatic wall",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "cloak of colors": {
+        "name": "cloak of colors",
+        "traits": [
+            "Illusion",
+            "Visual"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "cloudkill": {
+        "name": "cloudkill",
+        "traits": [
+            "Death",
+            "Necromancy",
+            "Poison"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "cone of cold": {
+        "name": "cone of cold",
+        "traits": [
+            "Cold",
+            "Evocation"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "control water": {
+        "name": "control water",
+        "traits": [
+            "Evocation",
+            "Water"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "crushing despair": {
+        "name": "crushing despair",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "death ward": {
+        "name": "death ward",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "dreaming potential": {
+        "name": "dreaming potential",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "drop dead": {
+        "name": "drop dead",
+        "traits": [
+            "Uncommon",
+            "Illusion",
+            "Visual"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "divine"
+        ],
+        "description": ""
+    },
+    "elemental form": {
+        "name": "elemental form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "false vision": {
+        "name": "false vision",
+        "traits": [
+            "Uncommon",
+            "Illusion"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "flame strike": {
+        "name": "flame strike",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "hallucination": {
+        "name": "hallucination",
+        "traits": [
+            "Illusion",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "illusory scene": {
+        "name": "illusory scene",
+        "traits": [
+            "Auditory",
+            "Illusion",
+            "Visual"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "mariner's curse": {
+        "name": "mariner's curse",
+        "traits": [
+            "Curse",
+            "Necromancy"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "mind probe": {
+        "name": "mind probe",
+        "traits": [
+            "Uncommon",
+            "Divination",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "moon frenzy": {
+        "name": "moon frenzy",
+        "traits": [
+            "Morph",
+            "Transmutation"
+        ],
+        "level": 5,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "passwall": {
+        "name": "passwall",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Earth"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "plant form": {
+        "name": "plant form",
+        "traits": [
+            "Plant",
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 5,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "prying eye": {
+        "name": "prying eye",
+        "traits": [
+            "Divination",
+            "Scrying"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "sending": {
+        "name": "sending",
+        "traits": [
+            "Divination",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shadow blast": {
+        "name": "shadow blast",
+        "traits": [
+            "Evocation",
+            "Shadow"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shadow siphon": {
+        "name": "shadow siphon",
+        "traits": [
+            "Illusion",
+            "Shadow"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shadow walk": {
+        "name": "shadow walk",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Shadow",
+            "Teleportation"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spiritual guardian": {
+        "name": "spiritual guardian",
+        "traits": [
+            "Abjuration",
+            "Attack",
+            "Force"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "subconscious suggestion": {
+        "name": "subconscious suggestion",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "summon celestial": {
+        "name": "summon celestial",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "summon dragon": {
+        "name": "summon dragon",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "summon entity": {
+        "name": "summon entity",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "summon fiend": {
+        "name": "summon fiend",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "summon giant": {
+        "name": "summon giant",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 5,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "synaptic pulse": {
+        "name": "synaptic pulse",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "synesthesia": {
+        "name": "synesthesia",
+        "traits": [
+            "Divination",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "telekinetic haul": {
+        "name": "telekinetic haul",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "telepathic bond": {
+        "name": "telepathic bond",
+        "traits": [
+            "Uncommon",
+            "Divination",
+            "Mental"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "tongues": {
+        "name": "tongues",
+        "traits": [
+            "Uncommon",
+            "Divination"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "tree stride": {
+        "name": "tree stride",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Plant",
+            "Teleportation"
+        ],
+        "level": 5,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "wall of ice": {
+        "name": "wall of ice",
+        "traits": [
+            "Cold",
+            "Evocation",
+            "Water"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "wall of stone": {
+        "name": "wall of stone",
+        "traits": [
+            "Conjuration",
+            "Earth"
+        ],
+        "level": 5,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "baleful polymorph": {
+        "name": "baleful polymorph",
+        "traits": [
+            "Incapacitation",
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "blade barrier": {
+        "name": "blade barrier",
+        "traits": [
+            "Evocation",
+            "Force"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "chain lightning": {
+        "name": "chain lightning",
+        "traits": [
+            "Electricity",
+            "Evocation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "collective transposition": {
+        "name": "collective transposition",
+        "traits": [
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "disintegrate": {
+        "name": "disintegrate",
+        "traits": [
+            "Attack",
+            "Evocation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "dominate": {
+        "name": "dominate",
+        "traits": [
+            "Uncommon",
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "dragon form": {
+        "name": "dragon form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "feeblemind": {
+        "name": "feeblemind",
+        "traits": [
+            "Curse",
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "field of life": {
+        "name": "field of life",
+        "traits": [
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "fire seeds": {
+        "name": "fire seeds",
+        "traits": [
+            "Evocation",
+            "Fire",
+            "Plant"
+        ],
+        "level": 6,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "flesh to stone": {
+        "name": "flesh to stone",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "mislead": {
+        "name": "mislead",
+        "traits": [
+            "Illusion"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "phantasmal calamity": {
+        "name": "phantasmal calamity",
+        "traits": [
+            "Illusion",
+            "Mental"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "purple worm sting": {
+        "name": "purple worm sting",
+        "traits": [
+            "Necromancy",
+            "Poison"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "raise dead": {
+        "name": "raise dead",
+        "traits": [
+            "Uncommon",
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "repulsion": {
+        "name": "repulsion",
+        "traits": [
+            "Abjuration",
+            "Aura",
+            "Mental"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "righteous might": {
+        "name": "righteous might",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "scrying": {
+        "name": "scrying",
+        "traits": [
+            "Uncommon",
+            "Divination",
+            "Scrying"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spellwrack": {
+        "name": "spellwrack",
+        "traits": [
+            "Abjuration",
+            "Curse",
+            "Force"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spirit blast": {
+        "name": "spirit blast",
+        "traits": [
+            "Force",
+            "Necromancy"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "stone tell": {
+        "name": "stone tell",
+        "traits": [
+            "Uncommon",
+            "Earth",
+            "Evocation"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "stone to flesh": {
+        "name": "stone to flesh",
+        "traits": [
+            "Earth",
+            "Transmutation"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "tangling creepers": {
+        "name": "tangling creepers",
+        "traits": [
+            "Conjuration",
+            "Plant"
+        ],
+        "level": 6,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "teleport": {
+        "name": "teleport",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "true seeing": {
+        "name": "true seeing",
+        "traits": [
+            "Divination",
+            "Revelation"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "vampiric exsanguination": {
+        "name": "vampiric exsanguination",
+        "traits": [
+            "Death",
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "vibrant pattern": {
+        "name": "vibrant pattern",
+        "traits": [
+            "Illusion",
+            "Incapacitation",
+            "Visual"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "wall of force": {
+        "name": "wall of force",
+        "traits": [
+            "Evocation",
+            "Force"
+        ],
+        "level": 6,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "zealous conviction": {
+        "name": "zealous conviction",
+        "traits": [
+            "Enchantment"
+        ],
+        "level": 6,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "contingency": {
+        "name": "contingency",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "dimensional lock": {
+        "name": "dimensional lock",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "divine decree": {
+        "name": "divine decree",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 7,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "divine vessel": {
+        "name": "divine vessel",
+        "traits": [
+            "Morph",
+            "Necromancy"
+        ],
+        "level": 7,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "duplicate foe": {
+        "name": "duplicate foe",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "eclipse burst": {
+        "name": "eclipse burst",
+        "traits": [
+            "Cold",
+            "Darkness",
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "energy aegis": {
+        "name": "energy aegis",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "ethereal jaunt": {
+        "name": "ethereal jaunt",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 7,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "fiery body": {
+        "name": "fiery body",
+        "traits": [
+            "Fire",
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "finger of death": {
+        "name": "finger of death",
+        "traits": [
+            "Death",
+            "Necromancy"
+        ],
+        "level": 7,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "magnificent mansion": {
+        "name": "magnificent mansion",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Extradimensional"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "mask of terror": {
+        "name": "mask of terror",
+        "traits": [
+            "Emotion",
+            "Fear",
+            "Illusion",
+            "Mental",
+            "Visual"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "plane shift": {
+        "name": "plane shift",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "possession": {
+        "name": "possession",
+        "traits": [
+            "Uncommon",
+            "Incapacitation",
+            "Mental",
+            "Necromancy",
+            "Possession"
+        ],
+        "level": 7,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "power word blind": {
+        "name": "power word blind",
+        "traits": [
+            "Uncommon",
+            "Auditory",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "prismatic spray": {
+        "name": "prismatic spray",
+        "traits": [
+            "Evocation",
+            "Light"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "project image": {
+        "name": "project image",
+        "traits": [
+            "Illusion",
+            "Mental"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "regenerate": {
+        "name": "regenerate",
+        "traits": [
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 7,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "retrocognition": {
+        "name": "retrocognition",
+        "traits": [
+            "Divination"
+        ],
+        "level": 7,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "reverse gravity": {
+        "name": "reverse gravity",
+        "traits": [
+            "Uncommon",
+            "Evocation"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spell turning": {
+        "name": "spell turning",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "sunburst": {
+        "name": "sunburst",
+        "traits": [
+            "Evocation",
+            "Fire",
+            "Light",
+            "Positive"
+        ],
+        "level": 7,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "true target": {
+        "name": "true target",
+        "traits": [
+            "Divination",
+            "Fortune",
+            "Prediction"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "unfettered pack": {
+        "name": "unfettered pack",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 7,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "visions of danger": {
+        "name": "visions of danger",
+        "traits": [
+            "Auditory",
+            "Illusion",
+            "Visual"
+        ],
+        "level": 7,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "volcanic eruption": {
+        "name": "volcanic eruption",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 7,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "warp mind": {
+        "name": "warp mind",
+        "traits": [
+            "Emotion",
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 7,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "antimagic field": {
+        "name": "antimagic field",
+        "traits": [
+            "Rare",
+            "Abjuration"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "disappearance": {
+        "name": "disappearance",
+        "traits": [
+            "Illusion"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "discern location": {
+        "name": "discern location",
+        "traits": [
+            "Uncommon",
+            "Detection",
+            "Divination"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "divine aura": {
+        "name": "divine aura",
+        "traits": [
+            "Abjuration"
+        ],
+        "level": 8,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "divine inspiration": {
+        "name": "divine inspiration",
+        "traits": [
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 8,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "dream council": {
+        "name": "dream council",
+        "traits": [
+            "Illusion",
+            "Mental",
+            "Sleep"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "earthquake": {
+        "name": "earthquake",
+        "traits": [
+            "Earth",
+            "Evocation"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "horrid wilting": {
+        "name": "horrid wilting",
+        "traits": [
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "maze": {
+        "name": "maze",
+        "traits": [
+            "Conjuration",
+            "Extradimensional",
+            "Teleportation"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "mind blank": {
+        "name": "mind blank",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "moment of renewal": {
+        "name": "moment of renewal",
+        "traits": [
+            "Healing",
+            "Necromancy"
+        ],
+        "level": 8,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "monstrosity form": {
+        "name": "monstrosity form",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "polar ray": {
+        "name": "polar ray",
+        "traits": [
+            "Cold",
+            "Evocation"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "power word stun": {
+        "name": "power word stun",
+        "traits": [
+            "Uncommon",
+            "Auditory",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "prismatic wall": {
+        "name": "prismatic wall",
+        "traits": [
+            "Abjuration",
+            "Light"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "punishing winds": {
+        "name": "punishing winds",
+        "traits": [
+            "Air",
+            "Evocation"
+        ],
+        "level": 8,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "scintillating pattern": {
+        "name": "scintillating pattern",
+        "traits": [
+            "Illusion",
+            "Incapacitation",
+            "Visual"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "spirit song": {
+        "name": "spirit song",
+        "traits": [
+            "Force",
+            "Necromancy"
+        ],
+        "level": 8,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "spiritual epidemic": {
+        "name": "spiritual epidemic",
+        "traits": [
+            "Curse",
+            "Necromancy"
+        ],
+        "level": 8,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "uncontrollable dance": {
+        "name": "uncontrollable dance",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "unrelenting observation": {
+        "name": "unrelenting observation",
+        "traits": [
+            "Divination",
+            "Scrying"
+        ],
+        "level": 8,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "wind walk": {
+        "name": "wind walk",
+        "traits": [
+            "Air",
+            "Transmutation"
+        ],
+        "level": 8,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "bind soul": {
+        "name": "bind soul",
+        "traits": [
+            "Uncommon",
+            "Evil",
+            "Necromancy"
+        ],
+        "level": 9,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "crusade": {
+        "name": "crusade",
+        "traits": [
+            "Uncommon",
+            "Enchantment",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 9,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "disjunction": {
+        "name": "disjunction",
+        "traits": [
+            "Uncommon",
+            "Abjuration"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "foresight": {
+        "name": "foresight",
+        "traits": [
+            "Divination",
+            "Mental",
+            "Prediction"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "implosion": {
+        "name": "implosion",
+        "traits": [
+            "Evocation"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "massacre": {
+        "name": "massacre",
+        "traits": [
+            "Death",
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "meteor swarm": {
+        "name": "meteor swarm",
+        "traits": [
+            "Evocation",
+            "Fire"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "nature's enmity": {
+        "name": "nature's enmity",
+        "traits": [
+            "Enchantment"
+        ],
+        "level": 9,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "overwhelming presence": {
+        "name": "overwhelming presence",
+        "traits": [
+            "Auditory",
+            "Enchantment",
+            "Incapacitation",
+            "Mental",
+            "Visual"
+        ],
+        "level": 9,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "power word kill": {
+        "name": "power word kill",
+        "traits": [
+            "Uncommon",
+            "Auditory",
+            "Death",
+            "Enchantment",
+            "Mental"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    },
+    "prismatic sphere": {
+        "name": "prismatic sphere",
+        "traits": [
+            "Abjuration",
+            "Light"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "resplendent mansion": {
+        "name": "resplendent mansion",
+        "traits": [
+            "Conjuration"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "shapechange": {
+        "name": "shapechange",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "storm of vengeance": {
+        "name": "storm of vengeance",
+        "traits": [
+            "Air",
+            "Electricity",
+            "Evocation"
+        ],
+        "level": 9,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "telepathic demand": {
+        "name": "telepathic demand",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Linguistic",
+            "Mental"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "unfathomable song": {
+        "name": "unfathomable song",
+        "traits": [
+            "Auditory",
+            "Emotion",
+            "Enchantment",
+            "Fear",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 9,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "wail of the banshee": {
+        "name": "wail of the banshee",
+        "traits": [
+            "Auditory",
+            "Death",
+            "Necromancy",
+            "Negative"
+        ],
+        "level": 9,
+        "traditions": [
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "weapon of judgement": {
+        "name": "weapon of judgement",
+        "traits": [
+            "Evocation",
+            "Force"
+        ],
+        "level": 9,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "weird": {
+        "name": "weird",
+        "traits": [
+            "Death",
+            "Emotion",
+            "Fear",
+            "Illusion",
+            "Mental"
+        ],
+        "level": 9,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "alter reality": {
+        "name": "alter reality",
+        "traits": [
+            "Divination"
+        ],
+        "level": 10,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "avatar": {
+        "name": "avatar",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 10,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "cataclysm": {
+        "name": "cataclysm",
+        "traits": [
+            "Acid",
+            "Air",
+            "Cold",
+            "Earth",
+            "Electricity",
+            "Evocation",
+            "Fire",
+            "Water"
+        ],
+        "level": 10,
+        "traditions": [
+            "arcane",
+            "primal"
+        ],
+        "description": ""
+    },
+    "fabricated truth": {
+        "name": "fabricated truth",
+        "traits": [
+            "Enchantment",
+            "Incapacitation",
+            "Mental"
+        ],
+        "level": 10,
+        "traditions": [
+            "occult"
+        ],
+        "description": ""
+    },
+    "gate": {
+        "name": "gate",
+        "traits": [
+            "Uncommon",
+            "Conjuration",
+            "Teleportation"
+        ],
+        "level": 10,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult"
+        ],
+        "description": ""
+    },
+    "miracle": {
+        "name": "miracle",
+        "traits": [
+            "Divination"
+        ],
+        "level": 10,
+        "traditions": [
+            "divine"
+        ],
+        "description": ""
+    },
+    "nature incarnate": {
+        "name": "nature incarnate",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 10,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "primal herd": {
+        "name": "primal herd",
+        "traits": [
+            "Polymorph",
+            "Transmutation"
+        ],
+        "level": 10,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "primal phenomenon": {
+        "name": "primal phenomenon",
+        "traits": [
+            "Divination"
+        ],
+        "level": 10,
+        "traditions": [
+            "primal"
+        ],
+        "description": ""
+    },
+    "remake": {
+        "name": "remake",
+        "traits": [
+            "Uncommon",
+            "Conjuration"
+        ],
+        "level": 10,
+        "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+        ],
+        "description": ""
+    },
+    "revival": {
+        "name": "revival",
+        "traits": [
+            "Healing",
+            "Necromancy",
+            "Positive"
+        ],
+        "level": 10,
+        "traditions": [
+            "divine",
+            "primal"
+        ],
+        "description": ""
+    },
+    "time stop": {
+        "name": "time stop",
+        "traits": [
+            "Transmutation"
+        ],
+        "level": 10,
+        "traditions": [
+            "arcane",
+            "occult"
+        ],
+        "description": ""
+    },
+    "wish": {
+        "name": "wish",
+        "traits": [
+            "Divination"
+        ],
+        "level": 10,
+        "traditions": [
+            "arcane"
+        ],
+        "description": ""
+    }
+}

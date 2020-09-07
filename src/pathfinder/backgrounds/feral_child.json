@@ -1,0 +1,22 @@
+{
+    "name": "Feral Child",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 50,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=185"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["STR", "DEX", "CON"] },
+        { "k": "proficiency", "skill": "nature", "proficiency": "T" },
+        { "k": "proficiency", "skill": "survival", "proficiency": "T" },
+        { "k": "bonus", "category": "sense", "text": "scent (imprecise) 30 feet" },
+        { "k": "feat", "feat": "Forager" },
+        {
+            "k": "if",
+            "if": ["special:lowlight_vision"],
+            "bonus": [{ "k": "special", "id": "darkvision" }],
+            "else_bonus": [{ "k": "special", "id": "lowlight_vision" }]
+        }
+    ],
+    "description": "You spent your youth in the wilderness, living close to or perhaps raised by animals. You have a close, mystical connection with these animals and gained certain abilities from them, though this limited your well-roundedness in mental pursuits.\n\nChoose one ability boost. It must be **Strength**, **Dexterity**, or **Constitution**.\n\nYou are trained in Nature and Survival. You gain low-light vision (or darkvision if you already had low-light vision), imprecise scent with a range of 30 feet, and the Forager skill feat.  "
+}

@@ -1,0 +1,73 @@
+{
+    "Cantrip Expansion": {
+        "name": "Cantrip Expansion",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 101,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=183"
+        },
+        "traits": ["Bard", "Cleric", "Oracle", "Sorcerer", "Witch", "Wizard"],
+        "level": 2,
+        "bonus": [
+            {
+                "k": "if",
+                "if": ["spellcaster_prepared"],
+                "bonus": [{ "k": "spellcasting_slot", "level": 0, "add": 2 }],
+                "else_bonus": [
+                    { "k": "spell", "filter": ["tradition:self", "cantrip"] },
+                    { "k": "spell", "filter": ["tradition:self", "cantrip"] }
+                ]
+            }
+        ],
+        "description": "\n\n---\n\nA greater understanding of your magic broadens your range of simple spells.\n\n**Prepared Caster (Cleric, Wizard, etc.)**: You can prepare two additional cantrips each day.  \n**Spontaneous Caster (Bard, Sorcerer, etc.)**: Add two additional cantrips from your spell list to your repertoire."
+    },
+    "Conceal Spell": {
+        "name": "Conceal Spell",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 101,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=640"
+        },
+        "traits": ["Concentrate", "Manipulate", "Metamagic", "Witch", "Wizard"],
+        "level": 2,
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "\n\n---\n\nHiding your gestures and incantations within other speech and movement, you attempt to conceal the fact that you are Casting a Spell. If the next action you use is to Cast a Spell, attempt a Stealth check against one or more observers' Perception DCs; if the spell has verbal components, you must also attempt a Deception check against the observers' Perception DC. If you succeed at your check (or checks) against an observer's DC, that observer doesn't notice you're casting a spell, even though material, somatic, and verbal components are usually noticeable and spells normally have sensory manifestations that would make spellcasting obvious to those nearby.\n\nThis ability hides only the spell's spellcasting actions and manifestations, not its effects, so an observer might still see a ray streak out from you or see you vanish into thin air."
+    },
+    "Energy Ablation": {
+        "name": "Energy Ablation",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 142,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1834"
+        },
+        "traits": ["Metamagic", "Wizard"],
+        "level": 2,
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "\n\n---\n\nWhen you cast energy spells, you retain some of that energy as a protective barrier. If your next action is to Cast a Spell that deals energy damage, whether or not it successfully deals damage, you gain resistance to that type of energy equal to the spell's level (minimum 1) until the end of your next turn. If the spell deals more than one type of energy damage, choose one and gain resistance to that type."
+    },
+    "Enhanced Familiar": {
+        "name": "Enhanced Familiar",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 102,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=318"
+        },
+        "traits": ["Druid", "Sorcerer", "Witch", "Wizard"],
+        "level": 2,
+        "prerequisites": ["special:familiar"],
+        "bonus": [{ "k": "special", "id": "familiar_extra_ability", "value": 2 }],
+        "description": "**Prerequisites** a familiar\n\n---\n\nYou infuse your familiar with additional magical energy. You can select four familiar or master abilities each day, instead of two.\n\n**Special**  \n(Wizard) If your arcane thesis is improved familiar attunement, your familiar's base number of familiar abilities, before adding any extra abilities from the arcane thesis, is four.  \n(Witch) Add the bonus familiar abilities you gain for being a witch to this amount."
+    },
+    "Nonlethal Spell": {
+        "name": "Nonlethal Spell",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 142,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1835"
+        },
+        "traits": ["Manipulate", "Metamagic", "Wizard"],
+        "level": 2,
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "\n\n---\n\nYou can alter offensive spells to be less deadly. If your next action is to Cast a Spell that deals damage and doesn't have the death or negative trait, that spell gains the nonlethal trait."
+    }
+}

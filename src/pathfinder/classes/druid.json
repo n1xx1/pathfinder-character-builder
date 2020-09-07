@@ -1,0 +1,313 @@
+{
+    "name": "Druid",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 128,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=6"
+    },
+    "key": "WIS",
+    "hp": 8,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "nature", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "2+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_medium", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_attack",
+                    "tradition": "primal",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_dc",
+                    "tradition": "primal",
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "class_dc", "class": "Druid", "proficiency": "T" },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Anathema": {
+            "name": "Anathema",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "As stewards of the natural order, druids find affronts to nature anathema. If you perform enough acts that are anathema to nature, you lose your magical abilities that come from the druid class, including your primal spellcasting and the benefits of your order. These abilities can be regained only if you demonstrate your repentance by conducting an *atone* ritual.\n\nThe following acts are anathema to all druids: * Using metal armor or shields. \n* Despoiling natural places. \n* Teaching the Druidic language to non-druids.\n\nEach druidic order also has additional anathema acts, detailed in the order's entry.\n\nSee specific orders for more information.  \n"
+        },
+        "Druidic Language": {
+            "name": "Druidic Language",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You know Druidic, a secret language known to only druids, in addition to any languages you know through your ancestry. Druidic has its own alphabet. Teaching the Druidic language to non-druids is anathema.  \n"
+        },
+        "Druidic Order": {
+            "name": "Druidic Order",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Animal": {
+                            "name": "Animal",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 131,
+                                "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You have a strong connection to beasts, and you are allied with a beast companion. You are trained in Athletics. You also gain the Animal Companion druid feat. You gain the *heal animal* order spell. Committing wanton cruelty to animals or killing animals unnecessarily is anathema to your order. (This doesn't prevent you from defending yourself against animals or killing them cleanly for food.)"
+                        },
+                        "Leaf": {
+                            "name": "Leaf",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 131,
+                                "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You revere plants and the bounty of nature, acting as both a gardener and warden for the wilderness, teaching sustainable techniques to communities, and helping areas regrow after disasters or negligent humanoid expansion. You are trained in Diplomacy. You also gain the Leshy Familiar druid feat. You gain the *goodberry* order spell, and you increase the number of Focus Points in your focus pool by 1. Committing wanton cruelty to plants or killing plants unnecessarily is anathema to your order. (This doesn't prevent you from defending yourself against plants or harvesting them when necessary for survival.)"
+                        },
+                        "Storm": {
+                            "name": "Storm",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 132,
+                                "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You carry the fury of the storm within you, channeling it to terrifying effect and riding the winds through the sky. You are trained in Acrobatics. You also gain the Storm Born druid feat. You gain the *tempest surge* order spell, and you increase the number of Focus Points in your focus pool by 1. Polluting the air or allowing those who cause major air pollution or climate shifts to go unpunished is anathema to your order. (This doesn't force you to take action against merely potential harm to the environment or to sacrifice yourself against an obviously superior foe.)"
+                        },
+                        "Wild": {
+                            "name": "Wild",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 132,
+                                "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "The savage, uncontrollable call of the natural world infuses you, granting you the ability to change your shape and take on the ferocious form of a wild creature. You are trained in Intimidation. You also gain the Wild Shape druid feat. You gain the *wild morph* order spell. Becoming fully domesticated by the temptations of civilization is anathema to your order. (This doesn't prevent you from buying and using processed goods or staying in a city for an adventure, but you can never come to rely on these conveniences or truly call such a place your permanent home.)"
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Upon becoming a druid, you align yourself with a druidic order, which grants you a class feat, an order spell (see below), and an additional trained skill tied to your order. While you'll always be a member of your initial order, it's not unheard of for a druid to request to study with other orders in search of greater understanding of the natural world, and PC druids are among the most likely to blend the powers of different orders.\n\nOrder spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to commune with local nature spirits or otherwise tend to the wilderness in a way befitting your order.\n\nFocus spells are automatically heightened to half your level rounded up, much like cantrips. Focus spells don't require spell slots to cast, and you can't cast them using spell slots. Selecting druid feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 points. The full rules for focus spells appear in Chapter 7 on page 300.\n\nOrders can be found here.  \n"
+        },
+        "Primal Spellcasting": {
+            "name": "Primal Spellcasting",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "The power of the wild world flows through you. You can cast primal spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells (see Casting Spells on page 302). Because you're a druid, you can usually hold a primal focus (such as holly and mistletoe) for spells requiring material components instead of needing to use a spell component pouch.\n\nAt 1st level, you can prepare two 1st-level spells and five cantrips each morning from the common spells on the primal spell list in this book (page 314), or from other primal spells to which you gain access. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.\n\nAs you increase in level as a druid, the number of spells you can prepare each day increases, as does the highest level of spell you can cast, as shown in Table 3\u201311: Druid Spells per Day on page 132.\n\nSome of your spells require you to attempt a spell attack roll to see how effective they are, or have your enemies roll against your spell DC (typically by attempting a saving throw). Since your key ability is Wisdom, your spell attack rolls and spell DCs use your Wisdom modifier. Details on calculating these statistics appear on page 447. \n\n### Heightening Spells\n\nWhen you gain spell slots of 2nd level and higher, you can fill those slots with stronger versions of lower-level spells. This increases the spell's level, heightening it to match the spell slot. Many spells have specific improvements when they are heightened to certain levels. \n\n### Cantrips\n\nA cantrip is a special type of spell that doesn't use spell slots. You can cast a cantrip at will, any number of times per day. A cantrip is always automatically heightened to half your level rounded up\u2014this is usually equal to the highest level of spell you can cast as a druid. For example, as a 1st-level druid, your cantrips are 1st-level spells, and as a 5th-level druid, your cantrips are 3rd-level spells.  \n"
+        },
+        "Shield Block": {
+            "name": "Shield Block",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You gain the Shield Block general feat, a reaction that lets you reduce damage with your shield.  \n"
+        },
+        "Wild Empathy": {
+            "name": "Wild Empathy",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have a connection to the creatures of the natural world that allows you to communicate with them on a rudimentary level. You can use Diplomacy to Make an Impression on animals and to make very simple Requests of them. In most cases, wild animals will give you time to make your case.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Alertness": {
+            "name": "Alertness",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Experience has made you increasingly aware of threats around you, and you react more quickly to danger. Your proficiency rank for Perception increases to expert.  \n"
+        },
+        "Great Fortitude": {
+            "name": "Great Fortitude",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your physique is incredibly hardy. Your proficiency rank for Fortitude saves increases to expert.  \n"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Lightning Reflexes": {
+            "name": "Lightning Reflexes",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Expert Spellcaster": {
+            "name": "Expert Spellcaster",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your command of primal forces has deepened, empowering your spells. Your proficiency ranks for primal spell attack rolls and spell DCs increase to expert.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Druid Weapon Expertise": {
+            "name": "Druid Weapon Expertise",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have become thoroughly familiar with the weapons of your trade. Your proficiency ranks for all simple weapons and unarmed attacks increase to expert.  \n"
+        },
+        "Resolve": {
+            "name": "Resolve",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've steeled your mind with incredible resolve. Your proficiency rank for Will saves increases to master. When you roll a success at a Will save, you get a critical success instead.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Medium Armor Expertise": {
+            "name": "Medium Armor Expertise",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned to defend yourself better against attacks. Your proficiency ranks for light armor, medium armor, and unarmored defense increase to expert.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Master Spellcaster": {
+            "name": "Master Spellcaster",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Primal magic answers your command. Your proficiency ranks for primal spell attack rolls and spell DCs increase to master.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Legendary Spellcaster": {
+            "name": "Legendary Spellcaster",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have developed an unparalleled rapport with the magic of nature. Your proficiency ranks for primal spell attack rolls and spell DCs increase to legendary.  \n"
+        },
+        "Primal Hierophant": {
+            "name": "Primal Hierophant",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You command the most potent forces of primal magic and can cast a spell of truly incredible power. You gain a single 10th-level spell slot and can prepare a spell in that slot using primal spellcasting. Unlike with other spell slots, you don't gain more 10th-level spells as you level up, though you can take the Hierophant's Power feat to gain a second slot.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Druid\n\n*The power of nature is impossible to resist. It can bring ruin to the stoutest fortress in minutes, reducing even the mightiest works to rubble, burning them to ash, burying them beneath an avalanche of snow, or drowning them beneath the waves. It can provide endless bounty and breathtaking splendor to those who respect it\u2014 and an agonizing death to those who take it too lightly. You are one of those who hear nature's call. You stand in awe of the majesty of its power and give yourself over to its service.*\n\n## During Combat Encounters...\n\nYou call upon the forces of nature to defeat your enemies and protect your allies. You cast spells that draw upon primal magic to protect yourself and your friends, heal their wounds, or summon deadly animals to fight at your side. Depending on your bond to nature, you might call upon powerful elemental magic or change shape into a terrifying beast.  \n\n## During Social Encounters...\n\nYou represent balance and a reasoned approach to problems, looking for solutions that not only are best for the natural world, but also allow the creatures within it to live in harmony and peace. You often propose compromises that allow both sides to gain what they truly need, even if they can't have all that they desire.  \n\n## While Exploring...\n\nYour nature skills are invaluable. You track down enemies, navigate the wilderness, and use spells to detect magical auras around you. You might even ask wild animals to lend their extraordinary senses and scouting abilities to your group.  \n\n## In Downtime...\n\nYou might craft magic items or potions. Alternatively, your tie to nature might lead you to tend a wilderness area, befriending beasts and healing the wounds caused by civilization. You might even teach sustainable farming and animal husbandry techniques that allow others to subsist off the land without harming the natural balance.  \n\n## You Might...\n\n* Have a deep and meaningful respect for the power of nature. \n* Be in constant awe of the natural world, eager to share it with others but wary of their influence upon it. \n* Treat plants and animals as allies, working with them to reach your goals.\n\n## Others Probably...\n\n* View you as a representative of nature, and are sure you can control it. \n* Assume you're a recluse who avoids society and cities and prefers to live in the wild. \n* Consider you a mystic, similar to a priest, but answering only to the forces of nature.\n\n"
+}

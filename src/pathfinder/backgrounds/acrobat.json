@@ -1,0 +1,16 @@
+{
+    "name": "Acrobat",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 60,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=2"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["STR", "DEX"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "acrobatics", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "Circus", "proficiency": "T" },
+        { "k": "feat", "feat": "Steady Balance" }
+    ],
+    "description": "In a circus or on the streets, you earned your pay by performing as an acrobat. You might have turned to adventuring when the money dried up, or simply decided to put your skills to better use.\n\nChoose two ability boosts. One must be to **Strength** or **Dexterity**, and one is a free ability boost.\n\nYou're trained in the Acrobatics skill, and the Circus Lore skill. You gain the Steady Balance skill feat."
+}

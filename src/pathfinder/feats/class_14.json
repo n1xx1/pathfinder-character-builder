@@ -1,0 +1,46 @@
+{
+    "Bonded Focus": {
+        "name": "Bonded Focus",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 211,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=655"
+        },
+        "traits": ["Wizard"],
+        "level": 14,
+        "prerequisites": ["special:arcane_bond"],
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "TODO",
+                "text": "If you have spent at least 2 Focus Points since the last time you Refocused and your bonded item is in your possession, you recover 2 Focus Points when you Refocus instead of 1."
+            }
+        ],
+        "description": "**Prerequisites** arcane bond\n\n---\n\nYour connection to your bonded item increases your focus pool. If you have spent at least 2 Focus Points since the last time you Refocused and your bonded item is in your possession, you recover 2 Focus Points when you Refocus instead of 1."
+    },
+    "Reflect Spell": {
+        "name": "Reflect Spell",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 104,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=624"
+        },
+        "traits": ["Sorcerer", "Witch", "Wizard"],
+        "level": 14,
+        "prerequisites": ["feat:Counterspell (Prepared)"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Counterspell\n\n---\n\nWhen you successfully use Counterspell to counteract a spell that affects targeted creatures or an area, you can turn that spell's effect back on its caster. When reflected, the spell affects only the original caster, even if it's an area spell or it would normally affect more than one creature. The original caster can attempt a save and use other defenses against the reflected spell as normal."
+    },
+    "Superior Bond": {
+        "name": "Superior Bond",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 213,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=657"
+        },
+        "traits": ["Wizard"],
+        "level": 14,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** arcane bond\n\n---\n\nWhen you draw upon your bonded item, you can leave a bit of energy within it for later use. You can use Drain Bonded Item one additional time per day, but only to cast a spell 2 or more levels lower than your highest-level spell."
+    }
+}

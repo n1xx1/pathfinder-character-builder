@@ -1,0 +1,16 @@
+{
+    "name": "Courier",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 48,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=169"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["DEX", "INT"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "society", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Glean Contents" }
+    ],
+    "description": "In your youth, you earned coin running messages for persons of wealth and influence, darting through crowded cobblestone streets. Your dogged commitment to deliver your message was good training for the life of an adventurer.\n\nChoose two ability boosts. One must be to **Dexterity** or **Intelligence**, and one is a free ability boost.\n\nYou're trained in the Society skill, and a Lore skill for the city in which you were raised. You gain the Glean Contents skill feat."
+}

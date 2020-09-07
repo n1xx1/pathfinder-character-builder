@@ -1,0 +1,16 @@
+{
+    "name": "Nomad",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 63,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=28"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["CON", "WIS"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "survival", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Assurance", "option": "Survival" }
+    ],
+    "description": "Traveling far and wide, you picked up basic tactics for surviving on the road and in unknown lands, getting by with few supplies and even fewer comforts. As an adventurer, you travel still, often into even more dangerous places.\n\nChoose two ability boosts. One must be to **Constitution** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in the Survival skill, and a Lore skill related to one terrain you traveled in (such as Desert Lore or Swamp Lore). You gain the Assurance skill feat with Survival."
+}

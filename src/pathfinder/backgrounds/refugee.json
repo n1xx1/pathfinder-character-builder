@@ -1,0 +1,16 @@
+{
+    "name": "Refugee",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 49,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=174"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["CON", "WIS"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "society", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Streetwise" }
+    ],
+    "description": "You come from a land very distant from the one you now find yourself in, driven by war, plague, or simply in the pursuit of opportunity. Regardless of your origin or the reason you left your home, you find yourself an outsider in this new land. Adventuring is a way to support yourself while offering hope to those who need it most.\n\nChoose two ability boosts. One must be to **Constitution** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in the Society skill, and a Lore skill related to the settlement you came from. You gain the Streetwise skill feat."
+}

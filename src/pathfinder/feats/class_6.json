@@ -1,0 +1,63 @@
+{
+    "Convincing Illusion": {
+        "name": "Convincing Illusion",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 142,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1837"
+        },
+        "traits": ["Illusion", "Wizard"],
+        "level": 6,
+        "prerequisites": ["skill:deception,E"],
+        "bonus": [{ "k": "action", "name": "#self", "actions": "reaction" }],
+        "description": "**Prerequisites** expert in Deception  \n**Requirements** You are within 30 feet of the observer and the illusion.  \n**Trigger** A creature succeeded, but didn't critically succeed, at a Perception check or Will save to disbelieve an illusion from a spell that you cast.\n\n---\n\nYou use your deceptive skills to make your illusions seem even more real. Attempt a Deception check against the target's Perception DC. If you succeed, the target fails to disbelieve the illusion."
+    },
+    "Spell Penetration": {
+        "name": "Spell Penetration",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 210,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=645"
+        },
+        "traits": ["Wizard"],
+        "level": 6,
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "TODO",
+                "text": "Any creature that has a status bonus to saving throws against magic reduces that bonus by 1 against your spells."
+            }
+        ],
+        "description": "\n\n---\n\nYou've studied ways of overcoming the innate magical resistance that dragons, otherworldly beings, and certain other powerful creatures have. Any creature that has a status bonus to saving throws against magic reduces that bonus by 1 against your spells."
+    },
+    "Split Slot": {
+        "name": "Split Slot",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 142,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1838"
+        },
+        "traits": ["Wizard"],
+        "level": 6,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou can prepare two spells in one slot, giving you the freedom to choose the spell when you cast it. When you prepare your spells for the day, you can choose one spell slot at least 1 level lower than the highest-level spell you can cast and prepare two spells in that slot. When you Cast a Spell from that slot, choose which spell to cast. Once you've chosen, the unused spell dissipates as though you hadn't prepared it at all\u2014for example, it isn't available for use with Drain Bonded Item."
+    },
+    "Steady Spellcasting": {
+        "name": "Steady Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 80,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=194"
+        },
+        "traits": ["Bard", "Cleric", "Druid", "Oracle", "Sorcerer", "Witch", "Wizard"],
+        "level": 6,
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "TODO",
+                "text": "If a reaction would disrupt your spellcasting action, attempt a DC 15 flat check. If you succeed, your action isn't disrupted."
+            }
+        ],
+        "description": "\n\n---\n\nConfident in your technique, you don't easily lose your concentration when you Cast a Spell. If a reaction would disrupt your spellcasting action, attempt a DC 15 flat check. If you succeed, your action isn't disrupted."
+    }
+}

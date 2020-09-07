@@ -1,0 +1,334 @@
+{
+    "name": "Rogue",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 178,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=10"
+    },
+    "key": ["DEX", "OTHER"],
+    "hp": 8,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "E" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "E" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "stealth", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "7+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "weapons": ["rapier", "sap", "shortbow", "and shortsword"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                { "k": "proficiency", "skill": "class_dc", "class": "Rogue", "proficiency": "T" },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Rogue's Racket": {
+            "name": "Rogue's Racket",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Eldritch Trickster": {
+                            "name": "Eldritch Trickster",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 134,
+                                "prd": "https://2e.aonprd.com/Rackets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "When it comes to a big heist, every rogue worth their salt knows that magic can throw meticulous plans into chaos, whether in the form of arcane wards or pesky divinations. You dabble in magic just enough to help handle these problems by jury-rigging spells and throwing a bit of your own magic into the mix. You might be a solitary thief, performing burglaries that can't be explained by skill alone, or a specialist called in by other rogues to deal with magical security measures. You might even be on the up-and-up, hired to test magical defenses or even build them yourself.\n\nChoose a multiclass archetype that has a basic, expert, and master spellcasting feat. You gain that archetype's dedication feat as a bonus feat even though you don't meet its level prerequisite, though you must meet its other prerequisites. For you, the Magical Trickster rogue feat has a prerequisite of 2nd level instead of 4th level. You can choose the spellcasting ability score for the multiclass archetype you chose as your key ability score."
+                        },
+                        "Mastermind": {
+                            "name": "Mastermind",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 134,
+                                "prd": "https://2e.aonprd.com/Rackets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Where others might use sleight of hand or a silver tongue to achieve their objectives, you rely on your intellect to craft intricate schemes. You likely view your operations as a chess game, always planning 10 steps ahead where others might plan three. You might be a detective determined to solve crimes or a spymaster in the service of a powerful family or nation. If you operate outside the law, you might be an aspiring crime lord or information broker, excellent at directing others toward suitable jobs.\n\nIf you successfully identify a creature using Recall Knowledge, that creature is flat-footed against your attacks until the start of your next turn; if you critically succeed, it's flat-footed against your attacks for 1 minute.\n\nYou're trained in Society and one of the following skills of your choice: Arcana, Nature, Occultism, or Religion. You can choose Intelligence as your key ability score."
+                        },
+                        "Ruffian": {
+                            "name": "Ruffian",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 180,
+                                "prd": "https://2e.aonprd.com/Rackets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You prefer to strong-arm or intimidate others rather than rely on finesse or fancy tricks. You might be an enforcer for organized crime, a highway bandit, or a noble who bullies others with threats of your family's power. Or, you might use your skills on the up and up, in a private security detail or as a guard in a city with the right temperament.\n\nYou use whatever tools you have at hand to get the job done. You can deal sneak attack damage with any simple weapon, in addition to the weapons listed in the sneak attack class feature. When you critically succeed at an attack roll using a simple weapon and the target has the flat-footed condition (unable to focus on defending itself), you also apply the critical specialization effect for the weapon you're wielding (page 283). You don't gain these benefits if the weapon has a damage die larger than d8 (after applying any abilities that alter its damage die size).\n\nYou're trained in Intimidation and medium armor. You can choose Strength as your key ability score. When you gain light armor expertise, you also gain expert proficiency in medium armor, and when you gain light armor mastery, you also gain master proficiency in medium armor."
+                        },
+                        "Scoundrel": {
+                            "name": "Scoundrel",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 180,
+                                "prd": "https://2e.aonprd.com/Rackets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You use fast-talking, flattery, and a silver tongue to avoid danger and escape tricky situations. You might be a grifter or con artist, traveling from place to place with a new story or scheme. Your racket is also ideal for certain reputable professions, like barrister, diplomat, or politician.\n\nWhen you successfully Feint, the target is flat-footed against melee attacks you attempt against it until the end of your next turn. On a critical success, the target is flat-footed against all melee attacks until the end of your next turn, not just yours.\n\nYou're trained in Deception and Diplomacy. You can choose Charisma as your key ability score."
+                        },
+                        "Thief": {
+                            "name": "Thief",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 180,
+                                "prd": "https://2e.aonprd.com/Rackets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Nothing beats the thrill of taking something that belongs to someone else, especially if you can do so completely unnoticed. You might be a pickpocket working the streets, a cat burglar sneaking through windows and escaping via rooftops, or a safecracker breaking into carefully guarded vaults. You might even work as a consultant, testing clients' defenses by trying to steal something precious.\n\nWhen a fight breaks out, you prefer swift, lightweight weapons, and you strike where it hurts. When you attack with a finesse melee weapon, you can add your Dexterity modifier to damage rolls instead of your Strength modifier.\n\nYou are trained in Thievery."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "As you started on the path of the rogue, you began to develop your own style to pursue your illicit activities. Your racket shapes your rogue techniques and the way you approach a job, while building your reputation in the criminal underworld for a certain type of work. A client with deep pockets might even hire a team of rogues for a particular heist, each specializing in a different racket, in order to cover all the bases. Choose a rogue's racket. \n\nRackets can be found here\n\n### Rogue Terms\n\nYou'll see the following key terms in many rogue class features.\n\n**Debilitation**: Debilitations apply conditions and other negative effects to a creature. When the creature is affected by a new debilitation, any previous one it was affected by ends.\n\n**Flourish**: Actions with this trait are special techniques that require too much exertion for you to perform frequently. You can use only 1 action with the flourish trait per turn.  \n"
+        },
+        "Sneak Attack": {
+            "name": "Sneak Attack",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "When your enemy can't properly defend itself, you take advantage to deal extra damage. If you Strike a creature that has the flat-footed condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, you deal an extra 1d6 precision damage. For a ranged attack with a thrown melee weapon, that weapon must also be agile or finesse.\n\nAs your rogue level increases, so does the number of damage dice for your sneak attack. Increase the number of dice by one at 5th, 11th, and 17th levels.  \n"
+        },
+        "Surprise Attack": {
+            "name": "Surprise Attack",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You spring into combat faster than foes can react. On the first round of combat, if you roll Deception or Stealth for initiative, creatures that haven't acted are flat-footed to you.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Deny Advantage": {
+            "name": "Deny Advantage",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "As someone who takes advantage of others' defenses, you are careful not to leave such openings yourself. You aren't flat-footed to hidden, undetected, or flanking creatures of your level or lower, or creatures of your level or lower using surprise attack. However, they can still help their allies flank.  \n"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Weapon Tricks": {
+            "name": "Weapon Tricks",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have become thoroughly familiar with the tools of your trade. You gain expert proficiency in simple weapons and unarmed attacks, as well as the rapier, sap, shortbow, and shortsword. When you critically succeed at an attack roll against a flat-footed creature while using an agile or finesse simple weapon or any of the listed weapons, you apply the critical specialization effect for the weapon you're wielding.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Evasion": {
+            "name": "Evasion",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned to move quickly to avoid explosions, dragons' breath, and worse. Your proficiency rank for Reflex saves increases to master. When you roll a success on a Reflex save, you get a critical success instead.  \n"
+        },
+        "Vigilant Senses": {
+            "name": "Vigilant Senses",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Through your adventures, you've developed keen awareness and attention to detail. Your proficiency rank for Perception increases to master.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 damage if you're a master, and 4 damage if you're legendary.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Debilitating Strikes": {
+            "name": "Debilitating Strikes",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "When taking advantage of an opening, you both hinder and harm your foe. You gain the Debilitating Strike free action.\n\n### Debilitating Strike :f:\n\n; Rogue  \n**Source** *Core Rulebook pg. 182* <sup>1.1</sup>  \n**Trigger** Your Strike hits a flat-footed creature and deals damage.\n\n---\n\nYou apply one of the following debilitations, which lasts until the end of your next turn. \n\n**Debilitation** The target takes a \u201310-foot status penalty to its Speeds. \n\n**Debilitation** The target becomes enfeebled 1.  \n"
+        },
+        "Great Fortitude": {
+            "name": "Great Fortitude",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your physique is incredibly hardy. Your proficiency rank for Fortitude saves increases to expert.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Rogue Expertise": {
+            "name": "Rogue Expertise",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your techniques are now harder to resist. Your proficiency rank for your rogue class DC increases to expert.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Improved Evasion": {
+            "name": "Improved Evasion",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You elude danger to a degree that few can match. Your proficiency rank for Reflex saves increases to legendary. When you roll a critical failure on a Reflex save, you get a failure instead. When you roll a failure on a Reflex save against a damaging effect, you take half damage.  \n"
+        },
+        "Incredible Senses": {
+            "name": "Incredible Senses",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You notice things almost impossible for an ordinary person to detect. Your proficiency rank for Perception increases to legendary.  \n"
+        },
+        "Light Armor Expertise": {
+            "name": "Light Armor Expertise",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to dodge while wearing light or no armor. Your proficiency ranks for light armor and unarmored defense increase to expert.  \n"
+        },
+        "Master Tricks": {
+            "name": "Master Tricks",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've mastered a rogue's fighting moves. Your proficiency ranks increase to master for all simple weapons and unarmed attacks plus the rapier, sap, shortbow, and shortsword.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Double Debilitation": {
+            "name": "Double Debilitation",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your opportunistic attacks are particularly detrimental. When you use Debilitating Strike, you can apply two debilitations simultaneously; removing one removes both.  \n"
+        },
+        "Greater Weapon Specialization": {
+            "name": "Greater Weapon Specialization",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your damage from weapon specialization increases to 4 with weapons and unarmed attacks in which you're an expert, 6 if you're a master, and 8 if you're legendary.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Slippery Mind": {
+            "name": "Slippery Mind",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You play mental games and employ cognitive tricks to throw off mind-altering effects. Your proficiency rank for Will saves increases to master. When you roll a success at a Will save, you get a critical success instead.  \n"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Light Armor Mastery": {
+            "name": "Light Armor Mastery",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your skill with light armor improves, increasing your ability to dodge blows. Your proficiency ranks for light armor and unarmored defense increase to master.  \n"
+        },
+        "Master Strike": {
+            "name": "Master Strike",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You can incapacitate an unwary foe with a single strike. Your proficiency rank for your rogue class DC increases to master. You gain the Master Strike free action.\n\n### Master Strike :f:\n\n; Incapacitation, Rogue  \n**Source** *Core Rulebook pg. 183* <sup>1.1</sup>  \n**Trigger** Your Strike hits a flat-footed creature and deals damage.\n\n---\n\nThe target attempts a Fortitude save at your class DC. It then becomes temporarily immune to your Master Strike for 1 day.\n\n**Critical Success** The target is unaffected.  \n**Success** The target is enfeebled 2 until the end of your next turn.  \n**Failure** The target is paralyzed for 4 rounds.  \n**Critical Failure** The target is paralyzed for 4 rounds, knocked unconscious for 2 hours, or killed (your choice).  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Rogue\n\n*You are skilled and opportunistic. Using your sharp wits and quick reactions, you take advantage of your opponents' missteps and strike where it hurts most. You play a dangerous game, seeking thrills and testing your skills, and likely don't care much for any laws that happen to get in your way. While the path of every rogue is unique and riddled with danger, the one thing you all share in common is the breadth and depth of your skills.*\n\n## During Combat Encounters...\n\nYou move about stealthily so you can catch foes unawares. You're a precision instrument, more useful against a tough boss or distant spellcaster than against rank-and-file soldiers.  \n\n## During Social Encounters...\n\nYour skills give you multiple tools to influence your opposition. Pulling cons and ferreting out information are second nature to you.  \n\n## While Exploring...\n\nYou sneak to get the drop on foes and scout for danger or traps. You're a great asset, since you can disable traps, solve puzzles, and anticipate dangers.  \n\n## In Downtime...\n\nYou might pick pockets or trade in illegal goods. You can also become part of a thieves' guild, or even found one of your own.  \n\n## You Might...\n\n* Hone your skills through intense practice, both on your own and out in the world. \n* Know where to attain illicit goods. \n* Skirt or break the law because you think it's meaningless or have your own code.\n\n## Others Probably...\n\n* Find you charming or fascinating, even if they think they know better than to trust you. \n* Come to you when they need someone who is willing to take risks or use questionable methods. \n* Suspect you're motivated primarily by greed.\n\n"
+}

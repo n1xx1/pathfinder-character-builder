@@ -1,0 +1,7 @@
+{
+    "htmlWhitespaceSensitivity": "css",
+    "tabWidth": 4,
+    "printWidth": 100,
+    "arrowParens": "avoid",
+    "trailingComma": "all"
+}

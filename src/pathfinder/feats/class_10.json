@@ -1,0 +1,45 @@
+{
+    "Overwhelming Energy": {
+        "name": "Overwhelming Energy",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 200,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=337"
+        },
+        "traits": ["Druid", "Manipulate", "Metamagic", "Sorcerer", "Wizard"],
+        "level": 10,
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "\n\n---\n\nYou alter your spells to overcome resistances. If the next action you use is to Cast a Spell, the spell ignores an amount of the target's resistance to acid, cold, electricity, fire, or sonic damage equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell, such as the wall created by *wall of fire*. A creature's immunities are unaffected."
+    },
+    "Quickened Casting": {
+        "name": "Quickened Casting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 80,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=199"
+        },
+        "traits": ["Bard", "Concentrate", "Metamagic", "Oracle", "Sorcerer", "Witch", "Wizard"],
+        "level": 10,
+        "bonus": [{ "k": "action", "name": "#self", "actions": "bonus" }],
+        "description": "**Frequency** once per day\n\n---\n\nIf your next action is to cast a cantrip or a spell that is at least 2 levels lower than the highest level spell you can cast, reduce the number of actions to cast it by 1 (minimum 1 action).\n\n**Special** This can only be used on a cantrip or spell from the class matching the one you gained this feat from."
+    },
+    "Scroll Savant": {
+        "name": "Scroll Savant",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 212,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=652"
+        },
+        "traits": ["Wizard"],
+        "level": 10,
+        "prerequisites": ["skill:crafting,E"],
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "daily preparations",
+                "text": "During your daily preparations, you can create two temporary scrolls containing arcane spells from your spellbook. These scrolls follow the normal rules for scrolls (page 564), with some additional restrictions. Each scroll must be of a different spell level, and both spell levels must be 2 or more levels lower than your highest-level spell. Any scrolls you create this way become non-magical the next time you make your daily preparations. A temporary scroll has no value.\n\nIf you have master proficiency in arcane spell DCs, you can create three temporary scrolls during your daily preparations, and if you have legendary proficiency, you can create four temporary scrolls."
+            }
+        ],
+        "description": "**Prerequisites** expert in Crafting\n\n---\n\nDuring your daily preparations, you can create two temporary scrolls containing arcane spells from your spellbook. These scrolls follow the normal rules for scrolls (page 564), with some additional restrictions. Each scroll must be of a different spell level, and both spell levels must be 2 or more levels lower than your highest-level spell. Any scrolls you create this way become non-magical the next time you make your daily preparations. A temporary scroll has no value.\n\nIf you have master proficiency in arcane spell DCs, you can create three temporary scrolls during your daily preparations, and if you have legendary proficiency, you can create four temporary scrolls."
+    }
+}

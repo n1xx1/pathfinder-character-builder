@@ -1,0 +1,32 @@
+{
+    "Effortless Concentration": {
+        "name": "Effortless Concentration",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=206"
+        },
+        "traits": ["Bard", "Druid", "Sorcerer", "Witch", "Wizard"],
+        "level": 16,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "bonus" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** Your turn begins.\n\n---\n\nYou maintain a spell with hardly a thought. You immediately gain the effects of the Sustain a Spell action, allowing you to extend the duration of one of your active class spells."
+    },
+    "Spell Tinker": {
+        "name": "Spell Tinker",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 213,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=659"
+        },
+        "traits": ["Concentrate", "Wizard"],
+        "level": 16,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou've learned to alter choices you make when casting spells on yourself. After casting a spell on only yourself that offers several choices of effect (such as *resist energy*, *spell immunity*, or a polymorph spell that offers several potential forms), you can alter the choice you made when Casting the Spell (for instance, choosing a different type of damage for *resist energy*). However, your tinkering weakens the spell's integrity, reducing its remaining duration by half.\n\nYou can't use this feat if the benefits of the spell have already been used up or if the effects of the first choice would persist in any way after switching (for instance, if one of the choices was to create a consumable item you already used, or to heal you), or if the feat would create an effect more powerful than that offered by the base spell. The GM is the final arbiter of what Spell Tinker can be applied to."
+    }
+}

@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+}
+#wrapper {
+    display: flex;
+    min-height: 100%;
+}
+
+#wrapper .ant-form-item-label {
+    white-space: normal;
+}
+#wrapper .ant-form-item-label > label::after {
+    content: " ";
+}
+
+.pf2-trait-container {
+    display: block;
+    margin-bottom: 0.5em;
+}
+.pf2-trait-container > .pf2-trait {
+    display: inline-block;
+    background-color: #522e2c;
+    border: 2px solid #d8c483;
+    padding: 0 3px;
+    color: #fff;
+}
+.pf2-trait-container > .pf2-trait.pf2-trait-alignment {
+    background-color: #4287f5;
+}
+.pf2-trait-container > .pf2-trait.pf2-trait-uncommon {
+    background-color: #c45500;
+}
+.pf2-trait-container > .pf2-trait.pf2-trait-rare {
+    background-color: #0c1466;
+}
+.pf2-trait-container > .pf2-trait.pf2-trait-unique {
+    background-color: #800080;
+}

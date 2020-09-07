@@ -1,0 +1,16 @@
+{
+    "name": "Bandit",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 48,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=165"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["DEX", "CHA"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "intimidation", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Group Coercion" }
+    ],
+    "description": "Your past includes no small amount of rural banditry, robbing travelers on the road and scraping by. Whether your robbery was sanctioned by a local noble or you did so of your own accord, you eventually got caught up in the adventuring life. Now, adventure is your stock and trade, and years of camping and skirmishing have only helped.\n\nChoose two ability boosts. One must be to **Dexterity** or **Charisma**, and one is a free ability boost.\n\nYou're trained in the Intimidation skill, and a Lore skill related to the terrain you worked in (such as Desert Lore or Plains Lore). You gain the Group Coercion skill feat."
+}

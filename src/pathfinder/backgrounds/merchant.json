@@ -1,0 +1,16 @@
+{
+    "name": "Merchant",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 63,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=25"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["INT", "CHA"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "diplomacy", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "Mercantile", "proficiency": "T" },
+        { "k": "feat", "feat": "Bargain Hunter" }
+    ],
+    "description": "In a dusty shop, market stall, or merchant caravan, you bartered wares for coin and trade goods. The skills you picked up still apply in the adventuring life, in which a good deal on a suit of armor could prevent your death.\n\nChoose two ability boosts. One must be to **Intelligence** or **Charisma**, and one is a free ability boost.\n\nYou're trained in the Diplomacy skill, and the Mercantile Lore skill. You gain the Bargain Hunter skill feat."
+}

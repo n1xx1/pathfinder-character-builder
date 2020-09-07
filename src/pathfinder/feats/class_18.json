@@ -1,0 +1,38 @@
+{
+    "Infinite Possibilities": {
+        "name": "Infinite Possibilities",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 213,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=660"
+        },
+        "traits": ["Wizard"],
+        "level": 18,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've found a way to prepare a spell slot that exists in your mind as many different possibilities at once. Once during your daily preparations, you can use a spell slot to hold that infinite potential, rather than using it to prepare a spell. You can use this spell slot to cast any spell from your spellbook that's at least 2 levels lower than the slot you designate; the spell acts in all ways as a spell of 2 levels lower. You don't have any particular spell prepared in that slot until you cast it."
+    },
+    "Reprepare Spell": {
+        "name": "Reprepare Spell",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 213,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=661"
+        },
+        "traits": ["Wizard"],
+        "level": 18,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've discovered how to reuse some of your spell slots over and over. You can spend 10 minutes to prepare a spell that you already cast today, regaining access to that spell slot. The spell must be of 4th level or lower and one that does not have a duration. You can reprepare a spell in this way even if you've already reprepared that spell previously in the same day. If you have the spell substitution arcane thesis, you can instead prepare a different spell in an expended slot, as long as the new spell doesn't have a duration. Once you've reprepared a spell in that slot even once, you can use your arcane thesis to substitute only spells without durations into that spell slot."
+    },
+    "Second Chance Spell": {
+        "name": "Second Chance Spell",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 143,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1842"
+        },
+        "traits": ["Enchantment", "Wizard"],
+        "level": 18,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhen your target proves resilient to your magical deceptions, you can try them again on someone else. When you cast an enchantment spell that targets one creature and that creature critically succeeds at its Will save, you can Cast the Spell again before the end of your next turn on a different creature without expending an additional spell slot. The second casting doesn't grant you any benefits that you would normally gain for Casting a Spell from a spell slot."
+    }
+}

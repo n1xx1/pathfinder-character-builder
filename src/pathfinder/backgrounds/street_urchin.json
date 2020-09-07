@@ -1,0 +1,16 @@
+{
+    "name": "Street Urchin",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 64,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=33"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["DEX", "CON"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "thievery", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Pickpocket" }
+    ],
+    "description": "You eked out a living by picking pockets on the streets of a major city, never knowing where you'd find your next meal. While some folk adventure for the glory, you do so to survive.\n\nChoose two ability boosts. One must be to **Dexterity** or **Constitution**, and one is a free ability boost.\n\nYou're trained in the Thievery skill, and a Lore skill for the city you lived in as a street urchin (such as Absalom Lore or Magnimar Lore). You gain the Pickpocket skill feat."
+}

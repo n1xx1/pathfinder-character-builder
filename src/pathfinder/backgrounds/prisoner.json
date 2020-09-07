@@ -1,0 +1,16 @@
+{
+    "name": "Prisoner",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 63,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=29"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["STR", "CON"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "stealth", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "Underworld", "proficiency": "T" },
+        { "k": "feat", "feat": "Experienced Smuggler" }
+    ],
+    "description": "You might have been imprisoned for crimes (whether you were guilty or not), or enslaved for some part of your upbringing. In your adventuring life, you take full advantage of your newfound freedom.\n\nChoose two ability boosts. One must be to **Strength** or **Constitution**, and one is a free ability boost.\n\nYou're trained in the Stealth skill, and the Underworld Lore skill. You gain the Experienced Smuggler skill feat."
+}

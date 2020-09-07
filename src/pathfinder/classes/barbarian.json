@@ -1,0 +1,338 @@
+{
+    "name": "Barbarian",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 82,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=2"
+    },
+    "key": "STR",
+    "hp": 12,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "E" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "E" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "athletics", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "3+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["martial"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_medium", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "class_dc",
+                    "class": "Barbarian",
+                    "proficiency": "T"
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Instinct": {
+            "name": "Instinct",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Animal Instinct": {
+                            "name": "Animal Instinct",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 86,
+                                "prd": "https://2e.aonprd.com/Instincts.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "The fury of a wild predator fills you when you Rage, granting you ferocious unarmed attacks. Cultures that revere vicious animals (such as apes or bears) give rise to barbarians with this instinct. You might also be at war with an uncontrollable, animalistic side of your personality, or you might be a descendant of a werewolf or another werecreature. Select an animal from Table 3\u20133: Animal Instincts that best matches your chosen animal.\n\n## Table 3-3: Animal Instincts\n\n| **Animal** | **Attack** | **Damage** | **Traits** |\n|  - | - | - | -  |\n| Ape | Fist | 1d10 B | Grapple, unarmed |\n| Bear | Jaws | 1d10 P | Unarmed |\n| Claw | 1d6 S | Agile, unarmed |\n| Bull | Horn | 1d10 P | Shove, unarmed |\n| Cat | Jaws | 1d10 P | Unarmed |\n| Claw | 1d6 S | Agile, unarmed |\n| Deer | Antler | 1d10 P | Grapple, unarmed |\n| Frog | Jaws | 1d10 B | Unarmed |\n| Tongue | 1d4 B | Agile, unarmed |\n| Shark | Jaws | 1d10 P | Grapple, unarmed |\n| Snake | Fangs | 1d10 P | Grapple, unarmed |\n| Wolf | Jaws | 1d10 P | Trip, unarmed |\n\n## Anathema  \n\nFlagrantly disrespecting an animal of your chosen kind is anathema to your instinct, as is using weapons while raging.  \n\n## Bestial Rage (Instinct Ability)\n\nWhen you Rage, you gain your chosen animal's unarmed attack (or attacks). The specific attack gained, the damage it deals, and its traits are listed on Table 3\u20133: Animal Instincts. These attacks are in the brawling group. Your Rage action gains the morph, primal, and transmutation traits.\n\n## Specialization Ability\n\nIncrease the damage die size for the unarmed attacks granted by your chosen animal by one step, and increase the additional damage from Rage from 2 to 5 for your chosen animal's unarmed attacks. The frog's tongue attack and deer's antler attack gain reach 10 feet. If you have greater weapon specialization, increase the damage from Rage from 5 to 12 for your chosen animal's unarmed attacks.\n\n## Raging Resistance\n\nYou resist piercing and slashing damage."
+                        },
+                        "Dragon Instinct": {
+                            "name": "Dragon Instinct",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 86,
+                                "prd": "https://2e.aonprd.com/Instincts.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You summon the fury of a mighty dragon and manifest incredible abilities. Perhaps your culture reveres draconic majesty, or you gained your connection by drinking or bathing in dragon's blood or after watching a marauding wyrm burn your village. Select a type of dragon from Table 3\u20134: Dragon Instincts to be your instinct's dragon type. Chromatic dragons tend to be evil, and metallic dragons tend to be good.\n\n## Table 3-4: Dragon Instincts\n\n| **Dragon** | **Type** | **Breath Weapon** |\n|  - | - | -  |\n| Black | Chromatic | Line of acid |\n| Blue | Chromatic | Line of electricity |\n| Green | Chromatic | Cone of poison |\n| Red | Chromatic | Cone of fire |\n| White | Chromatic | Cone of cold |\n| Brass | Metallic | Line of fire |\n| Bronze | Metallic | Line of electricity |\n| Copper | Metallic | Line of acid |\n| Gold | Metallic | Cone of fire |\n| Silver | Metallic | Cone of cold |\n\n## Anathema\n\nLetting a personal insult against you slide is anathema to your instinct. Choose whether your character respects or abhors your dragon type. If you respect it, defying such a dragon is anathema, and if you abhor it, failing to defeat such a dragon you come across is anathema.\n\n## Draconic Rage (Instinct Ability)\n\nWhile raging, you can increase the additional damage from Rage from 2 to 4 and change its damage type to match that of your dragon's breath weapon instead of the damage type for your weapon or unarmed attack. If you do this, your Rage action gains the arcane and evocation traits, as well as the trait matching the damage type.\n\n## Specialization Ability\n\nWhen you use draconic rage, you increase the additional damage from Rage from 4 to 8. If you have greater weapon specialization, instead increase the damage from Rage when using draconic rage from 8 to 16.\n\n## Raging Resistance\n\nYou resist piercing damage and the damage type of your dragon's breath weapon."
+                        },
+                        "Fury Instinct": {
+                            "name": "Fury Instinct",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 87,
+                                "prd": "https://2e.aonprd.com/Instincts.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your rage comes from a deep and purely personal well within you. You use your rage as you choose.\n\n## Anathema and Instinct Ability\n\nYou don't have an anathema or an instinct ability. Instead, you gain an additional 1st-level barbarian feat.\n\n## Specialization Ability\n\nIncrease the additional damage from Rage from 2 to 6. If you have greater weapon specialization, instead increase the additional damage from Rage to 12.\n\n## Raging Resistance\n\nYou resist physical weapon damage, but not physical damage from other sources (such as unarmed attacks)."
+                        },
+                        "Giant Instinct": {
+                            "name": "Giant Instinct",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 87,
+                                "prd": "https://2e.aonprd.com/Instincts.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your rage gives you the raw power and size of a giant. This doesn't necessarily mean you revere giants\u2014you might scoff at them or even aspire to slay them! You could instead seem like a giant to other people due to your exceptional strength or larger-than-life emotions and ego.\n\n## Anathema\n\nFailing to face a personal challenge of strength is anathema.\n\n## Titan Mauler (Instinct Ability)\n\nYou can use a weapon built for a Large creature if you are Small or Medium (both normally and when raging). If you're not Small or Medium, you can use a weapon built for a creature one size larger than you. You gain access to this larger weapon, of any weapon type otherwise available at character creation. It has the normal Price and Bulk for a weapon of its size (page 295). When wielding such a weapon in combat, increase your additional damage from Rage from 2 to 6, but you have the clumsy 1 condition (page 618) because of the weapon's unwieldy size. You can't remove this clumsy condition or ignore its penalties by any means while wielding the weapon.\n\n## Specialization Ability\n\nIncrease the damage from Rage when using a larger weapon from 6 to 10; if you have greater weapon specialization, increase it from 10 to 18.\n\n## Raging Resistance\n\nYou resist bludgeoning damage and your choice of cold, electricity, or fire, chosen when you gain raging resistance."
+                        },
+                        "Spirit Instinct": {
+                            "name": "Spirit Instinct",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 87,
+                                "prd": "https://2e.aonprd.com/Instincts.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Whether you are emotionally sensitive to the spirits around you; worship ancestors or apparitions; or are haunted by the specter of an ancestor, relative, friend, or foe, your rage takes the form of a spiritual possession.\n\n## Anathema\n\nDisrespecting corpses or spirits is anathema to your instinct; defending yourself against undead creatures is not.\n\n## Spirit Rage (Instinct Ability)\n\nWhen you are raging, you can increase your damage from Rage from 2 to 3 and deal negative or positive damage, instead of the normal damage type for your weapon or unarmed attack (choose each time you Rage). If you choose to deal negative or positive damage, your weapon or unarmed attack gains the effects of the ghost touch property rune, which makes it more effective against incorporeal creatures, and your Rage action gains the divine and necromancy traits, plus negative or positive, as appropriate.\n\n## Specialization Ability\n\nWhen using spirit rage, increase the damage from Rage from 3 to 7. If you have greater weapon specialization, instead increase the damage when using spirit rage to 13.\n\n## Raging Resistance\n\nYou resist negative damage, as well as damage dealt by the attacks and abilities of undead creatures, regardless of the damage type."
+                        },
+                        "Superstitious Instinct": {
+                            "name": "Superstitious Instinct",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 108,
+                                "prd": "https://2e.aonprd.com/Instincts.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "  \nA deep distrust of magic drives you to forgo and counter the metaphysical nonsense of spellcasters. Whether you're a member of a superstitious family or culture that distrusts magic, a warrior in constant battle against wizards and witches, a survivor of a magical accident that instilled an intense aversion in your mind and body, or a scion of a bloodline known for its magic resistance, your rage is inimical to magic. This makes you an excellent mage hunter but slow to trust practitioners of magical arts. Your extremely restrictive anathema grants you powers beyond those of other instincts.\n\n## Anathema\n\nWillingly accepting the effects of magic spells (including from scrolls, wands, and the like), even from your allies, is anathema to your instinct. You can still drink potions and invest and activate most magic items you find, though items that cast spells are subject to the same restrictions as all other spells. If an ally insists on using magic on you despite your unwillingness, and you have no reason to believe they will stop, continuing to travel with that ally of your own free will counts as willingly accepting their spells (as do similar circumstances) and thus is also anathema to your instinct.\n\n## Superstitious Resilience (Instinct Ability)\n\nWhile raging, you gain a +2 status bonus to all saves against magic. Increase your damage from Rage from 2 to 4 against creatures that can cast spells. Once every 10 minutes, when you Rage, you regain Hit Points equal to the temporary Hit Points you gain from that Rage action.\n\n## Specialization Ability\n\nIncrease the damage from Rage from 4 to 8 against creatures that can cast spells. If you have greater raging specialization, instead increase the damage from Rage to 12 against creatures with spells and 8 against other creatures.\n\n## Raging Resistance\n\nChoose two associated magical traditions: arcane and occult, arcane and primal, divine and occult, or divine and primal. The resistance from your raging resistance class feature applies against all damage you take from spells cast with these two traditions of magic, regardless of the type of damage dealt by the spell."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Your rage wells up from a dominant instinct\u2014one you learned from a tradition or that comes naturally to you. Your instinct gives you an ability, requires you to avoid certain behaviors, grants you increased damage and resistances at higher levels, and allows you to select feats tied to your instinct. \n\nInstincts can be found here.  \n"
+        },
+        "Rage": {
+            "name": "Rage",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You gain the Rage action, which lets you fly into a frenzy.\n\n### Rage :a:\n\n; Barbarian, Concentrate, Emotion, Mental  \n**Source** *Core Rulebook pg. 84* <sup>1.1</sup>  \n**Requirements** You aren't fatigued or raging.\n\n---\n\nYou tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. This frenzy lasts for 1 minute, until there are no enemies you can perceive, or until you fall unconscious, whichever comes first. You can't voluntarily stop raging. While you are raging: * You deal 2 additional damage with melee weapons and unarmed attacks. This additional damage is halved if your weapon or unarmed attack is agile. \n* You take a \u20131 penalty to AC. \n* You can't use actions with the concentrate trait unless they also have the rage trait. You can Seek while raging.\n\nAfter you stop raging, you lose any remaining temporary Hit Points from Rage, and you can't Rage again for 1 minute.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Deny Advantage": {
+            "name": "Deny Advantage",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your foes struggle to pass your defenses. You aren't flat-footed to hidden, undetected, or flanking creatures of your level or lower, or creatures of your level or lower using surprise attack. However, they can still help their allies flank.  \n"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Brutality": {
+            "name": "Brutality",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your fury makes your weapons lethal. Your proficiency ranks for simple weapons, martial weapons, and unarmed attacks increase to expert. While raging, you gain access to the critical specialization effects for melee weapons and unarmed attacks.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Juggernaut": {
+            "name": "Juggernaut",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your body is accustomed to physical hardship and resistant to ailments. Your proficiency rank for Fortitude saves increases to master. When you roll a success on a Fortitude save, you get a critical success instead.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your rage helps you hit harder. You deal an additional 2 damage with weapons and unarmed attacks in which you have expert proficiency. This damage increases to 3 if you're a master, and 4 if you're legendary. You gain your instinct's specialization ability.\n\nSee specific instincts for more information.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Lightning Reflexes": {
+            "name": "Lightning Reflexes",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.  \n"
+        },
+        "Raging Resistance": {
+            "name": "Raging Resistance",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Repeated exposure and toughened skin allow you to fend off harm. While raging, you gain resistance equal to 3 + your Constitution modifier to damage types based on your instinct.\n\nSee specific instincts for more information.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Mighty Rage": {
+            "name": "Mighty Rage",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your rage intensifies and lets you burst into action. Your proficiency rank for your barbarian class DC increases to expert. You gain the Mighty Rage free action.\n\n### Mighty Rage :f:\n\n; Barbarian  \n**Source** *Core Rulebook pg. 85* <sup>1.1</sup>  \n**Trigger** You use the Rage action on your turn.\n\n---\n\nUse an action that has the rage trait. Alternatively, you can increase the actions of the triggering Rage to 2 to instead use a 2-action activity with the rage trait.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Greater Juggernaut": {
+            "name": "Greater Juggernaut",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have a stalwart physiology. Your proficiency rank for Fortitude saves increases to legendary. When you roll a critical failure on a Fortitude save, you get a failure instead. When you roll a failure on a Fortitude save against an effect that deals damage, you halve the damage you take.  \n"
+        },
+        "Medium Armor Expertise": {
+            "name": "Medium Armor Expertise",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned to defend yourself better against attacks. Your proficiency ranks for light armor, medium armor, and unarmored defense increase to expert.  \n"
+        },
+        "Weapon Fury": {
+            "name": "Weapon Fury",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your rage makes you even more effective with the weapons you wield. Your proficiency ranks for simple weapons, martial weapons, and unarmed attacks increase to master.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Greater Weapon Specialization": {
+            "name": "Greater Weapon Specialization",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "The weapons you've mastered become truly fearsome in your hands. Your damage from weapon specialization increases to 4 with weapons and unarmed attacks in which you're an expert, 6 if you're a master, and 8 if you're legendary. You gain a greater benefit from your instinct's specialization ability.\n\nSee specific instincts for more information.  \n"
+        },
+        "Indomitable Will": {
+            "name": "Indomitable Will",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your rage makes it difficult to control you. Your proficiency rank for Will saves increases to master. When you roll a success on a Will save, you get a critical success instead.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Heightened Senses": {
+            "name": "Heightened Senses",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your instinct heightens each of your senses further. Your proficiency rank for Perception increases to master.  \n"
+        },
+        "Quick Rage": {
+            "name": "Quick Rage",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You recover from your Rage quickly, and are soon ready to begin anew. After you spend a full turn without raging, you can Rage again without needing to wait 1 minute.  \n"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Armor of Fury": {
+            "name": "Armor of Fury",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your training and rage deepen your connection to your armor. Your proficiency ranks for light armor, medium armor, and unarmored defense increase to master.  \n"
+        },
+        "Devastator": {
+            "name": "Devastator",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your Strikes are so devastating that you hardly care about resistance, and your barbarian abilities are unparalleled. Your proficiency rank for your barbarian class DC increases to master. Your melee Strikes ignore 10 points of a creature's resistance to their physical damage.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Barbarian\n\n*Rage consumes you in battle. You delight in wreaking havoc and using powerful weapons to carve through your enemies, relying on astonishing durability without needing complicated techniques or rigid training. Your rages draw upon a vicious instinct, which you might associate with an animal, a spirit, or some part of yourself. To many barbarians, brute force is a hammer and every problem looks like a nail, whereas others try to hold back the storm of emotions inside them and release their rage only when it matters most.*\n\n## During Combat Encounters...\n\nYou summon your rage and rush to the front lines to smash your way through. Offense is your best defense\u2014you'll need to drop foes before they can exploit your relatively low defenses.  \n\n## During Social Encounters...\n\nYou use intimidation to get what you need, especially when gentler persuasion can't get the job done.  \n\n## While Exploring...\n\nYou look out for danger, ready to rush headfirst into battle in an instant. You climb the challenging rock wall and drop a rope for others to follow, and you wade into the risky currents to reach the hidden switch beneath the water's surface. If something needs breaking, you're up to the task!  \n\n## In Downtime...\n\nYou might head to a tavern to carouse, build up the fearsome legend of your mighty deeds, or recruit followers to become a warlord in your own right.  \n\n## You Might...\n\n* Have a deep-seated well of anger, hatred, or frustration. \n* Prefer a straightforward approach to one requiring patience and tedium. \n* Engage in a regimen of intense physical fitness\u2014and punch anyone who says this conflicts with your distaste for patience and tedium.\n\n## Others Probably...\n\n* Rely on your courage and your strength, and trust that you can hold your own in a fight. \n* See you as uncivilized or a boorish lout unfit for high society. \n* Believe that you are loyal to your friends and allies and will never relent until the fight is done.\n\n"
+}

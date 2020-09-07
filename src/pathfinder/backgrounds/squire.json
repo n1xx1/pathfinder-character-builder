@@ -1,0 +1,44 @@
+{
+    "name": "Squire",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 49,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=178"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["STR", "CON"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "athletics", "proficiency": "T" },
+        {
+            "k": "option",
+            "options": {
+                "Genealogy Lore": {
+                    "name": "Genealogy Lore",
+                    "description": "Genealogy Lore",
+                    "bonus": [
+                        {
+                            "k": "proficiency",
+                            "skill": "lore",
+                            "kind": "Genealogy",
+                            "proficiency": "T"
+                        }
+                    ]
+                },
+                "Heraldry Lore": {
+                    "name": "Heraldry Lore",
+                    "description": "Heraldry Lore",
+                    "bonus": [
+                        {
+                            "k": "proficiency",
+                            "skill": "lore",
+                            "kind": "Genealogy",
+                            "proficiency": "T"
+                        }
+                    ]
+                }
+            }
+        },
+        { "k": "feat", "feat": "Armor Assist" }
+    ],
+    "description": "You trained at the feet of a knight, maintaining their gear and supporting them at tourneys and in battle. Now you search for a challenge that will prove you worthy of full knighthood, or you've spurned pomp and ceremony to test yourself in honest, albeit less formal, combat.\n\nChoose two ability boosts. One must be to **Strength** or **Constitution**, and one is a free ability boost.\n\nYou're trained in the Athletics skill and your choice of the Heraldry Lore or Warfare Lore skill. You gain the Armor Assist skill feat."
+}

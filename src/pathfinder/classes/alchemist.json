@@ -1,0 +1,329 @@
+{
+    "name": "Alchemist",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 66,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=1"
+    },
+    "key": "INT",
+    "hp": 8,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "E" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "E" },
+                { "k": "proficiency", "skill": "will", "proficiency": "T" },
+                { "k": "proficiency", "skill": "crafting", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "3+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["alchemical bombs"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "class_dc",
+                    "class": "Alchemist",
+                    "proficiency": "T"
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Alchemy": {
+            "name": "Alchemy",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You understand the complex interactions of natural and unnatural substances and can concoct alchemical items to meet your needs. You can do this using normal reagents and the Craft activity, or you can use special infused reagents that allow you to craft temporary items quickly and at no cost. Over time, you can create more and more alchemical items for free, and since each of them becomes more and more powerful, you advance in power dramatically, leaving behind those who don't understand your strange science.\n\nYou gain the Alchemical Crafting feat, even if you don't meet that feat's prerequisites, and you gain the four common 1st-level alchemical formulas granted by that feat. The catalog of alchemical items begins on page 543. You can use this feat to create alchemical items as long as you have the items' formulas in your formula book.\n\n### Infused Reagents\n\nYou infuse reagents with your own alchemical essence, allowing you to create alchemical items at no cost. Each day during your daily preparations, you gain a number of batches of infused reagents equal to your level + your Intelligence modifier. You can use these reagents for either advanced alchemy or Quick Alchemy, described below. Together, these infused reagents have light Bulk.\n\nAs soon as you make your next daily preparations, your infused reagents from the previous day's preparations are instantly destroyed, and nonpermanent effects of your previous day's infused items immediately end. While infused reagents are physical objects, they can't be duplicated, preserved, or created in any way other than your daily preparations. Any such artificial reagents lack the infusion and are useless for advanced alchemy or Quick Alchemy.\n\n### Advanced Alchemy\n\nDuring your daily preparations, after producing new infused reagents, you can spend batches of those infused reagents to create infused alchemical items. You don't need to attempt a Crafting check to do this, and you ignore both the number of days typically required to create the items and any alchemical reagent requirements. Your advanced alchemy level is equal to your level. For each batch of infused reagents you spend, choose an alchemical item of your advanced alchemy level or lower that's in your formula book, and make a batch of two of that item. These items have the infused trait and remain potent for 24 hours or until your next daily preparations, whichever comes first.\n\n### Quick Alchemy\n\nIf you need a specific alchemical item on the fly, you can use your infused reagents to quickly create it with the Quick Alchemy action.\n\n### Quick Alchemy :a:\n\n; Alchemist, Manipulate  \n**Source** *Core Rulebook pg. 72* <sup>1.1</sup>  \n**Cost** 1 batch of infused reagents  \n**Requirements** You have alchemist's tools, the formula for the alchemical item you're creating, and a free hand.\n\n---\n\nYou swiftly mix up a short-lived alchemical item to use at a moment's notice. You create a single alchemical item of your advanced alchemy level or lower that's in your formula book without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the infused trait, but it remains potent only until the start of your next turn.    \n"
+        },
+        "Formula Book": {
+            "name": "Formula Book",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "An alchemist keeps meticulous records of the formulas for every item they can create. You start with a standard formula book worth 10 sp or less (as detailed on page 290) for free. The formula book contains the formulas for two common 1st-level alchemical items of your choice, in addition to those you gained from Alchemical Crafting and your research field. The catalog of alchemical items begins on page 543.\n\nEach time you gain a level, you can add the formulas for two common alchemical items to your formula book. These new formulas can be for any level of item you can create. You learn these formulas automatically, but it's also possible to find or buy additional formulas in settlements or from other alchemists, or to invent them with the Inventor feat.\n\n### Sample Formula Book\n\nYou can choose any 1st-level common alchemical items for your formula book, but the list below contains a good selection of starter formulas. A beginner's book with these formulas called *The Fundamentals of Alchemy* has become popular among mainstream alchemists by staying away from controversial topics like mutagens, though it has drawn criticism from fringe alchemists for guiding fledgling alchemists away from more innovative experiments.\n\n**Alchemical Item Formulas**: Lesser acid flask, lesser alchemist's fire, lesser antidote, lesser antiplague, lesser cheetah's elixir, lesser elixir of life, lesser tanglefoot bag, lesser smokestick.  \n"
+        },
+        "Research Field": {
+            "name": "Research Field",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Bomber": {
+                            "name": "Bomber",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 73,
+                                "prd": "https://2e.aonprd.com/ResearchFields.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You specialize in explosions and other violent alchemical reactions. You start with the formulas for two 1st-level alchemical bombs in your formula book, in addition to your other formulas.\n\nWhen throwing an alchemical bomb with the splash trait, you can deal splash damage to only your primary target instead of the usual splash area.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make bombs during your daily preparations, you can use a batch of reagents to create any three bombs instead of just two of the same bomb.\n\n## Perpetual Infusions -- Level 7\n\nChoose two of the following formulas: lesser acid flask, lesser alchemist's fire, lesser bottled lightning, lesser frost vial, lesser tanglefoot bag, lesser thunderstone.\n\n## Perpetual Potency -- Level 11\n\nThe moderate versions of the bombs you chose for perpetual infusions.\n\n## Greater Field Discovery -- Level 13\n\nYou can increase the splash on your bombs to damage creatures within 10 feet, or 15 feet if you have Expanded Splash.\n\n## Perpetual Perfection -- Level 17\n\nThe greater versions of the bombs you chose for perpetual infusions."
+                        },
+                        "Chirurgeon": {
+                            "name": "Chirurgeon",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 73,
+                                "prd": "https://2e.aonprd.com/ResearchFields.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You concentrate on healing others with alchemy. You start with the formulas for two of the following in your formula book, in addition to your other formulas: lesser antidote, lesser antiplague, or minor elixir of life.\n\nAs long as your proficiency rank in Medicine is trained or better, you can attempt a Crafting check instead of a Medicine check for any of Medicine's untrained and trained uses.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make elixirs of life during your daily preparations, you can create three elixirs with each batch of reagents instead of two.\n\n## Perpetual Infusions -- Level 7\n\nLesser antidote and lesser antiplague.\n\n## Perpetual Potency -- Level 11\n\nModerate antidote and antiplague.\n\n## Greater Field Discovery -- Level 13\n\nWhen you use Quick Alchemy to create any type of elixir of life, the creature drinking the elixir gains the maximum Hit Points possible for that elixir, instead of rolling to determine the number of Hit Points regained.\n\n## Perpetual Perfection -- Level 17\n\nGreater antidote and antiplague."
+                        },
+                        "Mutagenist": {
+                            "name": "Mutagenist",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 73,
+                                "prd": "https://2e.aonprd.com/ResearchFields.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You focus on bizarre mutagenic transformations that sacrifice one aspect of a creature's physical or psychological being in order to strengthen another. You start with the formulas for two 1st-level mutagens in your formula book, in addition to your other formulas.\n\nYou gain the following free action.\n\n### Mutagenic Flashback :f:\n\n; Alchemist  \n**Source** *Core Rulebook pg. 73* <sup>1.1</sup>  \n**Frequency** once per day\n\n---\n\nYou experience a brief resurgence of a mutagen. Choose one mutagen you've consumed since your last daily preparations. You gain the effects of that mutagen for 1 minute.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make mutagens during your daily preparations, you can use a batch of reagents to create any three mutagens instead of just two of the same mutagen.\n\n## Perpetual Infusions -- Level 7\n\nChoose two of the following formulas: lesser bestial mutagen, lesser bullheaded mutagen, lesser cognitive mutagen, lesser juggernaut mutagen, lesser quicksilver mutagen, lesser silvertongue mutagen.\n\n## Perpetual Potency -- Level 11\n\nThe moderate versions of the mutagens you chose for perpetual infusions.\n\n## Greater Field Discovery -- Level 13\n\nIf you imbibe another mutagen while you are under the effects of a mutagen that you created, you can gain the benefits and the drawbacks of both mutagens at once, despite the fact that they both have the polymorph trait and would not normally function together. If you come under the effects of any further mutagens while benefiting from two mutagens, you lose the benefit of one of the former mutagens of your choice, while retaining the drawbacks of all the mutagens. If you are under the effects of two mutagens and you come under the effect of a non-mutagen polymorph effect, you lose the benefits of the mutagens while retaining the drawbacks of both.\n\n## Perpetual Perfection -- Level 17\n\nThe greater versions of the mutagens you chose for perpetual infusions."
+                        },
+                        "Toxicologist": {
+                            "name": "Toxicologist",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 106,
+                                "prd": "https://2e.aonprd.com/ResearchFields.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You specialize in toxins and venoms of all types. You start with the formulas for two common 1st-level alchemical poisons in your formula book, in addition to your other formulas. You can apply an injury poison you're holding to a weapon you're wielding as a single action, rather than as a 2-action activity, and you can change the DCs of your infused poisons to your class DC if it's higher.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make poisons during your daily preparations, you can spend one batch of reagents to create three poisons in any combination, instead of just two of the same poison.\n\n## Perpetual Infusions -- Level 7\n\nChoose two common 1st-level alchemical poisons.\n\n## Perpetual Potency -- Level 11\n\nChoose two common 5th-level or lower alchemical poisons.\n\n## Greater Field Discovery -- Level 13\n\nYou can apply two different injury poisons to the same weapon, though not to a piece of ammunition. The two poisons can be up to six levels lower than your level, and you can't use the poisons made without spending a batch of infused reagents via perpetual infusions. Applying the two poisons requires a separate action to apply each poison. Once completed, you combine the two poisons on the weapon into a double poison with the lower of the two poisons' DCs. This double poison is only virulent if both poisons were virulent, and if the poisons have a different number of stages, the double poison has a number of stages equal to the poison with the lower number of stages. The target takes the effects of both poisons for its current stage.\n\n## Perpetual Perfection -- Level 17\n\nChoose two common 11th-level or lower alchemical poisons."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Your inquiries into the alchemical nature of the universe have led you to focus on a particular field of research. You might have a degree from an scientific institute, correspond with other researchers in your field, or work as a genius loner. Choose a field of research. \n\nResearch fields can be found here.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Field Discovery": {
+            "name": "Field Discovery",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You learn a special discovery depending on your field. \n\nSee specific research fields for more information.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Alchemical Weapon Expertise": {
+            "name": "Alchemical Weapon Expertise",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've trained to more effectively wield the weapons you find in your lab. Your proficiency ranks for simple weapons, unarmed attacks, and alchemical bombs increase to expert.  \n"
+        },
+        "Iron Will": {
+            "name": "Iron Will",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your mental defenses are an iron fortress. Your proficiency rank for Will saves increases to expert.  \n"
+        },
+        "Perpetual Infusions": {
+            "name": "Perpetual Infusions",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have learned how to create perpetual alchemical infusions that can provide a near-infinite supply of certain simple items. You gain the ability to create two 1st-level alchemical items using Quick Alchemy without spending a batch of infused reagents. The items you can select depend on your research field and must be in your formula book.\n\nSee specific research fields for more information.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Alchemical Expertise": {
+            "name": "Alchemical Expertise",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Constant practice has increased the effectiveness of your concoctions. Your proficiency rank for your alchemist class DC increases to expert.  \n"
+        },
+        "Alertness": {
+            "name": "Alertness",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You remain alert to threats around you. Your proficiency rank for Perception increases to expert.  \n"
+        },
+        "Double Brew": {
+            "name": "Double Brew",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You know your formulas so well that you can concoct two items at once. When using the Quick Alchemy action, instead of spending one batch of infused reagents to create a single item, you can spend up to two batches of infused reagents to make up to two alchemical items as described in that action. These items do not have to be the same.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Juggernaut": {
+            "name": "Juggernaut",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your body has become accustomed to physical hazards and resistant to pathogens and ailments. Your proficiency rank for Fortitude saves increases to master. When you roll a success on a Fortitude save, you get a critical success instead.  \n"
+        },
+        "Perpetual Potency": {
+            "name": "Perpetual Potency",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your perpetual infusions improve, allowing you to use Quick Alchemy to create more powerful items with no cost. The items you can select depend on your research field and must be in your formula book.\n\nSee specific research fields for more information.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Greater Field Discovery": {
+            "name": "Greater Field Discovery",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You learn an incredible discovery that advances your understanding of your field.\n\nSee specific research fields for more information.  \n"
+        },
+        "Light Armor Expertise": {
+            "name": "Light Armor Expertise",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to dodge while wearing light or no armor. Your proficiency ranks for light armor and unarmored defense increase to expert.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Alchemical Alacrity": {
+            "name": "Alchemical Alacrity",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your comfort in concocting items is such that you can create three at a time. When using the Quick Alchemy action, you can spend up to three batches of infused reagents to make up to three alchemical items as described in that action. These items do not have to be the same.  \n"
+        },
+        "Evasion": {
+            "name": "Evasion",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned to move quickly to avoid explosions, dragon's breath, and worse. Your proficiency rank for Reflex saves increases to master. When you roll a success on a Reflex save, you get a critical success instead.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Alchemical Mastery": {
+            "name": "Alchemical Mastery",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your alchemical concoctions are incredibly effective. Your proficiency rank for your alchemist class DC increases to master.  \n"
+        },
+        "Perpetual Perfection": {
+            "name": "Perpetual Perfection",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have perfected your perpetual infusions, allowing you to use Quick Alchemy to create even more powerful items at no cost. The items you can select depend on your research field and must be in your formula book.\n\nSee specific research fields for more information.  \n"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Light Armor Mastery": {
+            "name": "Light Armor Mastery",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your skill with light armor improves, increasing your ability to dodge blows. Your proficiency ranks for light armor and unarmored defense increase to master.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Alchemist\n\n*There's no sight more beautiful to you than a strange brew bubbling in a beaker, and you consume your ingenious elixirs with abandon. You're fascinated by uncovering the secrets of science and the natural world, and you're constantly experimenting in your lab or on the go with inventive concoctions for every eventuality. You are fearless in the face of risk, hurling explosive or toxic creations at your foes. Your unique path toward greatness is lined with alchemical brews that push your mind and body to their limits.*\n\n## During Combat Encounters...\n\nYou lob bombs at your foes, harry your enemies, and support the rest of your party with potent elixirs. At higher levels, your mutagens warp your body into a resilient and powerful weapon.  \n\n## During Social Encounters...\n\nYou provide knowledge and experience about alchemical items and related secrets, such as poisons and diseases.  \n\n## While Exploring...\n\nYou keep an eye out for trouble with your bombs at the ready, while giving advice on all things alchemical and mysterious.  \n\n## In Downtime...\n\nYou experiment in an alchemical lab, brewing elixirs, making bombs, and furthering your alchemical knowledge.  \n\n## You Might...\n\n* Enjoy tinkering with strange formulas and alchemical reagents, often with a single-minded dedication and recklessness that gives others pause. \n* Get a kick out of wreaking havoc with the alchemical concoctions you've made, and enjoy watching things burn, dissolve, freeze, and jolt. \n* Endlessly experiment to discover new, more potent alchemical tools.\n\n## Others Probably...\n\n* Think you're some kind of sorcerer or an eccentric wizard and don't understand that you don't cast spells; spellcasters who clumsily dabble in alchemy only heighten this misconception. \n* Don't understand your zeal for alchemy, creativity, and invention. \n* Assume that if you haven't caused a catastrophe with your experimentations, you inevitably will.\n\n"
+}

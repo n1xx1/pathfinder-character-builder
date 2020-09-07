@@ -1,0 +1,15 @@
+{
+    "name": "Returned",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 51,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=188"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["CON", "WIS"] },
+        { "k": "ability" },
+        { "k": "feat", "feat": "Diehard" },
+        { "k": "feat", "feat": "Additional Lore", "option": "Boneyard" }
+    ],
+    "description": "You died and miraculously returned with knowledge of the realms beyond death and a stronger link to life. Some dead and undead souls might feel a strange, instinctual kinship with you. \n\nChoose two ability boosts. One must be to **Constitution** or **Wisdom**, and one is a free ability boost.\n\nYou gain the Diehard feat and the Additional Lore feat for Boneyard Lore.  "
+}

@@ -1,0 +1,64 @@
+{
+    "name": "Human",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 55,
+        "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=6"
+    },
+    "hp": 8,
+    "size": "medium",
+    "speed": 25,
+    "traits": ["Human", "Humanoid"],
+    "bonus": [
+        { "k": "ability" },
+        { "k": "ability" },
+        { "k": "feat", "filter": ["trait:Human", "level:1"] }
+    ],
+    "heritages": {
+        "Skilled Heritage": {
+            "name": "Skilled Heritage",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 56,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=28"
+            },
+            "bonus": [
+                {
+                    "k": "if",
+                    "if": ["level:5"],
+                    "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "E" }],
+                    "else_bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }]
+                }
+            ],
+            "description": "Your ingenuity allows you to train in a wide variety of skills. You become trained in one skill of your choice. At 5th level, you become an expert in the chosen skill.  \n"
+        },
+        "Versatile Heritage": {
+            "name": "Versatile Heritage",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 56,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=29"
+            },
+            "bonus": [{ "k": "feat", "filter": ["trait:General"] }],
+            "description": "Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).  \n"
+        },
+        "Wintertouched": {
+            "name": "Wintertouched",
+            "source": {
+                "book": "Character Guide",
+                "page": 11,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=30"
+            },
+            "bonus": [
+                { "k": "bonus", "category": "resistance", "text": "cold {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "environmental cold effects are one step less extreme"
+                }
+            ],
+            "description": "The power of winter flows through you. This heritage is most common among the Jadwiga of Irrisen, due to their descent from Baba Yaga, and certain Erutaki touched by the spirits. You gain cold resistance equal to half your level (minimum 1), and you treat environmental cold effects as if they were one step less extreme (incredible cold becomes extreme, extreme cold becomes severe, and so on)."
+        }
+    },
+    "description": "*As unpredictable and varied as any of Golarion's peoples, humans have exceptional drive and the capacity to endure and expand. Though many civilizations thrived before humanity rose to prominence, humans have built some of the greatest and the most terrible societies throughout the course of history, and today they are the most populous people in the realms around the Inner Sea.*\n\nHumans' ambition, versatility, and exceptional potential have led to their status as the world's predominant ancestry. Their empires and nations are vast, sprawling things, and their citizens carve names for themselves with the strength of their sword arms and the power of their spells. Humanity is diverse and tumultuous, running the gamut from nomadic to imperial, sinister to saintly. Many of them venture forth to explore, to map the expanse of the multiverse, to search for long-lost treasure, or to lead mighty armies to conquer their neighbors\u2014for no better reason than because they can.\n\nIf you want a character who can be just about anything, you should play a human.\n\n## You Might...\n\n* Strive to achieve greatness, either in your own right or on behalf of a cause. \n* Seek to understand your purpose in the world. \n* Cherish your relationships with family and friends.\n\n## Others Probably...\n\n* Respect your flexibility, your adaptability, and\u2014in most cases\u2014 your open\u2011mindedness. \n* Distrust your intentions, fearing you seek only power or wealth. \n* Aren't sure what to expect from you and are hesitant to assume your intentions.\n\n## Physical Description\n\nHumans' physical characteristics are as varied as the world's climes. Humans have a wide variety of skin and hair colors, body types, and facial features. Generally speaking, their skin has a darker hue the closer to the equator they or their ancestors lived.\n\nHumans reach physical adulthood around the age of 15, though mental maturity occurs a few years later. A typical human can live to be around 90 years old. Humans often intermarry with people of other ancestries, giving rise to children who bear the traits of both parents. The most notable half-humans are half-elves and half-orcs.  \n\n## Society\n\nHuman variety also manifests in terms of their governments, attitudes, and social norms. Though the oldest of human cultures can trace their shared histories thousands of years into the past, when compared to the societies of the elves or dwarves, human civilizations seem in a state of constant flux as empires fragment and new kingdoms subsume the old.  \n\n## Alignment and Religion\n\nHumanity is perhaps the most heterogeneous of all the ancestries, with a capacity for great evil and boundless good. Some humans assemble into vast raging hordes, while others build sprawling cities. Considered as a whole, most humans are neutral, yet they tend to congregate into nations or communities of a shared alignment, or at least a shared tendency toward an alignment. Humans also worship a wide range of gods and practice many different religions, tending to seek favor from any divine being they encounter.  \n\n## Names\n\nUnlike many ancestral cultures, which generally cleave to specific traditions and shared histories, humanity's diversity has resulted in a near-infinite set of names. The humans of northern tribes have different names than those dwelling in southern nation-states. Humans throughout much of the world speak Common (though some continents on Golarion have their own regional common languages), yet their names are as varied as their beliefs and appearances.  \n\n### Sample Names\n\nA variety of human ethnic groups\u2014many of which have origins on distant lands\u2014 populates the continents bordering Golarion's Inner Sea. Human characters can be any of these ethnicities, regardless of what lands they call home.\n\nCharacters of human ethnicities in the Inner Sea region speak Common (also known as Taldane), and some ethnicities grant access to an uncommon language."
+}

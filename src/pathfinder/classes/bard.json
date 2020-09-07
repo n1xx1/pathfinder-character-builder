@@ -1,0 +1,318 @@
+{
+    "name": "Bard",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 94,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=3"
+    },
+    "key": "CHA",
+    "hp": 8,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "E" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "occultism", "proficiency": "T" },
+                { "k": "proficiency", "skill": "performance", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "4+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "weapons": ["longsword", "rapier", "sap", "shortbow", "shortsword", "and whip"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_attack",
+                    "tradition": "occult",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_dc",
+                    "tradition": "occult",
+                    "proficiency": "T"
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Composition Spells": {
+            "name": "Composition Spells",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You can infuse your performances with magic to create unique effects called compositions. Compositions are a special type of spell that often require you to use the Performance skill when casting them. Composition spells are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to perform, write a new composition, or otherwise engage your muse.\n\nFocus spells are automatically heightened to half your level rounded up, much like cantrips. Focus spells don't require spell slots, and you can't cast them using spell slots. Taking feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points. The full rules for focus spells appear on page 300.\n\nYou learn the *counter performance* composition spell (page 386), protecting against auditory and visual effects.\n\n### Composition Cantrips\n\nComposition cantrips are special composition spells that don't cost Focus Points, so you can use them as often as you like. Composition cantrips are in addition to the cantrips you choose from the occult list. Generally, only feats can give you more composition cantrips. Unlike other cantrips, you can't swap out composition cantrips gained from bard feats at a later level, unless you swap out the specific feat via retraining (page 481). You learn the *inspire courage* composition cantrip, which boosts your allies' attacks, damage, and defense against fear.  \n"
+        },
+        "Muses": {
+            "name": "Muses",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Enigma": {
+                            "name": "Enigma",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 97,
+                                "prd": "https://2e.aonprd.com/Muses.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your muse is a mystery, driving you to uncover the hidden secrets of the multiverse. If your muse is a creature, it might be a dragon or otherworldly being; if a deity, it might be Irori or Nethys. You gain the Bardic Lore feat and add *true strike* to your spell repertoire."
+                        },
+                        "Maestro": {
+                            "name": "Maestro",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 97,
+                                "prd": "https://2e.aonprd.com/Muses.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your muse is a virtuoso, inspiring you to greater heights. If it's a creature, it might be a performance-loving creature such as a choral angel or lillend azata; if a deity, it might be Shelyn. As a bard with a maestro muse, you are an inspiration to your allies and confident of your musical and oratorical abilities. You gain the Lingering Composition feat and add *soothe* to your spell repertoire."
+                        },
+                        "Polymath": {
+                            "name": "Polymath",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 97,
+                                "prd": "https://2e.aonprd.com/Muses.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your muse is a jack of all trades, flitting between skills and pursuits. If it's is a creature, it might be an eclectic creature like a fey; if a deity, it might be Desna or Calistria. As a bard with a polymath muse, you are interested in a wide array of topics but rarely dedicated to any one, and you rarely make up your mind\u2014you want to try everything. You gain the Versatile Performance feat and add *unseen servant* to your spell repertoire."
+                        },
+                        "Warrior": {
+                            "name": "Warrior",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 112,
+                                "prd": "https://2e.aonprd.com/Muses.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "The battlefield is your stage, the clang of steel, your song. Your muse engages in countless battles, whether reveling in combat or resigned to its necessity. If your muse is a creature, it might be an otherworldly soldier, such as a planetar, archon, cornugon, or purrodaemon. If it's a deity, it might be Gorum. As a bard with a warrior muse, you train for battle in addition to performance, and you prepare your allies for the dangers of battle. You might even wade into the thick of things with them. You gain the Martial Performance feat and add *fear* to your spell repertoire."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "As a bard, you select one muse at 1st level. This muse leads you to great things, and might be a physical creature, a deity, a philosophy, or a captivating mystery.\n\nMuses can be found here.  \n"
+        },
+        "Occult Spellcasting": {
+            "name": "Occult Spellcasting",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You draw upon magic from esoteric knowledge. You can cast occult spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells (see Casting Spells on page 302). Because you're a bard, you can usually play an instrument for spells requiring somatic or material components, as long as it takes at least one of your hands to do so. If you use an instrument, you don't need a spell component pouch or another hand free. You can usually also play an instrument for spells requiring verbal components, instead of speaking.\n\nEach day, you can cast up to two 1st-level spells. You must know spells to cast them, and you learn them via the spell repertoire class feature. The number of spells you can cast each day is called your spell slots.\n\nAs you increase in level as a bard, your number of spells per day increases, as does the highest level of spells you can cast, as shown on Table 3\u20136: Bard Spells per Day on page 98.\n\nSome of your spells require you to attempt a spell attack roll to see how effective they are, or have your enemies roll against your spell DC (typically by attempting a saving throw). Since your key ability is Charisma, your spell attack rolls and spell DCs use your Charisma modifier. Details on calculating these statistics appear on page 447. \n\n### Heightening Spells\n\nWhen you get spell slots of 2nd level and higher, you can fill those slots with stronger versions of lower-level spells. This increases the spell's level to match the spell slot. You must have a spell in your spell repertoire at the level you want to cast in order to heighten it to that level. Many spells have specific improvements when they are heightened to certain levels (page 299). The signature spells class feature lets you heighten certain spells freely. \n\n### Cantrips\n\nSome of your spells are cantrips. A cantrip is a special type of spell that doesn't use spell slots. You can cast a cantrip at will, any number of times per day. A cantrip is automatically heightened to half your level rounded up, which equals the highest level of spell you can cast as a bard. For example, as a 1st-level bard, your cantrips are 1st-level spells, and as a 5th-level bard, your cantrips are 3rd-level spells.  \n"
+        },
+        "Spell Repertoire": {
+            "name": "Spell Repertoire",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "The collection of spells you can cast is called your spell repertoire. At 1st level, you learn two 1st-level occult spells of your choice and five occult cantrips of your choice. You choose these from the common spells from the occult list (page 311) or from other occult spells to which you have access. You can cast any spell in your spell repertoire by using a spell slot of an appropriate spell level.\n\nYou add to this spell repertoire as you increase in level. Each time you get a spell slot (see Table 3\u20136), you add a spell to your spell repertoire of the same level. At 2nd level, you select another 1st-level spell; at 3rd level, you select two 2nd-level spells, and so on. When you add spells, you might add a higher-level version of a spell you already have, so you can cast a heightened version of that spell.\n\nThough you gain them at the same rate, your spell slots and the spells in your spell repertoire are separate. If a feat or other ability adds a spell to your spell repertoire, it wouldn't give you another spell slot, and vice versa. \n\n### Swapping Spells in Your Repertoire\n\nAs you gain new spells in your repertoire, you might want to replace some of the spells you previously learned. Each time you gain a level and learn new spells, you can swap out one of your old spells for a different spell of the same level. This spell can be a cantrip. You can also swap out spells by retraining during downtime (page 481).  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Lightning Reflexes": {
+            "name": "Lightning Reflexes",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your reflexes are lightning fast. Your proficiency rank in Reflex saves increases to expert.  \n"
+        },
+        "Signature Spells": {
+            "name": "Signature Spells",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Experience allows you to cast some spells more flexibly. For each spell level you have access to, choose one spell of that level to be a signature spell. You don't need to learn heightened versions of signature spells separately; instead, you can heighten these spells freely. If you've learned a signature spell at a higher level than its minimum, you can also cast all its lower-level versions without learning those separately. If you swap out a signature spell, you can choose a replacement signature spell of the same spell level at which you learned the previous spell. You can also retrain specifically to change a signature spell to a different spell of that level without swapping any spells; this takes as much time as retraining a spell normally does.  \n"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Expert Spellcaster": {
+            "name": "Expert Spellcaster",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your proficiency ranks for occult spell attack rolls and spell DCs increase to expert.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Great Fortitude": {
+            "name": "Great Fortitude",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your physique is incredibly hardy. Your proficiency rank for Fortitude saves increases to expert.  \n"
+        },
+        "Resolve": {
+            "name": "Resolve",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've steeled your mind with resolve. Your proficiency rank for Will saves increases to master. When you roll a success at a Will save, you get a critical success instead.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Bard Weapon Expertise": {
+            "name": "Bard Weapon Expertise",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have become thoroughly adept with bardic weapons. You gain expert proficiency in simple weapons and unarmed attacks, plus the longsword, rapier, sap, shortbow, shortsword, and whip. When you critically succeed at an attack roll using one of these weapons while one of your compositions is active, you apply the critical specialization effect for that weapon.  \n"
+        },
+        "Vigilant Senses": {
+            "name": "Vigilant Senses",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Through your adventures, you've developed keen awareness and attention to detail. Your proficiency rank for Perception increases to master.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Light Armor Expertise": {
+            "name": "Light Armor Expertise",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to dodge while wearing light or no armor. Your proficiency ranks for light armor and unarmored defense increase to expert.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 damage if you're a master, and 4 damage if you're legendary.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Master Spellcaster": {
+            "name": "Master Spellcaster",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've mastered the occult. Your proficiency ranks for occult spell attack rolls and spell DCs increase to master.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Greater Resolve": {
+            "name": "Greater Resolve",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your unbelievable training grants you mental resiliency. Your proficiency rank for Will saves increases to legendary. When you roll a success at a Will save, you get a critical success. When you roll a critical failure at a Will save, you get a failure instead. When you roll a failure on a Will save against a damaging effect, you take half damage.  \n"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Legendary Spellcaster": {
+            "name": "Legendary Spellcaster",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your command of occult magic is the stuff of legends. Your proficiency ranks for occult spell attack rolls and spell DCs increase to legendary.  \n"
+        },
+        "Magnum Opus": {
+            "name": "Magnum Opus",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have tuned your spellcasting to the highest caliber. Add two common 10th-level occult spells to your repertoire. You gain a single 10th-level spell slot you can use to cast one of those two spells using bard spellcasting. You don't gain more 10th-level spells as you level up, unlike other spell slots, and you can't use 10th-level slots with abilities that give you more spell slots or that let you cast spells without expending spell slots.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Bard\n\n*You are a master of artistry, a scholar of hidden secrets, and a captivating persuader. Using powerful performances, you influence minds and elevate souls to new levels of heroics. You might use your powers to become a charismatic leader, or perhaps you might instead be a counselor, manipulator, scholar, scoundrel, or virtuoso. While your versatility leads some to consider you a beguiling ne'erdo- well and a jack-of-all-trades, it's dangerous to dismiss you as a master of none.*\n\n## During Combat Encounters...\n\nYou use magical performances to alter the odds in favor of your allies. You confidently alternate between attacks, healing, and helpful spells as needed.  \n\n## During Social Encounters...\n\nYou persuade, prevaricate, and threaten with ease.  \n\n## While Exploring...\n\nYou're a font of knowledge, folktales, legends, and lore that provide a deeper context and helpful reconnaissance for the group's adventure. Your spells and performances inspire your allies to greater discovery and success.  \n\n## In Downtime...\n\nYou can earn money and prestige with your performances, gaining a name for yourself and acquiring patrons. Eventually, tales of your talents and triumphs might attract other bards to study your techniques in a bardic college.  \n\n## You Might...\n\n* Have a passion for your art so strong that you forge a spiritual connection with it. \n* Take point when tact and nonviolent solutions are required. \n* Follow your muse, whether it's a mysterious fey creature, a philosophical concept, a psychic force, or a deity of art or music, and with its aid learn secret lore that few others have.\n\n## Others Probably...\n\n* Relish the opportunity to invite you to social events, either as a performer or a guest, but consider you to be something of a curiosity in their social circles. \n* Underestimate you compared to other spellcasters, believing you are little more than a foppish minstrel and overlooking the subtle power of your magic. \n* Respond favorably to your social charm and abilities, but remain suspicious of your beguiling magic.\n\n"
+}

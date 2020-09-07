@@ -1,0 +1,35 @@
+{
+    "name": "Martial Disciple",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 63,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=24"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["STR", "DEX"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "lore", "kind": "Warfare", "proficiency": "T" },
+        {
+            "k": "option",
+            "options": {
+                "Acrobatics": {
+                    "name": "Acrobatics",
+                    "description": "Become trained in Acrobatics",
+                    "bonus": [
+                        { "k": "proficiency", "skill": "acrobatics", "proficiency": "T" },
+                        { "k": "feat", "feat": "Cat Fall" }
+                    ]
+                },
+                "Athletics": {
+                    "name": "Athletics",
+                    "description": "Become trained in Athletics",
+                    "bonus": [
+                        { "k": "proficiency", "skill": "athletics", "proficiency": "T" },
+                        { "k": "feat", "feat": "Quick Jump" }
+                    ]
+                }
+            }
+        }
+    ],
+    "description": "You dedicated yourself to intense training and rigorous study to become a great warrior. The school you attended might have been a traditionalist monastery, an elite military academy, or the local branch of a prestigious mercenary organization.\n\nChoose two ability boosts. One must be to **Strength** or **Dexterity**, and one is a free ability boost.\n\nYou're trained in your choice of either the Acrobatics or Athletics skill, as well as the Warfare Lore skill. You gain a skill feat: Cat Fall if you chose Acrobatics or Quick Jump if you chose Athletics."
+}

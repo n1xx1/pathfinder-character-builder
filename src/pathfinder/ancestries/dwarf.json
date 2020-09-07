@@ -1,0 +1,194 @@
+{
+    "name": "Dwarf",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 35,
+        "prd": "https://2e.aonprd.com/Ancestries.aspx?ID=1"
+    },
+    "hp": 10,
+    "size": "medium",
+    "speed": 20,
+    "traits": ["Dwarf", "Humanoid"],
+    "bonus": [
+        { "k": "ability", "ability": "CON" },
+        { "k": "ability", "ability": "WIS" },
+        { "k": "ability" },
+        { "k": "ability_flaw", "ability": "CHA" },
+        { "k": "feat", "filter": ["trait:Dwarf", "level:1"] },
+        { "k": "special", "id": "darkvision" },
+        { "k": "item", "name": "clan dagger" }
+    ],
+    "heritages": {
+        "Ancient-Blooded": {
+            "name": "Ancient-Blooded",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 35,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=1"
+            },
+            "bonus": [
+                {
+                    "k": "action",
+                    "action": "Call on Ancient Blood",
+                    "description": "### Call on Ancient Blood :r:\n\n**Source** *Core Rulebook pg. 35* <sup>1.1</sup>  \n**Trigger** You attempt a saving throw against a magical effect, but you haven't rolled yet.\n\n---\n\nYour ancestors' innate resistance to magic surges, before slowly ebbing down. You gain a +1 circumstance bonus to the triggering saving throw and until the end of this turn."
+                }
+            ],
+            "description": "Dwarven heroes of old could shrug off their enemies' magic, and some of that resistance manifests in you. You gain the Call on Ancient Blood reaction.\n\n### Call on Ancient Blood :r:\n\n**Source** *Core Rulebook pg. 35* <sup>1.1</sup>  \n**Trigger** You attempt a saving throw against a magical effect, but you haven't rolled yet.\n\n---\n\nYour ancestors' innate resistance to magic surges, before slowly ebbing down. You gain a +1 circumstance bonus to the triggering saving throw and until the end of this turn.  \n"
+        },
+        "Anvil": {
+            "name": "Anvil",
+            "source": {
+                "book": "Character Guide",
+                "page": 19,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=31"
+            },
+            "bonus": [
+                {
+                    "k": "if",
+                    "if": ["skill:crafting,T"],
+                    "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }],
+                    "else_bonus": [{ "k": "proficiency", "skill": "crafting", "proficiency": "T" }]
+                },
+                { "k": "feat", "feat": "Specialty Crafting" }
+            ],
+            "description": "You are a descendant of a famed crafter and have your own amazing talent. Other dwarves might consider this a blessing from your ancestors or from the Forgefather himself, depending on where you grew up. You become trained in Crafting (or another skill if you were already trained in Crafting) and gain the Specialty Crafting skill feat, but you can pick two different specialties instead of one.  \n"
+        },
+        "Death Warden": {
+            "name": "Death Warden",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 35,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=2"
+            },
+            "bonus": [
+                {
+                    "k": "bonus",
+                    "category": "TODO",
+                    "text": "If you roll a success on a saving throw against a necromancy effect, you get a critical success instead."
+                }
+            ],
+            "description": "Your ancestors have been tomb guardians for generations, and the power they cultivated to ward off necromancy has passed on to you. If you roll a success on a saving throw against a necromancy effect, you get a critical success instead.    \n"
+        },
+        "Elemental Heart": {
+            "name": "Elemental Heart",
+            "source": {
+                "book": "Character Guide",
+                "page": 19,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=32"
+            },
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "acid": {
+                            "name": "acid",
+                            "description": "...",
+                            "bonus": [
+                                { "k": "action", "action": "Energy Emanation", "replace": "" }
+                            ]
+                        },
+                        "cold": {
+                            "name": "cold",
+                            "description": "...",
+                            "bonus": [
+                                { "k": "action", "action": "Energy Emanation", "replace": "" }
+                            ]
+                        },
+                        "electricity": {
+                            "name": "electricity",
+                            "description": "...",
+                            "bonus": [
+                                { "k": "action", "action": "Energy Emanation", "replace": "" }
+                            ]
+                        },
+                        "fire": {
+                            "name": "fire",
+                            "description": "...",
+                            "bonus": [
+                                { "k": "action", "action": "Energy Emanation", "replace": "" }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "description": "Whether through a connection to Torag's forge, the azers of the Plane of Fire, or another source, you can exude a burst of energy. Mbe'ke and Taralu dwarves of the Mwangi Expanse believe this heritage is a gift from dragons or elemental spirits. Choose one of the following damage types: acid, cold, electricity, or fire. Once chosen, this can't be changed. You gain the Energy Emanation activity.\n\n### Energy Emanation :aa:\n\n; Evocation, Primal  \n**Source** *Character Guide pg. 19*  \n**Frequency** once per day\n\n---\n\nEnergy bursts forth from your body. You deal 1d6 damage of your chosen type to all adjacent creatures (basic Reflex save using your class DC or spell DC, whichever is higher). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6.  \n"
+        },
+        "Forge": {
+            "name": "Forge",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 35,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=3"
+            },
+            "bonus": [
+                { "k": "bonus", "category": "resistance", "text": "fire {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "environmental heat effects are one step less extreme"
+                }
+            ],
+            "description": "You have a remarkable adaptation to hot environments from ancestors who inhabited blazing deserts or volcanic chambers beneath the earth. This grants you fire resistance equal to half your level (minimum 1), and you treat environmental heat effects as if they were one step less extreme (incredible heat becomes extreme, extreme heat becomes severe, and so on).    \n"
+        },
+        "Oathkeeper": {
+            "name": "Oathkeeper",
+            "source": {
+                "book": "Character Guide",
+                "page": 19,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=33"
+            },
+            "bonus": [
+                {
+                    "k": "bonus",
+                    "category": "",
+                    "text": "You gain a +1 circumstance bonus to Perception checks to Sense Motive and to Perception DCs against attempts to Lie to you."
+                },
+                {
+                    "k": "bonus",
+                    "category": "",
+                    "text": "You gain a +2 circumstance bonus to Diplomacy checks to convince others you speak the truth when you are telling the truth."
+                },
+                {
+                    "k": "bonus",
+                    "category": "",
+                    "text": "You take a \u00e2\u20ac\u201c4 circumstance penalty to Lie and to your Deception DC against Sense Motive."
+                }
+            ],
+            "description": "Growing up, you never tried to lie to get what you wanted, and even when necessary, lying makes you uncomfortable. The especially faithful might even have thought that you were blessed by the dwarven god of duty, Kols. You gain a +1 circumstance bonus to Perception checks to Sense Motive and to Perception DCs against attempts to Lie to you. Furthermore, you gain a +2 circumstance bonus to Diplomacy checks to convince others you speak the truth when you are telling the truth, and you take a \u20134 circumstance penalty to Lie and to your Deception DC against Sense Motive.  \n"
+        },
+        "Rock": {
+            "name": "Rock",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 36,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=4"
+            },
+            "bonus": [
+                {
+                    "k": "bonus",
+                    "category": "",
+                    "text": "You gain a +2 circumstance bonus to your Fortitude or Reflex DC against attempts to Shove or Trip you. This bonus also applies to saving throws against spells or effects that attempt to knock you prone. If any effect would force you to move 10 feet or more, you are moved only half the distance."
+                }
+            ],
+            "description": "Your ancestors lived and worked among the great ancient stones of the mountains or the depths of the earth. This makes you solid as a rock when you plant your feet. You gain a +2 circumstance bonus to your Fortitude or Reflex DC against attempts to Shove or Trip you. This bonus also applies to saving throws against spells or effects that attempt to knock you prone.\n\nIn addition, if any effect would force you to move 10 feet or more, you are moved only half the distance.    \n"
+        },
+        "Strong-Blooded": {
+            "name": "Strong-Blooded",
+            "source": {
+                "book": "Core Rulebook",
+                "page": 36,
+                "prd": "https://2e.aonprd.com/Heritages.aspx?ID=5"
+            },
+            "bonus": [
+                { "k": "bonus", "category": "resistance", "text": "poison {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "environmental heat effects are one step less extreme"
+                }
+            ],
+            "description": "Your blood runs hearty and strong, and you can shake off toxins. You gain poison resistance equal to half your level (minimum 1), and each of your successful saving throws against a poison affliction reduces its stage by 2, or by 1 for a virulent poison. Each critical success against an ongoing poison reduces its stage by 3, or by 2 for a virulent poison.  "
+        }
+    },
+    "description": "*Dwarves have a well-earned reputation as a stoic and stern people, ensconced within citadels and cities carved from solid rock. While some see them as dour and humorless crafters of stone and metal, dwarves and those who have spent time among them understand their unbridled zeal for their work, caring far more about quality than quantity. To a stranger, they can seem untrusting and clannish, but to their friends and family, they are warm and caring, their halls filled with the sounds of laughter and hammers hitting anvils.*\n\nDwarves are slow to trust those outside their kin, but this wariness is not without reason. Dwarves have a long history of forced exile from ancestral holds and struggles against the depredations of savage foes, especially giants, goblinoids, orcs, and the horrors that dwell deep below the surface. While trust from a dwarf is hard-won, once gained it is as strong as iron.\n\nIf you want to play a character who is as hard as nails, a stubborn and unrelenting adventurer, with a mix of rugged toughness and deep wisdom\u2014or at least dogged conviction\u2014you should play a dwarf.\n\n## You Might...\n\n* Strive to uphold your personal honor, no matter the situation. \n* Appreciate quality craftsmanship in all forms and insist upon it for all your gear. \n* Don't waver or back down once you've set your mind to something.\n\n## Others Probably...\n\n* See you as stubborn, though whether they see this as an asset or a detriment changes from one person to the next. \n* Assume you are an expert in matters related to stonework, mining, precious metals, and gems. \n* Recognize the deep connection you have with your family, heritage, and friends.\n\n## Physical Description\n\nDwarves are short and stocky, standing about a foot shorter than most humans. They have wide, compact bodies and burly frames. Dwarves of all genders pride themselves on the length of their hair, which they often braid into intricate patterns, some of which represent specific clans. A long beard is a sign of masculinity and honor among the dwarves, and thus a clean-shaven male dwarf is considered weak, untrustworthy, or worse.\n\nDwarves typically reach physical adulthood around the age of 25, though their traditionalist culture places more value on completing coming of age ceremonies unique to each clan than reaching a certain age. A typical dwarf can live to around 350 years old.  \n\n## Society\n\nThe ancient surface empire the dwarves once ruled fell long ago, overwhelmed by orc and goblinoid enemies. Today's dwarves today retain many of the qualities that propelled their people to greatness in ancient times: fierceness, gumption, and stubbornness in endeavors ranging from battle and craftsmanship to forging ties with family and friends.\n\nWhile the distance between their mountain Sky Citadels can create vast cultural divides between various dwarf clans, most dwarven societies share a number of similarities. Nearly all dwarven peoples share a passion for stonework, metalwork, and gem-cutting. Most are highly skilled at architecture and mining, and many share a hatred of giants, orcs, and goblinoids.\n\nFew dwarves are seen without their clan dagger strapped to their belt. This dagger is forged just before a dwarf's birth and bears the gemstone of their clan. A parent uses this dagger to cut the infant's umbilical cord, making it the first weapon to taste their blood.    \n\n## Alignment and Religion\n\nDwarves tend to value honor and closely follow the traditions of their clans and kingdoms. They have a strong sense of friendship and justice, though they are often very particular about who they consider a friend. They work hard and play harder\u2014 especially when strong ale is involved.\n\nThe typical dwarf is lawful good or lawful neutral and prefers to worship deities of those alignments. Torag, god of dwarvenkind, is the dwarves' primary deity, though worship of Torag's family members is also common.    \n\n## Adventurers\n\nDwarven adventurers tend to work as treasure hunters or sellswords. They often leave their citadels and subterranean cities in search of wealth to enrich their homeland or to reclaim long-lost dwarven treasures or lands taken by the enemies of their kin.\n\nTypical dwarven backgrounds include acolyte, artisan, merchant, miner, and warrior. Dwarves excel at many of the martial classes, such as barbarian, fighter, monk, and ranger, but they also make excellent clerics and druids.    \n\n## Names\n\nDwarves honor their children with names taken from ancestors or dwarven heroes, and it's quite rare to invent a new name or to borrow a name from another culture for a child. When introducing themselves, dwarves tend to list their family and clan, plus any number of other familial connections and honorifics. Dwarven names usually contain hard consonants and are rarely more or fewer than two syllables.  \n\n### Sample Names\n\nAgna, Bodill, Dolgrin, Edrukk, Grunyar, Ingra, Kazmuk, Kotri, Lupp, Morgrym, Rogar, Rusilka, Torra, Yangrit"
+}

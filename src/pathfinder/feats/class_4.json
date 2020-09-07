@@ -1,0 +1,59 @@
+{
+    "Bespell Weapon": {
+        "name": "Bespell Weapon",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 79,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=610"
+        },
+        "traits": ["Oracle", "Sorcerer", "Wizard"],
+        "level": 4,
+        "bonus": [{ "k": "action", "name": "#self", "actions": "bonus" }],
+        "description": "**Frequency** once per turn  \n**Requirements** Your most recent action was to cast a non-cantrip spell.\n\n---\n\nYou siphon the residual energy from the last spell you cast into one weapon you're wielding. Until the end of your turn, the weapon deals an extra 1d6 damage of a type depending on the school of the spell you just cast. * **Abjuration** force damage \n* **Conjuration or Transmutation** the same type as the weapon \n* **Divination, Enchantment, or Illusion** mental damage \n* **Evocation** a type the spell dealt, or force damage if the spell didn't deal damage \n* **Necromancy** negative damage\n\n"
+    },
+    "Call Bonded Item": {
+        "name": "Call Bonded Item",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 142,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1836"
+        },
+        "traits": ["Concentrate", "Conjuration", "Teleportation", "Wizard"],
+        "level": 4,
+        "prerequisites": ["special:arcane_bond"],
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "**Prerequisites** arcane bond\n\n---\n\nYou're mystically connected to your bonded item and can call it to your hand. If your bonded item is 1 Bulk or less, you teleport your bonded item into your hand from up to 1 mile away."
+    },
+    "Linked Focus": {
+        "name": "Linked Focus",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 210,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=643"
+        },
+        "traits": ["Wizard"],
+        "level": 4,
+        "prerequisites": ["special:arcane_bond", "special:arcane_school"],
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "TODO",
+                "text": "When you Drain your Bonded Item to cast a spell of your arcane school, you also regain 1 Focus Point."
+            }
+        ],
+        "description": "**Frequency** once per day  \n**Prerequisites** arcane bond, arcane school\n\n---\n\nYou have linked your bonded item to the well of energy that powers your school spells. When you Drain your Bonded Item to cast a spell of your arcane school, you also regain 1 Focus Point."
+    },
+    "Silent Spell": {
+        "name": "Silent Spell",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 210,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=644"
+        },
+        "traits": ["Concentrate", "Metamagic", "Wizard"],
+        "level": 4,
+        "prerequisites": ["feat:Conceal Spell"],
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "**Prerequisites** Conceal Spell\n\n---\n\nYou've learned how to cast many of your spells without speaking the words of power you would normally need to provide. If the next action you use is Casting a Spell that has a verbal component and at least one other component, you can remove the verbal component. This makes the spell quieter and allows you to cast it in areas where sound can't carry. However, the spell still has visual manifestations, so this doesn't make the spell any less obvious to someone who sees you casting it. When you use Silent Spell, you can choose to gain the benefits of Conceal Spell, and you don't need to attempt a Deception check because the spell has no verbal components."
+    }
+}

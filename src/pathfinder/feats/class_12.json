@@ -1,0 +1,69 @@
+{
+    "Clever Counterspell": {
+        "name": "Clever Counterspell",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 212,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=653"
+        },
+        "traits": ["Wizard"],
+        "level": 12,
+        "prerequisites": ["feat:Counterspell (Prepared)", "feat:Quick Recognition"],
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "Clever Counterspell",
+                "text": "Instead of being able to counter a foe's spell with Counterspell only if you have that same spell prepared, you can use Counterspell as long as you have the spell the foe is casting in your spellbook. When you use Counterspell in this way, the prepared spell you expend must share a trait other than its tradition with the triggering spell. At the GM's discretion, you can instead use a spell that has an opposing trait or that otherwise logically would counter the triggering spell (such as using a cold or water spell to counter *fireball* or using *remove fear* to counter a fear spell). Regardless of what spell you expend, you take a \u20132 penalty to your counteract check, though the GM can waive this penalty if the expended spell is especially appropriate."
+            }
+        ],
+        "description": "**Prerequisites** Counterspell, Quick Recognition\n\n---\n\nYou creatively apply your prepared spells to Counterspell a much wider variety of your opponents' magic. Instead of being able to counter a foe's spell with Counterspell only if you have that same spell prepared, you can use Counterspell as long as you have the spell the foe is casting in your spellbook. When you use Counterspell in this way, the prepared spell you expend must share a trait other than its tradition with the triggering spell. At the GM's discretion, you can instead use a spell that has an opposing trait or that otherwise logically would counter the triggering spell (such as using a cold or water spell to counter *fireball* or using *remove fear* to counter a fear spell). Regardless of what spell you expend, you take a \u20132 penalty to your counteract check, though the GM can waive this penalty if the expended spell is especially appropriate."
+    },
+    "Diviner Sense": {
+        "name": "Diviner Sense",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 143,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1840"
+        },
+        "traits": ["Divination", "Fortune", "Wizard"],
+        "level": 12,
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "TODO",
+                "text": "When using the Detect Magic exploration activity, you can roll initiative twice and use the better result so long as at least one opponent has a magical effect or magic item and is in range of your *detect magic*."
+            }
+        ],
+        "description": "\n\n---\n\nYou sense magical dangers. When using the Detect Magic exploration activity, you can roll initiative twice and use the better result so long as at least one opponent has a magical effect or magic item and is in range of your *detect magic*."
+    },
+    "Forcible Energy": {
+        "name": "Forcible Energy",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 143,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1841"
+        },
+        "traits": ["Manipulate", "Metamagic", "Wizard"],
+        "level": 12,
+        "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
+        "description": "\n\n---\n\nYou perform complex manipulations to make the energy from your spells so powerful that your enemies remain vulnerable to it afterward. If your next action is to Cast a Spell that deals acid, electricity, fire, or sonic damage, you can select one target that was damaged to gain weakness 5 to that damage type until the end of your next turn. If a spell deals multiple types of energy damage, choose one that the target gains weakness to. This has no effect on creatures with resistance or immunity to the energy type you choose."
+    },
+    "Magic Sense": {
+        "name": "Magic Sense",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 80,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=622"
+        },
+        "traits": ["Detection", "Divination", "Oracle", "Sorcerer", "Wizard"],
+        "level": 12,
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "TODO",
+                "text": "You have a literal sixth sense for ambient magic in your vicinity. You can sense the presence of magic auras as though you were always using a 1st-level *detect magic* spell. This detects magic in your field of vision only. When you Seek, you gain the benefits of a 3rd-level *detect magic* spell on things you see (in addition to the normal benefits of Seeking). You can turn this sense off and on with a free action at the start or the end of your turn."
+            }
+        ],
+        "description": "\n\n---\n\nYou have a literal sixth sense for ambient magic in your vicinity. You can sense the presence of magic auras as though you were always using a 1st-level *detect magic* spell. This detects magic in your field of vision only. When you Seek, you gain the benefits of a 3rd-level *detect magic* spell on things you see (in addition to the normal benefits of Seeking). You can turn this sense off and on with a free action at the start or the end of your turn.\n\n**Special** This feat has the trait corresponding to the tradition of spells you cast (arcane, divine, natural, or occult)."
+    }
+}

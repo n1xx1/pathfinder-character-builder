@@ -1,0 +1,16 @@
+{
+    "name": "Scavenger",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 49,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=176"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["INT", "WIS"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "survival", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Forager" }
+    ],
+    "description": "You've made a living sorting through the things society throws away. You might have scavenged simply to survive, or plied a trade as a ragpicker, dung carter, or the like. While you've left that life behind, you still keep one eye on the ground out of habit.\n\nChoose two ability boosts. One must be to **Intelligence** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in the Survival skill, and a Lore skill for the settlement you grew up scavenging in. You gain the Forager skill feat."
+}

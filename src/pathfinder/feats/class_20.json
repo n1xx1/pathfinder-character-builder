@@ -1,0 +1,65 @@
+{
+    "Archwizard's Might": {
+        "name": "Archwizard's Might",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 213,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=662"
+        },
+        "traits": ["Wizard"],
+        "level": 20,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** archwizard's spellcraft\n\n---\n\nYou have mastered the greatest secrets of arcane magic. You gain an additional 10th-level spell slot."
+    },
+    "Metamagic Mastery": {
+        "name": "Metamagic Mastery",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 201,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=632"
+        },
+        "traits": ["Sorcerer", "Wizard"],
+        "level": 20,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nAltering your spells doesn't take any longer than casting them normally. You can use metamagic single actions as free actions."
+    },
+    "Reclaim Spell": {
+        "name": "Reclaim Spell",
+        "source": {
+            "book": "Pathfinder #156: The Apocalypse Prophet",
+            "page": 72,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1246"
+        },
+        "traits": ["Uncommon", "Wizard"],
+        "level": 20,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Reprepare Spell\n\n---\n\nYou have learned to manipulate reflections of magic, similar to the *resonant reflections*. You reclaim the magic of an ongoing spell, using it reprepare a spell with a duration. You Dismiss a Spell of 4th level or lower that you cast today from a spell slot with at least half its duration remaining, even if that spell can't normally be Dismissed. You can then spend 10 minutes to reprepare the spell in that spell slot, as Reprepare Spell."
+    },
+    "Spell Combination": {
+        "name": "Spell Combination",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 213,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=664"
+        },
+        "traits": ["Wizard"],
+        "level": 20,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou can merge spells, producing multiple effects with a single casting. One slot of each level of spell you can cast, except 2nd level and 1st level, becomes a spell combination slot (this doesn't apply to cantrips). When you prepare your spells, you can fill a combination slot with a combination of two spells. Each spell in the combination must be 2 or more spell levels below the slot's level, and both must target only one creature or object or have the option to target only one creature or object. Each spell in the combination must also have the same means of determining whether it has an effect\u2014both spells must require a ranged spell attack roll, require the same type of saving throw, or automatically affect the target.\n\nWhen you cast a combined spell, it affects only one target, even if the component spells normally affect more than one. If any spell in the combination has further restrictions (such as targeting only living creatures), you must abide by all restrictions. The combined spell uses the shorter of the component spells' ranges. Resolve a combined spell as if were a single spell, but apply the effects of both component spells. For example, if the spell's target succeeded at the save against a combined spell, it would apply the success effect of each spell, and if it critically failed, it would apply the critical failure effect of both spells."
+    },
+    "Spell Mastery": {
+        "name": "Spell Mastery",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 143,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1843"
+        },
+        "traits": ["Wizard"],
+        "level": 20,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have mastered a handful of spells to such a degree that you can cast them even if you haven't prepared them in advance. Select any four spells of 9th level or lower that you have access to; each spell you select must be of a different level. These spells are automatically prepared when you make your daily preparations, and they have their own spell slots. You can select a different array of spells by spending 1 week of downtime retraining your mastered spells."
+    }
+}

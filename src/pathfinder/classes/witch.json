@@ -1,0 +1,325 @@
+{
+    "name": "Witch",
+    "source": {
+        "book": "Advanced Player's Guide",
+        "page": 94,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=16"
+    },
+    "key": "INT",
+    "hp": 6,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "3+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Familiar": {
+            "name": "Familiar",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your patron has sent you a familiar, a mystical creature that teaches you and facilitates your spells. This familiar follows the rules here, though as it's a direct conduit between you and your patron, it's more powerful than other familiars. Your familiar gains an extra familiar ability, and gains another extra ability at 6th, 12th, and 18th levels.\n\nYour familiar is the source and repository of the spells your patron has bestowed upon you, and you must commune with your familiar to prepare your spells each day using your witch spellcasting. Your familiar starts off knowing 10 cantrips, five 1stlevel spells, and one additional spell determined by your patron's theme. You choose these spells from the common spells of the tradition determined by your patron or from other spells of that tradition you gain access to.\n\nEach time you gain a level, your patron teaches your familiar two new spells of any level you can cast, chosen from common spells of your tradition or others you gain access to. Feats can also grant your familiar additional spells.\n\nYour familiar can learn new spells independently of your patron. It can learn any spell on your tradition's spell list by physically consuming a scroll of that spell in a process that takes 1 hour. You can use the Learn a Spell exploration activity to prepare a special written version of a spell, which your familiar can consume as if it were a scroll. You and your familiar can use the Learn a Spell activity to teach your familiar a spell from another witch's familiar. Both familiars must be present for the entirety of the activity, the spell must be on your spellcasting tradition's spell list, and you must pay the usual cost for that activity, typically in the form of an offering to the other familiar's patron. You can't prepare spells from another witch's familiar.\n\nIf your familiar dies, your patron replaces it during your next daily preparations. The new familiar might be a duplicate or reincarnation of your former familiar or a new entity altogether, but it knows the same spells your former familiar knew regardless. Your familiar's death doesn't affect any spells you have already prepared.  \n"
+        },
+        "Hexes": {
+            "name": "Hexes",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your patron and familiar teach you special spells called hexes. A hex is a short-term effect drawn directly from your patron's magic. As such, you can cast only one hex each turn; attempts to cast a second hex spell on that turn fail and the spellcasting actions are lost.\n\nHexes are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you can regain 1 Focus Point by spending 10 minutes using the Refocus activity to commune with your familiar. Focus spells are automatically heightened to half your level rounded up. \n\nFocus spells don't require spell slots, and you can't cast them using spell slots. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points. The full rules for focus spells appear here. \n\nYou learn the *phase familiar* hex, which you can cast as a reaction to protect your familiar from harm. You learn most other hexes from witch lessons. \n\n### Hex Cantrips\n\nHex cantrips are special hexes that don't cost Focus Points, so you can cast them as often as you like, though you can still cast only one hex each round. Hex cantrips are in addition to the cantrips you choose with your witch spellcasting and aren't counted toward your prepared cantrips. Your hex cantrips are determined by your patron theme.  \n"
+        },
+        "Patron": {
+            "name": "Patron",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Baba Yaga": {
+                            "name": "Baba Yaga",
+                            "source": {
+                                "book": "Legends",
+                                "page": 32,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Baba Yaga teaches you how to transfer spirits into objects and freeze your foes. A witch with Baba Yaga as their patron can choose an inanimate object as a familiar. If they do, they still can gain master abilities and some familiar abilities that don't require movement. The object familiar has no Speeds and must select a Speed familiar ability before it can move, coming to life in a way appropriate to the chosen Speed and using the statistics of a normal familiar for that day.\n\n**Spell List** occult  \n**Patron Skill** Nature  \n**Hex Cantrip** *spirit object*  \n**Granted Spell** *chilling spray*"
+                        },
+                        "Curse": {
+                            "name": "Curse",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Foiling foes and undermining those who stand in your way are the tools of the curse patrons.\n\n**Spell List** occult  \n**Patron Skill** Occultism  \n**Hex Cantrip** *evil eye*  \n**Granted Spell** *ray of enfeeblement*"
+                        },
+                        "Fate": {
+                            "name": "Fate",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Through your patron, you gain glimpses of the future and insight into the ever-woven tapestry of time.\n\n**Spell List** occult  \n**Patron Skill** Occultism  \n**Hex Cantrip** *nudge fate*  \n**Granted Spell** *true strike*"
+                        },
+                        "Fervor": {
+                            "name": "Fervor",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your patron represents a grand ideal or goal, granting you magic to further their mission and bring others to the cause.\n\n**Spell List** divine  \n**Patron Skill** Religion  \n**Hex Cantrip** *stoke the heart*  \n**Granted Spell** *command*"
+                        },
+                        "Night": {
+                            "name": "Night",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your patron speaks from the shadows, granting you power over darkness and dreams.\n\n**Spell List** occult  \n**Patron Skill** Occultism  \n**Hex Cantrip** *shroud of night*  \n**Granted Spell** *sleep*"
+                        },
+                        "Rune": {
+                            "name": "Rune",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your patron is one of sigils and symbols, tomes and texts, words and wisdom.\n\n**Spell List** arcane  \n**Patron Skill** Arcana  \n**Hex Cantrip** *discern secrets*  \n**Granted Spell** *magic weapon*"
+                        },
+                        "Wild": {
+                            "name": "Wild",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "The wild places of the world feel the touch of your patron.\n\n**Spell List** primal  \n**Patron Skill** Nature  \n**Hex Cantrip** *wilding word*  \n**Granted Spell** your choice of *summon animal* or *summon plant or fungus*"
+                        },
+                        "Winter": {
+                            "name": "Winter",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 99,
+                                "prd": "https://2e.aonprd.com/Patrons.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Your patron reflects the frozen reaches of the world, bitterly cruel to those who underestimate that power.\n\n**Spell List** primal  \n**Patron Skill** Nature  \n**Hex Cantrip** *clinging ice*  \n**Granted Spell** *gust of wind*"
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "You weren't born with the power to cast spells, nor have you spent years in devotion to tomes, deities, or mystical secrets. Your power comes through a potent being that has chosen you as their vessel to carry forth some agenda in the world. This entity is typically mysterious and distant, revealing little of their identity and motivations, and they grant you spells and other magical powers through a familiar, which serves as a conduit for their power.\n\nA patron might be a deity or demigod, a coven of powerful hags, a fey lord, an archdevil, or a similarly powerful entity, or perhaps multiple such figures working in tandem. As you gain more of your patron's power, you might learn more about who or what they are\u2014certain combinations of themes and lessons suggest particular patrons or agendas\u2014but patrons empower witches for their own secretive reasons, which they rarely reveal in full.\n\nAt 1st level, choose your patron's theme, which determines your spellcasting tradition, a skill, a special cantrip you gain, and a spell added to your familiar. The patron themes can be found here.  \n"
+        },
+        "Witch Spellcasting": {
+            "name": "Witch Spellcasting",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Using your familiar as a conduit, your patron provides you the power to cast spells. You can cast spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells.\n\nAt 1st level, you can prepare up to two 1st-level spells and five cantrips each morning from the spells your familiar knows. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.\n\nAs you increase in level as a witch, your number of spell slots and the highest level of spells you can cast from spell slots increase, as shown in Table 2\u20137: Witch Spells per Day.\n\nSome of your spells require you to attempt a spell attack roll to see how effective they are, or have your enemies roll against your spell DC (typically by attempting a saving throw). Since your key ability is Intelligence, your spell attack rolls and spell DCs use your Intelligence modifier. \n\n### Heightening Spells\n\nWhen you get spell slots of 2nd level and higher, you can fill those slots with stronger versions of lower-level spells. This increases the spell's level, heightening it to match the spell slot. Many spells have specific improvements when they are heightened to certain levels. \n\n### Cantrips\n\nA cantrip is a special type of spell that doesn't use spell slots. You can cast a cantrip at will, any number of times per day. A cantrip is always automatically heightened to half your level rounded up\u2014this is usually equal to the highest level of spell you can cast as a witch. For example, as a 1st-level witch, your cantrips are 1st-level spells, and as a 5th-level witch, your cantrips are 3rd-level spells.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Magical Fortitude": {
+            "name": "Magical Fortitude",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your patron's power boosts your physical resiliency. Your proficiency rank for Fortitude saves increases to expert.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Expert Spellcaster": {
+            "name": "Expert Spellcaster",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned to better control the power your patron has granted you. Your proficiency ranks for spell attacks and spell DCs for your witch spellcasting increase to expert.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Lightning Reflexes": {
+            "name": "Lightning Reflexes",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your reflexes are lightning fast, helping you avoid danger. Your proficiency rank for Reflex saves increases to expert.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Alertness": {
+            "name": "Alertness",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You remain alert to threats around you. Your proficiency rank for Perception increases to expert.  \n"
+        },
+        "Weapon Expertise": {
+            "name": "Weapon Expertise",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Through sheer experience, you've improved your technique with your weapons. Your proficiency ranks for simple weapons and unarmed attacks increase to expert.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Defensive Robes": {
+            "name": "Defensive Robes",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "The flow of magic through your spellcasting and your defensive training combine to help you get out of the way before an attack. Your proficiency rank in unarmored defense increases to expert.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You can inflict greater injuries with the weapons you know. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master and 4 if you're legendary.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Master Spellcaster": {
+            "name": "Master Spellcaster",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've achieved mastery over your patron's magic. Your proficiency ranks for spell attacks and spell DCs for your witch spellcasting increase to master.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Resolve": {
+            "name": "Resolve",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Communion with your familiar has steeled your mental fortitude. Your proficiency rank for Will saves increases to master. When you roll a success on a Will save, you get a critical success instead.  \n"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Legendary Spellcaster": {
+            "name": "Legendary Spellcaster",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've perfected your command of the magic your patron provides. Your proficiency ranks for spell attacks and spell DCs for your witch spellcasting increase to legendary.  \n"
+        },
+        "Patron's Gift": {
+            "name": "Patron's Gift",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your patron grants you the power to command incredible works of magic. You gain a single 10th-level spell slot and can prepare a spell in that slot using witch spellcasting. Unlike with other spell slots, these spell slots can't be used for abilities that let you cast spells without expending spell slots or abilities that give you more spell slots. You don't gain more 10th-level spells as you level up, though you can take the Patron's Truth feat to gain a second slot.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Witch\n\n*You command powerful magic, not through study or devotion to any ideal, but as a vessel or agent for a mysterious, otherworldly patron that even you don't entirely understand. This entity might be a covert divinity, a powerful fey, a manifestation of natural energies, an ancient spirit, or any other mighty supernatural being\u2014but its nature is likely as much a mystery to you as it is to anyone else. Through a special familiar, your patron grants you versatile spells and powerful hexes to use as you see fit, though you're never certain if these gifts will end up serving your patron's larger plan.*\n\n## During Combat Encounters...\n\nYou cast spells to change the course of battle. You use magical hexes to hamper enemies and aid allies, while leveraging more powerful spells to control the battlefield, heal, or harm, aided by your extraordinary familiar, brewed potions, and magical items.  \n\n## During Social Encounters...\n\nYou provide knowledge on numerous topics, including a variety of magical matters, and you might call upon your patron's magic to charm or deceive others.  \n\n## While Exploring...\n\nYou remain alert for magical traps and treasures, employing a clever array of spells to overcome obstacles that stand in your way. Your familiar might aid you through its own considerable set of exceptional abilities.  \n\n## In Downtime...\n\nYou brew potions, craft other magical items, or hunt for new spells for your familiar to learn. You might try to learn more about your patron, their aims, or your own powers, and you might seek out the company of other witches for collaboration or community.  \n\n## You Might...\n\n* Strive to learn more about your patron or familiar, your patron's goals, why they chose to empower you, and how you fit into their plans.\n* Seek out new sources of magic, like scrolls and spellbooks, to supplement the spells your patron provides.\n* View your familiar as a steadfast ally, a dear friend, or a necessary nuisance, depending on its personality.\n\n## Others Probably...\n\n* Wonder about the nature of your patron and the source of your magic, worrying you'll turn on them or that you unknowingly serve to a foul power.\n* Appreciate your ability to aid them with magic, whether you do so by helping them directly or by hampering their adversaries.\n* Take care not to offend you, fearful that you'll place a malicious hex on them if you're angered.\n\n"
+}

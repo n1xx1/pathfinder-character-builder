@@ -1,0 +1,257 @@
+{
+    "name": "Cleric",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 116,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=5"
+    },
+    "key": "WIS",
+    "hp": 8,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "religion", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "2+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "weapons": [
+                        "favored weapon of your deity. If your deity\u2019s favored weapon is uncommon",
+                        "you also gain access to that weapon."
+                    ],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_attack",
+                    "tradition": "divine",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_dc",
+                    "tradition": "divine",
+                    "proficiency": "T"
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Deity": {
+            "name": "Deity",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "As a cleric, you are a mortal servitor of a deity you revere above all others. The most common deities in Pathfinder appear on pages 437\u2013440, along with their alignments, areas of concern, and the benefits you get for being a cleric of that deity. Your alignment must be one allowed by your deity, as listed in their entry. Your deity grants you the trained proficiency rank in one skill and with the deity's favored weapon. If the favored weapon is uncommon, you also get access to that weapon.\n\nYour deity also adds spells to your spell list. You can prepare these just like you can any spell on the divine spell list, once you can prepare spells of their level as a cleric. Some of these spells aren't normally on the divine list, but they're divine spells if you prepare them this way.\n\nA list of all deities can be found here.\n\n### Anathema\n\nActs fundamentally opposed to your deity's alignment or ideals are anathema to your faith. Learning or casting spells, committing acts, and using items that are anathema to your deity remove you from your deity's good graces.\n\nCasting spells with the evil trait is almost always anathema to good deities, and casting good spells is likewise anathema to evil deities; similarly, casting chaotic spells is anathema to lawful deities, and casting lawful spells is anathema to chaotic deities. A neutral cleric who worships a neutral deity isn't limited this way, but their alignment might change over time if they frequently cast spells or use abilities with a certain alignment. Similarly, casting spells that are anathema to the tenets or goals of your faith could interfere with your connection to your deity. For example, casting a spell to create undead would be anathema to Pharasma, the goddess of death. For borderline cases, you and your GM determine which acts are anathema.\n\nIf you perform enough acts that are anathema to your deity, or if your alignment changes to one not allowed by your deity, you lose the magical abilities that come from your connection to your deity. The class features that you lose are determined by the GM, but they likely include your divine font and all divine spellcasting. These abilities can be regained only if you demonstrate your repentance by conducting an *atone* ritual.  \n"
+        },
+        "Divine Font": {
+            "name": "Divine Font",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Through your deity's blessing, you gain additional spells that channel either the life force called positive energy or its counterforce, negative energy. When you prepare your spells each day, you can prepare additional *heal* or *harm* spells, depending on your deity. The divine font spell your deity provides is listed in the Divine Font entry for your deity on pages 437\u2013440; if both are listed, you can choose between *heal* or *harm*. Once you choose, you can't change your choice short of an ethical shift or divine intervention.\n\n**Healing Font**: You gain additional spell slots each day at your highest level of cleric spell slots. You can prepare only *heal* spells (page 343) in these slots, and the number of slots is equal to 1 plus your Charisma modifier.\n\n**Harmful Font**: You gain additional spell slots each day at your highest level of cleric spell slots. You can prepare only *harm* spells (page 343) in these slots, and the number of slots is equal to 1 plus your Charisma modifier.  \n"
+        },
+        "Divine Spellcasting": {
+            "name": "Divine Spellcasting",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your deity bestows on you the power to cast divine spells. You can cast divine spells using the Cast a Spell activity, and you can supply material, somatic, and verbal components when casting spells (see Casting Spells on page 302). Because you're a cleric, you can usually hold a divine focus (such as a religious symbol) for spells requiring material components instead of needing to use a spell component pouch.\n\nAt 1st level, you can prepare two 1st-level spells and five cantrips each morning from the common spells on the divine spell list in this book (page 309) or from other divine spells to which you gain access. Prepared spells remain available to you until you cast them or until you prepare your spells again. The number of spells you can prepare is called your spell slots.\n\nAs you increase in level as a cleric, the number of spells you can prepare each day increases, as does the highest level of spell you can cast, as shown in Table 3\u20139: Cleric Spells per Day on page 120.\n\nSome of your spells require you to attempt a spell attack roll to see how effective they are, or your enemies to roll against your spell DC (typically by attempting a saving throw). Since your key ability is Wisdom, your spell attack rolls and spell DCs use your Wisdom modifier. Details on calculating these statistics appear on page 447.\n\n### Heightening Spells\n\nWhen you get spell slots of 2nd level and higher, you can fill those slots with stronger versions of lower-level spells. This increases the spell's level, heightening it to match the spell slot. Many spells have specific improvements when they are heightened to certain levels.\n\n### Cantrips\n\nA cantrip is a special type of spell that doesn't use spell slots. You can cast a cantrip at will, any number of times per day. A cantrip is always automatically heightened to half your level rounded up\u2014this is usually equal to the highest level of spell you can cast as a cleric. For example, as a 1st-level cleric, your cantrips are 1st-level spells, and as a 5th-level cleric, your cantrips are 3rd-level spells.  \n"
+        },
+        "Doctrine": {
+            "name": "Doctrine",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Cloistered Cleric": {
+                            "name": "Cloistered Cleric",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 119,
+                                "prd": "https://2e.aonprd.com/Doctrines.aspx?ID="
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You are a cleric of the cloth, focusing on divine magic and your connection to your deity's domains.\n\n**First Doctrine (1st):** You gain the Domain Initiate cleric feat.  \n**Second Doctrine (3rd):** Your proficiency rank for Fortitude saves increases to expert.  \n**Third Doctrine (7th):** Your proficiency ranks for divine spell attack rolls and spell DCs increase to expert.  \n**Fourth Doctrine (11th):** You gain expert proficiency with your deity's favored weapon. When you critically succeed at an attack roll using that weapon, you apply the weapon's critical specialization effect; use your divine spell DC if necessary.  \n**Fifth Doctrine (15th):** Your proficiency ranks for divine spell attack rolls and spell DCs increase to master.  \n**Final Doctrine (19th):** Your proficiency ranks for divine spell attack rolls and spell DCs increase to legendary."
+                        },
+                        "Warpriest": {
+                            "name": "Warpriest",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 120,
+                                "prd": "https://2e.aonprd.com/Doctrines.aspx?ID="
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You have trained in the more militant doctrine of your church, focusing on both spells and battle.\n\n**First Doctrine (1st):** You're trained in light and medium armor, and you have expert proficiency in Fortitude saves. You gain the Shield Block general feat, a reaction to reduce damage with a shield. If your deity's weapon is simple, you gain the Deadly Simplicity cleric feat. At 13th level, if you gain the divine defense class feature, you also gain expert proficiency in light and medium armor.  \n**Second Doctrine (3rd):** You're trained in martial weapons.  \n**Third Doctrine (7th):** You gain expert proficiency with your deity's favored weapon. When you critically succeed at an attack roll using that weapon, you apply the weapon's critical specialization effect; use your divine spell DC if necessary.  \n**Fourth Doctrine (11th):** Your proficiency ranks for divine spell attack rolls and spell DCs increase to expert.  \n**Fifth Doctrine (15th):** Your proficiency rank for Fortitude saves increases to master. When you roll a success at a Fortitude save, you get a critical success instead.  \n**Final Doctrine (19th):** Your proficiency ranks for divine spell attack rolls and spell DCs increase to master."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Even among followers of the same deity, there are numerous doctrines and beliefs, which sometimes vary wildly between clerics. At 1st level, you select a doctrine and gain the benefits of its first doctrine. The doctrines presented in this book are cloistered cleric and warpriest. Each doctrine grants you initial benefits at 1st level. At 3rd, 7th, 11th, 15th, and 19th levels, you gain the benefits granted by your doctrine's second, third, fourth, fifth, and final doctrines respectively.\n\nDoctrines can be found here.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Alertness": {
+            "name": "Alertness",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You remain alert to threats around you. Your proficiency rank for Perception increases to expert.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Resolve": {
+            "name": "Resolve",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've steeled your mind with resolve. Your proficiency rank for Will saves increases to master. When you roll a success at a Will save, you get a critical success instead.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Lightning Reflexes": {
+            "name": "Lightning Reflexes",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Divine Defense": {
+            "name": "Divine Defense",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your training and your deity protect you from harm. Your proficiency rank in unarmored defense increases to expert.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Miraculous Spell": {
+            "name": "Miraculous Spell",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You're exalted by your deity and gain truly incredible spells. You gain a single 10th-level spell slot and can prepare a spell in that slot using divine spellcasting. You don't gain more 10th-level spells as you level up, though you can take the Maker of Miracles feat to gain a second slot.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Cleric\n\n*Deities work their will upon the world in infinite ways, and you serve as one of their most stalwart mortal servants. Blessed with divine magic, you live the ideals of your faith, adorn yourself with the symbols of your church, and train diligently to wield your deity's favored weapon. Your spells might protect and heal your allies, or they might punish foes and enemies of your faith, as your deity wills. Yours is a life of devotion, spreading the teachings of your faith through both word and deed.*\n\n## During Combat Encounters...\n\nIf you're a warpriest, you balance between casting spells and attacking with weapons\u2014 typically the favored weapon of your deity. If you're a cloistered cleric, you primarily cast spells. Most of your spells can boost, protect, or heal your allies. Depending on your deity, you get extra spells to heal your allies or harm your enemies.  \n\n## During Social Encounters...\n\nYou might make diplomatic overtures or deliver impressive speeches. Because you're wise, you also pick up on falsehoods others tell.  \n\n## While Exploring...\n\nYou detect nearby magic and interpret any religious writing you come across. You might also concentrate on a protective spell for your allies in case of attack. After a battle or hazard, you might heal anyone who was hurt.  \n\n## In Downtime...\n\nYou might perform services at a temple, travel to spread the word of your deity, research scripture, celebrate holy days, or even found a new temple.  \n\n## You Might...\n\n* Visit the temples and holy places sacred to your faith, and have an immediate affinity with other worshippers of your deity. \n* Know the teachings of your religion's holy texts and how they apply to a dilemma. \n* Cooperate with your allies, provided they don't ask you to go against divine will.\n\n## Others Probably...\n\n* Find your devotion impressive, even if they don't understand it. \n* Expect you to heal their wounds. \n* Rely on you to interact with other religious figures.\n\n"
+}

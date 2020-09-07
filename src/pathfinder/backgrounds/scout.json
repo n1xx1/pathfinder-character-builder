@@ -1,0 +1,16 @@
+{
+    "name": "Scout",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 64,
+        "prd": "https://2e.aonprd.com/Backgrounds.aspx?ID=32"
+    },
+    "bonus": [
+        { "k": "ability", "choice": ["DEX", "WIS"] },
+        { "k": "ability" },
+        { "k": "proficiency", "skill": "survival", "proficiency": "T" },
+        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        { "k": "feat", "feat": "Forager" }
+    ],
+    "description": "You called the wilderness home as you found trails and guided travelers. Your wanderlust could have called you to the adventuring life, or perhaps you served as a scout for soldiers and found you liked battle.\n\nChoose two ability boosts. One must be to **Dexterity** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in the Survival skill, and a Lore skill related to one terrain you scouted in (such as Forest Lore or Cavern Lore). You gain the Forager skill feat."
+}

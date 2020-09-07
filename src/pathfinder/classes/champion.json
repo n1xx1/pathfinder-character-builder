@@ -1,0 +1,408 @@
+{
+    "name": "Champion",
+    "source": {
+        "book": "Core Rulebook",
+        "page": 104,
+        "prd": "https://2e.aonprd.com/Classes.aspx?ID=4"
+    },
+    "key": ["STR", "DEX"],
+    "hp": 10,
+    "features": {
+        "Level 1": {
+            "name": "Level 1",
+            "level": 1,
+            "bonus": [
+                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "E" },
+                { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
+                { "k": "proficiency", "skill": "will", "proficiency": "E" },
+                { "k": "proficiency", "skill": "religion", "proficiency": "T" },
+                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "2+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["simple"],
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "weapons",
+                    "category": ["martial"],
+                    "proficiency": "T"
+                },
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_medium", "proficiency": "T" },
+                { "k": "proficiency", "skill": "armor_heavy", "proficiency": "T" },
+                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_attack",
+                    "tradition": "divine",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "spell_dc",
+                    "tradition": "divine",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "class_dc",
+                    "class": "Champion",
+                    "proficiency": "T"
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Level 1"
+        },
+        "Champion's Code": {
+            "name": "Champion's Code",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Good": {
+                            "name": "Good",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 106,
+                                "prd": "https://2e.aonprd.com/Tenets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "* You must never perform acts anathema to your deity or willingly commit an evil act, such as murder, torture, or the casting of an evil spell.\n* You must never knowingly harm an innocent, or allow immediate harm to one through inaction when you know you could reasonably prevent it. This tenet doesn't force you to take action against possible harm to innocents at an indefinite time in the future, or to sacrifice your life to protect them.\n\n"
+                        },
+                        "Evil": {
+                            "name": "Evil",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 116,
+                                "prd": "https://2e.aonprd.com/Tenets.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "The tenets and causes of evil follow the rules provided in the *Core Rulebook*. While evil characters in general can range from self-serving but loyal allies to the extremes of depravity, evil champions are particularly vile, with a code that requires, enforces, and depends upon their villainous behavior. This means they can be extremely disruptive to a typical game and should be accessible player character options only in appropriate adventures or campaigns where the group collectively decides to embrace them. The tenets and causes of evil are uncommon options. While the feats and actions suitable for evil champions don't separately list access entries, typically if your GM grants you access to evil tenets, you also gain access to champion actions and feats that require those tenets.* You must never perform acts anathema to your deity or willingly commit a purely good act, such as giving something solely out of charity, casting a good spell, or using a good item.\n* You must never put another person's needs before your own, and you must never put your own needs before those of your deity. Though you can perform acts others might consider helpful, it must be done with the expectation that it ultimately furthers your own goals or those of your master.\n\n"
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "You follow a code of conduct, beginning with tenets shared by all champions of an alignment (such as good), and continuing with tenets of your cause. Deities often add additional strictures (for instance, Torag's champions can't show mercy to enemies of their people, making it almost impossible for them to follow the redeemer cause). Tenets are listed in order of importance, starting with the most important. If a situation places two tenets in conflict, you aren't in a no-win situation; instead, follow the more important tenet. For instance, as a paladin, if an evil king asked you if you're hiding refugees so he could execute them, you could lie to him, since the tenet against lying is less important than preventing harm to innocents. Trying to subvert your code by creating a situation that forces a higher tenet to override a lower tenet (for example, promising not to respect authorities and then, to keep your word, disrespecting authorities) is a violation of the champion code.\n\nIf you stray from your alignment or violate your code of conduct, you lose your focus pool and divine ally until you demonstrate your repentance by conducting an *atone* ritual, but you keep any other champion abilities that don't require those class features. If your alignment shifts but is still one allowed by your deity, your GM might let you retrain your cause while still following the same deity.\n\nTenets can be found here.  \n"
+        },
+        "Champion's Reaction": {
+            "name": "Champion's Reaction",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your cause gives you a special reaction. See specific causes for more information.  \n"
+        },
+        "Deific Weapon": {
+            "name": "Deific Weapon",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You zealously bear your deity's favored weapon. If it's uncommon, you gain access to it. If it's an unarmed attack with a d4 damage die or a simple weapon, increase the damage die by one step (d4 to d6, d6 to d8, d8 to d10, d10 to d12).  \n"
+        },
+        "Deity and Cause": {
+            "name": "Deity and Cause",
+            "level": 1,
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Paladin [Lawful Good]": {
+                            "name": "Paladin [Lawful Good]",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 106,
+                                "prd": "https://2e.aonprd.com/Causes.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You're honorable, forthright, and committed to pushing back the forces of cruelty. You gain the Retributive Strike champion's reaction and the *lay on hands* devotion spell. After the tenets of good, add these tenets: * You must act with honor, never taking advantage of others, lying, or cheating. \n* You must respect the lawful authority of legitimate leadership wherever you go, and follow its laws.\n\n## Champion's Reaction\n\n### Retributive Strike :r:\n\n; Champion  \n**Source** *Core Rulebook pg. 107* <sup>1.1</sup>  \n**Trigger** An enemy damages your ally, and both are within 15 feet of you.\n\n---\n\nYou protect your ally and strike your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. If the foe is within reach, make a melee Strike against it.\n\n## Divine Smite -- Level 9\n\nYou surround evil targets in a punishing halo. If you hit with your Retributive Strike, the target takes persistent good damage equal to your Charisma modifier.\n\n## Exalt -- Level 11\n\nWhen you use Retributive Strike, each ally within 15 feet of you with the target in their melee reach can spend a reaction to Strike the target with a \u20135 penalty."
+                        },
+                        "Redeemer [Neutral Good]": {
+                            "name": "Redeemer [Neutral Good]",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 106,
+                                "prd": "https://2e.aonprd.com/Causes.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You're full of kindness and forgiveness. You gain the Glimpse of Redemption champion's reaction and the *lay on hands* devotion spell. After the tenets of good, add these: * You must first try to redeem those who commit evil acts, rather than killing them or meting out punishment. If they then continue on a wicked path, you might need to take more extreme measures. \n* You must show compassion for others, regardless of their authority or station.\n\n## Champion's Reaction\n\n### Glimpse of Redemption :r:\n\n; Champion  \n**Source** *Core Rulebook pg. 107* <sup>1.1</sup>  \n**Trigger** An enemy damages your ally, and both are within 15 feet of you.\n\n---\n\nYour foe hesitates under the weight of sin as visions of redemption play in their mind's eye. The foe must choose one of the following options: * The ally is unharmed by the triggering damage. \n* The ally gains resistance to all damage against the triggering damage equal to 2 + your level. After the damaging effect is applied, the enemy becomes enfeebled 2 until the end of its next turn.\n\n## Divine Smite -- Level 9\n\nA guilty conscience assails foes who spurn your Glimpse of Redemption. A foe that responds to your Glimpse of Redemption by dealing damage takes persistent good damage equal to your Charisma modifier.\n\n## Exalt -- Level 11\n\nYou protect multiple allies. You can apply the resistance granted by Glimpse of Redemption to yourself and all allies within 15 feet of you, including the triggering ally, except the resistance is reduced by 2 for all."
+                        },
+                        "Liberator [Chaotic Good]": {
+                            "name": "Liberator [Chaotic Good]",
+                            "source": {
+                                "book": "Core Rulebook",
+                                "page": 107,
+                                "prd": "https://2e.aonprd.com/Causes.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You're committed to defending the freedom of others. You gain the Liberating Step champion's reaction and the *lay on hands* devotion spell. After the tenets of good, add these tenets: * You must respect the choices others make over their own lives, and you can't force someone to act in a particular way or threaten them if they don't. \n* You must demand and fight for others' freedom to make their own decisions. You may never engage in or countenance slavery or tyranny.\n\n## Champion's Reaction\n\n### Liberating Step :r:\n\n; Champion  \n**Source** *Core Rulebook pg. 107* <sup>1.1</sup>  \n**Trigger** An enemy damages, Grabs, or Grapples your ally, and both are within 15 feet of you.\n\n---\n\nYou free an ally from restraint. If the trigger was an ally taking damage, the ally gains resistance to all damage against the triggering damage equal to 2 + your level. The ally can attempt to break free of effects grabbing, restraining, immobilizing, or paralyzing them. They either attempt a new save against one such effect that allows a save, or attempt to Escape from one effect as a free action. If they can move, the ally can Step as a free action, even if they didn't need to escape.\n\n## Divine Smite -- Level 9\n\nYou punish those who ensnare your allies in bondage. If the triggering enemy was using any effects to make your ally grabbed, restrained, immobilized, or paralyzed when you used Liberating Step, that enemy takes persistent good damage equal to your Charisma modifier.\n\n## Exalt -- Level 11\n\nYou can help your whole group get into position. When you use Liberating Step, if your ally doesn't attempt to break free of an effect, you and all allies within 15 feet can Step, in addition to the triggering ally."
+                        },
+                        "Tyrant [Lawful Evil]": {
+                            "name": "Tyrant [Lawful Evil]",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 116,
+                                "prd": "https://2e.aonprd.com/Causes.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "Might makes right, and you subjugate the weak to keep them in their proper place. You gain the Iron Command champion's reaction and the *touch of corruption* devotion spell. After the tenets of evil, add these tenets. * Let no one who is lesser than you wield power over you or lead you.\n* Mercilessly enforce established hierarchies of masters and servants. Topple or seize control of illegitimate hierarchies, such as democratic governments or the arrogant echelons of the celestial planes, and fill power vacuums by taking that power for yourself.\n* Bind the weak to serve you. This tenet doesn't require you to spare foes' lives if you think they would be disloyal if pressed into servitude, nor does it require you to keep more servants than you find practical or useful.\n\n## Champion's Reaction\n\n### Iron Command :r:\n\n; Uncommon, Champion, Divine, Emotion, Enchantment, Mental  \n**Source** *Advanced Player's Guide pg. 117*  \n**Trigger** An enemy within 15 feet damages you.\n\n---\n\nYou put an impertinent foe who dared harm you in their proper place. You command your enemy to kneel before you in obedience. If they dare to refuse, they must pay the price in pain and anguish. The foe must choose one of the following options. * The enemy kneels, dropping prone as a free action.\n* The enemy refuses, and you deal 1d6 mental damage to it. This damage increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nIn addition, your Strikes against the triggering creature deal 1 extra damage until the end of your next turn. You choose whether the damage type is evil or negative each time you use this reaction. This extra damage increases to 2 at 9th level and 3 at 16th level.\n\n## Divine Smite -- Level 9\n\nThe regrets of disobedience linger. If an enemy refuses your Iron Command, it takes persistent evil damage equal to your Charisma modifier.\n\n## Exalt -- Level 11\n\nWhen you use Iron Command, each enemy within 15 feet of you other than the triggering creature must also either drop prone or take mental damage (the enemy chooses). These creatures take only minimum damage (typically 3 damage at 11th level, 4 at 12th, 5 at 16th, and 6 at 19th), and the effects they take can't be adjusted by anything that changes your Iron Command. For instance, the Iron Repercussions feat couldn't turn the damage into persistent mental damage for creatures other than the triggering creature."
+                        },
+                        "Desecrator [Neutral Evil]": {
+                            "name": "Desecrator [Neutral Evil]",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 116,
+                                "prd": "https://2e.aonprd.com/Causes.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You always take what pleases you, no matter who it hurts, and you spread the influence of evil across all you touch. You gain the Selfish Shield champion's reaction and the *touch of corruption* devotion spell. After the tenets of evil, add this tenet. * Subvert or corrupt everything in your path that is pure and good, and sow doubt among those upholding such ideals.\n\n## Champion's Reaction\n\n### Selfish Shield :r:\n\n; Uncommon, Champion  \n**Source** *Advanced Player's Guide pg. 117*  \n**Trigger** An enemy within 15 feet damages you.\n\n---\n\nYour self-interest keeps you safe. You gain resistance against the triggering damage equal to 2 + half your level, regardless of damage type.\n\nIn addition, your Strikes against the triggering creature deal 1 extra damage until the end of your next turn. You choose whether this extra damage is evil or negative each time you use this reaction. This extra damage increases to 2 at 9th level and 3 at 16th level.\n\n## Divine Smite -- Level 9\n\nIf your Charisma modifier is +2 or greater, your resistance against the triggering damage equals your Charisma modifier + half your level.\n\n## Exalt -- Level 11\n\nWhen you use Selfish Shield, each enemy within 15 feet of you takes a \u20131 status penalty to attack rolls against you until the start of your next turn."
+                        },
+                        "Antipaladin [Chaotic Evil]": {
+                            "name": "Antipaladin [Chaotic Evil]",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 116,
+                                "prd": "https://2e.aonprd.com/Causes.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "You're dishonorable, dishonest, and committed to breaking the false hopes of kindness. You gain the Destructive Vengeance champion's reaction and the *touch of corruption* devotion spell. After the tenets of evil, add these tenets. * You must not bind yourself with any law or oath beyond that of your code (though you can still select a champion feat with the oath trait). Act dishonorably, take advantage of others, lie, cheat, and steal to get what you want.\n* You must destroy that which offends you and that which stands in your way, including\u2014and perhaps especially\u2014the forces of good and law that oppose you. This tenet doesn't force you to take action immediately if it could mean your destruction, nor does it require you to destroy something that might be useful if corrupted toward your ends.\n\n## Champion's Reaction\n\n### Destructive Vengeance :r:\n\n; Uncommon, Champion  \n**Source** *Advanced Player's Guide pg. 117*  \n**Trigger** An enemy within 15 feet damages you.\n\n---\n\nBloodshed begets bloodshed as you drag your enemy toward oblivion. You increase the amount of damage you take by 1d6, and you deal 1d6 damage to the triggering enemy, choosing evil or negative damage to deal to the enemy each time you use this reaction. In addition, until the end of your next turn, your Strikes against the triggering creature deal 2 extra damage of the type you chose.\n\nThe damage you take and deal when you use this reaction increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level. The extra damage on your Strikes increases to 4 at 9th level and 6 at 16th level.\n\n## Divine Smite -- Level 9\n\nAn enemy damaged by the initial damage from your Destructive Vengeance also takes persistent evil damage equal to your Charisma modifier. This applies only to the damage the reaction itself deals to the triggering creature, not the damage you deal with subsequent Strikes.\n\n## Exalt -- Level 11\n\nWhen you use Destructive Vengeance, each enemy within 15 feet of you other than the triggering creature takes half the damage you deal to the triggering enemy, of the same damage type you chose."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
+            "description": "Champions are divine servants of a deity. Choose a deity to follow; your alignment must be one allowed for followers of your deity. Actions fundamentally opposed to your deity's ideals or alignment are anathema to your faith. A few examples of acts that would be considered anathema appear in each deity's entry. You and your GM determine whether other acts are anathema. You have one of the following causes. Your cause must match your alignment exactly. Your cause determines your champion's reaction, grants you a devotion spell, and defines part of your champion's code.\n\nCauses can be found here.  \n"
+        },
+        "Devotion Spells": {
+            "name": "Devotion Spells",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your deity's power grants you special divine spells called devotion spells, which are a type of focus spell. It costs 1 Focus Point to cast a focus spell, and you start with a focus pool of 1 Focus Point. You refill your focus pool during your daily preparations, and you regain 1 Focus Point by spending 10 minutes using the Refocus activity to pray to your deity or do service toward their causes.\n\nFocus spells are automatically heightened to half your level rounded up. Certain feats can give you more focus spells and increase the size of your focus pool, though your focus pool can never hold more than 3 Focus Points. The full rules are on page 300. You gain a devotion spell depending on your cause, and you are trained in divine spell attack rolls and spell DCs. Your spellcasting ability is Charisma.  \n"
+        },
+        "Shield Block": {
+            "name": "Shield Block",
+            "level": 1,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You gain the Shield Block general feat, a reaction that lets you reduce damage with your shield.  \n"
+        },
+        "Level 2": {
+            "name": "Level 2",
+            "level": 2,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 2"
+        },
+        "Level 3": {
+            "name": "Level 3",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 3"
+        },
+        "Divine Ally": {
+            "name": "Divine Ally",
+            "level": 3,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your devotion attracts a spirit of your deity's alignment. Once you choose an ally, your choice can't be changed.\n\nThe following are divine allies: \n\n**Blade Ally**: A spirit of battle dwells within your armaments. Select one weapon or *handwraps of mighty blows* when you make your daily preparations. In your hands, the item gains the effect of a property rune and you also gain the weapon's critical specialization effect. For a champion following the tenets of good, choose *disrupting*, *ghost touch*, *returning*, or *shifting*. For a champion following the tenets of evil, choose *fearsome*, *returning*, or *shifting*.\n\n**Shield Ally**: A spirit of protection dwells within your shield. In your hands, the shield's Hardness increases by 2 and its HP and BT increase by half. \n\n**Steed Ally**: You gain a young animal companion as a mount. Ordinarily, your animal companion is one that has the mount special ability, such as a horse. You can select a different animal companion (GM's discretion), but this ability doesn't grant it the mount special ability.      \n"
+        },
+        "Level 4": {
+            "name": "Level 4",
+            "level": 4,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 4"
+        },
+        "Level 5": {
+            "name": "Level 5",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 5"
+        },
+        "Weapon Expertise": {
+            "name": "Weapon Expertise",
+            "level": 5,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've dedicated yourself to learning the intricacies of your weapons. Your proficiency ranks for simple weapons, martial weapons, and unarmed attacks increase to expert.  \n"
+        },
+        "Level 6": {
+            "name": "Level 6",
+            "level": 6,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 6"
+        },
+        "Level 7": {
+            "name": "Level 7",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 7"
+        },
+        "Armor Expertise": {
+            "name": "Armor Expertise",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You have spent so much time in armor that you know how to make the most of its protection. Your proficiency ranks for light, medium, and heavy armor, as well as for unarmored defense, increase to expert. You gain the armor specialization effects of medium and heavy armor.  \n"
+        },
+        "Weapon Specialization": {
+            "name": "Weapon Specialization",
+            "level": 7,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've learned how to inflict greater injuries with the weapons you know best. You deal 2 additional damage with weapons and unarmed attacks in which you are an expert. This damage increases to 3 if you're a master, and to 4 if you're legendary.  \n"
+        },
+        "Level 8": {
+            "name": "Level 8",
+            "level": 8,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 8"
+        },
+        "Level 9": {
+            "name": "Level 9",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 9"
+        },
+        "Champion Expertise": {
+            "name": "Champion Expertise",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Prayers strengthen your divine power. Your proficiency ranks for your champion class DC and divine spell attack rolls and DCs increase to expert.  \n"
+        },
+        "Divine Smite": {
+            "name": "Divine Smite",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your champion's reaction improves.\n\nSee specific causes for more information.  \n"
+        },
+        "Juggernaut": {
+            "name": "Juggernaut",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your body is accustomed to physical hardship and resistant to ailments. Your proficiency rank for Fortitude saves increases to master. When you roll a success on a Fortitude save, you get a critical success instead.  \n"
+        },
+        "Lightning Reflexes": {
+            "name": "Lightning Reflexes",
+            "level": 9,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.  \n"
+        },
+        "Level 10": {
+            "name": "Level 10",
+            "level": 10,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 10"
+        },
+        "Level 11": {
+            "name": "Level 11",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 11"
+        },
+        "Alertness": {
+            "name": "Alertness",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You remain alert to threats around you. Your proficiency rank for Perception increases to expert.  \n"
+        },
+        "Divine Will": {
+            "name": "Divine Will",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your faith grants mastery of your will. Your proficiency rank for Will saves increases to master. When you roll a success on a Will save, you get a critical success instead.  \n"
+        },
+        "Exalt": {
+            "name": "Exalt",
+            "level": 11,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your champion's reaction exalts nearby allies, allowing them to benefit as well.\n\nSee specific causes for more information.  \n"
+        },
+        "Level 12": {
+            "name": "Level 12",
+            "level": 12,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 12"
+        },
+        "Level 13": {
+            "name": "Level 13",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 13"
+        },
+        "Armor Mastery": {
+            "name": "Armor Mastery",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your skill with armor improves, helping you avoid more blows. Your proficiency ranks for light, medium, and heavy armor, as well as for unarmored defense, increase to master.  \n"
+        },
+        "Weapon Mastery": {
+            "name": "Weapon Mastery",
+            "level": 13,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You fully understand your weapons. Your proficiency ranks for simple and martial weapons and unarmed attacks increase to master.  \n"
+        },
+        "Level 14": {
+            "name": "Level 14",
+            "level": 14,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 14"
+        },
+        "Level 15": {
+            "name": "Level 15",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 15"
+        },
+        "Greater Weapon Specialization": {
+            "name": "Greater Weapon Specialization",
+            "level": 15,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Your damage from weapon specialization increases to 4 with weapons and unarmed attacks in which you're an expert, 6 if you're a master, and 8 if you're legendary.  \n"
+        },
+        "Level 16": {
+            "name": "Level 16",
+            "level": 16,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 16"
+        },
+        "Level 17": {
+            "name": "Level 17",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 17"
+        },
+        "Champion Mastery": {
+            "name": "Champion Mastery",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You've mastered your arsenal of champion techniques and divine spells. Your proficiency ranks for your champion class DC and for divine spell attack rolls and spell DCs increase to master.  \n"
+        },
+        "Legendary Armor": {
+            "name": "Legendary Armor",
+            "level": 17,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You shield yourself with steel as easily as with faith. Your proficiency ranks for light, medium, and heavy armor, as well as for unarmored defense, increase to legendary.  \n"
+        },
+        "Level 18": {
+            "name": "Level 18",
+            "level": 18,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 18"
+        },
+        "Level 19": {
+            "name": "Level 19",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 19"
+        },
+        "Hero's Defiance": {
+            "name": "Hero's Defiance",
+            "level": 19,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "You can defy fate and continue fighting as long as you have divine energy. You gain the *hero's defiance* devotion spell.  \n"
+        },
+        "Level 20": {
+            "name": "Level 20",
+            "level": 20,
+            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "description": "Level 20"
+        }
+    },
+    "description": "# Champion\n\n*You are an emissary of a deity, a devoted servant who has taken up a weighty mantle, and you adhere to a code that holds you apart from those around you. While champions exist for every alignment, as a champion of good, you provide certainty and hope to the innocent. You have powerful defenses that you share freely with your allies and innocent bystanders, as well as holy power you use to end the threat of evil. Your devotion even attracts the attention of holy spirits who aid you on your journey.*\n\n## During Combat Encounters...\n\nYou confront enemies in hand-to-hand combat while carefully positioning yourself to protect your allies.  \n\n## During Social Encounters...\n\nYou are a voice of hope, striving to reach a peaceful solution that strengthens bonds and yields good results for all.  \n\n## While Exploring...\n\nYou overcome barriers both physical and spiritual, providing inspiration to your allies through your actions and\u2014when your fellow adventurers ask for it\u2014providing moral and ethical guidance.  \n\n## In Downtime...\n\nYou spend much of your time in solemn prayer and contemplation, rigorous training, charity work, and fulfilling the tenets of your code, but that doesn't mean there isn't time to take up a craft or hobby.  \n\n## You Might...\n\n* Believe there is always hope that good will triumph over evil, no matter how grim the odds. \n* Know the ends don't justify the means, since evil acts increase the power of evil. \n* Have a strong sense of right and wrong, and grow frustrated when greed or shortsightedness breeds evil.\n\n## Others Probably...\n\n* See you as a symbol of hope, especially in a time of great need. \n* Worry you secretly despise them for not living up to your impossible standard, or that you are unwilling to compromise when necessary. \n* Know that you've sworn divine oaths of service they can trust you to keep.\n\n"
+}

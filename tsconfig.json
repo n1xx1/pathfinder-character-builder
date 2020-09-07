@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "CommonJS",
+        "lib": ["DOM", "ES2019"],
+        "esModuleInterop": true
+    },
+    "include": ["./src/**/*"]
+}
