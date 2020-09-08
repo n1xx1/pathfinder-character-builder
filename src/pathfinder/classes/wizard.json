@@ -67,7 +67,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:abjuration", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Abjuration", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "protective ward" },
                                 { "k": "special", "id": "arcane_school_abjuration" },
@@ -85,7 +85,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:conjuration", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Conjuration", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "augment summoning" },
                                 { "k": "special", "id": "arcane_school_conjuration" },
@@ -103,7 +103,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:divination", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Divination", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "diviner's sight" },
                                 { "k": "special", "id": "arcane_school_divination" },
@@ -121,7 +121,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:enchantment", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Enchantment", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "charming words" },
                                 { "k": "special", "id": "arcane_school_enchantment" },
@@ -139,7 +139,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:evocation", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Evocation", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "force bolt" },
                                 { "k": "special", "id": "arcane_school_evocation" },
@@ -157,7 +157,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:illusion", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Illusion", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "warped terrain" },
                                 { "k": "special", "id": "arcane_school_illusion" },
@@ -175,7 +175,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "school:necromancy", "tradition:arcane"]
+                                    "filter": ["level:1", "trait:Necromancy", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "call of the grave" },
                                 { "k": "special", "id": "arcane_school_necromancy" },
@@ -193,11 +193,7 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": [
-                                        "level:1",
-                                        "school:transmutation",
-                                        "tradition:arcane"
-                                    ]
+                                    "filter": ["level:1", "trait:Transmutation", "tradition:arcane"]
                                 },
                                 { "k": "spell", "spell": "physical boost" },
                                 { "k": "special", "id": "arcane_school_transmutation" },

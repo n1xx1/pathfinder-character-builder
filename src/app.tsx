@@ -1,7 +1,18 @@
 import React, { useState, useMemo, useEffect, Dispatch, SetStateAction, useRef } from "react";
 import { render } from "react-dom";
 import "antd/dist/antd.css";
-import { Select, Form, Input, Layout, Row, Col, InputNumber, Typography, Switch, Button } from "antd";
+import {
+    Select,
+    Form,
+    Input,
+    Layout,
+    Row,
+    Col,
+    InputNumber,
+    Typography,
+    Switch,
+    Button,
+} from "antd";
 import { pf, ancestries, backgrounds, classes, feats, spells, ancestryList } from "./pathfinder";
 import {
     Context,
@@ -159,6 +170,7 @@ function App({}: {}) {
                                     placeholder="Select..."
                                     value={pfAncestryName}
                                     onChange={v => setPfAncestryName(v)}
+                                    showSearch
                                 >
                                     {ancestryList.map(a => (
                                         <Select.Option key={a} value={a}>
@@ -173,6 +185,7 @@ function App({}: {}) {
                                         placeholder="Select..."
                                         value={pfHeritageName}
                                         onChange={v => setPfHeritageName(v)}
+                                        showSearch
                                     >
                                         {heritageNames.map(h => (
                                             <Select.Option key={h} value={h}>
@@ -187,6 +200,7 @@ function App({}: {}) {
                                     placeholder="Select..."
                                     value={pfBackgroundName}
                                     onChange={v => setPfBackgroundName(v)}
+                                    showSearch
                                 >
                                     {backgroundNames.map(b => (
                                         <Select.Option key={b} value={b}>
@@ -200,6 +214,7 @@ function App({}: {}) {
                                     placeholder="Select..."
                                     value={pfClassName}
                                     onChange={v => setPfClassName(v)}
+                                    showSearch
                                 >
                                     {classNames.map(c => (
                                         <Select.Option key={c} value={c}>
@@ -397,7 +412,7 @@ function computeSkillBonuses(context: Context, bonuses: BonusList, fixSet: FixSe
 
             fixSet[`${path}`] = 0;
             fixSet[`${path}/${count}`] = 1;
-            for (let i = 0; i < skillBonus.count; i++) {
+            for (let i = 0; i < count; i++) {
                 bonuses.push({
                     bonus: {
                         k: "proficiency",
@@ -475,6 +490,7 @@ function computeOptionBonuses(context: Context, bonuses: BonusList, fixSet: FixS
         bonuses.entries(),
     ).filter(([i, b]) => b.bonus.k === "option") as any;
 
+    const additions: [number, BonusListEntry[]][] = [];
     for (const [index, { path, bonus: optionBonus, origin: parentOrigin }] of optionBonuses) {
         if (fixSet[`${path}`] !== undefined) {
             continue;
@@ -486,15 +502,22 @@ function computeOptionBonuses(context: Context, bonuses: BonusList, fixSet: FixS
             const selectedOption = optionBonus.options[bValue.value];
             fixSet[`${path}/${selectedOption.name}`] = 1;
 
+            const newBonuses: BonusListEntry[] = [];
             for (let i = 0; i < selectedOption.bonus.length; i++) {
                 const bonus = selectedOption.bonus[i];
-                bonuses.splice(index + 1, 0, {
+                newBonuses.push({
                     bonus,
                     path: `${path}/${selectedOption.name}/${i}`,
                     origin: `from "${selectedOption.name}" option, ${parentOrigin}`,
                 });
             }
+            additions.push([index, newBonuses]);
         }
+    }
+    let offset = 0;
+    for (const [index, newBonuses] of additions) {
+        bonuses.splice(offset + index + 1, 0, ...newBonuses);
+        offset += newBonuses.length;
     }
 }
 
@@ -503,6 +526,7 @@ function computeIfBonuses(context: Context, bonuses: BonusList, fixSet: FixSet) 
         ([i, b]) => b.bonus.k === "if",
     ) as any;
 
+    const additions: [number, BonusListEntry[]][] = [];
     for (const [index, { path, bonus: ifBonus, origin }] of ifBonuses) {
         if (fixSet[`${path}`] !== undefined) {
             continue;
@@ -511,19 +535,30 @@ function computeIfBonuses(context: Context, bonuses: BonusList, fixSet: FixSet) 
         fixSet[`${path}`] = 0;
         if (computePrerequisite(context, ifBonus.if)) {
             fixSet[`${path}/true`] = 1;
+
+            const newBonuses: BonusListEntry[] = [];
             for (let i = 0; i < ifBonus.bonus.length; i++) {
                 const bonus = ifBonus.bonus[i];
-                bonuses.splice(index + 1, 0, { bonus, path: `${path}/true/${i}`, origin });
+                newBonuses.push({ bonus, path: `${path}/true/${i}`, origin });
             }
+            additions.push([index, newBonuses]);
         } else {
             if (ifBonus.else_bonus) {
                 fixSet[`${path}/false`] = 1;
+
+                const newBonuses: BonusListEntry[] = [];
                 for (let i = 0; i < ifBonus.else_bonus.length; i++) {
                     const bonus = ifBonus.else_bonus[i];
-                    bonuses.splice(index + 1, 0, { bonus, path: `${path}/false/${i}`, origin });
+                    newBonuses.push({ bonus, path: `${path}/false/${i}`, origin });
                 }
+                additions.push([index, newBonuses]);
             }
         }
+    }
+    let offset = 0;
+    for (const [index, newBonuses] of additions) {
+        bonuses.splice(offset + index + 1, 0, ...newBonuses);
+        offset += newBonuses.length;
     }
 }
 
@@ -536,7 +571,7 @@ interface AbilitySelectProps {
 function AbilitySelect({ value, onChange, exclude }: AbilitySelectProps) {
     value = exclude?.includes(value) ? null : value;
     return (
-        <Select value={value} onChange={onChange}>
+        <Select value={value} onChange={onChange} showSearch>
             {!exclude?.includes("STR") && <Select.Option value="STR">Strength</Select.Option>}
             {!exclude?.includes("DEX") && <Select.Option value="DEX">Dexterity</Select.Option>}
             {!exclude?.includes("CON") && <Select.Option value="CON">Constitution</Select.Option>}
@@ -555,7 +590,7 @@ interface SkillSelectProps {
 
 function SkillSelect({ value, onChange, exclude }: SkillSelectProps) {
     return (
-        <Select value={value} onChange={onChange}>
+        <Select value={value} onChange={onChange} showSearch>
             {(exclude?.indexOf("acrobatics") ?? -1) == -1 && (
                 <Select.Option value={"acrobatics"}>Acrobatics</Select.Option>
             )}
@@ -623,7 +658,7 @@ function CreationBonusFeat({ context, bonus, path, onChange }: CreationBonusFeat
         bonusMap,
     ]);
     return (
-        <Select value={value} onChange={onChange}>
+        <Select value={value} onChange={onChange} showSearch>
             {filteredFeats.map(f => (
                 <Select.Option key={f.name} value={f.name}>
                     {f.name}
@@ -645,7 +680,7 @@ function CreationBonusSpell({ context, bonus, path, onChange }: CreationBonusSpe
     const filteredFeats = useMemo(() => computeFilteredSpells(context, bonus.filter), [bonus]);
     const value = (bonusMap[path] as BonusKindFeat)?.value;
     return (
-        <Select value={value} onChange={onChange}>
+        <Select value={value} onChange={onChange} showSearch>
             {filteredFeats.map(f => (
                 <Select.Option key={f.name} value={f.name}>
                     {f.name}
@@ -815,6 +850,7 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                         onChange={v =>
                             setValues(v1 => ({ ...v1, [path]: { value: v, kind: "option" } }))
                         }
+                        showSearch
                     >
                         {Object.keys(bonus.options)
                             .sort(sortStrings)
