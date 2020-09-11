@@ -22,6 +22,32 @@ async function getAllAncestries() {
     }));
 }
 
+function scanUntil(e: ChildNode, until: (x: ChildNode) => boolean) {
+    const ret: ChildNode[] = [];
+    while (until(e)) {
+        ret.push(e);
+        e = e.nextSibling;
+    }
+    return [ret, e] as [ChildNode[], ChildNode];
+}
+
+async function getAncestryDetail(url: string) {
+    const dom = await readAon(url);
+    const data = {} as any;
+
+    const pageTitle = dom.querySelector("#ctl00_MainContent_DetailedOutput>h1.title");
+    const [contents, ancestryMechanics] = scanUntil(
+        pageTitle.nextSibling,
+        x => !!x && x.nodeName != "h1",
+    );
+
+    const div = dom.createElement("div");
+    for (const c of contents) {
+        div.appendChild(c);
+    }
+    console.log(div.innerHTML);
+}
+
 async function getAllBackgrounds() {
     const dom = await readAon(`${BASE_URL}Backgrounds.aspx`);
 
@@ -94,7 +120,11 @@ const argv = yargs
         : argv.background ?? [];
     const classes = argv["all-classes"]
         ? (await getAllClasses()).map(a => a.url)
-        : argv.ancestry ?? [];
+        : argv.class ?? [];
+
+    for (const ancestry of ancestries) {
+        await getAncestryDetail(ancestry as string);
+    }
 
     console.log(ancestries, backgrounds, classes);
 })();
