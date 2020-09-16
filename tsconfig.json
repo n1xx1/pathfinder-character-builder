@@ -3,7 +3,8 @@
         "jsx": "react",
         "module": "CommonJS",
         "lib": ["DOM", "ES2019"],
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "downlevelIteration": true
     },
     "include": ["./src/**/*"]
 }

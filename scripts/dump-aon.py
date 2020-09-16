@@ -167,7 +167,7 @@ def to_markdown_recursive(element, out):
             for i, row in enumerate(rows):
                 out += "| "
                 cols = row.find_all("td", recursive=False)
-                for j, col in enumerate(row):
+                for j, col in enumerate(cols):
                     if j > 0:
                         out += " | "
                     out = to_markdown_recursive(col, out)
