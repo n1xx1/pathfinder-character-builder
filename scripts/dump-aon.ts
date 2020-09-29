@@ -1,5 +1,5 @@
 import { fetch, parseDom } from "./utils";
-import { $, findElement, findElementIndex, scanUntil, TagA, TagH2, TagSpan } from "./utils/dom";
+import { create$, QueryDOM, scanUntil, TagA, TagH1, TagH2, TagSpan } from "./utils/dom";
 import yargs from "yargs";
 
 const BASE_URL = "https://2e.aonprd.com/";
@@ -14,12 +14,12 @@ async function readAon(url) {
 }
 
 async function getAllAncestries() {
-    const dom = $(await readAon(`${BASE_URL}Ancestries.aspx`));
+    const $ = create$(await readAon(`${BASE_URL}Ancestries.aspx`));
 
-    const links = dom.find("h2.title>a:last-of-type");
-    return Array.from(links).map(l => ({
-        url: l.getAttribute("href"),
-        name: l.innerText,
+    const links = $<TagA>("h2.title>a:last-of-type");
+    return links.map(l => ({
+        url: BASE_URL + l.attr("href"),
+        name: l.text(),
     }));
 }
 
@@ -29,25 +29,28 @@ interface BookInfo {
     prd?: string;
 }
 
-function skipToAfterSource(contents: ChildNode[]): [ChildNode[], ChildNode[], BookInfo] {
-    const sourceIndex = findElementIndex(contents, "b", v => v.textContent == "Source");
-    const brIndex = findElementIndex(contents.slice(sourceIndex), "br");
-    const preContents = contents.slice(0, sourceIndex);
-    const sourceContents = contents.slice(sourceIndex, sourceIndex + brIndex + 1);
-    const sourceName = findElement(sourceContents, "a").querySelector<TagA>(":scope>i").innerText;
+function skipToAfterSource(contents: QueryDOM): [ChildNode[], ChildNode[], BookInfo] {
+    const preContents = contents.nextUntil(v => v.prop("nodeName") == "b" && v.text() == "Source");
+    const sourceContents = preContents
+        .last()
+        .next()
+        .nextUntil(v => v.prop("nodeName") == "br");
+
+    const sourceName = sourceContents.filter("a").find<TagA>(":scope>i").text();
     const [book, page] = sourceName.split(" pg. ");
 
+    throw "test";
     // skip FPS notes
-    let restContents = contents.slice(sourceIndex + brIndex + 1);
-    if (restContents.length > 0 && restContents[0].nodeName == "u") {
-        const firstNode = restContents[0] as HTMLElement;
-        const firstNodeLink = firstNode.querySelector<TagA>(":scope>a");
-        if (firstNodeLink && firstNodeLink.getAttribute("href") == "PFS.aspx") {
-            const brIndex = restContents.findIndex(v => v.nodeName == "br");
-            restContents = restContents.slice(brIndex + 1);
-        }
-    }
-    return [preContents, restContents, { book, page: +page }];
+    // let restContents = contents.slice(sourceIndex + brIndex + 1);
+    // if (restContents.length > 0 && restContents[0].nodeName == "u") {
+    //     const firstNode = restContents[0] as HTMLElement;
+    //     const firstNodeLink = firstNode.querySelector<TagA>(":scope>a");
+    //     if (firstNodeLink && firstNodeLink.getAttribute("href") == "PFS.aspx") {
+    //         const brIndex = restContents.findIndex(v => v.nodeName == "br");
+    //         restContents = restContents.slice(brIndex + 1);
+    //     }
+    // }
+    // return [preContents, restContents, { book, page: +page }];
 }
 
 function createElement(dom: Document, contents: ChildNode[]) {
@@ -192,107 +195,108 @@ function toMarkdown(el: ArrayLike<ChildNode>, out = "") {
 }
 
 async function getAncestryDetail(url: string) {
-    const dom = await readAon(url);
+    const $ = create$(await readAon(url));
+
     const data = {} as any;
 
-    const pageTitle = dom.querySelector("#ctl00_MainContent_DetailedOutput>h1.title");
-    let [contents, ancestryMechanics] = scanUntil(
-        pageTitle.nextSibling,
-        x => !!x && x.nodeName != "h1",
-    ) as [ChildNode[], HTMLElement];
+    const pageTitle = $<TagH1>("#ctl00_MainContent_DetailedOutput>h1.title");
 
-    const [info, ancestryInfo, source] = skipToAfterSource(contents);
+    const contents = pageTitle.nextUntil(x => x.prop("nodeName") == "h1");
+    console.log(pageTitle.html());
+    console.log(contents.html());
+
+    const contentsStart = $("<div>").append(contents).children()[0];
+    const anchestryMechanics = contents.last();
+
+    const [info, ancestryInfo, source] = skipToAfterSource(contentsStart);
     source.prd = url;
 
-    data.name = pageTitle.querySelector<TagA>("a:last-of-type").innerText;
+    data.name = pageTitle.find<TagA>("a:last-of-type").text();
     data.source = source;
     data.traits = getTraits(info);
-
-    const [ancestryMechanicsContents] = scanUntil(ancestryMechanics, x => !!x);
-    ancestryMechanics = createElement(dom, ancestryMechanicsContents);
-
-    const titles = ancestryMechanics.querySelectorAll<TagH2>("h2.title");
-    for (const c of Array.from(titles)) {
-        const title = c.innerText;
-        const [contents] = scanUntil(
-            c.nextSibling,
-            x => !!x && x.nodeName != "h1" && x.nodeName != "h2",
-        );
-
-        switch (title) {
-            case "Size":
-                data.size = contents[0].textContent;
-                break;
-            case "Hit Points":
-                data.hp = contents[0].textContent;
-                break;
-            case "Speed":
-                data.speed = +contents[0].textContent.replace(" feet", "");
-                break;
-            case "Darkvision":
-                data.darkvision = true;
-                break;
-            case "Low-Light Vision":
-                data.lowlight_vision = true;
-                break;
-            case "Ability Boosts":
-                data.ability_boosts = contents.filter(x => !x.nodeName).map(x => x.textContent);
-                if (data.ability_boosts[0] == "Two free ability boosts") {
-                    data.ability_boosts = ["Free", "Free"];
-                }
-                break;
-            case "Ability Flaw(s)":
-                data.ability_boosts = contents.filter(x => !x.nodeName).map(x => x.textContent);
-                break;
-            case "Languages":
-                break;
-            default:
-                if (!data.other) {
-                    data.other = [];
-                }
-                const desc = toMarkdown(contents);
-                data.other.append({ name: title, desc });
-                break;
-        }
-    }
-
-    data.description = toMarkdown(ancestryInfo);
-    data.heritages = getAncestryHeritages(url, data.name);
+    //
+    // const [ancestryMechanicsContents] = scanUntil(ancestryMechanics, x => !!x);
+    // ancestryMechanics = createElement(dom, ancestryMechanicsContents);
+    //
+    // const titles = ancestryMechanics.querySelectorAll<TagH2>("h2.title");
+    // for (const c of Array.from(titles)) {
+    //     const title = c.innerText;
+    //     const [contents] = scanUntil(
+    //         c.nextSibling,
+    //         x => !!x && x.nodeName != "h1" && x.nodeName != "h2",
+    //     );
+    //
+    //     switch (title) {
+    //         case "Size":
+    //             data.size = contents[0].textContent;
+    //             break;
+    //         case "Hit Points":
+    //             data.hp = contents[0].textContent;
+    //             break;
+    //         case "Speed":
+    //             data.speed = +contents[0].textContent.replace(" feet", "");
+    //             break;
+    //         case "Darkvision":
+    //             data.darkvision = true;
+    //             break;
+    //         case "Low-Light Vision":
+    //             data.lowlight_vision = true;
+    //             break;
+    //         case "Ability Boosts":
+    //             data.ability_boosts = contents.filter(x => !x.nodeName).map(x => x.textContent);
+    //             if (data.ability_boosts[0] == "Two free ability boosts") {
+    //                 data.ability_boosts = ["Free", "Free"];
+    //             }
+    //             break;
+    //         case "Ability Flaw(s)":
+    //             data.ability_boosts = contents.filter(x => !x.nodeName).map(x => x.textContent);
+    //             break;
+    //         case "Languages":
+    //             break;
+    //         default:
+    //             if (!data.other) {
+    //                 data.other = [];
+    //             }
+    //             const desc = toMarkdown(contents);
+    //             data.other.append({ name: title, desc });
+    //             break;
+    //     }
+    // }
+    //
+    // data.description = toMarkdown(ancestryInfo);
+    // data.heritages = getAncestryHeritages(url, data.name);
     return data;
 }
 
 async function getAncestryHeritages(url: string, name: string) {
     url = url.replace("Ancestries.aspx?ID=", "Heritages.aspx?Ancestry=");
-    const dom = await readAon(url);
+    const $ = create$(await readAon(url));
     const data = {};
 
-    const firstHeritage = dom.querySelector("#ctl00_MainContent_DetailedOutput>h2.title");
-    const [contents] = scanUntil(firstHeritage, x => !!x && x.nodeName != "h1");
-    const titles = createElement(dom, contents).querySelectorAll<TagH2>(":scope>h2.title");
-    for (const c of titles) {
-        const nameLink =
-    }
+    const firstHeritage = $<TagH2>("#ctl00_MainContent_DetailedOutput>h2.title")[0];
+    const contents = firstHeritage.nextUntil("h1");
+    const titles = $("<div>").append(contents).find<TagH2>(">h2.title");
 }
 
 async function getAllBackgrounds() {
-    const dom = await readAon(`${BASE_URL}Backgrounds.aspx`);
+    const $ = create$(await readAon(`${BASE_URL}Backgrounds.aspx`));
 
-    const links = dom.querySelectorAll<TagA>("h2.title>a:last-of-type");
-    return Array.from(links).map(l => ({
-        url: l.getAttribute("href"),
-        name: l.innerText,
+    const links = $<TagA>("h2.title>a:last-of-type");
+    return links.map(l => ({
+        url: l.attr("href"),
+        name: l.text(),
     }));
 }
 
 async function getAllClasses() {
-    const dom = await readAon(`${BASE_URL}Classes.aspx`);
+    const $ = create$(await readAon(`${BASE_URL}Classes.aspx`));
 
-    const links = dom.querySelectorAll<TagA>("#ctl00_MainContent_Navigation>h1>a");
-    return Array.from(links)
-        .filter(l => l.getAttribute("href")?.startsWith("Classes.aspx"))
+    const links = $<TagA>("#ctl00_MainContent_Navigation>h1>a");
+    return links
+        .filter(l => l.attr("href")?.startsWith("Classes.aspx"))
         .map(l => ({
-            url: l.getAttribute("href"),
-            name: l.innerText,
+            url: l.attr("href"),
+            name: l.text(),
         }));
 }
 
@@ -349,6 +353,7 @@ const argv = yargs
         : argv.class ?? [];
 
     for (const ancestry of ancestries) {
+        console.log(ancestry);
         await getAncestryDetail(ancestry as string);
     }
 

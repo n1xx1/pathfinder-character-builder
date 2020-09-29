@@ -37,12 +37,16 @@ export function findElementIndex(
     return contents.findIndex(v => names.includes(v.nodeName) && (!predicate || predicate(v)));
 }
 
-class QueryDOM<T extends HTMLElement> {
-    e: T[];
+function isElement(e: ChildNode): e is HTMLElement {
+    return e.nodeType == e.ELEMENT_NODE;
+}
+
+class QueryDOMClass<T extends ChildNode> {
+    private readonly e: T[];
 
     constructor(e: T[], query: string) {
         if (query) {
-            this.e = e.filter(e => e.matches(query));
+            this.e = e.filter(e => isElement(e) && e.matches(query));
         } else {
             this.e = e;
         }
@@ -54,6 +58,25 @@ class QueryDOM<T extends HTMLElement> {
         }
     }
 
+    map<P>(cb: (e: QueryDOM<T>) => P): P[] {
+        return this.e.map(v =>
+            cb(
+                queryDOM<T>([v]),
+            ),
+        );
+    }
+
+    filter<K extends keyof HTMLElementTagNameMap>(x: K): QueryDOM<HTMLElementTagNameMap[K]>;
+    filter<E extends HTMLElement = HTMLElement>(x: string): QueryDOM<E>;
+    filter(cb: (e: QueryDOM<T>) => boolean): QueryDOM<T>;
+
+    filter(x: string | ((e: QueryDOM<T>) => boolean)) {
+        if (typeof x === "string") {
+            return queryDOM<T>(this.e, x);
+        }
+        return queryDOM<T>(this.e.filter(v => x(queryDOM([v]))));
+    }
+
     find<K extends keyof HTMLElementTagNameMap>(x: K): QueryDOM<HTMLElementTagNameMap[K]>;
     find<E extends HTMLElement = HTMLElement>(x: string): QueryDOM<E>;
     find(query: string) {
@@ -61,12 +84,14 @@ class QueryDOM<T extends HTMLElement> {
             query = ":scope " + query;
         }
         return queryDOM(
-            _.flatten(this.e.map(e => Array.from(e.querySelectorAll(query)))) as HTMLElement[],
+            _.flatten(
+                this.e.map(e => (isElement(e) ? Array.from(e.querySelectorAll(query)) : [])),
+            ) as HTMLElement[],
         );
     }
     children(filter?: string) {
         return queryDOM(
-            _.flatten(this.e.map(e => Array.from(e.children) as HTMLElement[])),
+            _.flatten(this.e.map(e => (isElement(e) ? Array.from(e.children) : []))),
             filter,
         );
     }
@@ -99,13 +124,18 @@ class QueryDOM<T extends HTMLElement> {
             filter,
         );
     }
-    nextUntil(query: string, filter?: string) {
+    nextUntil(query: string | ((e: QueryDOM<HTMLElement>) => boolean), filter?: string) {
         return queryDOM(
             _.flatten(
                 this.e.map(e => {
                     const r = [] as HTMLElement[];
                     let e1 = e.nextElementSibling;
-                    while (e1 && e1.matches(query)) {
+                    while (
+                        e1 &&
+                        (typeof query === "string"
+                            ? e1.matches(query)
+                            : query(queryDOM([e1 as HTMLElement])))
+                    ) {
                         r.push(e1 as HTMLElement);
                         e1 = e1.nextElementSibling;
                     }
@@ -115,12 +145,31 @@ class QueryDOM<T extends HTMLElement> {
             filter,
         );
     }
-    text() {
+
+    text(value: string): QueryDOM<T>;
+    text(): string;
+    text(value?: string) {
+        if (value !== undefined) {
+            for (const e of this.e) {
+                e.innerText = value;
+            }
+            return this as any;
+        }
         return this.e.map(e => e.innerText).join("");
     }
-    html() {
+
+    html(value: string): QueryDOM<T>;
+    html(): string;
+    html(value?: string) {
+        if (value !== undefined) {
+            for (const e of this.e) {
+                e.innerHTML = value;
+            }
+            return this as any;
+        }
         return this.e.map(e => e.innerHTML).join("");
     }
+
     is(query: string) {
         return queryDOM(this.e, query);
     }
@@ -133,28 +182,98 @@ class QueryDOM<T extends HTMLElement> {
             query,
         );
     }
-    getter(index: number) {
+
+    attr(attr: string): string | null;
+    attr(attr: string, set: string): QueryDOM<T>;
+    attr(attrs: { [attr: string]: string }): QueryDOM<T>;
+
+    attr(attr: string | { [attr: string]: string }, set?: string) {
+        if (typeof attr !== "string") {
+            for (const e of this.e) {
+                for (const [k, v] of Object.entries(attr)) {
+                    e.setAttribute(k, v);
+                }
+            }
+            return this as any;
+        }
+        if (set !== undefined) {
+            for (const e of this.e) {
+                e.setAttribute(attr, set);
+            }
+            return this as any;
+        }
+        return this.e.length > 0 ? this.e[0].getAttribute(attr) : null;
+    }
+
+    prop<P extends keyof T>(prop: P): T[P] {
+        return this.e.length > 0 ? this.e[0][prop] : null;
+    }
+
+    elements() {
+        return this.e;
+    }
+    at(index: number = 0) {
         return this.e[index];
+    }
+    last() {
+        return this.e.length > 0 ? queryDOM<T>([this.e[this.e.length - 1]]) : queryDOM<T>([]);
+    }
+
+    append(contents: QueryDOM): QueryDOM {
+        for (const e of this.e) {
+            e.append(...contents.e);
+        }
+        return this as any;
+    }
+
+    getter(index: number) {
+        return queryDOM([this.e[index]]);
     }
 }
 
-function queryDOM<T extends HTMLElement>(e: T[], query?: string) {
-    return new Proxy(new QueryDOM<T>(e, query), {
+export interface QueryDOM<T extends ChildNode = ChildNode> extends QueryDOMClass<T> {
+    [index: number]: QueryDOM<T>;
+}
+
+function queryDOM<T extends ChildNode = ChildNode>(e: T[], query?: string): QueryDOM<T> {
+    return new Proxy(new QueryDOMClass<T>(e, query), {
         get(t, k) {
             if (typeof k === "number") {
                 return t.getter(k);
             }
             return t[k];
         },
-    });
+    }) as any;
 }
 
-export function $(el: Document | HTMLElement) {
-    return queryDOM([
-        el.nodeType === el.DOCUMENT_NODE
-            ? ((el as unknown) as Document).documentElement
-            : ((el as unknown) as HTMLElement),
-    ]);
+export declare function $Function<P extends keyof TagStringMap>(s: P): QueryDOM<TagStringMap[P]>;
+export declare function $Function<E extends HTMLElement>(el: E): QueryDOM<E>;
+export declare function $Function<E extends HTMLElement>(el: E[]): QueryDOM<E>;
+export declare function $Function<E extends HTMLElement>(s: string): QueryDOM<E>;
+export declare function $Function(el: Document): QueryDOM<HTMLElement>;
+
+export function create$(doc: Document): typeof $Function {
+    const rootDom = queryDOM([doc.documentElement]);
+    return (el: string | Document | HTMLElement | HTMLElement[]) => {
+        if (typeof el === "string") {
+            if (el.match(/^<\\w+>$/)) {
+                return queryDOM([doc.createElement(el.substr(1, el.length - 2))]);
+            }
+            if (el[0] == "<") {
+                return queryDOM([doc.createElement("template")])
+                    .html(el)
+                    .children();
+            }
+            return rootDom.find(el);
+        }
+        if (Array.isArray(el)) {
+            return queryDOM(el);
+        }
+        if (el.nodeType === el.DOCUMENT_NODE) {
+            return queryDOM([(el as Document).documentElement]);
+        }
+        return queryDOM([el as HTMLElement]);
+    };
 }
 
 export type TagA = HTMLAnchorElement;
@@ -276,3 +395,125 @@ export type TagUl = HTMLUListElement;
 export type TagVar = HTMLElement;
 export type TagVideo = HTMLVideoElement;
 export type TagWbr = HTMLElement;
+
+interface TagStringMap {
+    "<a>": TagA;
+    "<abbr>": TagAbbr;
+    "<address>": TagAddress;
+    "<applet>": TagApplet;
+    "<area>": TagArea;
+    "<article>": TagArticle;
+    "<aside>": TagAside;
+    "<audio>": TagAudio;
+    "<b>": TagB;
+    "<base>": TagBase;
+    "<basefont>": TagBasefont;
+    "<bdi>": TagBdi;
+    "<bdo>": TagBdo;
+    "<blockquote>": TagBlockquote;
+    "<body>": TagBody;
+    "<br>": TagBr;
+    "<button>": TagButton;
+    "<canvas>": TagCanvas;
+    "<caption>": TagCaption;
+    "<cite>": TagCite;
+    "<code>": TagCode;
+    "<col>": TagCol;
+    "<colgroup>": TagColgroup;
+    "<data>": TagData;
+    "<datalist>": TagDatalist;
+    "<dd>": TagDd;
+    "<del>": TagDel;
+    "<details>": TagDetails;
+    "<dfn>": TagDfn;
+    "<dialog>": TagDialog;
+    "<dir>": TagDir;
+    "<div>": TagDiv;
+    "<dl>": TagDl;
+    "<dt>": TagDt;
+    "<em>": TagEm;
+    "<embed>": TagEmbed;
+    "<fieldset>": TagFieldset;
+    "<figcaption>": TagFigcaption;
+    "<figure>": TagFigure;
+    "<font>": TagFont;
+    "<footer>": TagFooter;
+    "<form>": TagForm;
+    "<frame>": TagFrame;
+    "<frameset>": TagFrameset;
+    "<h1>": TagH1;
+    "<h2>": TagH2;
+    "<h3>": TagH3;
+    "<h4>": TagH4;
+    "<h5>": TagH5;
+    "<h6>": TagH6;
+    "<head>": TagHead;
+    "<header>": TagHeader;
+    "<hgroup>": TagHgroup;
+    "<hr>": TagHr;
+    "<html>": TagHtml;
+    "<i>": TagI;
+    "<iframe>": TagIframe;
+    "<img>": TagImg;
+    "<input>": TagInput;
+    "<ins>": TagIns;
+    "<kbd>": TagKbd;
+    "<label>": TagLabel;
+    "<legend>": TagLegend;
+    "<li>": TagLi;
+    "<link>": TagLink;
+    "<main>": TagMain;
+    "<map>": TagMap;
+    "<mark>": TagMark;
+    "<marquee>": TagMarquee;
+    "<menu>": TagMenu;
+    "<meta>": TagMeta;
+    "<meter>": TagMeter;
+    "<nav>": TagNav;
+    "<noscript>": TagNoscript;
+    "<object>": TagObject;
+    "<ol>": TagOl;
+    "<optgroup>": TagOptgroup;
+    "<option>": TagOption;
+    "<output>": TagOutput;
+    "<p>": TagP;
+    "<param>": TagParam;
+    "<picture>": TagPicture;
+    "<pre>": TagPre;
+    "<progress>": TagProgress;
+    "<q>": TagQ;
+    "<rp>": TagRp;
+    "<rt>": TagRt;
+    "<ruby>": TagRuby;
+    "<s>": TagS;
+    "<samp>": TagSamp;
+    "<script>": TagScript;
+    "<section>": TagSection;
+    "<select>": TagSelect;
+    "<slot>": TagSlot;
+    "<small>": TagSmall;
+    "<source>": TagSource;
+    "<span>": TagSpan;
+    "<strong>": TagStrong;
+    "<style>": TagStyle;
+    "<sub>": TagSub;
+    "<summary>": TagSummary;
+    "<sup>": TagSup;
+    "<table>": TagTable;
+    "<tbody>": TagTbody;
+    "<td>": TagTd;
+    "<template>": TagTemplate;
+    "<textarea>": TagTextarea;
+    "<tfoot>": TagTfoot;
+    "<th>": TagTh;
+    "<thead>": TagThead;
+    "<time>": TagTime;
+    "<title>": TagTitle;
+    "<tr>": TagTr;
+    "<track>": TagTrack;
+    "<u>": TagU;
+    "<ul>": TagUl;
+    "<var>": TagVar;
+    "<video>": TagVideo;
+    "<wbr>": TagWbr;
+}
