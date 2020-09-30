@@ -1,6 +1,9 @@
 import { fetch, parseDom } from "./utils/fetch";
 import { create$, QueryDOM, scanUntil, TagA, TagH1, TagH2, TagSpan } from "./utils/dom";
 import yargs from "yargs";
+import cheerio from "cheerio";
+import Cheerio = cheerio.Cheerio;
+import CheerioAPI = cheerio.CheerioAPI;
 
 const BASE_URL = "https://2e.aonprd.com/";
 
@@ -10,16 +13,16 @@ const regexFixPFSReplace = "$1</span></a>";
 async function readAon(url) {
     const res = await fetch(url);
     const text = await res.text();
-    return parseDom(text.replace(regexFixPFS, regexFixPFSReplace));
+    return text.replace(regexFixPFS, regexFixPFSReplace);
 }
 
 async function getAllAncestries() {
-    const $ = create$(await readAon(`${BASE_URL}Ancestries.aspx`));
+    const $ = cheerio.load(await readAon(`${BASE_URL}Ancestries.aspx`));
 
-    const links = $<TagA>("h2.title>a:last-of-type");
+    const links = $("h2.title>a:last-of-type");
     return links.map(l => ({
-        url: BASE_URL + l.attr("href"),
-        name: l.text(),
+        url: BASE_URL + $(l).attr("href"),
+        name: $(l).text(),
     }));
 }
 
@@ -29,14 +32,11 @@ interface BookInfo {
     prd?: string;
 }
 
-function skipToAfterSource(contents: QueryDOM): [ChildNode[], ChildNode[], BookInfo] {
-    const preContents = contents.nextUntil(v => v.prop("nodeName") == "b" && v.text() == "Source");
-    const sourceContents = preContents
-        .last()
-        .next()
-        .nextUntil(v => v.prop("nodeName") == "br");
+function skipToAfterSource(contents: Cheerio): [ChildNode[], ChildNode[], BookInfo] {
+    const preContents = contents.nextUntil("b:contains('Source')");
+    const sourceContents = preContents.last().next().nextUntil("br");
 
-    const sourceName = sourceContents.filter("a").find<TagA>(":scope>i").text();
+    const sourceName = sourceContents.filter("a").find(">i").text();
     const [book, page] = sourceName.split(" pg. ");
 
     throw "test";
@@ -44,7 +44,7 @@ function skipToAfterSource(contents: QueryDOM): [ChildNode[], ChildNode[], BookI
     // let restContents = contents.slice(sourceIndex + brIndex + 1);
     // if (restContents.length > 0 && restContents[0].nodeName == "u") {
     //     const firstNode = restContents[0] as HTMLElement;
-    //     const firstNodeLink = firstNode.querySelector<TagA>(":scope>a");
+    //     const firstNodeLink = firstNode.querySelector<TagA>(">a");
     //     if (firstNodeLink && firstNodeLink.getAttribute("href") == "PFS.aspx") {
     //         const brIndex = restContents.findIndex(v => v.nodeName == "br");
     //         restContents = restContents.slice(brIndex + 1);
@@ -89,86 +89,89 @@ function getActionKind(url: string) {
 
 const hMatcher = /^h[1-6]$/;
 
-function toMarkdown(el: ArrayLike<ChildNode>, out = "") {
+function toMarkdown($: CheerioAPI, el: Cheerio, out = "") {
     let skipToBr = false;
-    for (const [i, e1] of Array.from(el).entries()) {
+    el.each((i, e) => {
         if (skipToBr) {
-            if (e1.nodeName == "br") {
+            if (e.tagName == "br") {
                 skipToBr = false;
             }
-            continue;
+            return;
         }
-
-        if (!e1.nodeName) {
-            let s = e1.textContent.replace("\n", " ").replace("\\r", " ");
+        if (!e.tagName) {
+            let s = e.nodeValue.replace("\n", " ").replace("\\r", " ");
             if (out.length == 0 || out[-1] == "\n") {
                 s = s.trimLeft();
             }
             out += s;
-        } else {
-            const e = e1 as HTMLElement;
-            if (e.nodeName == "br") {
-                out += "  \n";
-            } else if (e.nodeName == "i") {
-                out += "*";
-                out = toMarkdown(e.childNodes, out);
-                out += "*";
-            } else if (e.nodeName == "b") {
-                out += "**";
-                out = toMarkdown(e.childNodes, out);
-                out += "**";
-            } else if (e.nodeName == "u") {
-                out = toMarkdown(e.childNodes, out);
-            } else if (e.nodeName == "a") {
-                out = toMarkdown(e.childNodes, out);
-            } else if (e.nodeName == "sup") {
-                out += "<sup>";
-                out = toMarkdown(e.childNodes, out);
-                out += "</sup>";
-            } else if (e.nodeName == "div") {
-                if ("sidebar" in e["class"]) {
-                    continue;
+        } else if (e.tagName == "br") {
+            out += "  \n";
+        } else if (e.tagName == "i") {
+            out += "*";
+            out = toMarkdown($, $(e).contents(), out);
+            out += "*";
+        } else if (e.tagName == "b") {
+            out += "**";
+            out = toMarkdown($, $(e).contents(), out);
+            out += "**";
+        } else if (e.tagName == "u") {
+            out = toMarkdown($, $(e).contents(), out);
+        } else if (e.tagName == "a") {
+            out = toMarkdown($, $(e).contents(), out);
+        } else if (e.tagName == "sup") {
+            out += "<sup>";
+            out = toMarkdown($, $(e).contents(), out);
+            out += "</sup>";
+        } else if (e.tagName == "div") {
+            if ($(e).hasClass("sidebar")) {
+                return;
+            }
+            throw new Error("invalid div: " + $(e).attr("class"));
+        } else if (e.tagName == "span") {
+            if (
+                $(e)
+                    .attr("class")
+                    .split("s+")
+                    .some(c => c.startsWith("trait"))
+            ) {
+                if (i == 0 || el[i - 1].tagName != "span") {
+                    out += "; ";
+                } else {
+                    out += ", ";
                 }
-                throw new Error("invalid div: " + Array.from(e.classList).join(", "));
-            } else if (e.nodeName == "span") {
-                if (Array.from(e.classList).some(c => c.startsWith("trait"))) {
-                    if (i == 0 || el[i - 1].nodeName != "span") {
-                        out += "; ";
-                    } else {
-                        out += ", ";
-                    }
-                    out = toMarkdown(e.childNodes, out);
-                } else if ((e.getAttribute("style") ?? "").includes("float:right")) {
-                    out += " -- ";
-                    out = toMarkdown(e.childNodes, out);
-                } else if (
-                    (e.getAttribute("style") ?? "").includes("float:left") &&
-                    e.querySelector("img")
-                ) {
-                    continue;
-                }
-                throw new Error(`invalid span: ${e}`);
-            } else if (e.nodeName == "ul") {
-                for (const li of Array.from(e.childNodes)) {
-                    if (li.nodeName == "li") {
-                        out += "* ";
-                        out = toMarkdown(li.childNodes, out);
-                        out += "\n";
-                    }
-                }
-                out += "\n";
-            } else if (e.nodeName == "img") {
-                out += getActionKind(e["src"])["markdown"];
-            } else if (e.nodeName == "table") {
-                const rows = e.querySelectorAll(":scope>tr");
-                for (const [i, row] of Array.from(rows).entries()) {
+                out = toMarkdown($, $(e).contents(), out);
+            } else if ($(e).css("float") == "right") {
+                out += " -- ";
+                out = toMarkdown($, $(e).contents(), out);
+            } else if ($(e).css("float") == "left" && $(e).find("img")) {
+                return;
+            }
+            throw new Error(`invalid span: ${e}`);
+        } else if (e.tagName == "ul") {
+            $(e)
+                .find(">li")
+                .each((j, li) => {
+                    out += "* ";
+                    out = toMarkdown($, $(li).contents(), out);
+                    out += "\n";
+                });
+            out += "\n";
+        } else if (e.tagName == "img") {
+            out += getActionKind($(e).attr("src"))["markdown"];
+        } else if (e.tagName == "table") {
+            const rows = $(e)
+                .find(">tr")
+                .each((j, row) => {
                     out += "| ";
-                    const cols = row.querySelectorAll(":scope>td");
+                    const cols = $(row)
+                        .find(">td")
+                        .each((k, col) => {
+                            if (k > 0) {
+                                out += " | ";
+                            }
+                            out = toMarkdown($, $(col).contents(), out);
+                        });
                     for (const [j, col] of Array.from(cols).entries()) {
-                        if (j > 0) {
-                            out += " | ";
-                        }
-                        out = toMarkdown(col.childNodes, out);
                     }
                     out += " |\n";
                     if (i == 0) {
@@ -179,33 +182,33 @@ function toMarkdown(el: ArrayLike<ChildNode>, out = "") {
                                 .join("|") +
                             " |\n";
                     }
-                }
-            } else if (e.nodeName == "hr") {
-                out += "\n\n---\n\n";
-            } else if (e.nodeName.match(hMatcher)) {
-                out += "\n\n" + "#".repeat(+e.nodeName[1]) + " ";
-                out = toMarkdown(e.childNodes, out);
-                out += "\n\n";
-            } else {
-                throw new Error(`cannot markdown: ${e}`);
-            }
+                });
+        } else if (e.nodeName == "hr") {
+            out += "\n\n---\n\n";
+        } else if (e.nodeName.match(hMatcher)) {
+            out += "\n\n" + "#".repeat(+e.nodeName[1]) + " ";
+            out = toMarkdown($, $(e).contents(), out);
+            out += "\n\n";
+        } else {
+            throw new Error(`cannot markdown: ${e}`);
         }
-    }
+    });
+
     return out;
 }
 
 async function getAncestryDetail(url: string) {
-    const $ = create$(await readAon(url));
+    const $ = cheerio.load(await readAon(url));
 
     const data = {} as any;
 
-    const pageTitle = $<TagH1>("#ctl00_MainContent_DetailedOutput>h1.title");
+    const pageTitle = $("#ctl00_MainContent_DetailedOutput>h1.title");
 
-    const contents = pageTitle.nextUntil(x => x.prop("nodeName") == "h1");
+    const contents = pageTitle.nextUntil("h1");
     console.log(pageTitle.html());
     console.log(contents.html());
 
-    const contentsStart = $("<div>").append(contents).children()[0];
+    const contentsStart = $("<div>").append(contents).children().first();
     const anchestryMechanics = contents.last();
 
     const [info, ancestryInfo, source] = skipToAfterSource(contentsStart);
@@ -270,7 +273,7 @@ async function getAncestryDetail(url: string) {
 
 async function getAncestryHeritages(url: string, name: string) {
     url = url.replace("Ancestries.aspx?ID=", "Heritages.aspx?Ancestry=");
-    const $ = create$(await readAon(url));
+    const $ = cheerio.load(await readAon(url));
     const data = {};
 
     const firstHeritage = $<TagH2>("#ctl00_MainContent_DetailedOutput>h2.title")[0];
@@ -279,7 +282,7 @@ async function getAncestryHeritages(url: string, name: string) {
 }
 
 async function getAllBackgrounds() {
-    const $ = create$(await readAon(`${BASE_URL}Backgrounds.aspx`));
+    const $ = cheerio.load(await readAon(`${BASE_URL}Backgrounds.aspx`));
 
     const links = $<TagA>("h2.title>a:last-of-type");
     return links.map(l => ({
@@ -289,7 +292,7 @@ async function getAllBackgrounds() {
 }
 
 async function getAllClasses() {
-    const $ = create$(await readAon(`${BASE_URL}Classes.aspx`));
+    const $ = cheerio.load(await readAon(`${BASE_URL}Classes.aspx`));
 
     const links = $<TagA>("#ctl00_MainContent_Navigation>h1>a");
     return links
