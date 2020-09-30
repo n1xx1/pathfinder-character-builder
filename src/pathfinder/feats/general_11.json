@@ -1,0 +1,50 @@
+{
+    "A Home in Every Port": {
+        "name": "A Home in Every Port",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 202,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2105"
+        },
+        "traits": ["Downtime", "General"],
+        "level": 11,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 16\n\n---\n\nYou have a reputation in towns and villages you've visited, and residents are always willing to open their doors to you. When in a town or village, during downtime, you can spend 8 hours to locate a resident willing to provide lodging for you and up to six allies for up to 24 hours at no charge. The standard of living within the acquired lodging is comfortable, and square meals are provided at no cost. After 24 hours, you must pay standard prices for further lodging and meals or use this feat again to find a new resident willing to host you."
+    },
+    "Caravan Leader": {
+        "name": "Caravan Leader",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 204,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2115"
+        },
+        "traits": ["General"],
+        "level": 11,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Constitution 18, Pick Up the Pace\n\n---\n\nYou know how to get the most effort out of your allies on the road. When Hustling in a group during exploration mode, your group can Hustle for as long as the member who could Hustle longest on their own, plus an additional 20 minutes beyond that."
+    },
+    "Incredible Investiture": {
+        "name": "Incredible Investiture",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=795"
+        },
+        "traits": ["General"],
+        "level": 11,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 16\n\n---\n\nYou have an incredible ability to invest more magic items. Increase your limit on invested items from 10 to 12."
+    },
+    "Incredible Scout": {
+        "name": "Incredible Scout",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 206,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2133"
+        },
+        "traits": ["General"],
+        "level": 11,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Perception\n\n---\n\nWhen you scout, you are particularly alert for danger, granting your allies precious moments to prepare to fight. When using the Scout exploration activity, you grant your allies a +2 circumstance bonus to their initiative rolls instead of a +1 circumstance bonus."
+    }
+}

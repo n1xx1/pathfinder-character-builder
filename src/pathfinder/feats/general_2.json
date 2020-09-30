@@ -1,0 +1,491 @@
+{
+    "Armored Stealth": {
+        "name": "Armored Stealth",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 203,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2110"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Stealth\n\n---\n\nYou have learned techniques to adjust and modify your armor and movements to reduce the noise you make. When you wear non-noisy armor with which you are trained, your penalty to Stealth checks is reduced by 1 (to a minimum penalty of 0). If you're a master in Stealth, reduce the penalty by 2, and if you're legendary, reduce the penalty by 3. If your armor has the noisy trait, instead of reducing the penalty to Stealth checks, you ignore the effects of the noisy trait, enabling you to remove the penalty with a sufficient Strength score as normal."
+    },
+    "Assured Identification": {
+        "name": "Assured Identification",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 203,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2111"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Arcana, Nature, Occultism, or Religion\n\n---\n\nYou rarely misidentify an item. When using Arcana, Nature, Occultism, or Religion checks to Identify Magic, if you roll a critical failure, you get a failure instead. If you would misidentify a cursed item because you roll a success but not a critical success, you simply can't identify it instead."
+    },
+    "Automatic Knowledge": {
+        "name": "Automatic Knowledge",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 258,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=757"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in a skill with the Recall Knowledge action, Assurance in that skill\n\n---\n\nYou know basic facts off the top of your head. Choose a skill you're an expert in that has the Recall Knowledge action and for which you have the Assurance feat. You can use the Recall Knowledge action with that skill as a free action once per round. If you do, you must use Assurance on the skill check.\n\n**Special** You can select this feat multiple times, choosing a different skill each time. You can use Automatic Knowledge with any skills you have chosen, but you can still use Automatic Knowledge only once per round."
+    },
+    "Backup Disguise": {
+        "name": "Backup Disguise",
+        "source": {
+            "book": "Character Guide",
+            "page": 71,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1064"
+        },
+        "traits": ["Uncommon", "General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Deception\n\n---\n\nYou have a specific disguise that you keep at the ready, worn underneath your outer garment. You can change into this disguise to Impersonate as a 3-action activity. If you have master proficiency in Deception, it is instead a 2-action activity, and if you have legendary proficiency, it is a single action. You can create a new backup disguise by spending the normal amount of time it takes you to Impersonate, but you can have only one backup disguise at a time. Having a backup disguise doesn't allow you to remove your armor or any other complex piece of clothing any more quickly, but once you have those off, the disguise is readily available. Because you have the backup disguise at the ready, it's possible that a thorough search might reveal some elements of the disguise (see Conceal an Object in the Stealth skill)."
+    },
+    "Battle Planner": {
+        "name": "Battle Planner",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 203,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2112"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Warfare Lore\n\n---\n\nYou are constantly drawing up plans and battle scenarios, assembling strategies and gathered intelligence for later use. When you scout an enemy's position or receive a detailed report from an ally who scouted the enemy's position, if you have a clear indication of the number, position, and identities of your potential foes, you can spend 1 minute to come up with a battle plan that takes such potential factors into account and reduces the role luck plays in the equation. Roll a Warfare Lore check. As long as the information was accurate and remains accurate when you roll initiative against those enemies, you can use the Warfare Lore result you previously rolled for your initiative roll; if you do, this is a fortune effect."
+    },
+    "Bonded Animal": {
+        "name": "Bonded Animal",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 259,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=762"
+        },
+        "traits": ["Downtime", "General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Nature\n\n---\n\nYou forge strong connections with animals. You can spend 7 days of downtime trying to bond with a normal animal (not a companion or other special animal). After this duration, attempt a DC 20 Nature check. If successful, you bond with the animal. The animal is permanently helpful to you, unless you do something egregious to break your bond. A helpful animal is easier to direct, as described under Command an Animal.\n\nBonding with a new animal ends any previous bond you had. You can't have both a bonded animal and an animal companion (though you can have both a bonded animal and a familiar)."
+    },
+    "Confabulator": {
+        "name": "Confabulator",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=769"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Deception\n\n---\n\nEven when caught in falsehoods, you pile lie upon lie. Reduce the circumstance bonus a target gains for your previous attempts to Create a Diversion or Lie to it from +4 to +2. If you're a master in Deception, reduce the bonus to +1, and if you're legendary, your targets don't get these bonuses at all."
+    },
+    "Connections": {
+        "name": "Connections",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=770"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Society, Courtly Graces\n\n---\n\nYou have social connections you can leverage to trade favors or meet important people. When you're in an area with connections (typically a settlement where you've spent downtime building connections, or possibly another area in the same nation), you can attempt a Society check to arrange a meeting with an important political figure or ask for a favor in exchange for a later favor of your contact's choice. The GM decides the DC based on the difficulty of the favor and the figure's prominence."
+    },
+    "Continual Recovery": {
+        "name": "Continual Recovery",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=771"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Medicine\n\n---\n\nYou zealously monitor a patient's progress to administer treatment faster. When you Treat Wounds, your patient becomes immune for only 10 minutes instead of 1 hour. This applies only to your Treat Wounds activities, not any other the patient receives."
+    },
+    "Criminal Connections": {
+        "name": "Criminal Connections",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 204,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2119"
+        },
+        "traits": ["Uncommon", "General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Society, Streetwise\n\n---\n\nYou have dealings with a variety of unsavory characters, which you can leverage to trade favors or meet powerful people. When you're in an area where you have connections (typically a settlement where you've spent downtime building connections or possibly another area in the same nation), you can attempt a Society check to arrange a meeting with an important criminal, such as a thieves' guild leader, or ask for a favor in exchange for a later favor of your contact's choice. The GM decides the DC based on the difficulty of the favor and the figure's prominence."
+    },
+    "Discreet Inquiry": {
+        "name": "Discreet Inquiry",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 204,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2121"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Deception or Diplomacy\n\n---\n\nYou are subtle in your efforts to learn the things you need to know. When Gathering Information, you can hide the true subject of your inquiry among other topics of little interest to you without increasing the difficulty of the check or taking more time to Gather Information. Anyone trying to Gather Information to determine if someone else was asking around about the topic in question must exceed your Deception DC or the normal DC to Gather Information about your inquiries, whichever is higher, or else they don't learn of your efforts."
+    },
+    "Distracting Performance": {
+        "name": "Distracting Performance",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 205,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2122"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Performance\n\n---\n\nYour performances are especially distracting, allowing your allies to Sneak away with ease. When you Aid an ally who is trying to Create a Diversion, instead of the usual effects of Aid, you can roll a Performance check and use that result to determine the outcome of the diversion, instead of the ally rolling a Deception check."
+    },
+    "Encouraging Words": {
+        "name": "Encouraging Words",
+        "source": {
+            "book": "Gamemastery Guide",
+            "page": 201,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1210"
+        },
+        "traits": ["Auditory", "General", "Linguistic", "Mental", "Skill", "Stamina"],
+        "level": 2,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** trained in Diplomacy  \n**Requirements** The target ally lost Stamina Points within the last round.\n\n---\n\nYou give an ally within 30 feet a quick pep talk, helping them recover. Attempt a Diplomacy check. The DC is usually 15, though the GM might adjust it based on the circumstances. If you have expert proficiency in Diplomacy, you can instead attempt a DC 20 check to increase the Stamina Points recovered by 5; if you have master proficiency, you can attempt a DC 30 check to increase the Stamina Points by 15; if you have legendary proficiency, you can attempt a DC 40 check to increase the Stamina Points by 25. No matter the result, the ally is temporarily immune to Encouraging Words until they either Take a Breather or rest for the day.  \n\n**Critical Success** The ally recovers 2d8 Stamina Points.  \n**Success** The ally recovers 1d8 Stamina Points.  \n**Critical Failure** The ally takes 1d8 mental damage, but this can reduce only Stamina Points, never Hit Points."
+    },
+    "Exhort the Faithful": {
+        "name": "Exhort the Faithful",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 205,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2125"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Religion, follower of a specific religion\n\n---\n\nYour knowledge of the tenets of your faith gives you insight into the best ways to get others of your faith to help you or to follow your directions. When you Request something of or Coerce members of your own faith, you can attempt a Religion check instead of Diplomacy or Intimidation, and you gain a +2 circumstance bonus to the check. On a critically failed attempt to make a Request, the target's attitude toward you doesn't worsen."
+    },
+    "Eye of the Arclords": {
+        "name": "Eye of the Arclords",
+        "source": {
+            "book": "World Guide",
+            "page": 81,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=870"
+        },
+        "traits": ["Uncommon", "General", "Skill"],
+        "level": 2,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day;  \n**Prerequisites** expert in Arcana, Arcane Sense  \n**Access**  You are a member of the Arclords of Nex.\n\n---\n\nYou open an incandescent third eye upon your forehead. The eye can remain open for 1 minute, and you can close it before then with a single action with the concentrate trait. It can remain open for 2 minutes if you're a master in Arcana, or 5 minutes if you're legendary. While the eye is open, you gain the following benefits: you gain the effects of the *detect magic* arcane innate spell from your Arcane Sense at the start of each of your turns without needing to cast the spell; you gain darkvision; you gain a +2 status bonus to Perception checks to Seek undetected and hidden creatures and to your Perception DC against Hide and Sneak. After your third eye closes, you are dazzled for an amount of time equal to how long you had it open."
+    },
+    "Glad-Hand": {
+        "name": "Glad-Hand",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 261,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=787"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Diplomacy\n\n---\n\nFirst impressions are your strong suit. When you meet someone in a casual or social situation, you can immediately attempt a Diplomacy check to Make an Impression on that creature rather than needing to converse for 1 minute. You take a \u20135 penalty to the check. If you fail or critically fail, you can engage in 1 minute of conversation and attempt a new check at the end of that time rather than accepting the failure or critical failure result."
+    },
+    "Godless Healing": {
+        "name": "Godless Healing",
+        "source": {
+            "book": "World Guide",
+            "page": 56,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=869"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Battle Medicine, can't have a patron deity\n\n---\n\nYou recover an additional 5 Hit Points from a successful attempt to Treat your Wounds or use Battle Medicine on you. After you or an ally use Battle Medicine on you, you become temporarily immune to that Battle Medicine for only 1 hour, instead of 1 day."
+    },
+    "Intimidating Prowess": {
+        "name": "Intimidating Prowess",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=797"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Strength 16, expert in Intimidation\n\n---\n\nIn situations where you can physically menace the target when you Coerce or Demoralize, you gain a +1 circumstance bonus to your Intimidation check and you ignore the penalty for not sharing a language. If your Strength score is 20 or higher and you are a master in Intimidation, this bonus increases to +2."
+    },
+    "Juggle": {
+        "name": "Juggle",
+        "source": {
+            "book": "Pathfinder #151: The Show Must Go On",
+            "page": 76,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1199"
+        },
+        "traits": ["Uncommon", "Concentrate", "General", "Manipulate", "Skill"],
+        "level": 2,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Dexterity 16, trained in Performance\n\n---\n\nYou can Juggle items and still use your hands between tosses. You can use the Juggle action in several ways.\n\nYou can start to Juggle with a single stored item, an item you were carrying, or an unattended item within your reach. The item must be of light or negligible Bulk. You Juggle the item until the end of your next turn, unless you use this feat against next turn to continue Juggling (see below). While you are Juggling, you can use this action again to add another item to the Juggle, which must meet all the same requirements. You can Juggle a number of items equal to one more than the number of hands you are using to Juggle.\n\nYou can also use this action to continue Juggling as long as you aren't fatigued. When you do, you continue to Juggle until the end of your next turn. If you do not continue Juggling by the end of your turn, you cease Juggling and you drop all the items. You become fatigued if you continue Juggling for more than 10 minutes (60 rounds) within the course of an hour.\n\nAs long as you're Juggling fewer than your maximum number of items, you have a free hand. You can wield weapons you are Juggling (but not shields or other items) as long as they can be wielded in one hand. For example, while you Juggle a dagger in one hand and wield a shield in the other, you are wielding the dagger but still have a free hand to Cast a Spell with a material component. Juggling two or more weapons with one hand doesn't allow you to use feats that require two weapons each held in a different hand."
+    },
+    "Lasting Coercion": {
+        "name": "Lasting Coercion",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=800"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Intimidation\n\n---\n\nWhen you successfully Coerce someone, the maximum time they comply increases to a week, still determined by the GM. If you're legendary, the maximum increases to a month."
+    },
+    "Lead Climber": {
+        "name": "Lead Climber",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 207,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2137"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Athletics\n\n---\n\nWhen climbing, you can prepare routes for others to follow, and you can pull your allies up to avoid disaster. When your allies attempt to Climb a route you set using the Follow the Expert exploration activity, if any of them critically fail their checks to Climb, you can attempt an Athletics check against the same DC. If you succeed, your ally fails instead of critically failing. If you also critically fail, you both experience the consequences of the critical failure."
+    },
+    "Magical Crafting": {
+        "name": "Magical Crafting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=812"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Crafting\n\n---\n\nYou can Craft magic items, though some have other requirements, as listed in Chapter 11. When you select this feat, you gain formulas for four common magic items of 2nd level or lower."
+    },
+    "Magical Shorthand": {
+        "name": "Magical Shorthand",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 264,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=813"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Arcana, Nature, Occultism, or Religion\n\n---\n\nLearning spells comes easily to you. If you're an expert in a tradition's associated skill, you take 10 minutes per spell level to learn a spell of that tradition, rather than 1 hour per spell level. If you fail to learn the spell, you can try again after 1 week or after you gain a level, whichever comes first. If you're a master in the tradition's associated skill, learning a spell takes 5 minutes per spell level, and if you're legendary, it takes 1 minute per spell level. You can use downtime to learn and inscribe new spells. This works as if you were using Earn Income with the tradition's associated skill, but instead of gaining money, you choose a spell available to you to learn and gain a discount on learning it, learning it for free if your earned income equals or exceeds its cost."
+    },
+    "Mortal Healing": {
+        "name": "Mortal Healing",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1181"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Godless Healing, you follow the Laws of Mortality\n\n---\n\nYou grant greater healing when the gods don't interfere. When you roll a success to Treat Wounds for a creature that hasn't regained Hit Points from divine magic in the past 24 hours, you get a critical success on your check instead and restore the corresponding amount of Hit Points."
+    },
+    "Nimble Crawl": {
+        "name": "Nimble Crawl",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 264,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=816"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Acrobatics\n\n---\n\nYou can Crawl incredibly swiftly\u2014up to half your Speed, rather than 5 feet. If you're a master in Acrobatics, you can Crawl at full Speed, and if you're legendary, you aren't flat-footed while prone."
+    },
+    "Powerful Leap": {
+        "name": "Powerful Leap",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 264,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=820"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Athletics\n\n---\n\nWhen you Leap, you can jump 5 feet up with a vertical Leap, and you increase the distance you can jump horizontally by 5 feet."
+    },
+    "Quick Contacts": {
+        "name": "Quick Contacts",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 208,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2144"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Society; Connections or Underworld Connections\n\n---\n\nYou know where to go, who to talk to, and how to make new connections, fast. Upon entering a new settlement, spending 1 day of downtime allows you to build enough connections to make use of the Connections or Underworld Connections feats. If you're legendary in Society, you can form the required connections within 1 hour of entering a new settlement."
+    },
+    "Quick Disguise": {
+        "name": "Quick Disguise",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 264,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=823"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Deception\n\n---\n\nYou can set up a disguise in half the usual time (generally 5 minutes). If you're a master, it takes one-tenth the usual time (usually 1 minute). If you're legendary, you can create a full disguise and Impersonate as a 3-action activity."
+    },
+    "Quiet Allies": {
+        "name": "Quiet Allies",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 265,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=831"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Stealth\n\n---\n\nYou're skilled at moving with a group. When you are Avoiding Notice and your allies Follow the Expert, you and those allies can roll a single Stealth check, using the lowest modifier, instead of rolling separately. This doesn't apply for initiative rolls."
+    },
+    "Rapid Mantel": {
+        "name": "Rapid Mantel",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 265,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=832"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Athletics\n\n---\n\nYou easily pull yourself onto ledges. When you Grab an Edge, you can pull yourself onto that surface and stand. You can use Athletics instead of a Reflex save to Grab an Edge."
+    },
+    "Robust Recovery": {
+        "name": "Robust Recovery",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 266,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=836"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Medicine\n\n---\n\nYou learned folk medicine to help recover from diseases and poison, and using it diligently has made you especially resilient. When you Treat a Disease or a Poison, or someone else uses one of these actions on you, increase the circumstance bonus granted on a success to +4, and if the result of the patient's saving throw is a success, the patient gets a critical success."
+    },
+    "Shadow Mark": {
+        "name": "Shadow Mark",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2150"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Stealth\n\n---\n\nYou have learned special tricks that help you follow individuals without them noticing you. When you attempt a Stealth check to Avoid Notice while following a specific target, the target takes a \u20132 circumstance penalty to their Perception DC. If you have master proficiency in Stealth, the penalty is \u20133 or \u20134 if you're legendary. If you start an encounter with the target while shadowing them, the target takes this penalty to their initiative roll and to their Perception DC to determine if they notice you, as normal for Sneak."
+    },
+    "Sow Rumor": {
+        "name": "Sow Rumor",
+        "source": {
+            "book": "Character Guide",
+            "page": 71,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1065"
+        },
+        "traits": ["Uncommon", "General", "Secret", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Deception\n\n---\n\nYou spread rumors, which may or may not be true, about a specific subject. If the subject of your rumor is not currently the subject of any contradictory rumors, this takes as long as it would normally take you to Gather Information (typically 2 hours), at the end of which the GM rolls a secret Deception check to see how well you spread the rumor. If your rumor matches any current rumors about the subject, it takes less time to spread the rumor, and if you are attempting to overtake a particularly popular and contradictory rumor, it takes much longer or may be impossible. The DC similarly increases or decreases depending on how plausible your rumor is.\n\n**Critical Success** Your rumor spreads like wildfire. Anyone who succeeds at a check to Gather Information on the specific subject learns your rumor in preference to other rumors about the subject. Your rumor persists for 1 month.  \n**Success** You successfully spread the rumor. Anyone who succeeds at a check to Gather Information on the specific subject adds your rumor to the list of rumors they could learn about the subject. Your rumor persists for 1 week.  \n**Failure** Your rumor dies off, never becoming popular enough for other people to learn it via Gather Information.  \n**Critical Failure** You are unable to spread a rumor and take a \u20134 circumstance penalty to Deception checks to Sow Rumors about the same subject within the same region for 1 week. In addition, a rumor spreads about someone trying to spread false rumors about the subject."
+    },
+    "Terrifying Resistance": {
+        "name": "Terrifying Resistance",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2153"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Intimidation\n\n---\n\nThe spells of those you have Demoralized are less effective on you. If you succeed in Demoralizing a creature, for the next 24 hours you gain a +1 circumstance bonus to saving throws against that creature's spells."
+    },
+    "Tweak Appearances": {
+        "name": "Tweak Appearances",
+        "source": {
+            "book": "Pathfinder #147: Tomorrow Must Burn",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=927"
+        },
+        "traits": ["Uncommon", "General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Crafting\n\n---\n\nYou spend 1 minute making quick adjustments to someone's clothing and appearance, causing their words to carry more weight with an audience of your choice. While speaking to that audience, the target gains a +1 item bonus to Diplomacy and Performance checks. If you have master proficiency in Crafting, the bonus increases to +2; if you have legendary proficiency in Crafting, the bonus increases to +3. This bonus lasts until this ability is used on the target again, the situation they were prepared for ends, or they next change their outfit."
+    },
+    "Underground Network": {
+        "name": "Underground Network",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2156"
+        },
+        "traits": ["Uncommon", "General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Society, Streetwise\n\n---\n\nYou're connected to groups that know what's going on in the streets, and you can get information out of them quickly. When you use Society to Gather Information in an area where you have a network (typically a settlement where you've spent at least a week or spent a day of downtime to build a network faster), you can contact a member of these groups to get information directly from them. This usually takes about an hour, and it doesn't draw as much attention as Gathering Information in public might. The check and information gained otherwise follow the normal rules for Gather Information.\n\nIn addition, if you have successfully consulted the underground network, you get a +1 circumstance bonus to the next check to Recall Knowledge you attempt about the subject you were Gathering Information on, or a +2 circumstance bonus if you're using Underworld Lore for the check. The GM might change the Lore skill related to the network depending on your location or the specifics of the network you're tapping into."
+    },
+    "Unmistakable Lore": {
+        "name": "Unmistakable Lore",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 268,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=860"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Lore\n\n---\n\nYou never get information about your areas of expertise wrong. When you Recall Knowledge using any Lore subcategory in which you're trained, if you roll a critical failure, you get a failure instead. If you're a master in a Lore subcategory, on a critical success, you gain even more information or context than usual."
+    },
+    "Ward Medic": {
+        "name": "Ward Medic",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 269,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=864"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Medicine\n\n---\n\nYou've studied in large medical wards, treating several patients at once and tending to all their needs. When you use Treat Disease or Treat Wounds, you can treat up to two targets. If you're a master in Medicine, you can treat up to four targets, and if you're legendary, you can treat up to eight targets."
+    },
+    "Wary Disarmament": {
+        "name": "Wary Disarmament",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 269,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=865"
+        },
+        "traits": ["General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Thievery\n\n---\n\nIf you trigger a device or set off a trap while disarming it, you gain a +2 circumstance bonus to your AC or saving throw against the device or trap. This applies only to attacks or effects triggered by your failed attempt, not to any later ones, such as additional attacks from a complex trap."
+    },
+    "Wilderness Spotter": {
+        "name": "Wilderness Spotter",
+        "source": {
+            "book": "The Fall of Plaguestone",
+            "page": 57,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=868"
+        },
+        "traits": ["Uncommon", "General", "Skill"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Survival\n\n---\n\nSelect one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter. You can also use Survival instead of Perception to notice traps in natural locations in the chosen terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.\n\n**Special** You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain."
+    }
+}

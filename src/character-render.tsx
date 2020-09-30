@@ -18,7 +18,7 @@ export interface RenderedSkill {
     prof: pf.Proficiency;
 }
 export interface RenderedSpellcasting {
-    slots: number[][];
+    slots: number[];
 }
 export interface RenderedCharacter {
     name: string;
@@ -36,8 +36,8 @@ export interface RenderedCharacter {
     reflex: RenderedSkill;
     will: RenderedSkill;
 
-    bonuses: { category: string; text: string }[];
-    actions: string[];
+    bonuses: { category: string; text: string; arg?: string }[];
+    actions: { name: string; description: string }[];
     feats: string[];
 
     spellcasting?: RenderedSpellcasting;
@@ -55,7 +55,9 @@ export function renderCharacter(context: Context): RenderedCharacter {
         CHA: calculateAbility("CHA", context),
     };
 
-    const skillProfs = _.fromPairs(pf.skills.map(skill => [skill, computeSkillProficiency(context, skill)])) as {
+    const skillProfs = _.fromPairs(
+        pf.skills.map(skill => [skill, computeSkillProficiency(context, skill)]),
+    ) as {
         [k in pf.Skill]: number;
     };
 
@@ -66,25 +68,35 @@ export function renderCharacter(context: Context): RenderedCharacter {
 
     const bonuses = context.bonusList
         .filter(({ bonus }) => bonus.k === "bonus")
-        .map(v => ({
-            category: (v.bonus as pf.BonusBonus).category,
-            text: (v.bonus as pf.BonusBonus).text,
+        .map(({ bonus, arg }) => ({
+            category: (bonus as pf.BonusBonus).category,
+            text: (bonus as pf.BonusBonus).text,
+            arg: arg,
         }));
 
     const removedActions = context.bonusList
-        .map(({ bonus }) => bonus.k === "remove_action" && bonus.action)
+        .map(({ bonus }) => bonus.k === "remove_action" && bonus.name)
         .filter(x => x);
+
     const actions = context.bonusList
-        .map(({ bonus }) => bonus.k === "action" && bonus.action)
-        .filter(x => x && !removedActions.includes(x));
+        .map(
+            ({ bonus }) =>
+                bonus.k === "action" && {
+                    name: bonus.name,
+                    description: bonus.description ?? "No description",
+                },
+        )
+        .filter(x => x && !removedActions.includes(x.name));
+
     const feats = computeSelectedFeats(context);
 
     let spellcasting: RenderedSpellcasting = undefined;
 
-    const spellcasterBonus = context.bonusList.find(b => b.bonus.k === "spellcasting")?.bonus as pf.BonusSpellcasting;
+    const spellcasterBonus = context.bonusList.find(b => b.bonus.k === "spellcasting")
+        ?.bonus as pf.BonusSpellcasting;
     if (spellcasterBonus) {
         spellcasting = {
-            slots: spellcasterBonus.slots,
+            slots: spellcasterBonus.slots[level],
         };
     }
 

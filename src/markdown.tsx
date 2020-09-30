@@ -12,7 +12,23 @@ type Plugin = (
 
 const actionRegex = /(\:(?:a|aa|aaa|r|f)\:)/;
 
-function getActionKind(s: string): pf.ActionKind {
+export function markdownAction(s: pf.ActionKind): string {
+    switch (s) {
+        case 1:
+            return ":a:";
+        case 2:
+            return ":aa:";
+        case 3:
+            return ":aaa:";
+        case "reaction":
+            return ":r:";
+        case "bonus":
+            return ":f:";
+    }
+    return "";
+}
+
+export function getActionKind(s: string): pf.ActionKind {
     switch (s) {
         case ":a:":
             return 1;

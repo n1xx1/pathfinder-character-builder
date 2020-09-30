@@ -11,6 +11,7 @@ export interface BonusKindSkillProf {
 export interface BonusKindFeat {
     kind: "feat";
     value: string;
+    option?: string | string[];
 }
 export interface BonusKindSpell {
     kind: "spell";
@@ -20,13 +21,19 @@ export interface BonusKindOption {
     kind: "option";
     value: string;
 }
-export type Bonus = BonusKindAbility | BonusKindSkillProf | BonusKindFeat | BonusKindSpell | BonusKindOption;
+export type Bonus =
+    | BonusKindAbility
+    | BonusKindSkillProf
+    | BonusKindFeat
+    | BonusKindSpell
+    | BonusKindOption;
 
 export type BonusMap = { [path: string]: Bonus };
 export interface BonusListEntry<T extends pf.Bonus = pf.Bonus> {
     bonus: T;
     origin: string;
     path: string;
+    arg?: string;
 }
 export type BonusList<T extends pf.Bonus = pf.Bonus> = BonusListEntry<T>[];
 
@@ -56,7 +63,10 @@ export function addFlaw(score: number) {
     }
 }
 
-export function calculateAbility(ability: pf.Ability, { bonusMap, bonusList }: Context): [number, number] {
+export function calculateAbility(
+    ability: pf.Ability,
+    { bonusMap, bonusList }: Context,
+): [number, number] {
     let score = 10;
     for (const { bonus } of bonusList) {
         if (bonus.k === "ability" && bonus.ability === ability) {
