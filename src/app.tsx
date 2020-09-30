@@ -1,18 +1,7 @@
 import React, { useState, useMemo, useEffect, Dispatch, SetStateAction, useRef } from "react";
 import { render } from "react-dom";
 import "antd/dist/antd.css";
-import {
-    Select,
-    Form,
-    Input,
-    Layout,
-    Row,
-    Col,
-    InputNumber,
-    Typography,
-    Switch,
-    Button,
-} from "antd";
+import { Select, Form, Input, Layout, Row, Col, InputNumber, Button } from "antd";
 import { pf, ancestries, backgrounds, classes, feats, spells, ancestryList } from "./pathfinder";
 import {
     Context,
@@ -31,7 +20,7 @@ import {
 import { CharacterPrinter } from "./character-printer";
 import { renderCharacter } from "./character-render";
 import _ from "lodash";
-import { RenderMarkdown } from "./markdown";
+import { markdownAction, RenderMarkdown } from "./markdown";
 
 function sortStrings(a: string, b: string) {
     return a.localeCompare(b);
@@ -127,25 +116,11 @@ function App({}: {}) {
     useEffect(() => {
         if (firstRender.current) {
             const data = loadData();
-            setName(data.name);
-            setPfAncestryName(data.ancestryName);
-            setPfHeritageName(data.heritageName);
-            setPfBackgroundName(data.backgroundName);
-            setPfClassName(data.className);
-            setLevel(data.level);
-            setValues(data.values);
+            loadSave(data);
             firstRender.current = false;
             return;
         }
-        saveData({
-            name,
-            ancestryName: pfAncestry?.name ?? "",
-            heritageName: pfHeritage?.name ?? "",
-            backgroundName: pfBackground?.name ?? "",
-            className: pfClass?.name ?? "",
-            level,
-            values: bonusMap,
-        });
+        saveData(createSave());
     }, [pfAncestry, pfHeritage, pfBackground, pfClass, values, level, name]);
 
     return (
@@ -235,6 +210,12 @@ function App({}: {}) {
                             ))}
                         </Form>
                         <Button onClick={handleClear}>Clear</Button>
+                        <Input.TextArea
+                            rows={20}
+                            style={{ marginTop: "20px" }}
+                            onChange={e => loadSave(JSON.parse(e.target.value))}
+                            value={JSON.stringify(createSave(), undefined, "  ")}
+                        />
                     </Col>
                     <Col span={14} style={{ padding: "0 10px" }}>
                         <CharacterPrinter pc={renderedCharacter} />
@@ -251,6 +232,28 @@ function App({}: {}) {
         setPfHeritageName("");
         setPfAncestryName("");
         setLevel(1);
+    }
+
+    function loadSave(data: AppSavedData) {
+        setName(data.name);
+        setPfAncestryName(data.ancestryName);
+        setPfHeritageName(data.heritageName);
+        setPfBackgroundName(data.backgroundName);
+        setPfClassName(data.className);
+        setLevel(data.level);
+        setValues(data.values);
+    }
+
+    function createSave(): AppSavedData {
+        return {
+            name,
+            ancestryName: pfAncestry?.name ?? "",
+            heritageName: pfHeritage?.name ?? "",
+            backgroundName: pfBackground?.name ?? "",
+            className: pfClass?.name ?? "",
+            level,
+            values: bonusMap,
+        };
     }
 }
 
@@ -411,8 +414,8 @@ function computeSkillBonuses(context: Context, bonuses: BonusList, fixSet: FixSe
             }
 
             fixSet[`${path}`] = 0;
-            fixSet[`${path}/${count}`] = 1;
             for (let i = 0; i < count; i++) {
+                fixSet[`${path}/${i}`] = 1;
                 bonuses.push({
                     bonus: {
                         k: "proficiency",
@@ -448,12 +451,25 @@ function computeFeatBonuses(context: Context, bonuses: BonusList, fixSet: FixSet
             fixSet[`feat/${feat.name}`] = 1;
             if (feat.bonus) {
                 for (let i = 0; i < feat.bonus.length; i++) {
-                    const bonus = feat.bonus[i];
-                    bonuses.splice(index + 1, 0, {
-                        bonus,
-                        path: `feat/${feat.name}/${i}`,
-                        origin: `from "${feat.name}" feat, ${parentOrigin}`,
-                    });
+                    if (bonus.option && feat.bonus[i].k == "option") {
+                        const option = (feat.bonus[i] as pf.BonusOption).options[
+                            bonus.option as string
+                        ];
+                        for (let j = 0; j < option.bonus.length; j++) {
+                            bonuses.splice(index + 1, 0, {
+                                bonus: option.bonus[j],
+                                path: `feat/${feat.name}/${i}/${j}`,
+                                origin: `from "${feat.name}" feat, ${parentOrigin}`,
+                            });
+                        }
+                    } else {
+                        const bonus1 = feat.bonus[i];
+                        bonuses.splice(index + 1, 0, {
+                            bonus: bonus1,
+                            path: `feat/${feat.name}/${i}`,
+                            origin: `from "${feat.name}" feat, ${parentOrigin}`,
+                        });
+                    }
                 }
             }
         }
@@ -473,6 +489,11 @@ function computeFeatBonuses(context: Context, bonuses: BonusList, fixSet: FixSet
                 if (feat.bonus) {
                     for (let i = 0; i < feat.bonus.length; i++) {
                         const bonus = feat.bonus[i];
+                        if (bonus.k == "action" && bonus.name == "#self") {
+                            bonus.description = `### ${feat.name} ${markdownAction(
+                                bonus.actions,
+                            )}\n\n; ${feat.traits.join(", ")}\n\n${feat.description}`;
+                        }
                         bonuses.splice(index + 1, 0, {
                             bonus,
                             path: `feat/${feat.name}/${i}`,
@@ -497,6 +518,7 @@ function computeOptionBonuses(context: Context, bonuses: BonusList, fixSet: FixS
         }
 
         fixSet[`${path}`] = 0;
+        fixSet[`${path}/key`] = 1;
         const bValue = context.bonusMap[path];
         if (bValue?.kind === "option") {
             const selectedOption = optionBonus.options[bValue.value];
@@ -661,7 +683,16 @@ function CreationBonusFeat({ context, bonus, path, onChange }: CreationBonusFeat
         <Select value={value} onChange={onChange} showSearch>
             {filteredFeats.map(f => (
                 <Select.Option key={f.name} value={f.name}>
-                    {f.name}
+                    <span
+                        style={{
+                            color:
+                                f.prerequisites && computePrerequisite(context, f.prerequisites)
+                                    ? "#f00"
+                                    : "inherit",
+                        }}
+                    >
+                        {f.name}
+                    </span>
                 </Select.Option>
             ))}
         </Select>
@@ -807,7 +838,10 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                             context={context}
                             path={path}
                             onChange={v =>
-                                setValues(v1 => ({ ...v1, [path]: { value: v, kind: "feat" } }))
+                                setValues(v1 => ({
+                                    ...v1,
+                                    [path]: { value: v, kind: "feat", option: bonus.option },
+                                }))
                             }
                         />
                     </Form.Item>
@@ -841,14 +875,18 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
             }
             return null;
         case "option":
-            const value = (bonusMap[path] as BonusKindOption)?.value;
+            const key = `${path}/key`;
+            const value = (bonusMap[key] as BonusKindOption)?.value;
             return (
                 <Form.Item label={"Option"} extra={origin}>
                     <Select
                         placeholder="Select..."
                         value={value}
                         onChange={v =>
-                            setValues(v1 => ({ ...v1, [path]: { value: v, kind: "option" } }))
+                            setValues(v1 => ({
+                                ...v1,
+                                [key]: { value: v, kind: "option" },
+                            }))
                         }
                         showSearch
                     >
@@ -1056,7 +1094,10 @@ function generateSkillExcludes(
             if (choices && choices.indexOf(skill as pf.Skill) == -1) {
                 return false;
             }
-            return level >= profAsNumber(prof);
+            if (upgrade) {
+                return level >= profAsNumber(prof);
+            }
+            return level != profAsNumber(prof) - 1;
         })
         .map(([skill]) => skill) as pf.Skill[];
 }

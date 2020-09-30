@@ -32,33 +32,186 @@
                     "skill": "class_dc",
                     "class": "Investigator",
                     "proficiency": "T"
-                },
-                { "k": "bonus", "category": "TODO", "text": "" }
+                }
             ],
             "description": "Level 1"
         },
         "Strategic Strike": {
             "name": "Strategic Strike",
             "level": 1,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "if",
+                    "if": ["level:<5"],
+                    "bonus": [
+                        {
+                            "k": "bonus",
+                            "category": "Strike",
+                            "text": "When making a Strike that adds your Intelligence modifier on your attack roll due to Devising a Stratagem, you deal an additional 1d6 precision damage."
+                        }
+                    ]
+                },
+                {
+                    "k": "if",
+                    "if": ["level:5", "level:<9"],
+                    "bonus": [
+                        {
+                            "k": "bonus",
+                            "category": "Strike",
+                            "text": "When making a Strike that adds your Intelligence modifier on your attack roll due to Devising a Stratagem, you deal an additional 2d6 precision damage."
+                        }
+                    ]
+                },
+                {
+                    "k": "if",
+                    "if": ["level:9", "level:<13"],
+                    "bonus": [
+                        {
+                            "k": "bonus",
+                            "category": "Strike",
+                            "text": "When making a Strike that adds your Intelligence modifier on your attack roll due to Devising a Stratagem, you deal an additional 3d6 precision damage."
+                        }
+                    ]
+                },
+                {
+                    "k": "if",
+                    "if": ["level:13", "level:<17"],
+                    "bonus": [
+                        {
+                            "k": "bonus",
+                            "category": "Strike",
+                            "text": "When making a Strike that adds your Intelligence modifier on your attack roll due to Devising a Stratagem, you deal an additional 4d6 precision damage."
+                        }
+                    ]
+                },
+                {
+                    "k": "if",
+                    "if": ["level:17"],
+                    "bonus": [
+                        {
+                            "k": "bonus",
+                            "category": "Strike",
+                            "text": "When making a Strike that adds your Intelligence modifier on your attack roll due to Devising a Stratagem, you deal an additional 5d6 precision damage."
+                        }
+                    ]
+                }
+            ],
             "description": "When you strike carefully and with forethought, you deal a telling blow. When making a Strike that adds your Intelligence modifier on your attack roll due to Devising a Stratagem, you deal an additional 1d6 precision damage.\n\nAs your investigator level increases, so too does the deadliness of your strategic strike. Increase the number of dice by one at 5th, 9th, 13th, and 17th levels.  \n"
         },
         "On the Case": {
             "name": "On the Case",
             "level": 1,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
-            "description": "As an investigator, you think of your adventures as cases waiting to be solved. You gain one activity and one reaction you can use to investigate cases: Pursue a Lead and Clue In.\n\n### Pursue a Lead \n\n; Concentrate, Exploration, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per 10 minutes\n\n---\n\nYou spend 1 minute examining the details of one potential clue, designating the subject related to that clue as the target of your active investigation. This subject is typically a single creature, item, or small location (such as a room or corridor), but the GM might allow a different scope for your investigation. You don't need to know the identity, purpose, or nature of the subject, but you do need to be aware of its existence. For instance, finding a footprint is enough to investigate the creature that left it, and seeing a hasty sketch of an item or location can be enough to start your investigation of that subject.\n\nWhenever you attempt a Perception or skill check to investigate a designated subject, you gain a +1 circumstance bonus to the check. The exact checks this applies to depend on the actions you use to investigate and are determined by the GM, but checks to investigate are typically Perception checks or skill checks that use Intelligence, Wisdom, or Charisma.\n\nYou can maintain two active investigations at a time. If you Pursue another Lead after that, the subject must be different from any of your current investigations (or rather, they must be different as far as you know), and you give up on a current subject of your choice. Once you've given up pursuit of a subject, you can't Pursue that Lead again until after the next time you make your daily preparations.  \n\n### Clue In :r:\n\n; Concentrate, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per 10 minutes  \n**Trigger** Another creature attempts a check to investigate a lead you're pursuing.\n\n---\n\nYou share information with the triggering creature. They gain a circumstance bonus to their check equal to your circumstance bonus to checks investigating your subject from Pursue a Lead. The GM can add any relevant traits to this reaction depending on the situation, such as auditory and linguistic if you're conveying information verbally.  \n"
+            "bonus": [
+                {
+                    "k": "action",
+                    "name": "Pursue a Lead",
+                    "description": "### Pursue a Lead \n\n; Concentrate, Exploration, Investigator  \n**Frequency** once per 10 minutes\n\n---\n\nYou spend 1 minute examining the details of one potential clue, designating the subject related to that clue as the target of your active investigation. This subject is typically a single creature, item, or small location (such as a room or corridor), but the GM might allow a different scope for your investigation. You don't need to know the identity, purpose, or nature of the subject, but you do need to be aware of its existence. For instance, finding a footprint is enough to investigate the creature that left it, and seeing a hasty sketch of an item or location can be enough to start your investigation of that subject.\n\nWhenever you attempt a Perception or skill check to investigate a designated subject, you gain a +1 circumstance bonus to the check. The exact checks this applies to depend on the actions you use to investigate and are determined by the GM, but checks to investigate are typically Perception checks or skill checks that use Intelligence, Wisdom, or Charisma.\n\nYou can maintain two active investigations at a time. If you Pursue another Lead after that, the subject must be different from any of your current investigations (or rather, they must be different as far as you know), and you give up on a current subject of your choice. Once you've given up pursuit of a subject, you can't Pursue that Lead again until after the next time you make your daily preparations."
+                },
+                {
+                    "k": "action",
+                    "name": "Clue In",
+                    "actions": "reaction",
+                    "description": "### Clue In :r:\n\n; Concentrate, Investigator  \n**Frequency** once per 10 minutes  \n**Trigger** Another creature attempts a check to investigate a lead you're pursuing.\n\n---\n\nYou share information with the triggering creature. They gain a circumstance bonus to their check equal to your circumstance bonus to checks investigating your subject from Pursue a Lead. The GM can add any relevant traits to this reaction depending on the situation, such as auditory and linguistic if you're conveying information verbally."
+                }
+            ],
+            "description": "As an investigator, you think of your adventures as cases waiting to be solved. You gain one activity and one reaction you can use to investigate cases: Pursue a Lead and Clue In.\n\n### Pursue a Lead \n\n; Concentrate, Exploration, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per 10 minutes\n\n---\n\nYou spend 1 minute examining the details of one potential clue, designating the subject related to that clue as the target of your active investigation. This subject is typically a single creature, item, or small location (such as a room or corridor), but the GM might allow a different scope for your investigation. You don't need to know the identity, purpose, or nature of the subject, but you do need to be aware of its existence. For instance, finding a footprint is enough to investigate the creature that left it, and seeing a hasty sketch of an item or location can be enough to start your investigation of that subject.\n\nWhenever you attempt a Perception or skill check to investigate a designated subject, you gain a +1 circumstance bonus to the check. The exact checks this applies to depend on the actions you use to investigate and are determined by the GM, but checks to investigate are typically Perception checks or skill checks that use Intelligence, Wisdom, or Charisma.\n\nYou can maintain two active investigations at a time. If you Pursue another Lead after that, the subject must be different from any of your current investigations (or rather, they must be different as far as you know), and you give up on a current subject of your choice. Once you've given up pursuit of a subject, you can't Pursue that Lead again until after the next time you make your daily preparations.\n\n### Clue In :r:\n\n; Concentrate, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per 10 minutes  \n**Trigger** Another creature attempts a check to investigate a lead you're pursuing.\n\n---\n\nYou share information with the triggering creature. They gain a circumstance bonus to their check equal to your circumstance bonus to checks investigating your subject from Pursue a Lead. The GM can add any relevant traits to this reaction depending on the situation, such as auditory and linguistic if you're conveying information verbally.  \n"
         },
         "Devise a Stratagem": {
             "name": "Devise a Stratagem",
             "level": 1,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "action",
+                    "name": "Devise a Stratagem",
+                    "actions": 1,
+                    "description": "### Devise a Stratagem :a:\n\n; Concentrate, Fortune, Investigator  \n**Frequency** once per round\n\n---\n\nYou assess a foe's weaknesses in combat and use them to formulate a plan of attack against your enemy. Choose a creature you can see and roll a d20. If you Strike the chosen creature later this round, you must use the result of the roll you made to Devise a Stratagem for your Strike's attack roll instead of rolling. You make this substitution only for the first Strike you make against the creature this round, not any subsequent attacks.\n\nWhen you make this substitution, you can also add your Intelligence modifier to your attack roll instead of your Strength or Dexterity modifier, provided your Strike uses an agile or finesse melee weapon, an agile or finesse unarmed attack, a ranged weapon (which must be agile or finesse if it's a melee weapon with the thrown trait), or a sap. \n\nIf you're aware that the creature you choose is the subject of a lead you're pursuing, you can use this ability as a free action."
+                }
+            ],
             "description": "You can play out a battle in your head, using brains rather than brawn to execute an attack.\n\n### Devise a Stratagem :a:\n\n; Concentrate, Fortune, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per round\n\n---\n\nYou assess a foe's weaknesses in combat and use them to formulate a plan of attack against your enemy. Choose a creature you can see and roll a d20. If you Strike the chosen creature later this round, you must use the result of the roll you made to Devise a Stratagem for your Strike's attack roll instead of rolling. You make this substitution only for the first Strike you make against the creature this round, not any subsequent attacks.\n\nWhen you make this substitution, you can also add your Intelligence modifier to your attack roll instead of your Strength or Dexterity modifier, provided your Strike uses an agile or finesse melee weapon, an agile or finesse unarmed attack, a ranged weapon (which must be agile or finesse if it's a melee weapon with the thrown trait), or a sap. \n\nIf you're aware that the creature you choose is the subject of a lead you're pursuing, you can use this ability as a free action.  \n"
         },
         "Methodology": {
             "name": "Methodology",
             "level": 1,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "option",
+                    "options": {
+                        "Alchemical Sciences": {
+                            "name": "Alchemical Sciences",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 57,
+                                "prd": "https://2e.aonprd.com/Methodologies.aspx"
+                            },
+                            "bonus": [
+                                { "k": "proficiency", "skill": "crafting", "proficiency": "T" },
+                                { "k": "feat", "feat": "Alchemical Crafting" },
+                                { "k": "special", "id": "formulabook", "value": "TODO" },
+                                {
+                                    "k": "bonus",
+                                    "category": "Daily Preparations",
+                                    "text": "During your daily preparations, you can create a number of versatile vials\u2014alchemical concoctions that can quickly be turned into elixirs and tools\u2014 equal to your Intelligence modifier."
+                                },
+                                {
+                                    "k": "action",
+                                    "name": "Quick Tincture",
+                                    "actions": 1,
+                                    "description": "### Quick Tincture :a:\n\n; Investigator, Manipulate  \n**Cost** 1 versatile vial  \n**Requirements** You know the formula for the alchemical item you're creating, you are holding or wearing alchemist's tools, and you have a free hand.\n\n---\n\nYou quickly brew up a short-lived tincture. You create a single alchemical elixir or tool of your level or lower without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the infused trait, but it remains potent only until the end of the current turn."
+                                }
+                            ],
+                            "description": "Your methodology emphasizes chemical and alchemical analysis, collecting information from unusual particles and fluids found on the scene. You possess enough alchemical know-how to whip up a few tinctures to help you with your cases.\n\nYou're trained in Crafting and gain the Alchemical Crafting skill feat. In addition, you gain a standard formula book for free and learn the formulas for two additional common 1st-level alchemical items, which must be elixirs or tools. Each time you gain a level, you learn the formula for one common alchemical elixir or alchemical tool of any level of item you can create. \n\nDuring your daily preparations, you can create a number of versatile vials\u2014alchemical concoctions that can quickly be turned into elixirs and tools\u2014 equal to your Intelligence modifier. You can use the Quick Tincture action to turn one of these vials into an elixir or alchemical tool for which you know the formula.\n\n### Quick Tincture :a:\n\n; Investigator, Manipulate  \n**Source** *Advanced Player's Guide pg. 57*  \n**Cost** 1 versatile vial  \n**Requirements** You know the formula for the alchemical item you're creating, you are holding or wearing alchemist's tools, and you have a free hand.\n\n---\n\nYou quickly brew up a short-lived tincture. You create a single alchemical elixir or tool of your level or lower without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the infused trait, but it remains potent only until the end of the current turn."
+                        },
+                        "Empiricism": {
+                            "name": "Empiricism",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 57,
+                                "prd": "https://2e.aonprd.com/Methodologies.aspx"
+                            },
+                            "bonus": [
+                                {
+                                    "k": "proficiency",
+                                    "skill": "any_skill",
+                                    "filter": ["crafting", "society", "arcana", "occultism"],
+                                    "proficiency": "T"
+                                },
+                                { "k": "feat", "feat": "That's Odd" },
+                                {
+                                    "k": "action",
+                                    "name": "Expeditious Inspections",
+                                    "actions": "bonus",
+                                    "description": "### Expeditious Inspection :f:\n\n; Investigator  \n**Source** *Advanced Player's Guide pg. 57*  \n**Frequency** once per 10 minutes\n\n---\n\nYou observe and assess your surroundings with great speed. You Recall Knowledge, Seek, or Sense Motive."
+                                }
+                            ],
+                            "description": "Everything comes down to data. Calculating statistics, running numbers, and using inductive reasoning allows you to determine the most likely outcome of any scenario, and anything out of place draws your keen attention.\n\nYou are trained in one Intelligence-based skill of your choice. You gain the That's Odd investigator feat, and you gain the Expeditious Inspection free action.\n\n### Expeditious Inspection :f:\n\n; Investigator  \n**Source** *Advanced Player's Guide pg. 57*  \n**Frequency** once per 10 minutes\n\n---\n\nYou observe and assess your surroundings with great speed. You Recall Knowledge, Seek, or Sense Motive."
+                        },
+                        "Forensic Medicine": {
+                            "name": "Forensic Medicine",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 58,
+                                "prd": "https://2e.aonprd.com/Methodologies.aspx"
+                            },
+                            "bonus": [
+                                { "k": "proficiency", "skill": "medicine", "proficiency": "T" },
+                                { "k": "feat", "feat": "Battle Medicine" }
+                            ],
+                            "description": "You've learned that in most cases, especially murders, criminals tend to leave more evidence of the crime on the body than they'd like to believe. Information from bruising, bone fractures, blood spatters, and even the life cycle of carrion insects can provide valuable clues that help reconstruct the scene.\n\nYou're trained in Medicine and gain the Forensic Acumen and Battle Medicine skill feats. When you use Battle Medicine, on a success the target recovers additional Hit Points equal to your level, and the target becomes temporarily immune for only 1 hour, not 1 day."
+                        },
+                        "Interrogation": {
+                            "name": "Interrogation",
+                            "source": {
+                                "book": "Advanced Player's Guide",
+                                "page": 58,
+                                "prd": "https://2e.aonprd.com/Methodologies.aspx"
+                            },
+                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "description": "People can't help but trust you, whether through your inherent likableness or your firm insistence on sticking to the truth. You have a way about you that gets others talking, and you've developed interrogative techniques to help you get to the truth of your investigations.\n\nYou are trained in Diplomacy. You gain the No Cause for Alarm skill feat. You can also Pursue a Lead over the course of a conversation rather than spending dedicated time looking into the lead, provided the conversation lasts 1 minute or longer. For example, while trying to Make an Impression, you could pursue the creature you're conversing with as a lead, and you could Pursue a Lead about an object while someone is telling you information about that object. You also gain the Pointed Question action.\n\n### Pointed Question :a:\n\n; Auditory, Concentrate, Investigator, Linguistic, Mental  \n**Source** *Advanced Player's Guide pg. 58*\n\n---\n\nYou ask a question that charms or needles someone in just the right way. Ask a question of a non-allied creature that you can see and have been conversing with. Attempt a Diplomacy check against the creature's Will DC. The creature is then temporarily immune for 1 hour.\n\n**Critical Success** The target must directly answer your question. It doesn't have to answer truthfully, but you gain a +4 circumstance bonus to your Perception DC if the creature attempts to Lie to you.  \n**Success** As critical success, but the circumstance bonus is +2.  \n**Failure** The target can refuse to answer you as normal.  \n**Critical Failure** The target can refuse to answer you as normal, and its attitude toward you decreases by one step due to your aggravating attention."
+                        }
+                    }
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Your studies have made you savvy in many areas, but one in particular drew your intense interest. Choose a methodology. The methodologies presented in this book are as follows.  \n"
         },
         "Level 2": {
@@ -278,5 +431,5 @@
             "description": "Level 20"
         }
     },
-    "description": "# Investigator\n\n*You seek to uncover the truth, doggedly pursuing leads to reveal the plots of devious villains, discover ancient secrets, or unravel other mysteries. Your analytical mind quickly formulates solutions to complicated problems and your honed senses identify even the most obscure clues. Wielding knowledge as a weapon, you study the creatures and dangers you encounter to exploit their weaknesses.*\n\n## During Combat Encounters...\n\nYour keen insights regarding your foes make you more dangerous than your physical strength would suggest. After spending a moment to study your enemies, your perceptiveness allows you to act quickly, striking them where it hurts most. You often assist tougher members of your party, wisely protecting yourself while providing vital aid.   \n\n## During Social Encounters...\n\nFew can stand up against your scrutiny. You might not be the most charming, but you see things for what they really are and develop an understanding of a social situation rapidly. Every conversation is an investigation, after all, and you never know what you might uncover!  \n\n## While Exploring...\n\nYou look for clues in your environment. You often prove yourself to be a valuable ally by serving as a party scout, analyzing the intricacies of puzzles or mysterious phenomena, and pursuing leads that could reveal beneficial information.  \n\n## In Downtime...\n\nYou study up on subjects new and old, make new allies you can share information with, and pursue hobbies that keep your active mind satisfied. You might make a bit of coin on the side working as a private detective or consulting with the local constabulary.  \n\n## You Might...\n\n* Start asking questions\u2014including several that are quite involved\u2014immediately after you're presented with a conundrum.\n* Strive to uncover the deeper meanings behind anything you encounter and to identify the social machinations that truly drive events behind the scenes.\n* Get so involved in a case that you ignore other matters, deeming them trivial.\n\n## Others Probably...\n\n* Find the cascades of information you spout forth extremely helpful, if difficult to fully comprehend.\n* Get a bit annoyed that you're such a know-it-all.\n* Rely on you to solve mysteries, puzzles, or other challenges requiring intellectual curiosity and reasoning.\n\n"
+    "description": "# Investigator\n\n*You seek to uncover the truth, doggedly pursuing leads to reveal the plots of devious villains, discover ancient secrets, or unravel other mysteries. Your analytical mind quickly formulates solutions to complicated problems and your honed senses identify even the most obscure clues. Wielding knowledge as a weapon, you study the creatures and dangers you encounter to exploit their weaknesses.*\n\n## During Combat Encounters...\n\nYour keen insights regarding your foes make you more dangerous than your physical strength would suggest. After spending a moment to study your enemies, your perceptiveness allows you to act quickly, striking them where it hurts most. You often assist tougher members of your party, wisely protecting yourself while providing vital aid. \n\n## During Social Encounters...\n\nFew can stand up against your scrutiny. You might not be the most charming, but you see things for what they really are and develop an understanding of a social situation rapidly. Every conversation is an investigation, after all, and you never know what you might uncover!\n\n## While Exploring...\n\nYou look for clues in your environment. You often prove yourself to be a valuable ally by serving as a party scout, analyzing the intricacies of puzzles or mysterious phenomena, and pursuing leads that could reveal beneficial information.\n\n## In Downtime...\n\nYou study up on subjects new and old, make new allies you can share information with, and pursue hobbies that keep your active mind satisfied. You might make a bit of coin on the side working as a private detective or consulting with the local constabulary.\n\n## You Might...\n\n* Start asking questions\u2014including several that are quite involved\u2014immediately after you're presented with a conundrum.\n* Strive to uncover the deeper meanings behind anything you encounter and to identify the social machinations that truly drive events behind the scenes.\n* Get so involved in a case that you ignore other matters, deeming them trivial.\n\n## Others Probably...\n\n* Find the cascades of information you spout forth extremely helpful, if difficult to fully comprehend.\n* Get a bit annoyed that you're such a know-it-all.\n* Rely on you to solve mysteries, puzzles, or other challenges requiring intellectual curiosity and reasoning.\n\n"
 }

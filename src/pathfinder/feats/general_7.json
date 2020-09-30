@@ -1,0 +1,476 @@
+{
+    "Advanced First Aid": {
+        "name": "Advanced First Aid",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 202,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2107"
+        },
+        "traits": ["General", "Healing", "Manipulate", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Medicine\n\n---\n\nYou use your medical training to ameliorate sickness or assuage fears. When you use Medicine to Administer First Aid, instead of Stabilizing a character or Stopping Bleeding, you can reduce an ally's frightened or sickened condition by 2, or remove either of those conditions entirely on a critical success. You can remove only one condition at a time. The DC for the Medicine check is usually the DC of the effect that caused the condition."
+    },
+    "Aerobatics Mastery": {
+        "name": "Aerobatics Mastery",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 202,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2108"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Acrobatics\n\n---\n\nYou move with grace in flight and can perform amazing aerial stunts. You gain a +2 circumstance bonus to Acrobatics checks to Maneuver in Flight and can combine two maneuvers into a single action, such as reversing direction while making a steep ascent or descent or hovering in gale-force winds. The DC of the Acrobatics check is equal to the DC of the most difficult maneuver + 5. If you're legendary in Acrobatics, you can combine three such maneuvers into a single action; the DC of the Acrobatics check is equal to the DC of the most difficult maneuver + 10. Regardless of the combination, these maneuvers rarely allow you to move farther than your fly Speed."
+    },
+    "Battle Cry": {
+        "name": "Battle Cry",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 258,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=759"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Intimidation\n\n---\n\nWhen you roll initiative, you can yell a mighty battle cry and Demoralize an observed foe as a free action. If you're legendary in Intimidation, you can use a reaction to Demoralize your foe when you critically succeed at an attack roll."
+    },
+    "Battle Prayer": {
+        "name": "Battle Prayer",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 104,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1174"
+        },
+        "traits": ["Divine", "General", "Skill"],
+        "level": 7,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** master in Religion, you follow a deity\n\n---\n\nCalling out to your deity, you recite scripture to harm a foe. When you select this feat, choose chaos, evil, good, or law. Your choice must match one of your deity's alignment components. This action has the trait corresponding to the chosen alignment.\n\nAttempt a Religion check against the Will DC of a foe within 30 feet. The foe is then temporarily immune to Battle Prayers from your deity for 1 day.\n\n**Critical Success** You deal 2d6 damage of the chosen alignment type, or 6d6 damage if you have legendary proficiency in Religion.  \n**Success** You deal 1d6 damage of the chosen alignment type, or 3d6 damage if you have legendary proficiency in Religion.  \n**Failure** There is no effect.  \n**Critical Failure** The backlash of your foe's will against your prayer prevents you from using Battle Prayer again for 10 minutes."
+    },
+    "Biographical Eye": {
+        "name": "Biographical Eye",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 203,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2113"
+        },
+        "traits": ["General", "Secret", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Society\n\n---\n\nIn even a brief conversation or social interaction, you pick up on subtle social and visual cues to learn a great deal about a person's origin and history. You might notice bits of green under the person's fingernails and determine they're an herbalist, a pin indicating their membership in a secret society, or something similar. You pick up on only details that have to do with their societal role, so you might learn the city district where a vampire lives, but wouldn't learn any of their weaknesses, nor necessarily even that they are a vampire. \n\nSpend 1 minute in the presence of someone you haven't met before, or haven't met since you first gained Biographical Eye, then attempt a DC 30 Society check. You gain a +1 circumstance bonus to the check if you engaged the person in conversation during this time. If the person is deliberately trying to conceal their nature or present a false identity, you learn about their false biography rather than their true one unless the result of your Society check exceeds their Will DC.\n\n**Critical Success** You learn the creature's profession, their specialty within that profession, and a major accomplishment or controversy from their career. You also learn the nation and settlement where they live, as well as the district in a city large enough to have districts. In addition, you learn the nation or settlement where they spent their formative years.  \n**Success** You learn the creature's profession and specialty within that profession. You learn the nation or settlement where they normally live.  \n**Failure** You learn the creature's profession and the region of the world they hail from, but no more.  \n**Critical Failure** You learn a piece of erroneous information about the creature."
+    },
+    "Bizarre Magic": {
+        "name": "Bizarre Magic",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 258,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=761"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Occultism\n\n---\n\nYou can draw upon strange variations in your spellcasting, whether or not you can cast occult spells. The DCs to Recognize Spells you cast and Identify Magic you use increase by 5."
+    },
+    "Bless Tonic": {
+        "name": "Bless Tonic",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 104,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1175"
+        },
+        "traits": ["General", "Positive", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Crafting, deity who grants *heal* divine font\n\n---\n\nYou channel positive energy into restoratives that ward against harm. When you Craft an alchemical item that restores Hit Points (rather than create it with advanced alchemy, Quick Alchemy, or another means), it becomes a blessed alchemical item and gains the positive trait. For example, an elixir of life would become a blessed elixir of life. When a creature regains Hit Points using a blessed alchemical item, the overflowing energy grants them negative resistance 5 for 1 round, or negative resistance 10 if you are legendary in Crafting."
+    },
+    "Bless Toxin": {
+        "name": "Bless Toxin",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 104,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1176"
+        },
+        "traits": ["General", "Negative", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Crafting, deity who grants *harm* divine font\n\n---\n\nYou pour negative energy into toxins you create to further debilitate your targets. When you Craft an alchemical poison (rather than create it with advanced alchemy, Quick Alchemy, or another means), it becomes a blessed alchemical poison and gains the negative trait. When a creature is afflicted with a blessed alchemical poison, for 1 round, any Hit Points it would regain from a positive effect are reduced by 5, or by 10 if you are legendary in Crafting."
+    },
+    "Consult the Spirits": {
+        "name": "Consult the Spirits",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 204,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2117"
+        },
+        "traits": ["General", "Secret", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Frequency** once per day  \n**Prerequisites** master in Nature, Occultism, or Religion\n\n---\n\nYou have learned rites or meditations that enable you to perceive minor, invisible spirits within a place. Choose Nature, Occultism, or Religion when you select this feat. Nature allows you to contact the spirits of nature that form leshies, who are born of pure life essence rather than spiritual energy and can answer questions about natural features like the location of nearby water or plant life. Religion reveals the presence of angelic, demonic, or other spirits in service to divine beings, who provide information about sources of powerful positive or negative energy, sacred or profane influences, or the presence of undead. Occultism allows you to contact lingering spirits, psychic echoes of the departed dead, and spirits from beyond reality, who tell you about things like strange auras, effects, or the presence of unnatural occult beings.\n\nSpend 10 minutes and attempt a check to Recall Knowledge with the chosen skill; the DC is determined by the GM (usually a very high DC for the level of the highest-level creature you might encounter in the area). If you're legendary in the chosen skill, you can use this feat once per hour, instead of only once per day, but you can't use it again on any area that overlaps a previous area.\n\n**Special** You can select this feat multiple times, each time picking a different skill in which you have the master proficiency rank. You can use this feat with each skill once per day (or once per hour, if you're legendary).\n\n**Critical Success** The spirits reveal themselves to you and have a helpful attitude toward you. Only you can perceive these spirits. They answer three simple questions about the environment within 100 feet of you, depending on the skill you chose and thus the type of spirits you contact. Their answers are almost always a single word, and their knowledge is limited to within their area of interest.  \n**Success** As with a critical success, but the spirits are indifferent to you and answer only one question.  \n**Failure** You are unable to contact the spirits of this place.  \n**Critical Failure** You contact one or more malevolent spirits. They are hostile toward you, though they may not immediately appear so. They answer up to three questions but give you information that is harmful to you in some way, as determined by the GM."
+    },
+    "Disturbing Knowledge": {
+        "name": "Disturbing Knowledge",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 205,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2123"
+        },
+        "traits": ["Emotion", "Fear", "General", "Mental", "Skill"],
+        "level": 7,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** master in Occultism\n\n---\n\nYou utter a litany of dreadful names, prophecies, and descriptions of realms beyond mortal comprehension, drawn from your study of forbidden tomes and scrolls. Even those who don't understand your language are unsettled by these dire secrets. Attempt an Occultism check and compare the result to the Will DC of an enemy within 30 feet, or to the Will DCs of any number of enemies within 30 feet if you are legendary in Occultism. Those creatures are temporarily immune for 24 hours.\n\n**Critical Success** The target becomes confused for 1 round and frightened 1.  \n**Success** The target becomes frightened 1.  \n**Failure** The target is unaffected.  \n**Critical Failure** You get overly caught up in your own words and become frightened 1."
+    },
+    "Doublespeak": {
+        "name": "Doublespeak",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 205,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2124"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master at Deception\n\n---\n\nYou are skilled at saying one thing while meaning something different. You disguise your true meaning behind other words and phrases, relying on subtle emphasis and shared experience to convey meaning that only your allies understand. Any allies who have traveled alongside you for at least 1 full week automatically discern your meaning. Other observers must succeed at a Perception check against your Deception DC to realize you are passing a secret message, and they must critically succeed to understand the message itself."
+    },
+    "Entourage": {
+        "name": "Entourage",
+        "source": {
+            "book": "Character Guide",
+            "page": 72,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1066"
+        },
+        "traits": ["Rare", "General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Diplomacy, Hobnobber\n\n---\n\nYou have a small group of admirers who tend to follow you around while you're in civilized settlements. Your admirers are helpful to you, allowing you to make simple Requests of them such as purchasing basic equipment with your funds or finding a room at an inn. These admirers do not travel with you to places that are obviously dangerous, including most adventure locations, but they'll wait for you at the nearest settlement. Your admirers never use actions in encounter mode other than to retreat, and they abandon you if you intentionally bring them harm or at the GM's discretion. When you Gather Information, you can use your admirers to assist you, granting a +1 circumstance bonus to your Diplomacy check and reducing the time it takes even further (typically to 30 minutes, rather than 1 hour with the Hobnobber feat alone). If you have the Sow Rumor feat, you can have your admirers assist you, with the same benefits as Gather Information."
+    },
+    "Environmental Grace": {
+        "name": "Environmental Grace",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1179"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Survival; deity who grants the cold, fire, nature, or travel domain\n\n---\n\nYou rapidly adapt to environments through a combination of skill, meditation, and divine grace. After spending an hour in an environment of severe cold or colder, you are protected from the effects of severe cold until you leave that environment. After spending an hour in an environment of severe heat or hotter, you are protected from the effects of severe heat until you leave that environment."
+    },
+    "Evangelize": {
+        "name": "Evangelize",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1180"
+        },
+        "traits": ["Auditory", "General", "Linguistic", "Mental", "Skill"],
+        "level": 7,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** master in Diplomacy, you follow a deity or philosophy\n\n---\n\nYou point out a detail that incontrovertibly supports your faith, causing a listener's mind to whirl. Attempt a Diplomacy check and compare the result to the Will DC of a single target that can hear you and understands your language; that target is then temporarily immune to Evangelize with respect to your deity or philosophy for 1 day. A creature that already agrees with you is unaffected, and at the GM's discretion, a target that genuinely changes its perspective to support your faith as a result of the argument is also otherwise unaffected.\n\n**Critical Success** The target is stupefied 2 for 1 round.  \n**Success** The target is stupefied 1 for 1 round.  \n**Failure** The target is unaffected."
+    },
+    "Expeditious Search": {
+        "name": "Expeditious Search",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=777"
+        },
+        "traits": ["General"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Perception\n\n---\n\nYou have a system that lets you search at great speed, finding details and secrets twice as quickly as others can. When Searching, you take half as long as usual to Search a given area. This means that while exploring, you double the Speed you can move while ensuring you've Searched an area before walking into it (up to half your Speed). If you're legendary in Perception, you instead Search areas four times as quickly."
+    },
+    "Foil Senses": {
+        "name": "Foil Senses",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 261,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=785"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Stealth\n\n---\n\nYou are adept at foiling creatures' special senses and cautious enough to safeguard against them at all times. Whenever you use the Avoid Notice, Hide, or Sneak actions, you are always considered to be taking precautions against special senses (see the Detecting with Other Senses sidebar on page 465)."
+    },
+    "Impeccable Crafter": {
+        "name": "Impeccable Crafter",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=792"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Crafting, Specialty Crafting\n\n---\n\nYou craft flawless creations with great efficiency. Whenever you roll a success at a Crafting check to make an item of the type you chose with Specialty Crafting, you get a critical success instead."
+    },
+    "Influence Nature": {
+        "name": "Influence Nature",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 207,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2134"
+        },
+        "traits": ["Downtime", "General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Nature\n\n---\n\nWith patience and time, you can make bird calls, leave game trails, and ultimately influence the behavior of a certain type of animals in the region to favor and even aid you in the days to come. The GM determines the DC of any check required and the amount of time your work requires (usually at least a day or two of downtime). While you can't directly control how you've influenced nature, you can hope for certain effects, such as easier hunts or birds falling silent whenever danger is approaching. If you're legendary in Nature, you can elicit these same adjustments to animal behavior in the area by spending only 10 minutes."
+    },
+    "Inventor": {
+        "name": "Inventor",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=798"
+        },
+        "traits": ["Downtime", "General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Crafting\n\n---\n\nYou are a genius at Crafting, easily able to determine how things are made and create new inventions. You can spend downtime to invent a common formula that you don't know. This works just like the Craft activity: you spend half the Price of the formula up front, attempt a Crafting check, and on a success either finish the formula by paying the difference or work for longer to decrease the Price. The difference is that you spend the additional time in research, design, and development, rather than in creating an item. Once it's complete, you add the new formula you invented to your formula book."
+    },
+    "Kip Up": {
+        "name": "Kip Up",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=799"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "bonus" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** master in Acrobatics\n\n---\n\nYou stand up. This movement doesn't trigger reactions."
+    },
+    "Numb to Death": {
+        "name": "Numb to Death",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1182"
+        },
+        "traits": ["General"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Frequency** once per day  \n**Prerequisites** Diehard, you have died at least once\n\n---\n\nYour past has left you numb to death's call. The first time each day that you regain Hit Points while you are dying, you regain additional Hit Points equal to your level, and you neither gain the wounded condition nor increase the value of this condition."
+    },
+    "Paragon Battle Medicine": {
+        "name": "Paragon Battle Medicine",
+        "source": {
+            "book": "Legends",
+            "page": 72,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2171"
+        },
+        "traits": ["Rare", "General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Battle Medicine, master in Medicine\n\n---\n\nKassi Aziril taught you her techniques that originated the modern use of Battle Medicine. When you successfully use Battle Medicine, you can also reduce the target's sickened, enfeebled, or clumsy condition by 1 (this has no effect if you are subject to an effect continually applying the clumsy condition, like *enlarge*). If you are legendary in Medicine, you can choose to reduce the target's frightened or stunned condition by 1 instead, and if you have the Godless Healing feat, you can choose to reduce the target's stupefied or drained condition by 1 instead. If you have the Mortal Healing feat, you can reduce all available conditions by 1 for a target who hasn't benefited from positive or healing magic in the last 24 hours, and if you roll a critical success before applying the effects of the feat, you reduce all available conditions by 2 for that target instead.  "
+    },
+    "Planar Survival": {
+        "name": "Planar Survival",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 264,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=819"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Survival\n\n---\n\nYou can Subsist using Survival on different planes, even those without resources or natural phenomena you normally need. For instance, you can forage for food even if the plane lacks food that could normally sustain you. A success on your check to Subsist can also reduce the damage dealt by the plane, at the GM's discretion."
+    },
+    "Prescient Consumable": {
+        "name": "Prescient Consumable",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 208,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2142"
+        },
+        "traits": ["General"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Prescient Planner\n\n---\n\nYou can predict which consumables you might need in advance. When using Prescient Planner, you can procure a consumable item from your backpack, instead of a piece of adventuring gear. The consumable item must still be common with a level no higher than half your level, and its Bulk must be low enough that carrying it wouldn't have made you encumbered."
+    },
+    "Quick Climber": {
+        "name": "Quick Climber",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 264,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=821"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Athletics\n\n---\n\nWhen Climbing, you move 5 more feet on a success and 10 more feet on a critical success, to a maximum of your Speed. If you're legendary in Athletics, you gain a climb Speed equal to your Speed."
+    },
+    "Quick Recognition": {
+        "name": "Quick Recognition",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 265,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=826"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Arcana, Nature, Occultism, or Religion; Recognize Spell\n\n---\n\nYou Recognize Spells swiftly. Once per round, you can Recognize a Spell using a skill in which you're a master as a free action."
+    },
+    "Quick Swim": {
+        "name": "Quick Swim",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 265,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=829"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Athletics\n\n---\n\nYou Swim 5 feet farther on a success and 10 feet farther on a critical success, to a maximum of your Speed. If you're legendary in Athletics, you gain a swim Speed equal to your Speed."
+    },
+    "Quick Unlock": {
+        "name": "Quick Unlock",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 265,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=830"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Thievery\n\n---\n\nYou can Pick a Lock using 1 action instead of 2."
+    },
+    "Rapid Affixture": {
+        "name": "Rapid Affixture",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 208,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2145"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Crafting\n\n---\n\nYou take only 1 minute to Affix a Talisman. If you're legendary in Crafting, you can Affix a Talisman as a 3-action activity."
+    },
+    "Sacred Defense": {
+        "name": "Sacred Defense",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1183"
+        },
+        "traits": ["Divine", "General", "Skill"],
+        "level": 7,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per hour  \n**Prerequisites** master in Religion, you follow a deity\n\n---\n\nYou call upon your deity to grant you their protective blessing. Attempt a DC 30 Religion check. If you have legendary proficiency in Religion, you can instead attempt a DC 40 Religion check to increase the temporary Hit Points you gain on a successful check to 15 (25 on a critical success).\n\n**Critical Success** You gain 10 temporary Hit Points. You lose any remaining temporary Hit Points after 1 minute.  \n**Success** You gain 5 temporary Hit Points. You lose any remaining temporary Hit Points after 1 minute.  \n**Critical Failure** Your deity withholds their blessing. You cannot attempt to call to your deity again for 1 day."
+    },
+    "Sanctify Water": {
+        "name": "Sanctify Water",
+        "source": {
+            "book": "Gods & Magic",
+            "page": 105,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1185"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** master in Religion, good or evil deity\n\n---\n\nYou imbue water with your deity's blessing. Choose a container of water on your person that is of light Bulk. For 1 round, if you or an ally throw this container at a foe, it has the damaging effects of holy water (if you follow a good deity) or unholy water (if you follow an evil deity). The water's transient power doesn't make it gain any value, allow it to be used to supply the cost for a spell or ritual, and so on. If you have legendary proficiency in Religion, you can sanctify three containers held by you or allies within your reach instead of one."
+    },
+    "Shameless Request": {
+        "name": "Shameless Request",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 266,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=838"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Diplomacy\n\n---\n\nYou can downplay the consequences or outrageousness of your requests using sheer brazenness and charm. When you Request something, you reduce any DC increases for making an outrageous request by 2, and if you roll a critical failure for your Request, you get a failure instead. While this means you can never cause your target to reduce their attitude toward you by making a Request, they eventually tire of requests, even though they still have a positive attitude toward you."
+    },
+    "Slippery Secrets": {
+        "name": "Slippery Secrets",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 266,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=842"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Deception\n\n---\n\nYou elude and evade attempts to uncover your true nature or intentions. When a spell or magical effect tries to read your mind, detect whether you are lying, or reveal your alignment, you can attempt a Deception check against the spell or effect's DC. If you succeed, the effect reveals nothing."
+    },
+    "Supertaster": {
+        "name": "Supertaster",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2152"
+        },
+        "traits": ["General"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Perception\n\n---\n\nYou have refined your palate and have a discerning sense of taste that can detect abnormalities in the flavor and texture of food and beverages. When eating food or drinking a beverage, you automatically attempt to identify the ingredients, which might alert you to the presence of alterations or additives, such as poisons. The GM rolls a secret Perception check using the poison's level to determine the DC; on a success, you learn that the food or drink was poisoned, but not the specific poison used. \n\nIf you lick or taste something while Investigating or attempting to Recall Knowledge to identify something, if the taste would provide relevant additional information (at the GM's discretion), you gain a +2 circumstance bonus to your check."
+    },
+    "Swift Sneak": {
+        "name": "Swift Sneak",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 267,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=850"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Stealth\n\n---\n\nYou can move your full Speed when you Sneak. You can use Swift Sneak while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type."
+    },
+    "Terrified Retreat": {
+        "name": "Terrified Retreat",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 268,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=853"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Intimidation\n\n---\n\nWhen you critically succeed at the Demoralize action, if the target's level is lower than yours, the target is fleeing for 1 round."
+    },
+    "Wall Jump": {
+        "name": "Wall Jump",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 269,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=863"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Athletics\n\n---\n\nYou can use your momentum from a jump to propel yourself off a wall. If you're adjacent to a wall at the end of a jump (whether performing a High Jump, Long Jump, or Leap), you don't fall as long as your next action is another jump. Furthermore, since your previous jump gives you momentum, you can use High Jump or Long Jump as a single action, but you don't get to Stride as part of the activity.\n\nYou can use Wall Jump only once in a turn, unless you're legendary in Athletics, in which case you can use Wall Jump as many times as you can use consecutive jump actions in that turn."
+    },
+    "Water Sprint": {
+        "name": "Water Sprint",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2157"
+        },
+        "traits": ["General", "Skill"],
+        "level": 7,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Athletics\n\n---\n\nExperience and training have taught you that water has just enough surface tension for a master sprinter to traverse the surface. When you Stride in a straight line, if you move at least half your Speed over ground, you can move any amount of the remaining distance across a level body of water. If you don't end your Stride on solid ground, you fall into the water. \n\nIf you're legendary in Athletics, as long as you start on solid ground, any part of your Stride can cross the water's surface, even if you aren't moving a straight line, though you still fall into the water if you don't end your movement on solid ground."
+    }
+}

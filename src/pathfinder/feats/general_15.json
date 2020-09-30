@@ -1,0 +1,203 @@
+{
+    "Cloud Jump": {
+        "name": "Cloud Jump",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=767"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Athletics\n\n---\n\nYour unparalleled athletic skill allows you to jump impossible distances. Triple the distance you Long Jump (so you could jump 60 feet on a successful DC 20 check). When you High Jump, use the calculation for a Long Jump but don't triple the distance.\n\nWhen you Long Jump or High Jump, you can also increase the number of actions you use (up to the number of actions you have remaining in your turn) to jump even further. For each extra action, add your Speed to the maximum distance you jump."
+    },
+    "Craft Anything": {
+        "name": "Craft Anything",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=773"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Crafting\n\n---\n\nYou can find ways to craft just about anything, despite restrictions. As long as you have the appropriate Crafting skill feat (such as Magical Crafting for magic items) and meet the item's level and proficiency requirement, you ignore just about any other requirement, such as being of a specific ancestry or providing spells. The only exceptions are requirements that add to the item's cost, including castings of spells that themselves have a cost, and requirements of special items such as the *philosopher's stone* that have exclusive means of access and Crafting. The GM decides whether you can ignore a requirement."
+    },
+    "Divine Guidance": {
+        "name": "Divine Guidance",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 260,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=775"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Religion\n\n---\n\nYou're so immersed in divine scripture that you find meaning and guidance in your texts in any situation. Spend 10 minutes Deciphering Writing on religious scriptures of your deity or philosophy while thinking about a particular problem or conundrum you face, and then attempt a Religion check (DC determined by the GM). If you succeed, you unearth a relevant passage, parable, or aphorism that can help you move forward or change your thinking to help solve your conundrum. For example, the GM might provide you with a cryptic poem or hint that can guide you to the next step of solving your problem."
+    },
+    "Legendary Codebreaker": {
+        "name": "Legendary Codebreaker",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 262,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=801"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Society\n\n---\n\nYour skill with languages and codes is so great that you can decipher information with little more than a quick read through a text. You can Decipher Writing using Society while reading at normal speed. If you slow down and spend the full amount of time that's ordinarily required and roll a success, you get a critical success; if you critically succeed while spending the normal amount of time, you gain a nearly word-for-word understanding of the document."
+    },
+    "Legendary Guide": {
+        "name": "Legendary Guide",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 207,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2138"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Survival\n\n---\n\nYou know the wilderness so well that you can help your party travel through it with ease. When you are setting the path for your party through wilderness terrain, your party gains a +10-foot circumstance bonus to its Speed for the purpose of calculating the party's travel speed, your party's travel speed doesn't decrease in difficult terrain, and greater difficult terrain halves your party's travel speed instead of reducing it to a third. This doesn't increase your party's Speed during an encounter or allow your party to ignore difficult terrain during an encounter."
+    },
+    "Legendary Linguist": {
+        "name": "Legendary Linguist",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=802"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Society, Multilingual\n\n---\n\nYou're so skilled with languages you can create a pidgin instantly. You can always talk to any creature that has a language\u2014even a language you don't know \u2014by creating a new pidgin language that uses simplified terms and conveys basic concepts. To do so, you must first understand at least what medium of communication the creature uses (speech, sign language, and so on)."
+    },
+    "Legendary Medic": {
+        "name": "Legendary Medic",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=803"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Medicine\n\n---\n\nYou've discovered medical breakthroughs or techniques that achieve miraculous results. Once per day for each target, you can spend 1 hour treating that target and attempt a Medicine check to remove a disease or the blinded, deafened, doomed, or drained condition. Use the DC of the disease or of the spell or effect that created the condition. If the effect's source is an artifact, above 20th level, or similarly powerful, increase the DC by 10."
+    },
+    "Legendary Negotiation": {
+        "name": "Legendary Negotiation",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=804"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 3 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** legendary in Diplomacy\n\n---\n\nYou can negotiate incredibly quickly in adverse situations. You attempt to Make an Impression and then Request your opponent cease their current activity and engage in negotiations. You take a \u20135 penalty to your Diplomacy check. The GM sets the DC of the Request based on the circumstances\u2014it's generally at least a very hard DC of the creature's level. Some creatures might simply refuse, and even those who agree to parley might ultimately find your arguments lacking and return to violence."
+    },
+    "Legendary Performer": {
+        "name": "Legendary Performer",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=805"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Performance, Virtuosic Performer\n\n---\n\nYour fame has spread throughout the lands. NPCs who succeed at a DC 10 Society check to Recall Knowledge have heard of you and usually have an attitude toward you one step better than normal, depending on your reputation and the NPC's disposition. For instance, if you're well-known for cruel and demanding behavior, creatures might be intimidated by you, rather than be friendly toward you. When you Earn Income with Performance, you attract higher-level audiences than your location would allow, as audiences flock to see you. For instance, rulers and angels might travel to your small tower in the woods to hear you perform. Typically, this increases the audiences available by 2 levels or more, determined by the GM."
+    },
+    "Legendary Professional": {
+        "name": "Legendary Professional",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=806"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Lore\n\n---\n\nYour fame has spread throughout the lands (for instance, if you have Warfare Lore, you might be a legendary general or tactician). This works as Legendary Performer, except you gain higher-level jobs when you Earn Income with Lore."
+    },
+    "Legendary Sneak": {
+        "name": "Legendary Sneak",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=807"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Stealth, Swift Sneak\n\n---\n\nYou're always sneaking unless you choose to be seen, even when there's nowhere to hide. You can Hide and Sneak even without cover or being concealed. When you employ an exploration tactic other than Avoiding Notice, you also gain the benefits of Avoiding Notice unless you choose not to."
+    },
+    "Legendary Survivalist": {
+        "name": "Legendary Survivalist",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=808"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Survival\n\n---\n\nYou can survive indefinitely without food or water and can endure severe, extreme, and incredible cold and heat without taking damage from doing so."
+    },
+    "Legendary Thief": {
+        "name": "Legendary Thief",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 263,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=809"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Thievery, Pickpocket\n\n---\n\nYour ability to Steal defies belief. You can attempt to Steal something that is actively wielded or that would be extremely noticeable or time consuming to remove (like worn shoes or armor). You must do so slowly and carefully, spending at least 1 minute (and significantly longer for items that are normally time consuming to remove, like armor). Throughout this duration you must have some means of staying hidden, such as the cover of darkness or a bustling crowd. You take a \u20135 penalty to your Thievery check. Even if you succeed, if the item is extremely prominent\u2014like a suit of full plate armor\u2014onlookers will quickly notice it's gone after you steal it."
+    },
+    "Reveal Machinations": {
+        "name": "Reveal Machinations",
+        "source": {
+            "book": "Pathfinder #147: Tomorrow Must Burn",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=924"
+        },
+        "traits": ["Rare", "General", "Skill"],
+        "level": 15,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** legendary in Deception\n\n---\n\nYou reveal that you played a minor but recurring role in another humanoid's life\u2014or at least convince them that's the case. Attempt a Deception check against the target's Will DC. On a success, the revelation makes them frightened 2, and on a critical success they are frightened 3. In addition, you gain information about the subject as though you had attempted to Recall Knowledge about them using an appropriate skill and received the same result on your roll. You can't use this ability against the same humanoid again until 1 day has passed and you've also successfully disguised yourself as a different person."
+    },
+    "Scare to Death": {
+        "name": "Scare to Death",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 266,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=837"
+        },
+        "traits": ["Death", "Emotion", "Fear", "General", "Incapacitation", "Skill"],
+        "level": 15,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** legendary in Intimidation\n\n---\n\nYou can frighten foes so much, they might die. Attempt an Intimidation check against the Will DC of a living creature within 30 feet of you that you sense or observe and who can sense or observe you. If the target can't hear you or doesn't understand the language you are speaking, you take a \u20134 circumstance penalty. The creature is temporarily immune for 1 minute.\n\n**Critical Success** The target must succeed at a Fortitude save against your Intimidation DC or die. If the target succeeds at its save, it becomes frightened 2 and is fleeing for 1 round; it suffers no effect on a critical success.  \n**Success** The target becomes frightened 2.  \n**Failure** The target becomes frightened 1.  \n**Critical Failure** The target is unaffected."
+    },
+    "Unified Theory": {
+        "name": "Unified Theory",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 268,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=859"
+        },
+        "traits": ["General", "Skill"],
+        "level": 15,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** legendary in Arcana\n\n---\n\nYou've started to make a meaningful connection about the common underpinnings of the four traditions of magic and magical essences, allowing you to understand them all through an arcane lens. Whenever you use an action or a skill feat that requires a Nature, Occultism, or Religion check, depending on the magic tradition, you can use Arcana instead. If you would normally take a penalty or have a higher DC for using Arcana on other magic (such as when using Identify Magic), you no longer do so."
+    }
+}

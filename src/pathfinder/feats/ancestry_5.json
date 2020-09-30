@@ -1,0 +1,1028 @@
+{
+    "Adaptive Adept": {
+        "name": "Adaptive Adept",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 57,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=73"
+        },
+        "traits": ["Human"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Adapted Cantrip, can cast 3rd-level spells\n\n---\n\nYou've continued adapting your magic to blend your class's tradition with your adapted tradition. Choose a cantrip or 1st-level spell from the same magical tradition as your cantrip from Adapted Cantrip. You gain that spell, adding it to your spell repertoire, spellbook, or prepared spells just like the cantrip from Adapted Cantrip. You can cast this spell as a spell of your class's magical tradition. If you choose a 1st-level spell, you don't gain access to the heightened versions of that spell, meaning you can't prepare them if you prepare spells and you can't learn them or select the spell as a signature spell if you have a spell repertoire."
+    },
+    "Ageless Patience": {
+        "name": "Ageless Patience",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 40,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=19"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou work at a pace born from longevity that enhances your thoroughness. You can voluntarily spend twice as much time as normal on a Perception check or skill check to gain a +2 circumstance bonus to that check. You also don't treat a natural 1 as worse than usual on these checks; you get a critical failure only if your result is 10 lower than the DC. For example, you could get these benefits if you spent 2 actions to Seek, which normally takes 1 action. You can get these benefits during exploration by taking twice as long exploring as normal, or in downtime by spending twice as much downtime.\n\nThe GM might determine a situation doesn't grant you a benefit if a delay would be directly counterproductive to your success, such as a tense negotiation with an impatient creature.  "
+    },
+    "Agonizing Rebuke": {
+        "name": "Agonizing Rebuke",
+        "source": {
+            "book": "Character Guide",
+            "page": 50,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1030"
+        },
+        "traits": ["Hobgoblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhen you terrorize your enemies, you also cause them painful mental distress. When you successfully Demoralize a foe, that foe takes 1d4 mental damage at the start of each of its turns as long as it remains frightened and continues to engage in combat with you. If you have master proficiency in Intimidation, the damage increases to 2d4, and if you have legendary proficiency, the damage increases to 3d4."
+    },
+    "Ally's Shelter": {
+        "name": "Ally's Shelter",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 14,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1276"
+        },
+        "traits": ["Fortune", "Kobold"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day  \n**Trigger** You attempt a saving throw while adjacent to one or more allies, but you haven't rolled yet.\n\n---\n\nIn stressful circumstances, you find strength in your allies' example. Roll the save using an adjacent ally's modifier for that type of saving throw instead of your own."
+    },
+    "Ancestral Suspicion": {
+        "name": "Ancestral Suspicion",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 43,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1410"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nLong-lived elves have seen civilizations rise and fall, often at the hands of outside forces. As a result, they have developed a wariness of others who might seek to influence or control them. You've been trained to resist such manipulation, gaining a +2 circumstance bonus to saving throws against effects that would make you controlled, such as *dominate*, and to Perception checks to Sense Motive when trying to determine if a creature is under the influence of such an effect. When you roll a success on a saving throw against such an effect, you get a critical success instead."
+    },
+    "Animal Elocutionist": {
+        "name": "Animal Elocutionist",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=32"
+        },
+        "traits": ["Gnome"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Burrow Elocutionist\n\n---\n\nYou hear animal sounds as conversations instead of unintelligent noise, and can respond in turn. You can speak to all animals, not just animals with a burrow Speed. You gain a +1 circumstance bonus to Make an Impression on animals (which usually uses the Diplomacy skill).  "
+    },
+    "Ankle Bite": {
+        "name": "Ankle Bite",
+        "source": {
+            "book": "Character Guide",
+            "page": 38,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1002"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Fang Sharpener or razortooth goblin heritage  \n**Trigger** A foe gives you the grabbed or restrained condition using a part of its body.\n\n---\n\nWhenever someone grabs onto you, you instinctively bite down hard. Sometimes that makes them let go, and sometimes it just makes them angrier, but either way, it's both satisfying and tasty. Make a jaws Strike against the triggering foe. On a critical hit, you are no longer grabbed. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike."
+    },
+    "Athletic Might": {
+        "name": "Athletic Might",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 18,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1287"
+        },
+        "traits": ["Orc"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nSurviving in hostile terrain has given you a great talent for mobility. Whenever you roll a success on an Athletics check to Climb or Swim, you get a critical success instead."
+    },
+    "Bloody Blows": {
+        "name": "Bloody Blows",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 18,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1288"
+        },
+        "traits": ["Orc"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour lethal unarmed attacks leave bloody gouges or cause severe internal bleeding. When you critically hit with a Strike using an unarmed attack that isn't nonlethal, the target takes 1d4 persistent bleed damage. This can be because you're taking the penalty to use a fist for a lethal attack or because you have an unarmed attack without the nonlethal trait due to Iron Fists, Tusks, or a similar ability."
+    },
+    "Boulder Roll": {
+        "name": "Boulder Roll",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 36,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=7"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Rock Runner\n\n---\n\nYour dwarven build allows you to push foes around, just like a mighty boulder tumbles through a subterranean cavern. Take a Step into the square of a foe that is your size or smaller, and the foe must move into the empty space directly behind it. The foe must move even if doing so places it in harm's way. The foe can attempt a Fortitude saving throw against your Athletics DC to block your Step. If the foe attempts this saving throw, unless it critically succeeds, it takes bludgeoning damage equal to your level plus your Strength modifier.\n\nIf the foe can't move into an empty space (if it is surrounded by solid objects or other creatures, for example), your Boulder Roll has no effect.  "
+    },
+    "Catfolk Weapon Rake": {
+        "name": "Catfolk Weapon Rake",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 10,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1257"
+        },
+        "traits": ["Catfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Catfolk Weapon Familiarity\n\n---\n\nYou know how to efficiently use weapons that rake across your enemies. Whenever you critically hit using a catfolk weapon or one of the weapons listed in Catfolk Weapon Familiarity, you apply the weapon's critical specialization effect."
+    },
+    "Chosen of Lamashtu": {
+        "name": "Chosen of Lamashtu",
+        "source": {
+            "book": "Character Guide",
+            "page": 38,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1003"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** worshipper of Lamashtu\n\n---\n\nYou bear the favor and blessings of Lamashtu, the Mother of Monsters. She has bestowed a mutation upon you, granting you the benefits of another heritage. Choose one goblin heritage that you do not already have; you gain that heritage and its benefits."
+    },
+    "Clan Protector": {
+        "name": "Clan Protector",
+        "source": {
+            "book": "Character Guide",
+            "page": 20,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=968"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour clan dagger can protect your allies as easily as yourself. When you use an Interact action to gain a circumstance bonus to AC from your clan dagger's parry trait, you can grant the circumstance bonus to an adjacent ally instead of gaining it yourself. You can use multiple Interact actions to protect multiple allies, or to protect yourself and an ally. The ally benefits from the bonus to AC only when they are adjacent to you."
+    },
+    "Clever Improviser": {
+        "name": "Clever Improviser",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 57,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=74"
+        },
+        "traits": ["Human"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've learned how to handle situations when you're out of your depth. You gain the Untrained Improvisation general feat. In addition, you can attempt skill actions that normally require you to be trained, even if you are untrained."
+    },
+    "Climbing Claws": {
+        "name": "Climbing Claws",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 10,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1258"
+        },
+        "traits": ["Catfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou can extend your claws to aid you in climbing. You gain a climb Speed of 10 feet."
+    },
+    "Cultural Adaptability": {
+        "name": "Cultural Adaptability",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 53,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=60"
+        },
+        "traits": ["Halfling"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nDuring your adventures, you've honed your ability to adapt to the culture of the predominant ancestry around you. You gain the Adopted Ancestry general feat, and you also gain one 1st-level ancestry feat from the ancestry you chose for the Adopted Ancestry feat.  "
+    },
+    "Darkseer": {
+        "name": "Darkseer",
+        "source": {
+            "book": "Character Guide",
+            "page": 13,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=950"
+        },
+        "traits": ["Human"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Gloomseer\n\n---\n\nZon-Kuthon smiles upon you\u2014even if you curse his name\u2014granting you pitch-black eyes that allow you to see in shadows and darkness. You gain darkvision."
+    },
+    "Defiance Unto Death": {
+        "name": "Defiance Unto Death",
+        "source": {
+            "book": "Character Guide",
+            "page": 26,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=980"
+        },
+        "traits": ["Uncommon", "Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Access** Spiresworn elf\n\n---\n\nYou loathe the alghollthus and their mind magic, and you've been trained to be willing to die rather than give into mental manipulation. If you would start your turn confused, controlled, or fleeing due to a failed Will save, you can attempt a Will save against the same DC; on a success, you become paralyzed until your next turn, rather than act against your will."
+    },
+    "Defy the Darkness": {
+        "name": "Defy the Darkness",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 42,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1399"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** darkvision\n\n---\n\nUsing ancient dwarven methods developed to fight enemies wielding magical darkness, you've honed your darkvision and sworn not to use such magic yourself. You gain greater darkvision, enabling you to see through magical darkness even if it normally hampers darkvision (such as the darkness created by a 4th-level *darkness* spell). You can't cast spells with the darkness trait, use item activations with the darkness trait, or use any other ability with the darkness trait."
+    },
+    "Dwarven Reinforcement": {
+        "name": "Dwarven Reinforcement",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 42,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1400"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Crafting\n\n---\n\nYou can use your knowledge of engineering and metalwork to temporarily strengthen thick objects and structures. By spending 1 hour working on an item, you can give it a +1 circumstance bonus to its Hardness for 24 hours. If you're a master in Crafting, the bonus is +2, and if you're legendary, the bonus is +3. You can reinforce a portion of a structure, though 1 hour usually reinforces only a door, a few windows, or another section that fits within a 10-foot cube."
+    },
+    "Dwarven Weapon Cunning": {
+        "name": "Dwarven Weapon Cunning",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 37,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=8"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Dwarven Weapon Familiarity\n\n---\n\nYou've learned cunning techniques to get the best effects out of your dwarven weapons. Whenever you critically hit using a battle axe, pick, warhammer, or a dwarf weapon, you apply the weapon's critical specialization effect.  "
+    },
+    "Easily Dismissed": {
+        "name": "Easily Dismissed",
+        "source": {
+            "book": "Character Guide",
+            "page": 44,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1016"
+        },
+        "traits": ["Uncommon", "Halfling"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Access** Chelaxian nationality\n\n---\n\nYou are practiced at blending into the background of the streets and halls of larger folk to ensure that you are overlooked. When you are in a crowd or well trafficked urban area, you can attempt to Hide and Sneak, even when observed. On a success, you aren't hidden or undetected, but other creatures simply don't take particular notice of you, even though they can see you. You can't use this ability on observers who have already seen you perform obtrusive or notable actions. If you perform any action other than to Hide or Sneak or otherwise take particularly salient actions (GM's discretion), observers notice you right away."
+    },
+    "Eat Fortune": {
+        "name": "Eat Fortune",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 26,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1315"
+        },
+        "traits": ["Concentrate", "Divination", "Divine", "Tengu"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day  \n**Trigger** A creature within 60 feet uses a fortune or misfortune effect.\n\n---\n\nAs someone tries to twist fate, you consume the interference. The triggering effect is disrupted. If it's a misfortune effect, Eat Fortune gains the fortune trait; if it's a fortune effect, Eat Fortune gains the misfortune trait. This fortune or misfortune applies to the same roll the triggering effect would have, so you couldn't negate a fortune effect with Eat Fortune and then apply a misfortune effect to the same roll."
+    },
+    "Eclectic Obsession": {
+        "name": "Eclectic Obsession",
+        "source": {
+            "book": "Character Guide",
+            "page": 33,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=995"
+        },
+        "traits": ["Gnome"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Frequency** once per day  \n**Prerequisites** Gnome Obsession\n\n---\n\nYour desire for stimulation has led you from one pursuit to another and granted you a smattering of expertise with myriad crafts and professions. You reflect on snippets you've learned to temporarily become trained in one Lore skill of your choice. This proficiency lasts for 10 minutes or until you critically fail a check with that skill. Since this training is temporary, you can't use it as a prerequisite for a permanent character option like a feat or a skill increase."
+    },
+    "Elven Instincts": {
+        "name": "Elven Instincts",
+        "source": {
+            "book": "Character Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=981"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour senses let you react rapidly. You gain a +2 circumstance bonus to Perception checks made as initiative rolls. Additionally, if your initiative roll result is tied with that of an opponent, you go first, regardless of whether you rolled Perception or not."
+    },
+    "Elven Weapon Elegance": {
+        "name": "Elven Weapon Elegance",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 41,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=20"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Elven Weapon Familiarity\n\n---\n\nYou are attuned to the weapons of your elven ancestors and are particularly deadly when using them. Whenever you critically hit using an elf weapon or one of the weapons listed in Elven Weapon Familiarity, you apply the weapon's critical specialization effect.  "
+    },
+    "Energized Font": {
+        "name": "Energized Font",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=33"
+        },
+        "traits": ["Gnome"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day  \n**Prerequisites** focus pool, at least one innate spell from a gnome heritage or ancestry feat that shares a tradition with at least one of your focus spells\n\n---\n\nThe magic within you provides increased energy you can use to focus. You regain 1 Focus Point, up to your usual maximum."
+    },
+    "Envenom Fangs": {
+        "name": "Envenom Fangs",
+        "source": {
+            "book": "Character Guide",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1057"
+        },
+        "traits": ["Lizardfolk"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** a number of times per day equal to your level  \n**Prerequisites** Sharp Fangs\n\n---\n\nYou envenom your fangs. If the next fangs Strike you make before the end of your next turn hits and deals damage, the Strike deals an additional 1d6 poison damage. On a critical failure, the poison is wasted as normal."
+    },
+    "Expanded Luck": {
+        "name": "Expanded Luck",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 10,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1259"
+        },
+        "traits": ["Catfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Cat's Luck\n\n---\n\nYou are luckier even than most catfolk. You can trigger Cat's Luck when you fail or critically fail a Fortitude or Will saving throw in addition to Reflex saving throws. You still can use Cat's Luck only once per day."
+    },
+    "Expert Drill Sergeant": {
+        "name": "Expert Drill Sergeant",
+        "source": {
+            "book": "Character Guide",
+            "page": 51,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1031"
+        },
+        "traits": ["Hobgoblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou know how to get the most out of your allies. While exploring, when you are leading and allies are Following the Expert, you grant a +3 circumstance bonus instead of +2 if you're an expert in the applicable skill, and a +4 circumstance bonus if you're a master."
+    },
+    "Fey Influence": {
+        "name": "Fey Influence",
+        "source": {
+            "book": "Pathfinder Society Scenario #1-17: The Perennial Crown Part 2, The Thorned Monarch",
+            "page": 30,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1239"
+        },
+        "traits": ["Rare"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have been exposed to powerful fey magic. You become trained in primal DCs and spell attack rolls. You gain the fey trait and one of the following features which grant an innate primal spell that can be used once per day. * **Anteater** You can launch your tongue forward as a deadly attack, gaining *grim tendrils*.\n* **Dryad** Your body is covered in elegant vines, granting you *summon plants and fungi*.\n* **Gremlin** You have long, bat-like ears and gain *bane*.\n* **Monarch** You have vestigial, insectile features and gain *spider sting*.\n\nThis feat gains the trait appropriate for your ancestry (human for human, goblin for goblin, etc.)"
+    },
+    "Forest Stealth": {
+        "name": "Forest Stealth",
+        "source": {
+            "book": "Character Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=982"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Expert in Stealth  \n**Requirements** You are in a forest or jungle environment near an environmental feature that would allow you to Take Cover.\n\n---\n\nYou are skilled at quickly hiding behind bits of underbrush or foliage. You Take Cover and then use that cover to Hide."
+    },
+    "Formation Training": {
+        "name": "Formation Training",
+        "source": {
+            "book": "Character Guide",
+            "page": 51,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1032"
+        },
+        "traits": ["Hobgoblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** trained in all martial weapons\n\n---\n\nYou know how to fight in formation with your brethren. When you are adjacent to at least two hobgoblin allies, you gain a +1 circumstance bonus to AC and saving throws. This bonus increases to +2 on Reflex saves against area effects."
+    },
+    "Gecko's Grip": {
+        "name": "Gecko's Grip",
+        "source": {
+            "book": "Character Guide",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1058"
+        },
+        "traits": ["Lizardfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** cliffscale lizardfolk\n\n---\n\nYou stick to walls with a preternatural grip. You gain a climb Speed of 15 feet."
+    },
+    "Gnome Weapon Innovator": {
+        "name": "Gnome Weapon Innovator",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=34"
+        },
+        "traits": ["Gnome"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Gnome Weapon Familiarity\n\n---\n\nYou produce outstanding results when wielding unusual weapons. Whenever you critically hit using a glaive, kukri, or gnome weapon, you apply the weapon's critical specialization effect.  "
+    },
+    "Goblin Weapon Frenzy": {
+        "name": "Goblin Weapon Frenzy",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 49,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=47"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Goblin Weapon Familiarity\n\n---\n\nYou know how to wield your people's vicious weapons. Whenever you score a critical hit using a goblin weapon, you apply the weapon's critical specialization effect.  "
+    },
+    "Grovel": {
+        "name": "Grovel",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 14,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1277"
+        },
+        "traits": ["Auditory", "Concentrate", "Emotion", "Kobold", "Mental"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** trained in Deception\n\n---\n\nWith obsequious words and begging gestures, you convince your foe you're less of a threat. You attempt to Feint against a creature. Unlike a normal Feint, the creature can be within 30 feet instead of in your melee reach, and you make your check against its Will DC instead of its Perception DC."
+    },
+    "Halfling Ingenuity": {
+        "name": "Halfling Ingenuity",
+        "source": {
+            "book": "Character Guide",
+            "page": 44,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1017"
+        },
+        "traits": ["Halfling"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Halfling Luck\n\n---\n\nWhile your willingness to dig into a task you know little about might get you into trouble, your incredible luck often saves you from danger. You can attempt skill actions that normally require you to be trained even if you aren't trained in that skill. If you use Halfling Luck when you fail a check for a skill with which you are untrained, you can add a proficiency bonus equal to your level, rather than 0, when you reroll the triggering skill check. You gain a +4 circumstance bonus to this rerolled skill check."
+    },
+    "Halfling Weapon Trickster": {
+        "name": "Halfling Weapon Trickster",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 53,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=61"
+        },
+        "traits": ["Halfling"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Halfling Weapon Familiarity\n\n---\n\nYou are particularly adept at fighting with your people's favored weapons. Whenever you critically succeed at an attack roll using a shortsword, a sling, or a halfling weapon, you apply the weapon's critical specialization effect.  "
+    },
+    "Hobgoblin Weapon Discipline": {
+        "name": "Hobgoblin Weapon Discipline",
+        "source": {
+            "book": "Character Guide",
+            "page": 51,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1033"
+        },
+        "traits": ["Hobgoblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Hobgoblin Weapon Familiarity\n\n---\n\nYou know how to efficiently utilize the weapons soldiers use in close quarters. Whenever you score a critical hit using a weapon of the polearm, spear, or sword group, you apply the weapon's critical specialization effect."
+    },
+    "Hold Mark": {
+        "name": "Hold Mark",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 18,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1289"
+        },
+        "traits": ["Orc"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou bear scars or tattoos enhanced by the mark of your community's prowess. When you select this feat, choose one of the options on the following page. When you critically hit using a weapon of the listed group, you apply the weapon's critical specialization effect. You gain a large brand or tattoo in the shape of the chosen emblem or a similar image (for example, the axe could be a bear or other symbol of ferocious strength, while the shield might be a turtle or another symbol associated with a strong defense) and gain the listed benefit. * **Axe** axe or pick\n* **Shield** hammer or shield\n* **Torch** bomb or knife\n\n"
+    },
+    "Intuitive Illusions": {
+        "name": "Intuitive Illusions",
+        "source": {
+            "book": "Character Guide",
+            "page": 33,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=996"
+        },
+        "traits": ["Gnome"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "bonus" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day  \n**Prerequisites** Illusion Sense  \n**Trigger** Your turn begins.\n\n---\n\nIllusion magic comes to you so naturally that you can effortlessly sustain your magical ruses. You immediately gain the effects of a Sustain a Spell action to extend the duration of one of your active illusion spells."
+    },
+    "Iruxi Unarmed Cunning": {
+        "name": "Iruxi Unarmed Cunning",
+        "source": {
+            "book": "Character Guide",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1059"
+        },
+        "traits": ["Lizardfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou make the most of your iruxi unarmed attacks. Whenever you score a critical hit with a claw or an unarmed attack you gained from a lizardfolk ancestry feat, you apply the unarmed attack's critical specialization effect."
+    },
+    "Kneecap": {
+        "name": "Kneecap",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1425"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou deliver a punishing blow to an enemy's knee, shin, or other vulnerable anatomy within your reach. Make a Strike with one of your melee weapons or melee unarmed attacks. This attack doesn't deal damage. On a hit, the target takes a \u201310-foot status penalty to its Speed or a \u201315-foot status penalty on a critical hit. This penalty applies only if the target has a land Speed and depends on legs or other targetable appendages to use its land Speed. As with all penalties to Speed, this can't reduce a creature's Speed below 5 feet."
+    },
+    "Lab Rat": {
+        "name": "Lab Rat",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 23,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1303"
+        },
+        "traits": ["Ratfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've spent more than your share of time in an alchemy lab. You might have been an alchemist yourself, an assistant, or perhaps even a test subject. Either way, you have been exposed to a wide variety of alchemical poisons and elixirs, leaving you with increased tolerance of their effects. You have a +1 circumstance bonus to saves against poison and harmful effects from elixirs. If you roll a success on your saving throw against an elixir or poison, you get a critical success instead."
+    },
+    "Leshy Glide": {
+        "name": "Leshy Glide",
+        "source": {
+            "book": "Character Guide",
+            "page": 55,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1044"
+        },
+        "traits": ["Leshy"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** leaf leshy heritage or Cat Fall skill feat\n\n---\n\nUsing your own leaves, you can control your descent. You glide slowly toward the ground, 5 feet down and up to 25 feet forward through the air. As long as you spend at least 1 action gliding each round and have not yet reached the ground, you remain in the air at the end of your turn."
+    },
+    "Light Paws": {
+        "name": "Light Paws",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 10,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1260"
+        },
+        "traits": ["Catfolk"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou can balance on your toes to step carefully over obstructions. You Stride and then Step, or Step and then Stride, ignoring difficult terrain during this movement."
+    },
+    "Long-Nosed Form": {
+        "name": "Long-Nosed Form",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 26,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1316"
+        },
+        "traits": ["Concentrate", "Polymorph", "Primal", "Tengu", "Transmutation"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou can transform into a specific, curious-looking human form. This human form is the same age and body type as your tengu form and has roughly analogous physical traits, such as height, though your nose remains as long as your beak and your complexion has red undertones, no matter the skin color of your human form. Using Long-Nosed Form counts as creating a disguise for the Impersonate use of Deception. Due to your imperfect transformation, your transformation doesn't automatically defeat Perception DCs to determine whether you are human, though you may be able to explain away or hide your tengu traits. You lose your beak unarmed Strike in your human form, as well as any other unarmed Strikes you gained from a tengu heritage or ancestry feat. You can remain in your human form indefinitely, and you can shift back to your tengu form by using this action again."
+    },
+    "Loud Singer": {
+        "name": "Loud Singer",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1426"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Goblin Song\n\n---\n\nStaying on pitch, proper breath control, and remembering the words are all less important than the real measure of a good singer: volume! The range of your Goblin Song is increased to 60 feet, and you can target one additional enemy when you use it."
+    },
+    "Loyal Empath": {
+        "name": "Loyal Empath",
+        "source": {
+            "book": "Pathfinder #153: Life's Long Shadow",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1220"
+        },
+        "traits": ["Shoony"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have incredible empathy for your friends and family, and you have an innate timing for helping others in distress. You can use the Aid reaction to grant a bonus to another creature's Will saving throw. As usual for Aid, you need to prepare by using an action on your turn to encourage the creature to bravely withstand the effect."
+    },
+    "Martial Experience": {
+        "name": "Martial Experience",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 43,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1411"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've crossed blades with a wide variety of foes wielding a wide variety of weapons, and you've learned the basics of fighting with nearly any of them. When wielding a weapon you aren't proficient with, treat your level as your proficiency bonus.\n\nAt 11th level, you become trained in all weapons."
+    },
+    "Natural Illusionist": {
+        "name": "Natural Illusionist",
+        "source": {
+            "book": "Character Guide",
+            "page": 33,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=997"
+        },
+        "traits": ["Gnome"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Illusion Sense\n\n---\n\nBy drawing upon the First World's magic, you can siphon a portion of that malleable world to create a convincing illusion. Once per day, you can cast *illusory disguise*, *item facade*, or *ventriloquism*. At 7th level, the spell is heightened to 2nd level, and every 2 levels thereafter, the spell is heightened an additional spell level."
+    },
+    "One-Toed Hop": {
+        "name": "One-Toed Hop",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1317"
+        },
+        "traits": ["Tengu"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nAssuming a peculiar stance, you make a short hop on each toe. You make a vertical Leap without triggering reactions that can be triggered by move actions or upon leaving or entering a square."
+    },
+    "Orc Weapon Carnage": {
+        "name": "Orc Weapon Carnage",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=87"
+        },
+        "traits": ["Orc"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Orc Weapon Familiarity\n\n---\n\nYou are brutally efficient with the weapons of your orc ancestors. Whenever you critically hit using a falchion, a greataxe, or an orc weapon, you apply the weapon's critical specialization effect.  "
+    },
+    "Ornate Tattoo": {
+        "name": "Ornate Tattoo",
+        "source": {
+            "book": "Character Guide",
+            "page": 13,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=951"
+        },
+        "traits": ["Human"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Arcane Tattoos\n\n---\n\nYou expand your tattoos to encompass greater magic. Choose a 1st-level arcane spell from the same school as your Arcane Tattoos, either a common spell or another to which you have access. You can cast that spell once per day as an innate arcane spell."
+    },
+    "Practiced Paddler": {
+        "name": "Practiced Paddler",
+        "source": {
+            "book": "Pathfinder #153: Life's Long Shadow",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1221"
+        },
+        "traits": ["Shoony"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** paddler shoony\n\n---\n\nYou're skilled at navigating bogs and marshes, even for a paddler shoony. You gain a swim Speed of 15 feet."
+    },
+    "Project Persona": {
+        "name": "Project Persona",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 44,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1418"
+        },
+        "traits": ["Concentrate", "Gnome", "Illusion", "Primal", "Visual"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nWhere others etch their armor to serve as a conduit for their imaginations, your vivid mind and bold personality allow you to project a more fitting persona over your lackluster armor. You change the shape and appearance of your armor to appear as ordinary or fine clothes of your imagining. The armor's statistics don't change. This effect lasts as long as you remain conscious and are wearing the armor. A creature can disbelieve the illusion by Seeking or touching your armor. The DC equals your Will DC."
+    },
+    "Protective Sheath": {
+        "name": "Protective Sheath",
+        "source": {
+            "book": "Character Guide",
+            "page": 21,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=969"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Clan's Edge\n\n---\n\nWhen you lash out with your clan dagger, you keep its sheath close at hand. When you use Clan's Edge, if the hand you're not holding the dagger with is empty, you can use your clan dagger's sheath to block attacks as well. The circumstance bonus to your AC from parrying increases to a +2 against any target you hit with a Strike this turn."
+    },
+    "Quick Stow": {
+        "name": "Quick Stow",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 23,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1304"
+        },
+        "traits": ["Ratfolk"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "bonus" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Cheek Pouches  \n**Trigger** once per round\n\n---\n\nYou are adept at quickly moving items into your cheek pouches. You Interact to store one held item in your cheek pouches (provided it fits)."
+    },
+    "Rat Magic": {
+        "name": "Rat Magic",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 23,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1305"
+        },
+        "traits": ["Ratfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nThere always seems to be a little rat around to carry messages for you. You can cast *animal messenger* once per day as a primal innate spell. When you do, the animal that responds is always a rat. If there are no rats within range, the spell is lost."
+    },
+    "Ritual Reversion": {
+        "name": "Ritual Reversion",
+        "source": {
+            "book": "Character Guide",
+            "page": 55,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1045"
+        },
+        "traits": ["Leshy", "Polymorph", "Primal", "Transmutation"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou can temporarily revert to a less conspicuous form without diminishing your senses. You take the form of an ordinary specimen of the type of plant or fungus that most closely resembles you, reverting to your body's appearance just before your spirit joined with it. This otherwise has the effects of *tree shape*, except that your size remains Small."
+    },
+    "Sense Allies": {
+        "name": "Sense Allies",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 47,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1437"
+        },
+        "traits": ["Human"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nLike many humans raised in a close-knit community, you have always been strongly attuned to the presence of others. Willing allies that you are aware of within 60 feet that would otherwise be undetected by you are instead hidden from you. The flat check for you to target willing allies within 60 feet that are hidden from you is 5 instead of 11."
+    },
+    "Shared Luck (Halfling)": {
+        "name": "Shared Luck (Halfling)",
+        "source": {
+            "book": "Character Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1018"
+        },
+        "traits": ["Halfling"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Halfling Luck\n\n---\n\nYou are evidence that it's lucky to travel with a halfling. You can use Halfling Luck when an ally within 30 feet fails a skill check or a saving throw to allow the ally to reroll the triggering check instead of you rerolling your own failed check. As usual, your ally must use the new result, even if it's worse than their first roll. If you have Guiding Luck, you can't use Guiding Luck's effect that applies to attack rolls and Perception checks to use Shared Luck to benefit an ally."
+    },
+    "Shed Tail": {
+        "name": "Shed Tail",
+        "source": {
+            "book": "Character Guide",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1060"
+        },
+        "traits": ["Lizardfolk"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Tail Whip  \n**Requirements** You have a fully grown tail.  \n**Trigger** You become grabbed.\n\n---\n\nYou can shed your tail to escape. You cease being grabbed, then Stride without triggering any reactions from the creature that grabbed you. It takes 1 week for your tail to fully grow back. Until it does, you can't use your tail unarmed attack, and you take a \u20132 circumstance penalty on checks to Balance."
+    },
+    "Sheltering Slab": {
+        "name": "Sheltering Slab",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 42,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1401"
+        },
+        "traits": ["Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nThe stone around you is your ally, and you have learned to use it to shore up your weaknesses. As long as you remain on the ground and are adjacent to a vertical stone wall that rises to your height or taller, you aren't flat-footed against attacks as a result of being flanked. This works even if you are at the outside corner of the wall."
+    },
+    "Snare Genius": {
+        "name": "Snare Genius",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 15,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1278"
+        },
+        "traits": ["Kobold"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Crafting, Snare Crafting\n\n---\n\nYour expertise makes your snares more powerful, and you can place them quickly and efficiently. Each day during your daily preparations, you can prepare three snares from your formula book for quick deployment; if the snare normally takes 1 minute to Craft, you can Craft it with 3 Interact actions. Snares prepared in this way don't cost you any resources to Craft. The number of snares you can prepare this way increases to four if you are a master in Crafting, and to five if you are legendary.\n\nWhen you Craft and deploy a snare that deals damage, any creature that critically fails its saving throw against the snare's initial effect and takes damage becomes flat-footed until the end of its next turn."
+    },
+    "Speak with Kindred": {
+        "name": "Speak with Kindred",
+        "source": {
+            "book": "Character Guide",
+            "page": 55,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1046"
+        },
+        "traits": ["Leshy"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have a connection with creatures that share your physiology. You can ask questions of, receive answers from, and use the Diplomacy skill with plants or fungi that match your leshy heritage. Generally, fungus leshies can speak to mushrooms and fungi; gourd leshies can speak to gourds, melons, and similar fruiting plants; leaf leshies can speak with deciduous trees; and vine leshies can speak with vines and climbing plants. The GM determines which plants or fungi count for this ability."
+    },
+    "Springing Leaper": {
+        "name": "Springing Leaper",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 10,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1261"
+        },
+        "traits": ["Catfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Athletics\n\n---\n\nYour powerful legs allow you to make sudden and dramatic leaps. You can Leap as a 2-action activity to double the distance you can Leap vertically, or Leap as a 3-action activity to triple the distance you can Leap vertically. You don't automatically fail Long Jumps for jumping in a different direction than your Stride."
+    },
+    "Step Lively": {
+        "name": "Step Lively",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 46,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1432"
+        },
+        "traits": ["Halfling"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** A Large or larger enemy ends a move action adjacent to you.\n\n---\n\nYou are an expert at avoiding the lumbering footsteps of larger creatures. You Step to another space adjacent to the enemy."
+    },
+    "Swift Swimmer": {
+        "name": "Swift Swimmer",
+        "source": {
+            "book": "Character Guide",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1061"
+        },
+        "traits": ["Lizardfolk"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** wetlander lizardfolk\n\n---\n\nYou swim faster than most iruxi. Your swim Speed increases to 25 feet."
+    },
+    "Tail Spin": {
+        "name": "Tail Spin",
+        "source": {
+            "book": "Character Guide",
+            "page": 38,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1004"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** tailed goblin heritage, Hard Tail \n\n---\n\nYou excel at using your tail as a weapon to upend your foes. Attempt a single Athletics check to Trip up to two adjacent creatures. If you roll a success against a target, you get a critical success against that target instead."
+    },
+    "Tengu Weapon Study": {
+        "name": "Tengu Weapon Study",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1318"
+        },
+        "traits": ["Tengu"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Tengu Weapon Familiarity\n\n---\n\nYou've learned techniques for using blades and other tengu weapons. Whenever you critically hit using one of the weapons from your Tengu Weapon Familiarity, you apply the weapon's critical specialization effect."
+    },
+    "Tomb-Watcher's Glare": {
+        "name": "Tomb-Watcher's Glare",
+        "source": {
+            "book": "Character Guide",
+            "page": 21,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=970"
+        },
+        "traits": ["Divine", "Dwarf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** death warden dwarf heritage\n\n---\n\nWhen you critically hit an undead creature, or an undead creature critically fails a saving throw against one of your abilities, you drive your divine wrath home in your enemy's heart. The undead is enfeebled 1 for 1 round."
+    },
+    "Torch Goblin": {
+        "name": "Torch Goblin",
+        "source": {
+            "book": "Character Guide",
+            "page": 38,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1005"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** charhide goblin heritage\n\n---\n\nYou've spent enough time on fire that you know how to use it to your advantage. You can light yourself thoroughly on fire with a held torch, a bottle of alchemist's fire, or a similar incendiary, dealing yourself 1d6 persistent fire damage. As long as you are suffering persistent fire damage, all your melee attacks against adjacent creatures deal an additional 1 fire damage per weapon damage die. Any creature that successfully Grapples, Shoves, or Trips you takes 1d6 fire damage; if it uses a weapon for that action, the weapon takes the damage instead. You must still attempt the flat check to remove the persistent fire damage each round, as normal."
+    },
+    "Tough Tumbler": {
+        "name": "Tough Tumbler",
+        "source": {
+            "book": "Pathfinder #153: Life's Long Shadow",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1222"
+        },
+        "traits": ["Shoony"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Scamper Underfoot\n\n---\n\nYou've taken your share of licks while scurrying around the battlefield and know how to defend yourself against opportunistic attackers. Your movement ends only when you critically fail an Acrobatics check to Tumble Through an enemy's space (or when you don't have enough Speed to move all the way through its space). You still trigger reactions on a failure to Tumble Through, but you gain a +1 circumstance bonus to AC against attacks that you trigger in this way."
+    },
+    "Tree Climber (Goblin)": {
+        "name": "Tree Climber (Goblin)",
+        "source": {
+            "book": "Character Guide",
+            "page": 38,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1006"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** tailed goblin or treedweller goblin heritage\n\n---\n\nYour time in forest or jungle canopies has taught you how to scramble across branches with sure feet. You gain a climb Speed of 10 feet. If you also have the Cave Climber ancestry feat, your total climb Speed increases to your land Speed when climbing trees."
+    },
+    "Vandal": {
+        "name": "Vandal",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1427"
+        },
+        "traits": ["Goblin"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have a knack for breaking and dismantling things. Putting them back together is the boring part, so you largely don't bother with that. You become trained in Thievery. If you would automatically become trained in Thievery (from your background or class, for example), you instead become trained in a skill of your choice. In addition, whenever you hit with a Strike against a trap or an unattended object, you ignore the first 5 points of the object's Hardness."
+    },
+    "Victorious Vigor": {
+        "name": "Victorious Vigor",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=88"
+        },
+        "traits": ["Orc"],
+        "level": 5,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** You bring a foe to 0 Hit Points.\n\n---\n\nYour victories in battle fill you with pride and imbue you with the energy to fight a bit longer despite your wounds. You gain temporary Hit Points equal to your Constitution modifier until the end of your next turn."
+    },
+    "Wavetouched Paragon": {
+        "name": "Wavetouched Paragon",
+        "source": {
+            "book": "Character Guide",
+            "page": 13,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=952"
+        },
+        "traits": ["Human"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Bonuwat ethnicity\n\n---\n\nYou have been blessed by the sea, granting you the ability to swim like a fish. You gain a 15-foot swim Speed.\n\n**Special** If you have the Bonuwat Wavetouched background, you can take this feat at 1st level instead of 5th."
+    },
+    "Wildborn Adept": {
+        "name": "Wildborn Adept",
+        "source": {
+            "book": "Character Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=983"
+        },
+        "traits": ["Elf"],
+        "level": 5,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Wildborn Magic\n\n---\n\nThe whispers of the jungle grant you more diverse access to simple primal magic. You can cast *dancing lights*, *disrupt undead*, and *tanglefoot* as innate primal spells at will. If you chose one of those spells with Wildborn Magic, you can select a new spell for Wildborn Magic."
+    }
+}

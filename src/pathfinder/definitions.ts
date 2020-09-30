@@ -169,6 +169,7 @@ export namespace pf {
         k: "bonus";
         category: string; // ???
         text: string;
+        arg: string;
     }
 
     export interface BonusSpeed {

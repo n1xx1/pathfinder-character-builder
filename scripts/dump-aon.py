@@ -475,8 +475,12 @@ def get_class_detail(url):
                 "description": to_markdown(soup, content)
             }
             here = to_element(soup, content).find("a", string="here")
+
             if here and not here["href"] == "Familiars.aspx" and not here["href"].startswith("Rules.aspx"):
                 feature["options"] = get_class_options(BASE_URL + here["href"])
+            elif feat_name == "Methodology":
+                feature["options"] = get_class_options(
+                    BASE_URL + "Methodologies.aspx")
 
             features.append(feature)
 
@@ -630,7 +634,7 @@ def get_feat_detail(url, all_ancestry_names):
 
         if any(x for x in data["traits"] if x in all_ancestry_names):
             data["kind"] = "ancestry"
-        elif "Archetype" in data["traits"]:
+        elif "Archetype" in data["traits"] or ("Rare" in data["traits"] and len(data["traits"]) == 1):
             data["kind"] = "archetype"
             data["skill"] = "Skill" in data["traits"]
         elif "General" in data["traits"]:
@@ -729,7 +733,7 @@ def create_feature_json(data, old):
 
         options = {}
         for o, odata in data["options"].items():
-            if o in old_options["options"]:
+            if "options" in old_options and o in old_options["options"]:
                 options[o] = create_feature_option_json(
                     odata, old_options["options"][o])
             else:
@@ -942,6 +946,7 @@ if __name__ == "__main__":
     parser.add_argument("--ancestry-feats", "--Fa", action="append")
     parser.add_argument("--all-class-feats", "--FC", action="store_true")
     parser.add_argument("--class-feats", "--Fc", action="append")
+    parser.add_argument("--all-general-feats", "--FG", action="store_true")
     parser.add_argument("--feat", "-f", action="append")
     args = parser.parse_args()
 
@@ -965,13 +970,17 @@ if __name__ == "__main__":
 
     feats = []
     if args.all_ancestry_feats:
-        ancestries, _ = get_all_ancestries()
+        ancestries1, _ = get_all_ancestries()
+        for a in ancestries1:
+            feats.extend(get_ancestry_or_class_feats(a))
     elif args.ancestry_feats != None:
         for a in args.ancestry_feats:
             feats.extend(get_ancestry_or_class_feats(a))
     elif args.class_feats != None:
         for c in args.class_feats:
             feats.extend(get_ancestry_or_class_feats(c))
+    if args.all_general_feats != None:
+        feats.extend(get_feats(BASE_URL + "Feats.aspx"))
 
     stuff_to_do = len(ancestries) + len(backgrounds) + len(classes) + len(feats) + to_int(
         args.print_all_ancestries) + to_int(args.print_all_backgrounds) + to_int(args.print_all_classes)

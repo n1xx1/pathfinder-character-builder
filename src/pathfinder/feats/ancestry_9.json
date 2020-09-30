@@ -1,0 +1,818 @@
+{
+    "Aggravating Scratch": {
+        "name": "Aggravating Scratch",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 10,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1262"
+        },
+        "traits": ["Catfolk", "Disease"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** claw unarmed attack\n\n---\n\nYour claws carry an irritant that is harmless to you but can be damaging to others. Your claw Strikes deal an additional 1d4 persistent poison damage on a critical hit."
+    },
+    "Bark and Tendril": {
+        "name": "Bark and Tendril",
+        "source": {
+            "book": "Character Guide",
+            "page": 55,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1047"
+        },
+        "traits": ["Leshy"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou wield primal magic. You can cast *barkskin* and *entangle* as 2nd-level primal innate spells once per day each."
+    },
+    "Battleforger": {
+        "name": "Battleforger",
+        "source": {
+            "book": "Character Guide",
+            "page": 21,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=971"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Crafting\n\n---\n\nYou can sharpen weapons, polish armor, and apply special techniques to temporarily gain better effects from your armaments. By spending 1 hour working on a weapon or armor, you can grant it the effects of a *+1 potency* rune until your next daily preparations, gaining a +1 item bonus to attack rolls for a weapon or increasing armor's item bonus to AC by 1. This has no effect if the weapon or armor already had a *potency* rune."
+    },
+    "Between the Scales": {
+        "name": "Between the Scales",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 15,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1279"
+        },
+        "traits": ["Kobold"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nUnderestimating you is a grave mistake, but it's one others keep making. You've learned to take advantage of slips in your foes' defenses. When you Strike a flat-footed creature using a melee weapon or unarmed attack that has the agile and finesse traits, it gains the backstabber trait."
+    },
+    "Big Mouth": {
+        "name": "Big Mouth",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 23,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1306"
+        },
+        "traits": ["Ratfolk"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Cheek Pouches\n\n---\n\nYour cheek pouches are especially stretchy. Instead of storing up to four items of Light Bulk in your cheek pouches, you can store up to 1 Bulk worth of items. The maximum size of a given item is unchanged."
+    },
+    "Brightness Seeker": {
+        "name": "Brightness Seeker",
+        "source": {
+            "book": "Character Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=984"
+        },
+        "traits": ["Elf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nOnce per day, you can spend 10 minutes studying your surroundings in search of omens related to a particular course of action to cast *augury* as an innate divine spell. Unless the result of the *augury* was \u201cnothing,\u201d you gain the following reaction for the next 30 minutes:"
+    },
+    "Cautious Curiosity": {
+        "name": "Cautious Curiosity",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 44,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1419"
+        },
+        "traits": ["Gnome"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** at least one arcane or occult innate spell gained from a gnome heritage or gnome ancestry feat\n\n---\n\nYou've learned a few magical techniques for getting yourself both into and out of trouble unnoticed. You gain *misdirection* and *silence* as 2nd-level arcane or occult innate spells. The tradition of these spells must match the tradition you use for your gnome ancestry options. You can cast each spell once per day and can target only yourself."
+    },
+    "Cave Climber": {
+        "name": "Cave Climber",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 49,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=48"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nAfter years of crawling and climbing through caverns, you can climb easily anywhere you go. You gain a climb Speed of 10 feet."
+    },
+    "Cling": {
+        "name": "Cling",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1428"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Requirements** Your last action was a successful Strike.\n\n---\n\nYou hang onto a foe to harry them into submission. If your target moves while you're hanging onto it, you can choose to move with the target. The target is released if you choose not to move with it, at the start of your next turn, or if the target Escapes. Attempts to Escape from a Cling follow the rules for Escape, but use your Acrobatics DC and end the Cling instead of the conditions normally ended by the Escape action.\n\n**Special** You can use this action without a free hand if your preceding Strike was made with your jaws or a similar unarmed attack you could use to hang on. The GM determines which unarmed attacks apply. Hanging on in this way prevents you from using that unarmed attack."
+    },
+    "Cooperative Soul": {
+        "name": "Cooperative Soul",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 57,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=75"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Cooperative Nature\n\n---\n\nYou have developed a soul-deep bond with your comrades and maintain an even greater degree of cooperation with them. If you are at least an expert in the skill you are Aiding, you get a success on any outcome rolled to Aid other than a critical success.  "
+    },
+    "Cunning Climber": {
+        "name": "Cunning Climber",
+        "source": {
+            "book": "Character Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1019"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhether you are climbing a ship's rigging, a jungle tree, or a clock tower, you have an uncanny knack for finding footholds and handholds where larger creatures can't. You gain a climb Speed of 10 feet. You can take the Legendary Climber feat even if you don't have the Quick Climb feat, provided you meet its other prerequisites."
+    },
+    "Dance Underfoot": {
+        "name": "Dance Underfoot",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 46,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1433"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Step Lively\n\n---\n\nYou dart under the legs of your enemies in combat. You can end a successful Tumble Through action in a Large or larger enemy's space. Also, when using the Step Lively feat, you can Step into the triggering enemy's space. The enemy must have limbs or otherwise leave you enough room for this maneuver, as determined by the GM. For instance, you could share space with a giant or dragon, but not an ooze."
+    },
+    "Death's Drums": {
+        "name": "Death's Drums",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 19,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1290"
+        },
+        "traits": ["Orc"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour life has been spent challenging death itself, and proximity to that implacable foe only makes your heart beat harder. When you are taking persistent damage or your wounded value is 1 or greater, you gain a +2 circumstance bonus to Fortitude saving throws."
+    },
+    "Dracomancer": {
+        "name": "Dracomancer",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 15,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1280"
+        },
+        "traits": ["Kobold"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour inborn arcane power manifests as your exemplar's most time-honored spells. Choose one 1st-level spell and one 2nd-level spell from those listed for a dragon spellcaster of your draconic exemplar's type (such as *alarm*, *blur*, *invisibility*, and *true strike* for a black dragon exemplar). Links to all types of dragons can be found here. You can cast each of these spells once per day as arcane innate spells. You gain the trained proficiency rank in arcane spell attack rolls and spell DCs, and your key spellcasting ability is Charisma."
+    },
+    "Dragon Prince": {
+        "name": "Dragon Prince",
+        "source": {
+            "book": "Character Guide",
+            "page": 14,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=953"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Dragon Spit\n\n---\n\nThe blood of the Dragon Kings runs strong in your veins. Your draconic heritage is clearly visible, with hair that is almost entirely crimson, azure, or the like, and that shines like a dragon's scales. You can cast the *dragon breath* sorcerer bloodline spell as an innate arcane spell once per day, but you can use only the dragon breath that is associated with your heritage and that matches the energy type of your Dragon Spit feat. At 12th level and every 3 levels thereafter, the spell is heightened by an additional spell level."
+    },
+    "Dragon's Breath": {
+        "name": "Dragon's Breath",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 15,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1281"
+        },
+        "traits": ["Kobold"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Kobold Breath\n\n---\n\nYou can put more effort into your Kobold Breath to channel greater draconic power, though it takes more out of you. When you use Kobold Breath, you can increase the damage dice to d8s and increase the area to 60 feet for a line breath weapon or 30 feet for a cone. If you do, you can't use Kobold Breath again for 1 hour."
+    },
+    "Echoes in Stone": {
+        "name": "Echoes in Stone",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 42,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1402"
+        },
+        "traits": ["Concentrate", "Dwarf"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Requirements** You are standing on a stone or earthen surface.\n\n---\n\nYou pause a moment to attune your senses to the stone around you. Until the start of your next turn, you gain a new sense: imprecise tremorsense with a range of 20 feet."
+    },
+    "Eclectic Sword Training": {
+        "name": "Eclectic Sword Training",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1319"
+        },
+        "traits": ["Tengu"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Tengu Weapon Familiarity\n\n---\n\nYou were always taught that you needed to be able to use whatever weapon came your way. You can change any of the swords designated in your Tengu Weapon Familiarity to different swords that meet the same specifications. You have to practice with a sword during your daily preparations to designate it, and the designation only lasts until your next daily preparations. This changes only your proficiency; it doesn't change your access."
+    },
+    "Elf Step": {
+        "name": "Elf Step",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 41,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=21"
+        },
+        "traits": ["Elf"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou move in a graceful dance, and even your steps are broad. You Step 5 feet twice."
+    },
+    "Energy Blessed": {
+        "name": "Energy Blessed",
+        "source": {
+            "book": "Character Guide",
+            "page": 21,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=972"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** elemental heart dwarf heritage\n\n---\n\nEnergy runs through your blood more powerfully. When you use Energy Emanation, you can create an emanation of 5 feet, 10 feet, or 15 feet. The damage increases to 6d6 plus an additional 1d6 for every level you have above 9th, instead of 1d6 plus an additional 1d6 for every 2 levels above 1st."
+    },
+    "Expert Longevity": {
+        "name": "Expert Longevity",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 41,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=22"
+        },
+        "traits": ["Elf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Ancestral Longevity\n\n---\n\nYou've continued to refine the knowledge and skills you've gained through your life. When you choose a skill in which to become trained with Ancestral Longevity, you can also choose a skill in which you are already trained and become an expert in that skill. This lasts until your Ancestral Longevity expires.\n\nWhen the effects of Ancestral Longevity and Expert Longevity expire, you can retrain one of your skill increases. The skill increase you gain from this retraining must either make you trained in the skill you chose with Ancestral Longevity or make you an expert in the skill you chose with Expert Longevity."
+    },
+    "Fade Away": {
+        "name": "Fade Away",
+        "source": {
+            "book": "Character Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1020"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Easily Dismissed\n\n---\n\nYour ability to blend into the background allows you to fade away entirely or appear innocuous even to magical effects. You gain *invisibility* and *misdirection* as 2nd-level innate occult spells. You can target only yourself with *invisibility*, and you must be the primary target of *misdirection*. You can cast each spell once per day."
+    },
+    "First World Adept": {
+        "name": "First World Adept",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=35"
+        },
+        "traits": ["Gnome"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** at least one primal innate spell\n\n---\n\nOver time your fey magic has grown stronger. You gain *faerie fire* and *invisibility* as 2nd-level primal innate spells. You can cast each of these primal innate spells once per day."
+    },
+    "Fortutious Shift": {
+        "name": "Fortutious Shift",
+        "source": {
+            "book": "Character Guide",
+            "page": 33,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=998"
+        },
+        "traits": ["Gnome"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Unexpected Shift\n\n---\n\nYou have grown more comfortable with your penchant for supernatural disappearance. The flat check DC of your Fortuitous Shift feat decreases to 11, and you are no longer dazzled if you succeed."
+    },
+    "Freeze It!": {
+        "name": "Freeze It!",
+        "source": {
+            "book": "Character Guide",
+            "page": 39,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1007"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** snow goblin heritage\n\n---\n\nYou are no rime hag or Jadwiga, but the magic of the north has still left a mark on you. Frigid ice runs through your veins, and you can expel frost from your body to freeze your foes. Attempt an Athletics check against the Fortitude DC of an adjacent foe. If you have master proficiency in Athletics, you can affect up to two adjacent foes, rolling one Athletics check against each foe.\n\n**Critical Success** The target becomes clumsy 2 for 1 round.  \n**Success** The target becomes clumsy 1 for 1 round.  \n**Critical Failure** The target is temporarily immune for 1 minute."
+    },
+    "Group Aid": {
+        "name": "Group Aid",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 47,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1438"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour upbringing emphasized teamwork and helping your allies comes naturally to you. After you Aid an ally at a skill check that doesn't have the attack trait, you can also Aid any other ally who attempts the same skill check for the same purpose that round. You do so as a free action rather than a reaction. \n\nThe preparation you did to help must still apply to the other allies, and you can Aid each ally only once. For example, if you helped lift up an ally to Aid them on an Athletics check to scale a wall, you could keep the same posture to give a boost to other allies attempting to scale the wall in the same round."
+    },
+    "Guiding Luck": {
+        "name": "Guiding Luck",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 53,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=62"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Halfling Luck\n\n---\n\nYour luck guides you to look the right way and aim your blows unerringly. You can use Halfling Luck twice per day: once in response to its normal trigger, and once when you fail a Perception check or attack roll instead of the normal trigger."
+    },
+    "Hardy Traveler": {
+        "name": "Hardy Traveler",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 47,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1439"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nThere's no journey too far or burden too heavy when your friends are at your side. Increase your maximum and encumbered Bulk limits by 1. In addition, you gain a +10-foot circumstance bonus to your Speed during overland travel."
+    },
+    "Heir of the Saoc": {
+        "name": "Heir of the Saoc",
+        "source": {
+            "book": "Character Guide",
+            "page": 14,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=954"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Saoc Astrology\n\n---\n\nIn the past, you would have been a proud initiate of the Saoc Brethren. Today, you carry on their legacy. When you use Saoc Astrology, roll 1d4 instead; on a 1, you take a \u20131 penalty to the skill check. On any other result, you gain a circumstance bonus of that value (for instance, a +3 circumstance bonus on a 3)."
+    },
+    "Helpful Halfling": {
+        "name": "Helpful Halfling",
+        "source": {
+            "book": "Character Guide",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1021"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhen you aid a friend with a task, you find many ways to help and avoid interfering. On a critical success to Aid, you grant your ally a +3 circumstance bonus if you have expert proficiency in the skill (rather than +2), and you grant your ally a +4 circumstance bonus if you have master proficiency (rather than +3). If you roll a critical failure on a check to Aid, you don't give your ally a \u20131 circumstance penalty to their check."
+    },
+    "Heroes' Call": {
+        "name": "Heroes' Call",
+        "source": {
+            "book": "Character Guide",
+            "page": 21,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=973"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nThe songs of ancient heroes echo through your mind and quicken your pulse, especially in dire straits. You gain *heroism* as a 3rd-level innate occult spell that you can cast once per day. If you Cast the Spell when you have half or fewer Hit Points, you also gain temporary Hit Points equal to twice your level."
+    },
+    "Hungry Goblin": {
+        "name": "Hungry Goblin",
+        "source": {
+            "book": "Character Guide",
+            "page": 39,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1008"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Fang Sharpener\n\n---\n\nYou'll eat anything and anyone. Whenever you inflict persistent bleed damage with your jaws unarmed attack, you gain temporary Hit Points equal to half your level for 1 minute."
+    },
+    "Improvisational Warrior": {
+        "name": "Improvisational Warrior",
+        "source": {
+            "book": "Pathfinder #153: Life's Long Shadow",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1223"
+        },
+        "traits": ["Shoony"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Improvisational Defender\n\n---\n\nWhen you use an improvised weapon, you apply the critical specialization of a brawling weapon to it. Depending on the shape and nature of the improvised weapon, your GM might determine another weapon group's critical specialization is more appropriate."
+    },
+    "Incredible Improvisation": {
+        "name": "Incredible Improvisation",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 57,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=76"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "bonus" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day  \n**Prerequisites** Clever Improviser  \n**Trigger** You attempt a check using a skill you're untrained in.\n\n---\n\nA stroke of brilliance gives you a major advantage with a skill despite your inexperience. Gain a +4 circumstance bonus to the triggering skill check."
+    },
+    "Irrepressible": {
+        "name": "Irrepressible",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 53,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=63"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou are easily able to ward off attempts to play on your fears and emotions. When you roll a success on a saving throw against an emotion effect, you get a critical success instead. If your heritage is gutsy halfling, when you roll a critical failure on a saving throw against an emotion effect, you get a failure instead.  "
+    },
+    "Kneel for No God": {
+        "name": "Kneel for No God",
+        "source": {
+            "book": "Character Guide",
+            "page": 21,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=974"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** ancient-blooded dwarf heritage  \n**Access** Vahird ethnicity\n\n---\n\nYour ancestors' defiance of magic and your people's strictly egalitarian mindset mean that certain forms of magic have little effect on you. When you use your Call on Ancient Blood reaction against a divine spell and roll a critical failure on the saving throw against that spell, you get a failure instead."
+    },
+    "Life Leap": {
+        "name": "Life Leap",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 44,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1420"
+        },
+        "traits": ["Gnome", "Move", "Necromancy", "Teleportation"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Requirements** You must be adjacent to a living creature.\n\n---\n\nYou phase through a space that a living creature occupies in a flash, spontaneously appearing on the opposite side of it in a vibrant display of colorful light. You move from your current location to another location that's still adjacent to the same living creature, but on the opposite side or corner of the creature's space. To determine whether a position is valid, use the same rules as for flanking: a line through the center of the two spaces must pass through opposite sides or corners of the creature's space.\n\nYou pass through the creature's life force, appearing in the selected location; this doesn't trigger reactions based on movement. You must be able to see your destination, and you can't move farther than your Speed would allow."
+    },
+    "Lucky Keepsake": {
+        "name": "Lucky Keepsake",
+        "source": {
+            "book": "Character Guide",
+            "page": 55,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1048"
+        },
+        "traits": ["Leshy"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Leshy Superstition\n\n---\n\nYou have a keepsake that grants you luck. You gain a +1 circumstance bonus to saves against spells and magical effects at all times, not just when you use Leshy Superstition. If you lose the keepsake, you lose the bonus until you designate a new keepsake, typically over the course of a week."
+    },
+    "Mountain's Stoutness": {
+        "name": "Mountain's Stoutness",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 37,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=9"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour hardiness lets you withstand more punishment than most before going down. Increase your maximum Hit Points by your level. When you have the dying condition, the DC of your recovery checks is equal to 9 + your dying value (instead of 10 + your dying value).\n\nIf you also have the Toughness feat, the Hit Points gained from it and this feat are cumulative, and the DC of your recovery checks is equal to 6 + your dying value."
+    },
+    "Multitalented": {
+        "name": "Multitalented",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 58,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=77"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've learned to split your focus between multiple classes with ease. You gain a 2nd-level multiclass dedication feat, even if you normally couldn't take another dedication feat until you take more feats from your current archetype.\n\nIf you're a half-elf, you don't need to meet the feat's ability score prerequisites.  "
+    },
+    "Otherworldly Acumen": {
+        "name": "Otherworldly Acumen",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 43,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1412"
+        },
+        "traits": ["Elf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** at least one innate spell gained from an elf ancestry feat\n\n---\n\nThe arcane magic you possess grows in power and complexity. Choose one common 2nd-level spell from the same tradition as an innate spell you previously gained from another elf ancestry feat (from the arcane list if you have Otherworldly Magic, for example). You can cast that spell as an innate spell once per day, using the same tradition as the list you chose the spell from.\n\nYour magic is adaptable. By spending 1 day of downtime, you can change the spell you chose to a different common 2nd-level spell from the same tradition."
+    },
+    "Overcrowd": {
+        "name": "Overcrowd",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 23,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1307"
+        },
+        "traits": ["Ratfolk"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour physiology is slight, and you can pack into small spaces with others of similar stature. As long as you are Small, you can end your movement in the same square as a Small ally. Only two creatures total can share the same space when using this ability or a similar one."
+    },
+    "Pervasive Superstition": {
+        "name": "Pervasive Superstition",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=89"
+        },
+        "traits": ["Orc"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Orc Superstition\n\n---\n\nYou steep yourself in superstition and practice ancient orc mental exercises for shrugging off the effects of magic. You gain a +1 circumstance bonus to saving throws against spells and magical effects at all times."
+    },
+    "Pride in Arms": {
+        "name": "Pride in Arms",
+        "source": {
+            "book": "Character Guide",
+            "page": 51,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1034"
+        },
+        "traits": ["Hobgoblin"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** An ally within 30 feet brings a foe to 0 Hit Points.\n\n---\n\nWith a shout of triumph, you grant inspiration to an ally fight on. The triggering ally gains temporary Hit Points equal to their Constitution modifier until the end of their next turn."
+    },
+    "Rat Form": {
+        "name": "Rat Form",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 23,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1308"
+        },
+        "traits": ["Concentrate", "Polymorph", "Primal", "Ratfolk", "Transmutation"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou can transform into an innocuous-looking rat to scout an area or slip through tight spaces. You gain the effects of a 1st-level *pest form* spell, except that you must assume the battle form of a Tiny rat."
+    },
+    "Returning Throw": {
+        "name": "Returning Throw",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 42,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1403"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou have mastered the technique of arcing a projectile so that it returns to your hand after being thrown, though this requires a moment to precisely calculate the trajectory and possible ricochets. Make a ranged Strike with a thrown weapon. Once the Strike is complete, the weapon arcs or ricochets back to your hand. If your hands are full when the weapon returns, it falls to the ground in your space."
+    },
+    "Roll with It": {
+        "name": "Roll with It",
+        "source": {
+            "book": "Character Guide",
+            "page": 39,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1009"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** unbreakable goblin heritage, Bouncy Goblin  \n**Trigger** A foe hits you with a melee weapon or unarmed attack.\n\n---\n\nWhen you take a big hit, your foe bounces you around like a rubber ball, but you escape the worst of the blow. Your foe can move you any distance of its choice up to 30 feet in a direction of its choice (this is not forced movement, and it triggers reactions as normal). You fall prone and are stunned 1. Attempt a DC 6 flat check. On a success, you take minimum damage from the attack, and on a critical success, if the attack was a critical hit, you don't take double damage from the critical hit."
+    },
+    "Scalding Spit": {
+        "name": "Scalding Spit",
+        "source": {
+            "book": "Character Guide",
+            "page": 39,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1010"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Torch Goblin\n\n---\n\nYour bodily fluids burn with surprising volatility, as if you ran on oil instead of blood. As long as you are taking persistent fire damage, you gain a boiling spit ranged unarmed attack with a range of 30 feet that deals 1d6 fire damage."
+    },
+    "Sense Thoughts": {
+        "name": "Sense Thoughts",
+        "source": {
+            "book": "Character Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=985"
+        },
+        "traits": ["Uncommon", "Elf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Share Thoughts\n\n---\n\nYou have an even stranger knack for knowing what other people are thinking. You can cast *mind reading* as an innate occult spell once per day."
+    },
+    "Shared Luck (Catfolk)": {
+        "name": "Shared Luck (Catfolk)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 11,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1263"
+        },
+        "traits": ["Catfolk"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Cat's Luck\n\n---\n\nWhen you use Cat's Luck to reroll a Reflex saving throw, any creatures you choose within 10 feet who also just failed a Reflex saving throw against the same effect (such as a single spell) can also reroll their saving throws and use the better result."
+    },
+    "Shory Aeromancer": {
+        "name": "Shory Aeromancer",
+        "source": {
+            "book": "Character Guide",
+            "page": 14,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=955"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Garundi, Mauxi, or Tian-Yae ethnicity\n\n---\n\nYour ancestors hailed from the flying cities of the Shory, and a few simple tricks have come down through the ages to you. You can cast 4th-level *fly* on yourself as an innate arcane spell once per day."
+    },
+    "Skittering Scuttle": {
+        "name": "Skittering Scuttle",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 49,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=49"
+        },
+        "traits": ["Goblin"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Goblin Scuttle\n\n---\n\nYou can scuttle farther and faster when maneuvering alongside allies. When you use Goblin Scuttle, you can Stride up to half your Speed instead of Stepping."
+    },
+    "Soaring Flight": {
+        "name": "Soaring Flight",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 27,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1320"
+        },
+        "traits": ["Morph", "Primal", "Tengu", "Transmutation"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 2 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Frequency** once per day  \n**Prerequisites** skyborn tengu heritage\n\n---\n\nTo be a tengu is to be unburdened by the concerns of the world below. You grow a pair of magical wings or expand your existing ones. For 5 minutes, you gain a fly Speed equal to your land Speed or 20 feet, whichever is greater."
+    },
+    "Sodbuster": {
+        "name": "Sodbuster",
+        "source": {
+            "book": "Pathfinder #153: Life's Long Shadow",
+            "page": 73,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1224"
+        },
+        "traits": ["Shoony"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Dig Quickly\n\n---\n\nYears toiling in soil have made you an expert digger. You gain a burrow Speed of 10 feet through loose soil or dirt."
+    },
+    "Solar Rejuvenation": {
+        "name": "Solar Rejuvenation",
+        "source": {
+            "book": "Character Guide",
+            "page": 55,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1049"
+        },
+        "traits": ["Leshy"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nIf you rest outdoors for 10 minutes during the day, you regain Hit Points equal to your Constitution modifier \u00d7 half your level. You gain this benefit in addition to any healing from Treat Wounds. Leshies whose plant nourishment does not rely on photosynthesis require a similarly suitable environment. For example, fungus leshies need dark, damp environments and a pile of decaying plant matter."
+    },
+    "Stone Bones": {
+        "name": "Stone Bones",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 42,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1404"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** You are struck by a critical hit that deals physical damage.\n\n---\n\nYour intractable nature can help you shrug off even the most grievous injuries. Attempt a DC 17 flat check. If you are successful, the attack becomes a normal hit."
+    },
+    "Stonewalker": {
+        "name": "Stonewalker",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 37,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=10"
+        },
+        "traits": ["Dwarf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have a deep reverence for and connection to stone. You gain *meld into stone* as a 3rd-level divine innate spell that you can cast once per day.\n\nIf you have the Stonecunning dwarf ancestry feat, you can attempt to find unusual stonework and stonework traps that require legendary proficiency in Perception. If you have both Stonecunning and legendary proficiency in Perception, when you're not Seeking and the GM rolls a secret check for you to notice unusual stonework, you keep the bonus from Stonecunning and don't take the \u20132 circumstance penalty.  "
+    },
+    "Terrain Advantage": {
+        "name": "Terrain Advantage",
+        "source": {
+            "book": "Character Guide",
+            "page": 59,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1062"
+        },
+        "traits": ["Lizardfolk"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou can take advantage of the terrain to bypass foes' defenses. Non-lizardfolk creatures in difficult terrain are flat-footed to you. If you have a swim Speed, non-lizardfolk creatures that are in water and lack a swim Speed are also flat-footed to you."
+    },
+    "Tree Climber (Elf)": {
+        "name": "Tree Climber (Elf)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 43,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1413"
+        },
+        "traits": ["Elf"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've spent much of your life among the treetops and have become an expert at quickly and safely climbing them. You gain a climb Speed of 10 feet."
+    },
+    "Undying Ferocity": {
+        "name": "Undying Ferocity",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 19,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1291"
+        },
+        "traits": ["Orc"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Orc Ferocity \n\n---\n\nYou resist death's clutches with supernatural vigor. When you use Orc Ferocity, you gain temporary Hit Points equal to your level."
+    },
+    "Unhampered Passage": {
+        "name": "Unhampered Passage",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 46,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1434"
+        },
+        "traits": ["Halfling"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou won't allow others to restrain you. You can cast *freedom of movement* on yourself as a primal innate spell once per day."
+    },
+    "Virtue-Forged Tattoos": {
+        "name": "Virtue-Forged Tattoos",
+        "source": {
+            "book": "Character Guide",
+            "page": 14,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=956"
+        },
+        "traits": ["Human"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Ornate Tattoo\n\n---\n\nYour tattoos are a work of eldritch genius, a masterpiece of art, magic, and skin. Choose a 3rd-level arcane spell from the same school as your Arcane Tattoos, either a common spell or another to which you have access, including a lower-level spell heightened to 3rd level if you wish. You can cast that spell once per day as an innate arcane spell."
+    },
+    "Vivacious Conduit": {
+        "name": "Vivacious Conduit",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 45,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=36"
+        },
+        "traits": ["Gnome"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour connection to the First World has grown, and its positive energy flows into you rapidly. If you rest for 10 minutes, you gain Hit Points equal to your Constitution modifier \u00d7 half your level. This is cumulative with any healing you receive from Treat Wounds.  "
+    },
+    "Wary Skulker": {
+        "name": "Wary Skulker",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 11,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1264"
+        },
+        "traits": ["Catfolk"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nEver alert, you scout for danger even when you are trying to stay hidden. You can perform the Scout exploration activity at the same time as the Avoid Notice exploration activity."
+    },
+    "Well-Groomed": {
+        "name": "Well-Groomed",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 11,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1265"
+        },
+        "traits": ["Catfolk"],
+        "level": 9,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou are fastidious about keeping yourself clean, whether licking your fur or carefully using traditional catfolk hygiene products, to salubrious effect. You gain a +1 circumstance bonus to saving throws against diseases. If you roll a success on a saving throw against a disease, you get a critical success instead."
+    }
+}

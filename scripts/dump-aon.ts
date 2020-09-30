@@ -1,4 +1,4 @@
-import { fetch, parseDom } from "./utils";
+import { fetch, parseDom } from "./utils/fetch";
 import { create$, QueryDOM, scanUntil, TagA, TagH1, TagH2, TagSpan } from "./utils/dom";
 import yargs from "yargs";
 

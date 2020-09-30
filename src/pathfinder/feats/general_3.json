@@ -1,0 +1,128 @@
+{
+    "Ancestral Paragon": {
+        "name": "Ancestral Paragon",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 258,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=753"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhether through instinct, study, or magic, you feel a deeper connection to your ancestry. You gain a 1st-level ancestry feat."
+    },
+    "Hireling Manager": {
+        "name": "Hireling Manager",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 206,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2130"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 14\n\n---\n\nYou are able to find and secure better labor than most. When securing a hireling for a service, that hireling gains a +2 circumstance bonus to all skill checks. This circumstance bonus applies to both trained and untrained hirelings and has no effect on the cost of the service or labor provided."
+    },
+    "Improvised Repair": {
+        "name": "Improvised Repair",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 206,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2132"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 3 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYou are skilled at making quick fixes to damaged equipment, but your fixes aren't meant to last forever. You make a quick repair to a broken non-magical item in your possession. Until the item takes damage again, you can still use it as a shoddy item of its type. This repair restores no Hit Points, so the item is easy to destroy. Once the item is Repaired normally such that it is no longer broken, it is also no longer shoddy."
+    },
+    "Keen Follower": {
+        "name": "Keen Follower",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 207,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2136"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour keen observation of your allies has made you better at following their lead. When using the Follow the Expert activity in exploration mode, you gain a +3 circumstance bonus if the ally you are following is an expert and a +4 circumstance bonus if your ally is a master."
+    },
+    "Pick up the Pace": {
+        "name": "Pick up the Pace",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 208,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2140"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Constitution 14\n\n---\n\nYou lead by example and can help others push themselves beyond their normal limits. When Hustling in a group during exploration mode, your group can Hustle for up to 20 additional minutes, to a maximum of the amount of time the character with the highest Constitution modifier could Hustle alone."
+    },
+    "Prescient Planner": {
+        "name": "Prescient Planner",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 208,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2143"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Cost** the Price of the chosen item  \n**Requirements** You haven't used this ability since the last time you were able to purchase goods.\n\n---\n\nYou regularly create convoluted plans and contingencies, using your resources to enact them. You take 1 minute to remove your backpack, then carefully remove an item you hadn't previously declared that you purchased\u2014you intuited that you would come to need the item and purchased it at the latest opportunity. The item must be a piece of adventuring gear, and can't be a weapon, armor, alchemical item, magic item, or other treasure. It must be common with a level no higher than half your level, and its Bulk must be low enough that carrying it wouldn't have made you encumbered."
+    },
+    "Skitter": {
+        "name": "Skitter",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2151"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Dexterity 16, Fleet\n\n---\n\nYou can scoot swiftly across the ground. You can Crawl up to half your Speed. "
+    },
+    "Steel Your Resolve": {
+        "name": "Steel Your Resolve",
+        "source": {
+            "book": "Gamemastery Guide",
+            "page": 201,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1211"
+        },
+        "traits": ["General", "Stamina"],
+        "level": 3,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Cost** 1 Resolve Point\n\n---\n\nRegain Stamina Points equal to half your maximum."
+    },
+    "Thorough Search": {
+        "name": "Thorough Search",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 209,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=2154"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** expert in Perception\n\n---\n\nYou take your time searching to ensure you find everything. When Searching, you can take twice as long to search. Normally this means you Search at up to one quarter of your Speed, to a maximum of 150 feet per minute to check everything, or 75 feet per minute to check everything before you walk into it. If you do, you gain a +2 circumstance bonus to your Perception checks to Seek."
+    },
+    "Untrained Improvisation": {
+        "name": "Untrained Improvisation",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 268,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=861"
+        },
+        "traits": ["General"],
+        "level": 3,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've learned how to handle situations when you're out of your depth. Your proficiency bonus to untrained skill checks is equal to half your level instead of +0. If you're 7th level or higher, the bonus increases to your full level instead. This doesn't allow you to use the skill's trained actions."
+    }
+}

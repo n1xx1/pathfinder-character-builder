@@ -8,10 +8,17 @@
     "bonus": [
         { "k": "ability", "choice": ["DEX", "CHA"] },
         { "k": "ability" },
-        { "k": "proficiency", "skill": "lore", "kind": "Fey", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Fey",
+            "proficiency": "T",
+            "description": ""
+        },
         {
             "k": "action",
-            "action": "Fey's Fortune",
+            "name": "Fey's Fortune",
+            "actions": "bonus",
             "description": "### Fey's Fortune\n\n**Activate** :f: (Concentrate, Fortune) Fey's Fortune; **Frequency** once per day; **Trigger** You attempt a skill check and haven't yet rolled; **Effect** Roll the skill check twice and use the better result."
         },
         { "k": "feat", "feat": "Fascinating Performance" }
