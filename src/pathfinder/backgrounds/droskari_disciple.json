@@ -8,8 +8,18 @@
     "bonus": [
         { "k": "ability", "choice": ["CON", "INT"] },
         { "k": "ability" },
-        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "Droskar", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "TODO",
+            "proficiency": "T"
+        },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Droskar",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Skill Training" }
     ],
     "description": "You grew up in the church of the Dark Smith, where you learned the value of hard work and achieving vocational mastery.\n\nChoose two ability boosts. One must be to **Constitution** or **Intelligence**, and one is a free ability boost.\n\nYou're trained in the Lore skill, and the Droskar Lore skill. You gain the Skill Training skill feat."

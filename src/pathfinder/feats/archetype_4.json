@@ -1,0 +1,482 @@
+{
+    "Arcane School Spell": {
+        "name": "Arcane School Spell",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=743"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Wizard Dedication\n\n---\n\nSelect one arcane school of magic. You gain the school's initial school spell. If you don't already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by studying.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Barbarian Resiliency": {
+        "name": "Barbarian Resiliency",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 221,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=672"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Barbarian Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Barbarian Dedication, class granting no more Hit Points per level than 10 + your Constitution modifier\n\n---\n\nYou gain 3 additional Hit Points for each barbarian archetype class feat you have. As you continue selecting barbarian archetype class feats, you continue to gain additional Hit Points in this way.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Arcana": {
+        "name": "Basic Arcana",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=744"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Wizard Dedication\n\n---\n\nYou gain a 1st- or 2nd-level wizard feat of your choice.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Bard Spellcasting": {
+        "name": "Basic Bard Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=678"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Bard Dedication\n\n---\n\nYou gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the bard archetype, add a common occult spell or another spell you learned or discovered to your repertoire, of the appropriate spell level.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Blood Potency": {
+        "name": "Basic Blood Potency",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=736"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Sorcerer Dedication\n\n---\n\nYou gain a 1st- or 2nd-level sorcerer feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Bloodline Spell": {
+        "name": "Basic Bloodline Spell",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=737"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Sorcerer Dedication\n\n---\n\nYou gain your bloodline's initial bloodline spell. If you don't already have one, you also gain a focus pool of 1 Focus Point, which you can Refocus without any special effort.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Cleric Spellcasting": {
+        "name": "Basic Cleric Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=695"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Cleric Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Cleric Dedication\n\n---\n\nYou gain the basic spellcasting benefits. You can prepare your deity's spells in your spell slots of the appropriate level from the cleric archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Concoction": {
+        "name": "Basic Concoction",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 220,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=666"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Alchemist Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Alchemist Dedication\n\n---\n\nYou gain a 1st- or 2nd-level alchemist feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Deduction": {
+        "name": "Basic Deduction",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1845"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Investigator Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Investigator Dedication\n\n---\n\nYou gain a 1st- or 2nd-level investigator feat of your choice.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Devotion": {
+        "name": "Basic Devotion",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=687"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Champion Dedication\n\n---\n\nYou gain a 1st- or 2nd-level champion feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Dogma": {
+        "name": "Basic Dogma",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=696"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Cleric Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Cleric Dedication\n\n---\n\nYou gain a 1st- or 2nd-level cleric feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Druid Spellcasting": {
+        "name": "Basic Druid Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=702"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Druid Dedication\n\n---\n\nYou gain the basic spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Flair": {
+        "name": "Basic Flair",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1860"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Swashbuckler Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Swashbuckler Dedication\n\n---\n\nYou gain a 1st- or 2nd-level swashbuckler feat of your choice.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Fury": {
+        "name": "Basic Fury",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 221,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=673"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Barbarian Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Barbarian Dedication\n\n---\n\nYou gain a 1st- or 2nd-level barbarian feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Hunter's Trick": {
+        "name": "Basic Hunter's Trick",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 228,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=723"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Ranger Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Ranger Dedication\n\n---\n\nYou gain a 1st- or 2nd-level ranger feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Kata": {
+        "name": "Basic Kata",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=716"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Monk Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Monk Dedication\n\n---\n\nYou gain a 1st- or 2nd-level monk feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Maneuver": {
+        "name": "Basic Maneuver",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 226,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=710"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Fighter Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Fighter Dedication\n\n---\n\nYou gain a 1st- or 2nd-level fighter feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Muse's Whispers": {
+        "name": "Basic Muse's Whispers",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=679"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Bard Dedication\n\n---\n\nYou gain a 1st- or 2nd-level bard feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Mysteries": {
+        "name": "Basic Mysteries",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1852"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Oracle Dedication\n\n---\n\nYou gain a 1st- or 2nd-level oracle feat of your choice.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Oracle Spellcasting": {
+        "name": "Basic Oracle Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1853"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Oracle Dedication\n\n---\n\nYou gain the basic spellcasting benefits. When you gain a spell slot of a new level from the oracle archetype, add a common divine spell or another divine spell you have learned or discovered to your repertoire, of that spell level.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Sorcerer Spellcasting": {
+        "name": "Basic Sorcerer Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=735"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Sorcerer Dedication\n\n---\n\nYou gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the sorcerer archetype, add a spell of the appropriate spell level to your repertoire: a common spell of your bloodline's tradition, one of your bloodline's granted spells, or another spell you have learned or discovered.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Trickery": {
+        "name": "Basic Trickery",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=728"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Rogue Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Rogue Dedication\n\n---\n\nYou gain a 1st- or 2nd-level rogue feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Wilding": {
+        "name": "Basic Wilding",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=703"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Druid Dedication\n\n---\n\nYou gain a 1st- or 2nd-level druid feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Witch Spellcasting": {
+        "name": "Basic Witch Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1867"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Witch Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Witch Dedication\n\n---\n\nYou gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the witch archetype, add two common spells of that level to your familiar.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Witchcraft": {
+        "name": "Basic Witchcraft",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1868"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Witch Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Witch Dedication\n\n---\n\nYou gain a 1st- or 2nd-level witch feat of your choice. Your familiar no longer has one less familiar ability than normal.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Basic Wizard Spellcasting": {
+        "name": "Basic Wizard Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=745"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Wizard Dedication\n\n---\n\nYou gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from the wizard archetype, add two common spells of that level to your spellbook.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Champion Resiliencey": {
+        "name": "Champion Resiliencey",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=688"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Champion Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier\n\n---\n\nYou gain 3 additional Hit Points for each champion archetype class feat you have. As you continue selecting champion archetype class feats, you continue to gain additional Hit Points in this way.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Fighter Resiliency": {
+        "name": "Fighter Resiliency",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 226,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=711"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Fighter Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Fighter Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier\n\n---\n\nYou gain 3 additional Hit Points for each fighter archetype class feat you have. As you continue selecting fighter archetype class feats, you continue to gain additional Hit Points in this way.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Finishing Precision": {
+        "name": "Finishing Precision",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1861"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Swashbuckler Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Swashbuckler Dedication\n\n---\n\nYou've learned how to land daring blows when you have panache. You gain the precise strike class feature (page 85) but you deal 1 addition damage on a hit and 1d6 damage on a finisher. This damage doesn't increase as you gain levels. In addition, you gain the Basic Finisher action.\n\n**Activate** :a::a: (Finisher, Swashbuckler) Basic Finisher; **Effect** You make a graceful, deadly attack. Make a Strike; if you hit and your weapon qualifies for precise strike, you deal the full 1d6 damage from precise strike.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "First Revelation": {
+        "name": "First Revelation",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1854"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Oracle Dedication\n\n---\n\nYou gain your mystery's initial revelation spell. Casting this spell progresses your curse. Use the minor curse from your mystery, but when you progress it again, instead of your mystery's moderate curse effect, you become flat-footed in addition to the effects of the minor curse.\n\nIf you don't have one, you gain a focus pool of 1 Focus Point. You can Refocus by reconciling the conflicting nature of your mystery, which also reduces your curse to minor.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Healing Touch": {
+        "name": "Healing Touch",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=689"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Champion Dedication\n\n---\n\nYou gain the appropriate devotion spell for your cause (*lay on hands* for the paladin, redeemer, and liberator). If you don't already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by praying or serving your deity.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Monk Resiliency": {
+        "name": "Monk Resiliency",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=717"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Monk Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Monk Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier\n\n---\n\nYou gain 3 additional Hit Points for each monk archetype class feat you have. As you continue selecting monk archetype class feats, you continue to gain additional Hit Points in this way.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Opportunist": {
+        "name": "Opportunist",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 226,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=712"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Fighter Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Fighter Dedication\n\n---\n\nYou gain the Attack of Opportunity reaction. \n\n### Attack of Opportunity :r:\n\n**Source** *Core Rulebook pg. 142* <sup>1.1</sup>  \n**Trigger** A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.\n\n---\n\nYou lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Order Spell": {
+        "name": "Order Spell",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=704"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Druid Dedication\n\n---\n\nYou gain the initial order spell from your order. If you don't already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by being one with nature.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Quick Alchemy": {
+        "name": "Quick Alchemy",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 220,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=667"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Alchemist Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Alchemist Dedication\n\n---\n\nYou gain the Quick Alchemy action. \n\n### Quick Alchemy :a:\n\n; Alchemist, Manipulate  \n**Source** *Core Rulebook pg. 72* <sup>1.1</sup>  \n**Cost** 1 batch of infused reagents  \n**Requirements** You have alchemist's tools, the formula for the alchemical item you're creating, and a free hand.\n\n---\n\nYou swiftly mix up a short-lived alchemical item to use at a moment's notice. You create a single alchemical item of your advanced alchemy level or lower that's in your formula book without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the infused trait, but it remains potent only until the start of your next turn.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Ranger Resiliency": {
+        "name": "Ranger Resiliency",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 228,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=724"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "prerequisites": ["feat:Ranger Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Ranger Dedication, class granting no more Hit Points per level than 8 + your Constitution modifier\n\n---\n\nYou gain 3 additional Hit Points for each ranger archetype class feat you have. As you continue selecting ranger archetype class feats, you continue to gain additional Hit Points in this way.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Sneak Attacker": {
+        "name": "Sneak Attacker",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=729"
+        },
+        "traits": ["Archetype"],
+        "level": 4,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Archetypes** Assassin*, Rogue  \n**Prerequisites** Rogue Dedication  \n* This archetype offers Sneak Attacker at a different level than displayed here.\n\n---\n\nYou gain the sneak attack class feature, except it deals 1d4 damage, increasing to 1d6 at 6th level. You don't increase the number of dice as you gain levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["STR", "CHA"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "intimidation", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "TODO",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Quick Coercion" }
     ],
     "description": "Reviled but required, you were sent when taxes were due. Performing your job might have required travel and persuasion, or perhaps you were responsible for collecting taxes on trade. Either way, it sometimes meant dirty hands, and adventuring seemed the next logical step to you.\n\nChoose two ability boosts. One must be to **Strength** or **Charisma**, and one is a free ability boost.\n\nYou're trained in the Intimidation skill, and a Lore skill for the settlement that employed you. You gain the Quick Coercion skill feat."

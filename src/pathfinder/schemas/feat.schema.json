@@ -5,24 +5,11 @@
     },
     "definitions": {
         "pf.Ability": {
-            "enum": [
-                "CHA",
-                "CON",
-                "DEX",
-                "INT",
-                "STR",
-                "WIS"
-            ],
+            "enum": ["CHA", "CON", "DEX", "INT", "STR", "WIS"],
             "type": "string"
         },
         "pf.ActionKind": {
-            "enum": [
-                1,
-                2,
-                3,
-                "bonus",
-                "reaction"
-            ]
+            "enum": [1, 2, 3, "bonus", "reaction"]
         },
         "pf.BonusAbility": {
             "additionalProperties": false,
@@ -46,15 +33,11 @@
                     "type": "array"
                 },
                 "k": {
-                    "enum": [
-                        "ability"
-                    ],
+                    "enum": ["ability"],
                     "type": "string"
                 }
             },
-            "required": [
-                "k"
-            ],
+            "required": ["k"],
             "type": "object"
         },
         "pf.BonusAbilityFlaw": {
@@ -64,16 +47,11 @@
                     "$ref": "#/definitions/pf.Ability"
                 },
                 "k": {
-                    "enum": [
-                        "ability_flaw"
-                    ],
+                    "enum": ["ability_flaw"],
                     "type": "string"
                 }
             },
-            "required": [
-                "ability",
-                "k"
-            ],
+            "required": ["ability", "k"],
             "type": "object"
         },
         "pf.BonusAction": {
@@ -86,9 +64,7 @@
                     "type": "string"
                 },
                 "k": {
-                    "enum": [
-                        "action"
-                    ],
+                    "enum": ["action"],
                     "type": "string"
                 },
                 "name": {
@@ -98,33 +74,88 @@
                     "$ref": "#/definitions/pf.Source"
                 }
             },
-            "required": [
-                "k",
-                "name"
-            ],
+            "required": ["k", "name"],
+            "type": "object"
+        },
+        "pf.BonusAncestryFeat": {
+            "additionalProperties": false,
+            "properties": {
+                "k": {
+                    "enum": ["ancestry_feat"],
+                    "type": "string"
+                },
+                "level": {
+                    "type": "integer"
+                }
+            },
+            "required": ["k", "level"],
             "type": "object"
         },
         "pf.BonusBonus": {
             "additionalProperties": false,
             "properties": {
+                "arg": {
+                    "type": "string"
+                },
                 "category": {
                     "type": "string"
                 },
                 "k": {
-                    "enum": [
-                        "bonus"
-                    ],
+                    "enum": ["bonus"],
                     "type": "string"
                 },
                 "text": {
                     "type": "string"
                 }
             },
-            "required": [
-                "category",
-                "k",
-                "text"
-            ],
+            "required": ["category", "k", "text"],
+            "type": "object"
+        },
+        "pf.BonusClassFeat": {
+            "additionalProperties": false,
+            "properties": {
+                "k": {
+                    "enum": ["class_feat"],
+                    "type": "string"
+                },
+                "level": {
+                    "type": "integer"
+                }
+            },
+            "required": ["k", "level"],
+            "type": "object"
+        },
+        "pf.BonusFeat": {
+            "additionalProperties": false,
+            "properties": {
+                "feat": {
+                    "type": "string"
+                },
+                "filter": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "k": {
+                    "enum": ["feat"],
+                    "type": "string"
+                },
+                "option": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "required": ["k"],
             "type": "object"
         },
         "pf.BonusIf": {
@@ -146,49 +177,19 @@
                                 "$ref": "#/definitions/pf.BonusSpell"
                             },
                             {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "feat": {
-                                        "type": "string"
-                                    },
-                                    "filter": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "k": {
-                                        "enum": [
-                                            "feat"
-                                        ],
-                                        "type": "string"
-                                    },
-                                    "option": {
-                                        "anyOf": [
-                                            {
-                                                "items": {
-                                                    "type": "string"
-                                                },
-                                                "type": "array"
-                                            },
-                                            {
-                                                "type": "string"
-                                            }
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "k"
-                                ],
-                                "type": "object"
+                                "$ref": "#/definitions/pf.BonusFeat"
+                            },
+                            {
+                                "$ref": "#/definitions/pf.BonusClassFeat"
+                            },
+                            {
+                                "$ref": "#/definitions/pf.BonusAncestryFeat"
                             },
                             {
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
@@ -198,6 +199,7 @@
                                         "enum": [
                                             "acrobatics",
                                             "arcana",
+                                            "armor_heavy",
                                             "armor_light",
                                             "armor_medium",
                                             "athletics",
@@ -229,21 +231,14 @@
                                         "type": "boolean"
                                     }
                                 },
-                                "required": [
-                                    "k",
-                                    "proficiency",
-                                    "skill"
-                                ],
+                                "required": ["k", "proficiency", "skill"],
                                 "type": "object"
                             },
                             {
                                 "additionalProperties": false,
                                 "properties": {
                                     "count": {
-                                        "type": [
-                                            "string",
-                                            "integer"
-                                        ]
+                                        "type": ["string", "integer"]
                                     },
                                     "filter": {
                                         "items": {
@@ -270,29 +265,21 @@
                                         "type": "array"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "any_skill"
-                                        ],
+                                        "enum": ["any_skill"],
                                         "type": "string"
                                     },
                                     "upgrade": {
                                         "type": "boolean"
                                     }
                                 },
-                                "required": [
-                                    "k",
-                                    "proficiency",
-                                    "skill"
-                                ],
+                                "required": ["k", "proficiency", "skill"],
                                 "type": "object"
                             },
                             {
@@ -302,9 +289,7 @@
                                         "type": "string"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "kind": {
@@ -314,9 +299,7 @@
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "lore"
-                                        ],
+                                        "enum": ["lore"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -335,18 +318,14 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "weapons"
-                                        ],
+                                        "enum": ["weapons"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -377,18 +356,14 @@
                                         "type": "array"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "weapons"
-                                        ],
+                                        "enum": ["weapons"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -410,18 +385,14 @@
                                         "type": "string"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "class_dc"
-                                        ],
+                                        "enum": ["class_dc"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -440,19 +411,14 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "spell_attack",
-                                            "spell_dc"
-                                        ],
+                                        "enum": ["spell_attack", "spell_dc"],
                                         "type": "string"
                                     },
                                     "tradition": {
@@ -520,49 +486,19 @@
                                 "$ref": "#/definitions/pf.BonusSpell"
                             },
                             {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "feat": {
-                                        "type": "string"
-                                    },
-                                    "filter": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "k": {
-                                        "enum": [
-                                            "feat"
-                                        ],
-                                        "type": "string"
-                                    },
-                                    "option": {
-                                        "anyOf": [
-                                            {
-                                                "items": {
-                                                    "type": "string"
-                                                },
-                                                "type": "array"
-                                            },
-                                            {
-                                                "type": "string"
-                                            }
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "k"
-                                ],
-                                "type": "object"
+                                "$ref": "#/definitions/pf.BonusFeat"
+                            },
+                            {
+                                "$ref": "#/definitions/pf.BonusClassFeat"
+                            },
+                            {
+                                "$ref": "#/definitions/pf.BonusAncestryFeat"
                             },
                             {
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
@@ -572,6 +508,7 @@
                                         "enum": [
                                             "acrobatics",
                                             "arcana",
+                                            "armor_heavy",
                                             "armor_light",
                                             "armor_medium",
                                             "athletics",
@@ -603,21 +540,14 @@
                                         "type": "boolean"
                                     }
                                 },
-                                "required": [
-                                    "k",
-                                    "proficiency",
-                                    "skill"
-                                ],
+                                "required": ["k", "proficiency", "skill"],
                                 "type": "object"
                             },
                             {
                                 "additionalProperties": false,
                                 "properties": {
                                     "count": {
-                                        "type": [
-                                            "string",
-                                            "integer"
-                                        ]
+                                        "type": ["string", "integer"]
                                     },
                                     "filter": {
                                         "items": {
@@ -644,29 +574,21 @@
                                         "type": "array"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "any_skill"
-                                        ],
+                                        "enum": ["any_skill"],
                                         "type": "string"
                                     },
                                     "upgrade": {
                                         "type": "boolean"
                                     }
                                 },
-                                "required": [
-                                    "k",
-                                    "proficiency",
-                                    "skill"
-                                ],
+                                "required": ["k", "proficiency", "skill"],
                                 "type": "object"
                             },
                             {
@@ -676,9 +598,7 @@
                                         "type": "string"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "kind": {
@@ -688,9 +608,7 @@
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "lore"
-                                        ],
+                                        "enum": ["lore"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -709,18 +627,14 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "weapons"
-                                        ],
+                                        "enum": ["weapons"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -751,18 +665,14 @@
                                         "type": "array"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "weapons"
-                                        ],
+                                        "enum": ["weapons"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -784,18 +694,14 @@
                                         "type": "string"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "class_dc"
-                                        ],
+                                        "enum": ["class_dc"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -814,19 +720,14 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "spell_attack",
-                                            "spell_dc"
-                                        ],
+                                        "enum": ["spell_attack", "spell_dc"],
                                         "type": "string"
                                     },
                                     "tradition": {
@@ -885,17 +786,11 @@
                     "type": "array"
                 },
                 "k": {
-                    "enum": [
-                        "if"
-                    ],
+                    "enum": ["if"],
                     "type": "string"
                 }
             },
-            "required": [
-                "bonus",
-                "if",
-                "k"
-            ],
+            "required": ["bonus", "if", "k"],
             "type": "object"
         },
         "pf.BonusItem": {
@@ -905,28 +800,21 @@
                     "type": "string"
                 },
                 "k": {
-                    "enum": [
-                        "item"
-                    ],
+                    "enum": ["item"],
                     "type": "string"
                 },
                 "name": {
                     "type": "string"
                 }
             },
-            "required": [
-                "k",
-                "name"
-            ],
+            "required": ["k", "name"],
             "type": "object"
         },
         "pf.BonusOption": {
             "additionalProperties": false,
             "properties": {
                 "k": {
-                    "enum": [
-                        "option"
-                    ],
+                    "enum": ["option"],
                     "type": "string"
                 },
                 "options": {
@@ -949,49 +837,19 @@
                                             "$ref": "#/definitions/pf.BonusSpell"
                                         },
                                         {
-                                            "additionalProperties": false,
-                                            "properties": {
-                                                "feat": {
-                                                    "type": "string"
-                                                },
-                                                "filter": {
-                                                    "items": {
-                                                        "type": "string"
-                                                    },
-                                                    "type": "array"
-                                                },
-                                                "k": {
-                                                    "enum": [
-                                                        "feat"
-                                                    ],
-                                                    "type": "string"
-                                                },
-                                                "option": {
-                                                    "anyOf": [
-                                                        {
-                                                            "items": {
-                                                                "type": "string"
-                                                            },
-                                                            "type": "array"
-                                                        },
-                                                        {
-                                                            "type": "string"
-                                                        }
-                                                    ]
-                                                }
-                                            },
-                                            "required": [
-                                                "k"
-                                            ],
-                                            "type": "object"
+                                            "$ref": "#/definitions/pf.BonusFeat"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/pf.BonusClassFeat"
+                                        },
+                                        {
+                                            "$ref": "#/definitions/pf.BonusAncestryFeat"
                                         },
                                         {
                                             "additionalProperties": false,
                                             "properties": {
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "proficiency": {
@@ -1001,6 +859,7 @@
                                                     "enum": [
                                                         "acrobatics",
                                                         "arcana",
+                                                        "armor_heavy",
                                                         "armor_light",
                                                         "armor_medium",
                                                         "athletics",
@@ -1073,18 +932,14 @@
                                                     "type": "array"
                                                 },
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "proficiency": {
                                                     "$ref": "#/definitions/pf.Proficiency"
                                                 },
                                                 "skill": {
-                                                    "enum": [
-                                                        "any_skill"
-                                                    ],
+                                                    "enum": ["any_skill"],
                                                     "type": "string"
                                                 },
                                                 "upgrade": {
@@ -1105,9 +960,7 @@
                                                     "type": "string"
                                                 },
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "kind": {
@@ -1117,9 +970,7 @@
                                                     "$ref": "#/definitions/pf.Proficiency"
                                                 },
                                                 "skill": {
-                                                    "enum": [
-                                                        "lore"
-                                                    ],
+                                                    "enum": ["lore"],
                                                     "type": "string"
                                                 },
                                                 "upgrade": {
@@ -1138,18 +989,14 @@
                                             "additionalProperties": false,
                                             "properties": {
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "proficiency": {
                                                     "$ref": "#/definitions/pf.Proficiency"
                                                 },
                                                 "skill": {
-                                                    "enum": [
-                                                        "weapons"
-                                                    ],
+                                                    "enum": ["weapons"],
                                                     "type": "string"
                                                 },
                                                 "upgrade": {
@@ -1180,18 +1027,14 @@
                                                     "type": "array"
                                                 },
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "proficiency": {
                                                     "$ref": "#/definitions/pf.Proficiency"
                                                 },
                                                 "skill": {
-                                                    "enum": [
-                                                        "weapons"
-                                                    ],
+                                                    "enum": ["weapons"],
                                                     "type": "string"
                                                 },
                                                 "upgrade": {
@@ -1213,18 +1056,14 @@
                                                     "type": "string"
                                                 },
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "proficiency": {
                                                     "$ref": "#/definitions/pf.Proficiency"
                                                 },
                                                 "skill": {
-                                                    "enum": [
-                                                        "class_dc"
-                                                    ],
+                                                    "enum": ["class_dc"],
                                                     "type": "string"
                                                 },
                                                 "upgrade": {
@@ -1243,9 +1082,7 @@
                                             "additionalProperties": false,
                                             "properties": {
                                                 "k": {
-                                                    "enum": [
-                                                        "proficiency"
-                                                    ],
+                                                    "enum": ["proficiency"],
                                                     "type": "string"
                                                 },
                                                 "proficiency": {
@@ -1323,39 +1160,27 @@
                                 "$ref": "#/definitions/pf.Source"
                             }
                         },
-                        "required": [
-                            "bonus",
-                            "description",
-                            "name"
-                        ],
+                        "required": ["bonus", "description", "name"],
                         "type": "object"
                     },
                     "type": "object"
                 }
             },
-            "required": [
-                "k",
-                "options"
-            ],
+            "required": ["k", "options"],
             "type": "object"
         },
         "pf.BonusRemoveAction": {
             "additionalProperties": false,
             "properties": {
                 "k": {
-                    "enum": [
-                        "remove_action"
-                    ],
+                    "enum": ["remove_action"],
                     "type": "string"
                 },
                 "name": {
                     "type": "string"
                 }
             },
-            "required": [
-                "k",
-                "name"
-            ],
+            "required": ["k", "name"],
             "type": "object"
         },
         "pf.BonusSpecial": {
@@ -1365,35 +1190,24 @@
                     "type": "string"
                 },
                 "k": {
-                    "enum": [
-                        "special"
-                    ],
+                    "enum": ["special"],
                     "type": "string"
                 },
                 "value": {
                     "anyOf": [
                         {
                             "items": {
-                                "type": [
-                                    "string",
-                                    "integer"
-                                ]
+                                "type": ["string", "integer"]
                             },
                             "type": "array"
                         },
                         {
-                            "type": [
-                                "string",
-                                "integer"
-                            ]
+                            "type": ["string", "integer"]
                         }
                     ]
                 }
             },
-            "required": [
-                "id",
-                "k"
-            ],
+            "required": ["id", "k"],
             "type": "object"
         },
         "pf.BonusSpeed": {
@@ -1403,16 +1217,11 @@
                     "type": "integer"
                 },
                 "k": {
-                    "enum": [
-                        "speed"
-                    ],
+                    "enum": ["speed"],
                     "type": "string"
                 }
             },
-            "required": [
-                "increase",
-                "k"
-            ],
+            "required": ["increase", "k"],
             "type": "object"
         },
         "pf.BonusSpell": {
@@ -1428,9 +1237,7 @@
                     "$ref": "#/definitions/pf.Tradition"
                 },
                 "k": {
-                    "enum": [
-                        "spell"
-                    ],
+                    "enum": ["spell"],
                     "type": "string"
                 },
                 "spell": {
@@ -1447,18 +1254,14 @@
                     ]
                 }
             },
-            "required": [
-                "k"
-            ],
+            "required": ["k"],
             "type": "object"
         },
         "pf.BonusSpellcasting": {
             "additionalProperties": false,
             "properties": {
                 "k": {
-                    "enum": [
-                        "spellcasting"
-                    ],
+                    "enum": ["spellcasting"],
                     "type": "string"
                 },
                 "slots": {
@@ -1483,18 +1286,11 @@
                             "type": "integer"
                         }
                     },
-                    "required": [
-                        "0",
-                        "1",
-                        "n"
-                    ],
+                    "required": ["0", "1", "n"],
                     "type": "object"
                 }
             },
-            "required": [
-                "k",
-                "slots"
-            ],
+            "required": ["k", "slots"],
             "type": "object"
         },
         "pf.BonusSpellcastingSlot": {
@@ -1504,20 +1300,14 @@
                     "type": "integer"
                 },
                 "k": {
-                    "enum": [
-                        "spellcasting_slot"
-                    ],
+                    "enum": ["spellcasting_slot"],
                     "type": "string"
                 },
                 "level": {
                     "type": "integer"
                 }
             },
-            "required": [
-                "add",
-                "k",
-                "level"
-            ],
+            "required": ["add", "k", "level"],
             "type": "object"
         },
         "pf.BonusStartingFocus": {
@@ -1527,17 +1317,11 @@
                     "type": "integer"
                 },
                 "k": {
-                    "enum": [
-                        "increase_focus",
-                        "starting_focus"
-                    ],
+                    "enum": ["increase_focus", "starting_focus"],
                     "type": "string"
                 }
             },
-            "required": [
-                "amount",
-                "k"
-            ],
+            "required": ["amount", "k"],
             "type": "object"
         },
         "pf.Feat": {
@@ -1559,49 +1343,19 @@
                                 "$ref": "#/definitions/pf.BonusSpell"
                             },
                             {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "feat": {
-                                        "type": "string"
-                                    },
-                                    "filter": {
-                                        "items": {
-                                            "type": "string"
-                                        },
-                                        "type": "array"
-                                    },
-                                    "k": {
-                                        "enum": [
-                                            "feat"
-                                        ],
-                                        "type": "string"
-                                    },
-                                    "option": {
-                                        "anyOf": [
-                                            {
-                                                "items": {
-                                                    "type": "string"
-                                                },
-                                                "type": "array"
-                                            },
-                                            {
-                                                "type": "string"
-                                            }
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "k"
-                                ],
-                                "type": "object"
+                                "$ref": "#/definitions/pf.BonusFeat"
+                            },
+                            {
+                                "$ref": "#/definitions/pf.BonusClassFeat"
+                            },
+                            {
+                                "$ref": "#/definitions/pf.BonusAncestryFeat"
                             },
                             {
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
@@ -1611,6 +1365,7 @@
                                         "enum": [
                                             "acrobatics",
                                             "arcana",
+                                            "armor_heavy",
                                             "armor_light",
                                             "armor_medium",
                                             "athletics",
@@ -1642,21 +1397,14 @@
                                         "type": "boolean"
                                     }
                                 },
-                                "required": [
-                                    "k",
-                                    "proficiency",
-                                    "skill"
-                                ],
+                                "required": ["k", "proficiency", "skill"],
                                 "type": "object"
                             },
                             {
                                 "additionalProperties": false,
                                 "properties": {
                                     "count": {
-                                        "type": [
-                                            "string",
-                                            "integer"
-                                        ]
+                                        "type": ["string", "integer"]
                                     },
                                     "filter": {
                                         "items": {
@@ -1683,29 +1431,21 @@
                                         "type": "array"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "any_skill"
-                                        ],
+                                        "enum": ["any_skill"],
                                         "type": "string"
                                     },
                                     "upgrade": {
                                         "type": "boolean"
                                     }
                                 },
-                                "required": [
-                                    "k",
-                                    "proficiency",
-                                    "skill"
-                                ],
+                                "required": ["k", "proficiency", "skill"],
                                 "type": "object"
                             },
                             {
@@ -1715,9 +1455,7 @@
                                         "type": "string"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "kind": {
@@ -1727,9 +1465,7 @@
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "lore"
-                                        ],
+                                        "enum": ["lore"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -1748,18 +1484,14 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "weapons"
-                                        ],
+                                        "enum": ["weapons"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -1790,18 +1522,14 @@
                                         "type": "array"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "weapons"
-                                        ],
+                                        "enum": ["weapons"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -1823,18 +1551,14 @@
                                         "type": "string"
                                     },
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "class_dc"
-                                        ],
+                                        "enum": ["class_dc"],
                                         "type": "string"
                                     },
                                     "upgrade": {
@@ -1853,19 +1577,14 @@
                                 "additionalProperties": false,
                                 "properties": {
                                     "k": {
-                                        "enum": [
-                                            "proficiency"
-                                        ],
+                                        "enum": ["proficiency"],
                                         "type": "string"
                                     },
                                     "proficiency": {
                                         "$ref": "#/definitions/pf.Proficiency"
                                     },
                                     "skill": {
-                                        "enum": [
-                                            "spell_attack",
-                                            "spell_dc"
-                                        ],
+                                        "enum": ["spell_attack", "spell_dc"],
                                         "type": "string"
                                     },
                                     "tradition": {
@@ -1942,23 +1661,11 @@
                     "type": "array"
                 }
             },
-            "required": [
-                "description",
-                "level",
-                "name",
-                "source",
-                "traits"
-            ],
+            "required": ["description", "level", "name", "source", "traits"],
             "type": "object"
         },
         "pf.Proficiency": {
-            "enum": [
-                "E",
-                "L",
-                "M",
-                "T",
-                "U"
-            ],
+            "enum": ["E", "L", "M", "T", "U"],
             "type": "string"
         },
         "pf.Source": {
@@ -1974,23 +1681,13 @@
                     "type": "string"
                 }
             },
-            "required": [
-                "book",
-                "page",
-                "prd"
-            ],
+            "required": ["book", "page", "prd"],
             "type": "object"
         },
         "pf.Tradition": {
-            "enum": [
-                "arcane",
-                "divine",
-                "occult",
-                "primal"
-            ],
+            "enum": ["arcane", "divine", "occult", "primal"],
             "type": "string"
         }
     },
     "type": "object"
 }
-

@@ -1,4 +1,16 @@
 {
+    "Didactic Strike": {
+        "name": "Didactic Strike",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1476"
+        },
+        "traits": ["Investigator"],
+        "level": 16,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Shared Stratagem\n\n---\n\nWhen you find a glaring weakness, you can set your allies up to annihilate your foe. When you use Shared Stratagem, you can designate up to 10 allies instead of just one. The foe is flat-footed against the first attack from each designated ally before your next turn, and each ally's first attack deals an extra 2d6 precision damage to the target if it hits."
+    },
     "Effortless Concentration": {
         "name": "Effortless Concentration",
         "source": {
@@ -13,6 +25,30 @@
             { "k": "bonus", "category": "TODO", "text": "" }
         ],
         "description": "**Trigger** Your turn begins.\n\n---\n\nYou maintain a spell with hardly a thought. You immediately gain the effects of the Sustain a Spell action, allowing you to extend the duration of one of your active class spells."
+    },
+    "Implausible Purchase (Investigator)": {
+        "name": "Implausible Purchase (Investigator)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1477"
+        },
+        "traits": ["Investigator"],
+        "level": 16,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Predictive Purchase\n\n---\n\nIt seems impossible, but you've analyzed every angle and are able to just keep pulling out exactly the item you need, even in far-flung locations. You can use Prescient Planner even if you have already used it after purchasing goods, and you can use it as a single action instead of a 2-action activity, during which you Interact to draw the item. In addition, five times per day, you can use Prescient Planner to pull out a common consumable item up to 6 levels lower than your level."
+    },
+    "Reconstruct the Scene": {
+        "name": "Reconstruct the Scene",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1478"
+        },
+        "traits": ["Concentrate", "Investigator", "Rogue"],
+        "level": 16,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou spend 1 minute surveying a small location (such as a single room) to get an impression of events that occurred there in the last day. This involves moving about the area and studying footprints, the placement of objects, spilled drinks or blood, and so forth. You get an indistinct mental impression of significant events that happened there. This gives you clues and details of the past, including the overall events and their time frame, but it's not a perfect record. This also isn't enough to identify who was involved in these events if you weren't already aware the person was there. As determined by the GM, you also pick out various seemingly small details that could serve as important clues, like a memorable weapon someone used for a murder or the type of cloak someone wore when passing through."
     },
     "Spell Tinker": {
         "name": "Spell Tinker",

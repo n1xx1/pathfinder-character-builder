@@ -1,0 +1,198 @@
+{
+    "Alchemist Dedication": {
+        "name": "Alchemist Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 220,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=665"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Intelligence 14\n\n---\n\nYou put your alchemical interest into practice. You become trained in alchemical bombs and Crafting; if you were already trained in Crafting, you instead become trained in a skill of your choice. You become trained in alchemist class DC.\n\nYou gain the alchemist's infused reagents class feature, gaining a number of reagents each day equal to your level. You also gain the Alchemical Crafting feat and four additional formulas for 1st-level alchemical items, as well as the ability to create free items during your daily preparations. Your advanced alchemy level is 1 and doesn't increase on its own.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the alchemist archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Barbarian Dedication": {
+        "name": "Barbarian Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 221,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=671"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Strength 14, Constitution 14\n\n---\n\nYou become trained in Athletics; if you were already trained in Athletics, you instead become trained in a skill of your choice. You become trained in barbarian class DC.\n\nYou can use the Rage action.\n\nChoose an instinct as you would if you were a barbarian. You have that instinct for all purposes and become bound by its anathema, but you don't gain any of the other abilities it grants.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the barbarian archetype.\n\n### Rage :a:\n\n; Barbarian, Concentrate, Emotion, Mental  \n**Source** *Core Rulebook pg. 84* <sup>1.1</sup>  \n**Requirements** You aren't fatigued or raging.\n\n---\n\nYou tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. This frenzy lasts for 1 minute, until there are no enemies you can perceive, or until you fall unconscious, whichever comes first. You can't voluntarily stop raging. While you are raging: * You deal 2 additional damage with melee weapons and unarmed attacks. This additional damage is halved if your weapon or unarmed attack is agile. \n* You take a \u20131 penalty to AC. \n* You can't use actions with the concentrate trait unless they also have the rage trait. You can Seek while raging.\n\nAfter you stop raging, you lose any remaining temporary Hit Points from Rage, and you can't Rage again for 1 minute.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Bard Dedication": {
+        "name": "Bard Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=677"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 14\n\n---\n\nYou cast spells like a bard and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the occult spell list, or any other cantrips you learn or discover. You can add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You're trained in spell attack rolls and spell DCs for occult spells. Your key spellcasting ability for bard archetype spells is Charisma, and they are occult bard spells. You become trained in Occultism and Performance; for each of these skills in which you were already trained, you instead become trained in a skill of your choice.\n\nChoose a muse as you would if you were a bard. You have that muse for all purposes, allowing you to take that muse's feats, but you don't gain any of the other abilities it grants.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the bard archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Champion Dedication": {
+        "name": "Champion Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=686"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Strength 14, Charisma 14\n\n---\n\nChoose a deity and cause as you would if you were a champion. You become trained in light, medium, and heavy armor. You become trained in Religion and your deity's associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You become trained in champion class DC.\n\nYou are bound by your deity's anathema and must follow the champion's code and alignment requirements for your cause. You don't gain any other abilities from your choice of deity or cause.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the champion archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Cleric Dedication": {
+        "name": "Cleric Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=694"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Wisdom 14\n\n---\n\nYou cast spells like a cleric. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the divine spell list in this book or any other cantrips you learn or discover. You can prepare common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You're trained in spell attack rolls and spell DCs for divine spells. Your key spellcasting ability for cleric archetype spells is Wisdom, and they are divine cleric spells. Choose a deity as you would if you were a cleric. You become bound by that deity's anathema. You become trained in Religion and your deity's associated skill; for each of these skills in which you were already trained, you instead become trained in a skill of your choice. You don't gain any other abilities from your choice of deity.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the cleric archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Druid Dedication": {
+        "name": "Druid Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=701"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Wisdom 14\n\n---\n\nYou cast spells like a druid. You gain access to the Cast a Spell activity. You can prepare two common cantrips each day from the primal spell list in this book or any other cantrips you learn or discover. You can prepare common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You're trained in spell attack rolls and spell DCs for primal spells. Your key spellcasting ability for druid archetype spells is Wisdom, and they are primal druid spells.\n\nYou learn the Druidic language.\n\nChoose an order as you would if you were a druid. You become a member of that order and are bound by its anathema, allowing you to take the order's feats. You become trained in Nature and your order's associated skill; for each of these skills in which you were already trained, you become trained in a skill of your choice. You don't gain any other abilities from your choice of order.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the druid archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Fighter Dedication": {
+        "name": "Fighter Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 226,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=709"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Strength 14, Dexterity 14\n\n---\n\nYou become trained in simple weapons and martial weapons. You become trained in your choice of Acrobatics or Athletics; if you are already trained in both of these skills, you instead become trained in a skill of your choice. You become trained in fighter class DC.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the fighter archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Investigator Dedication": {
+        "name": "Investigator Dedication",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1844"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Intelligence 14\n\n---\n\nYou gain the on the case class feature, which grants you both the Pursue a Lead activity and Clue In reaction. You become trained in Society and another skill of your choice. If you were already trained in Society, you instead become trained in an additional skill of your choice. You also become trained in investigator class DC.\n\n### Pursue a Lead \n\n; Concentrate, Exploration, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per 10 minutes\n\n---\n\nYou spend 1 minute examining the details of one potential clue, designating the subject related to that clue as the target of your active investigation. This subject is typically a single creature, item, or small location (such as a room or corridor), but the GM might allow a different scope for your investigation. You don't need to know the identity, purpose, or nature of the subject, but you do need to be aware of its existence. For instance, finding a footprint is enough to investigate the creature that left it, and seeing a hasty sketch of an item or location can be enough to start your investigation of that subject.\n\nWhenever you attempt a Perception or skill check to investigate a designated subject, you gain a +1 circumstance bonus to the check. The exact checks this applies to depend on the actions you use to investigate and are determined by the GM, but checks to investigate are typically Perception checks or skill checks that use Intelligence, Wisdom, or Charisma.\n\nYou can maintain two active investigations at a time. If you Pursue another Lead after that, the subject must be different from any of your current investigations (or rather, they must be different as far as you know), and you give up on a current subject of your choice. Once you've given up pursuit of a subject, you can't Pursue that Lead again until after the next time you make your daily preparations.\n\n### Clue In :r:\n\n; Concentrate, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per 10 minutes  \n**Trigger** Another creature attempts a check to investigate a lead you're pursuing.\n\n---\n\nYou share information with the triggering creature. They gain a circumstance bonus to their check equal to your circumstance bonus to checks investigating your subject from Pursue a Lead. The GM can add any relevant traits to this reaction depending on the situation, such as auditory and linguistic if you're conveying information verbally.\n\n**Special** You can't select another dedication feat until you have gained two other feats from the investigator archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Monk Dedication": {
+        "name": "Monk Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=715"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Strength 14, Dexterity 14\n\n---\n\nYou become trained in unarmed attacks and gain the powerful fist class feature. You become trained in your choice of Acrobatics or Athletics; if you are already trained in both of these skills, you become trained in a skill of your choice. You become trained in monk class DC.\n\n**Special** You can't select another dedication feat until you have gained two other feats from the monk archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Oracle Dedication": {
+        "name": "Oracle Dedication",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1851"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 14\n\n---\n\nChoose a mystery. You become trained in Religion and the mystery's skill; if you were already trained, you become trained in a skill of your choice. You gain the mild, constant effects of the mystery's curse described in its first paragraph, but not other effects the mystery usually grants. You cast spells like an oracle and gain the Cast a Spell activity. You gain a spell repertoire with two cantrips, either common divine cantrips or other divine cantrips you learn or discover. You're trained in divine spell attack rolls and divine spell DCs. Your key spellcasting ability for oracle archetype spells is Charisma, and they are divine oracle spells.\n\n**Special** You can't select another dedication feat until you have gained two other feats from the oracle archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Ranger Dedication": {
+        "name": "Ranger Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 228,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=722"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Dexterity 14\n\n---\n\nYou become trained in Survival; if you were already trained in Survival, you instead become trained in another skill of your choice. You become trained in ranger class DC.\n\nYou can use the Hunt Prey action.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the ranger archetype.\n\n### Hunt Prey :a:\n\n; Concentrate, Ranger  \n**Source** *Core Rulebook pg. 168* <sup>1.1</sup>\n\n---\n\nYou designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration.\n\nYou gain a +2 circumstance bonus to Perception checks when you Seek your prey and a +2 circumstance bonus to Survival checks when you Track your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you're hunting.\n\nYou can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Rogue Dedication": {
+        "name": "Rogue Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=727"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Dexterity 14\n\n---\n\nYou gain a skill feat and the rogue's surprise attack class feature. You become trained in light armor. In addition, you become trained in Stealth or Thievery plus one skill of your choice; if you are already trained in both Stealth and Thievery, you become trained in an additional skill of your choice. You become trained in rogue class DC.\n\n**Special** You cannot gain another dedication feat until you have gained two other feats from the rogue archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Sorcerer Dedication": {
+        "name": "Sorcerer Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=734"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 14\n\n---\n\nChoose a bloodline. You become trained in the bloodline's two skills; for each of these skills in which you were already trained, you become trained in a skill of your choice. \n\nYou cast spells like a sorcerer. You gain access to the Cast a Spell activity. You gain a spell repertoire with two common cantrips from the spell list associated with your bloodline, from the spells granted by your bloodline, or any other cantrips of that tradition you learn or discover. You can add to your repertoire common cantrips of your spellcasting tradition, whether from this book or other cantrips of that tradition you learn or discover. You're trained in spell attack rolls and spell DCs for your tradition's spells. Your key spellcasting ability for sorcerer archetype spells is Charisma, and they are sorcerer spells of your bloodline's tradition. You don't gain any other abilities from your choice of bloodline.\n\n**Special** You cannot select another dedication feat until you have gained two other feats from the sorcerer archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Swashbuckler Dedication": {
+        "name": "Swashbuckler Dedication",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1859"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Charisma 14, Dexterity 14\n\n---\n\nChoose a swashbuckler style. You gain the panache class feature, and you can gain panache in all the ways a swashbuckler of your style can. You become trained in Acrobatics or the skill associated with your style. If you were already trained in both skills, you instead become trained in a skill of your choice. You also become trained in swashbuckler class DC. You don't gain any other effects of your chosen style.\n\n**Special** You can't select another dedication feat until you have gained two other feats from the swashbuckler archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Witch Dedication": {
+        "name": "Witch Dedication",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1866"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Intelligence 14\n\n---\n\nYou cast spells like a witch. Choose a patron; you gain a familiar with two common cantrips of your choice from your chosen patron's tradition, but aside from the tradition, you don't gain any other effects the patron would usually grant. Your familiar has one less familiar ability than normal. You gain the Cast a Spell activity. You can prepare one cantrip each day from your familiar. You're trained in spell attack rolls and spell DCs from your patron's tradition. Your key spellcasting ability for witch archetype spells is Intelligence, and they are witch spells of your patron's tradition. You become trained in the skill associated with the patron's tradition; if you were already trained in it, you instead become trained in a skill of your choice.\n\n**Special** You can't select another dedication feat until you have gained two other feats from the witch archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Wizard Dedication": {
+        "name": "Wizard Dedication",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=742"
+        },
+        "traits": ["Archetype", "Dedication", "Multiclass"],
+        "level": 2,
+        "prerequisites": ["ability:INT,14"],
+        "bonus": [
+            { "k": "proficiency", "skill": "arcana", "proficiency": "T" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Prerequisites** Intelligence 14\n\n---\n\nYou cast spells like a wizard, gaining a spellbook with four common arcane cantrips of your choice. You gain the Cast a Spell activity. You can prepare two cantrips each day from your spellbook. You're trained in arcane spell attack rolls and spell DCs. Your key spellcasting ability for wizard archetype spells is Intelligence, and they are arcane wizard spells. You become trained in Arcana; if you were already trained in Arcana, you instead become trained in a skill of your choice.\n\n**Special** You can't select another dedication feat until you have gained two other feats from the wizard archetype.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

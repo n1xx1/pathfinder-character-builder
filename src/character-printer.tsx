@@ -41,22 +41,28 @@ export function CharacterPrinter({ pc }: CharacterPrinterProps) {
                 <Col span={12} style={{ padding: "10px" }}>
                     <Descriptions title="Abilities" bordered>
                         <Descriptions.Item span={3} label="Strength">
-                            {printMod(pc.abilities.STR.mod)} ({pc.abilities.STR.score})
+                            {printMod(pc.abilities.STR.mod)} (
+                            {pc.abilities.STR.score})
                         </Descriptions.Item>
                         <Descriptions.Item span={3} label="Dexterity">
-                            {printMod(pc.abilities.DEX.mod)} ({pc.abilities.DEX.score})
+                            {printMod(pc.abilities.DEX.mod)} (
+                            {pc.abilities.DEX.score})
                         </Descriptions.Item>
                         <Descriptions.Item span={3} label="Constitution">
-                            {printMod(pc.abilities.CON.mod)} ({pc.abilities.CON.score})
+                            {printMod(pc.abilities.CON.mod)} (
+                            {pc.abilities.CON.score})
                         </Descriptions.Item>
                         <Descriptions.Item span={3} label="Intelligence">
-                            {printMod(pc.abilities.INT.mod)} ({pc.abilities.INT.score})
+                            {printMod(pc.abilities.INT.mod)} (
+                            {pc.abilities.INT.score})
                         </Descriptions.Item>
                         <Descriptions.Item span={3} label="Wisdom">
-                            {printMod(pc.abilities.WIS.mod)} ({pc.abilities.WIS.score})
+                            {printMod(pc.abilities.WIS.mod)} (
+                            {pc.abilities.WIS.score})
                         </Descriptions.Item>
                         <Descriptions.Item span={3} label="Charisma">
-                            {printMod(pc.abilities.CHA.mod)} ({pc.abilities.CHA.score})
+                            {printMod(pc.abilities.CHA.mod)} (
+                            {pc.abilities.CHA.score})
                         </Descriptions.Item>
                     </Descriptions>
                 </Col>
@@ -68,7 +74,10 @@ export function CharacterPrinter({ pc }: CharacterPrinterProps) {
                         >
                             {printMod(pc.skills["acrobatics"].mod)}
                         </Descriptions.Item>
-                        <Descriptions.Item span={3} label={`Arcana (${pc.skills["arcana"].prof})`}>
+                        <Descriptions.Item
+                            span={3}
+                            label={`Arcana (${pc.skills["arcana"].prof})`}
+                        >
                             {printMod(pc.skills["arcana"].mod)}
                         </Descriptions.Item>
                         <Descriptions.Item
@@ -107,7 +116,10 @@ export function CharacterPrinter({ pc }: CharacterPrinterProps) {
                         >
                             {printMod(pc.skills["medicine"].mod)}
                         </Descriptions.Item>
-                        <Descriptions.Item span={3} label={`Nature (${pc.skills["nature"].prof})`}>
+                        <Descriptions.Item
+                            span={3}
+                            label={`Nature (${pc.skills["nature"].prof})`}
+                        >
                             {printMod(pc.skills["nature"].mod)}
                         </Descriptions.Item>
                         <Descriptions.Item
@@ -160,7 +172,11 @@ export function CharacterPrinter({ pc }: CharacterPrinterProps) {
                 <Col span={12} style={{ padding: "10px" }}>
                     <Descriptions title="Actions and Activities" bordered>
                         {pc.actions.map(a => (
-                            <Descriptions.Item key={a.name} span={3} label={a.name}>
+                            <Descriptions.Item
+                                key={a.name}
+                                span={3}
+                                label={a.name}
+                            >
                                 <RenderMarkdown source={a.description} />
                             </Descriptions.Item>
                         ))}
@@ -168,17 +184,24 @@ export function CharacterPrinter({ pc }: CharacterPrinterProps) {
                 </Col>
                 <Col span={12} style={{ padding: "10px" }}>
                     <Descriptions title="Bonus" bordered>
-                        {_.entries(_.groupBy(pc.bonuses, b => b.category)).map(([k, cat]) => (
-                            <Descriptions.Item key={k} span={3} label={k}>
-                                <List>
-                                    {cat.map(({ text }, i) => (
-                                        <List.Item key={i}>
-                                            <RenderMarkdown source={formatBonus(text, pc)} />
-                                        </List.Item>
-                                    ))}
-                                </List>
-                            </Descriptions.Item>
-                        ))}
+                        {_.entries(_.groupBy(pc.bonuses, b => b.category)).map(
+                            ([k, cat]) => (
+                                <Descriptions.Item key={k} span={3} label={k}>
+                                    <List>
+                                        {cat.map(({ text }, i) => (
+                                            <List.Item key={i}>
+                                                <RenderMarkdown
+                                                    source={formatBonus(
+                                                        text,
+                                                        pc,
+                                                    )}
+                                                />
+                                            </List.Item>
+                                        ))}
+                                    </List>
+                                </Descriptions.Item>
+                            ),
+                        )}
                     </Descriptions>
                 </Col>
             </Row>
@@ -215,7 +238,11 @@ export function CharacterPrinter({ pc }: CharacterPrinterProps) {
                                 },
                             ]}
                             columns={[
-                                { title: "Level", dataIndex: "level", key: "level" },
+                                {
+                                    title: "Level",
+                                    dataIndex: "level",
+                                    key: "level",
+                                },
                                 { title: "Cantrips", dataIndex: "0", key: "0" },
                                 { title: "1st", dataIndex: "1", key: "1" },
                                 { title: "2nd", dataIndex: "2", key: "2" },
@@ -314,10 +341,10 @@ function functionCreator(data: any, dyndatadefs: string[]) {
     ].join("; ");
 
     return function (body: string, dyndata: any) {
-        return new Function("__data", "__dyndata", `${initializer}; return ${body};`).call(
-            undefined,
-            data,
-            dyndata,
-        );
+        return new Function(
+            "__data",
+            "__dyndata",
+            `${initializer}; return ${body};`,
+        ).call(undefined, data, dyndata);
     };
 }

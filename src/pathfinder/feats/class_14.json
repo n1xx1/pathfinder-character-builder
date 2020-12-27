@@ -18,6 +18,18 @@
         ],
         "description": "**Prerequisites** arcane bond\n\n---\n\nYour connection to your bonded item increases your focus pool. If you have spent at least 2 Focus Points since the last time you Refocused and your bonded item is in your possession, you recover 2 Focus Points when you Refocus instead of 1."
     },
+    "Plot the Future": {
+        "name": "Plot the Future",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 64,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1473"
+        },
+        "traits": ["Uncommon", "Concentrate", "Investigator", "Prediction"],
+        "level": 14,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou spend 10 minutes in contemplation to uncannily predict how events will play out. Choose a particular goal or activity you plan to engage in within 1 week, or an event you expect might happen within 1 week. You analyze whether it's likely to come to pass, learning whether it's highly likely, somewhat likely, somewhat unlikely, or highly unlikely. You also gain a piece of advice suggesting a course of action you or your allies could take that might make the chosen event more or less likely, whichever you prefer. The GM determines the likeliness of the event and the piece of advice you learn."
+    },
     "Reflect Spell": {
         "name": "Reflect Spell",
         "source": {
@@ -30,6 +42,34 @@
         "prerequisites": ["feat:Counterspell (Prepared)"],
         "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
         "description": "**Prerequisites** Counterspell\n\n---\n\nWhen you successfully use Counterspell to counteract a spell that affects targeted creatures or an area, you can turn that spell's effect back on its caster. When reflected, the spell affects only the original caster, even if it's an area spell or it would normally affect more than one creature. The original caster can attempt a save and use other defenses against the reflected spell as normal."
+    },
+    "Sense the Unseen": {
+        "name": "Sense the Unseen",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 64,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=530"
+        },
+        "traits": ["Investigator", "Ranger", "Rogue"],
+        "level": 14,
+        "prerequisites": ["feat:Shadowdancer* Dedication"],
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** You fail a check to Seek.  \n* This archetype offers Sense the Unseen at a different level than displayed here.\n\n---\n\nWhen you look for foes, you can catch even the slightest cues, such as their minute movements or the shifting of air currents on your skin. Even though you failed at the triggering check, you automatically sense any undetected creatures in the area where you're Seeking, making them merely hidden to you.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Strategic Bypass": {
+        "name": "Strategic Bypass",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1475"
+        },
+        "traits": ["Investigator"],
+        "level": 14,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour plans account for your foes' resistances, enabling you to strike a telling blow. When you hit with a Strike on which you substituted your attack roll due to Devising a Stratagem, you ignore an amount of resistance equal to your Intelligence modifier for each resistance that applies against your attack."
     },
     "Superior Bond": {
         "name": "Superior Bond",

@@ -1,4 +1,16 @@
 {
+    "Athletic Strategist": {
+        "name": "Athletic Strategist",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1452"
+        },
+        "traits": ["Investigator"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** trained in Athletics\n\n---\n\nYou know how to calculatedly manipulate joints and body weight. In addition to using Devise a Stratagem to modify a Strike, you can use it to modify a Disarm, Grapple, Shove, or Trip attempt, substituting your Devise a Stratagem roll for the Athletics check. You must apply the substitution to the first eligible attack you make, whether it's a Strike or one of the Athletics actions.\n\nYou can also use your Intelligence modifier instead of Strength for the Athletics check when you substitute your Devise a Stratagem roll, unless you're using a weapon for the maneuver and the weapon doesn't fit the restrictions for using Intelligence with a stratagem."
+    },
     "Cantrip Expansion": {
         "name": "Cantrip Expansion",
         "source": {
@@ -55,7 +67,9 @@
         "traits": ["Druid", "Sorcerer", "Witch", "Wizard"],
         "level": 2,
         "prerequisites": ["special:familiar"],
-        "bonus": [{ "k": "special", "id": "familiar_extra_ability", "value": 2 }],
+        "bonus": [
+            { "k": "special", "id": "familiar_extra_ability", "value": 2 }
+        ],
         "description": "**Prerequisites** a familiar\n\n---\n\nYou infuse your familiar with additional magical energy. You can select four familiar or master abilities each day, instead of two.\n\n**Special**  \n(Wizard) If your arcane thesis is improved familiar attunement, your familiar's base number of familiar abilities, before adding any extra abilities from the arcane thesis, is four.  \n(Witch) Add the bonus familiar abilities you gain for being a witch to this amount."
     },
     "Nonlethal Spell": {
@@ -69,5 +83,41 @@
         "level": 2,
         "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
         "description": "\n\n---\n\nYou can alter offensive spells to be less deadly. If your next action is to Cast a Spell that deals damage and doesn't have the death or negative trait, that spell gains the nonlethal trait."
+    },
+    "Red Herring": {
+        "name": "Red Herring",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 61,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1453"
+        },
+        "traits": ["Investigator"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have a keen sense for avoiding spurious lines of inquiry. When you Pursue a Lead, the GM tells you if the lead you chose is inconsequential. For example, if you found a splatter of gray mud on the wall, thought it was suspicious, and Pursued it as a Lead, the GM would tell you if there was no greater mystery related to it. When the GM tells you a lead is inconsequential, you can decline to Pursue the Lead, keeping any leads you were already pursuing. You still can't use Pursue a Lead again for 10 minutes, as normal."
+    },
+    "Shared Stratagem": {
+        "name": "Shared Stratagem",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 61,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1454"
+        },
+        "traits": ["Investigator"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nThe plans you make include your allies as well as yourself. When you hit a creature with an attack on which you substituted your attack roll due to Devising a Stratagem, designate one ally. The creature you hit is flat-footed to that ally on the next attack the designated ally makes against that creature before the start of your next turn."
+    },
+    "Solid Lead": {
+        "name": "Solid Lead",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 61,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1455"
+        },
+        "traits": ["Investigator"],
+        "level": 2,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nSometimes your case splinters into smaller mysteries, but you never lose sight of the big picture. Once per day when you give up on the subject of a lead due to using Pursue a Lead again, you can designate the lead you stopped pursuing as your solid lead for the day. Even though you stopped following the solid lead, you can change back to your solid lead any number of times by using a single action, which has the concentrate trait. Doing so ends one of your current leads as normal.\n\nDuring your next daily preparations, you can maintain your solid lead or you can remove it; removing it allows you to designate a new solid lead later that day."
     }
 }

@@ -12,13 +12,34 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "E" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "E"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
-                { "k": "proficiency", "skill": "occultism", "proficiency": "T" },
-                { "k": "proficiency", "skill": "performance", "proficiency": "T" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "4+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "occultism",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "performance",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "4+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -28,12 +49,27 @@
                 {
                     "k": "proficiency",
                     "skill": "weapons",
-                    "weapons": ["longsword", "rapier", "sap", "shortbow", "shortsword", "and whip"],
+                    "weapons": [
+                        "longsword",
+                        "rapier",
+                        "sap",
+                        "shortbow",
+                        "shortsword",
+                        "and whip"
+                    ],
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "armor_light",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 {
                     "k": "proficiency",
                     "skill": "spell_attack",
@@ -70,7 +106,9 @@
                                 "page": 97,
                                 "prd": "https://2e.aonprd.com/Muses.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your muse is a mystery, driving you to uncover the hidden secrets of the multiverse. If your muse is a creature, it might be a dragon or otherworldly being; if a deity, it might be Irori or Nethys. You gain the Bardic Lore feat and add *true strike* to your spell repertoire."
                         },
                         "Maestro": {
@@ -80,7 +118,9 @@
                                 "page": 97,
                                 "prd": "https://2e.aonprd.com/Muses.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your muse is a virtuoso, inspiring you to greater heights. If it's a creature, it might be a performance-loving creature such as a choral angel or lillend azata; if a deity, it might be Shelyn. As a bard with a maestro muse, you are an inspiration to your allies and confident of your musical and oratorical abilities. You gain the Lingering Composition feat and add *soothe* to your spell repertoire."
                         },
                         "Polymath": {
@@ -90,7 +130,9 @@
                                 "page": 97,
                                 "prd": "https://2e.aonprd.com/Muses.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your muse is a jack of all trades, flitting between skills and pursuits. If it's is a creature, it might be an eclectic creature like a fey; if a deity, it might be Desna or Calistria. As a bard with a polymath muse, you are interested in a wide array of topics but rarely dedicated to any one, and you rarely make up your mind\u2014you want to try everything. You gain the Versatile Performance feat and add *unseen servant* to your spell repertoire."
                         },
                         "Warrior": {
@@ -100,7 +142,9 @@
                                 "page": 112,
                                 "prd": "https://2e.aonprd.com/Muses.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "The battlefield is your stage, the clang of steel, your song. Your muse engages in countless battles, whether reveling in combat or resigned to its necessity. If your muse is a creature, it might be an otherworldly soldier, such as a planetar, archon, cornugon, or purrodaemon. If it's a deity, it might be Gorum. As a bard with a warrior muse, you train for battle in addition to performance, and you prepare your allies for the dangers of battle. You might even wade into the thick of things with them. You gain the Martial Performance feat and add *fear* to your spell repertoire."
                         }
                     }
@@ -124,7 +168,10 @@
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
@@ -148,19 +195,28 @@
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
@@ -178,13 +234,19 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Great Fortitude": {
@@ -202,7 +264,10 @@
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
@@ -226,13 +291,19 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Light Armor Expertise": {
@@ -250,7 +321,10 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
@@ -268,13 +342,19 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Greater Resolve": {
@@ -286,7 +366,10 @@
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
@@ -310,7 +393,10 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

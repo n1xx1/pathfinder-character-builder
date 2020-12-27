@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["INT", "CHA"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "nature", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "Plains", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Plains",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Courtly Graces" },
         {
             "k": "bonus",

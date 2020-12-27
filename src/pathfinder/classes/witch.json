@@ -12,11 +12,24 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "3+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "3+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -24,7 +37,11 @@
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 { "k": "bonus", "category": "TODO", "text": "" }
             ],
             "description": "Level 1"
@@ -55,7 +72,9 @@
                                 "page": 32,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Baba Yaga teaches you how to transfer spirits into objects and freeze your foes. A witch with Baba Yaga as their patron can choose an inanimate object as a familiar. If they do, they still can gain master abilities and some familiar abilities that don't require movement. The object familiar has no Speeds and must select a Speed familiar ability before it can move, coming to life in a way appropriate to the chosen Speed and using the statistics of a normal familiar for that day.\n\n**Spell List** occult  \n**Patron Skill** Nature  \n**Hex Cantrip** *spirit object*  \n**Granted Spell** *chilling spray*"
                         },
                         "Curse": {
@@ -65,7 +84,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Foiling foes and undermining those who stand in your way are the tools of the curse patrons.\n\n**Spell List** occult  \n**Patron Skill** Occultism  \n**Hex Cantrip** *evil eye*  \n**Granted Spell** *ray of enfeeblement*"
                         },
                         "Fate": {
@@ -75,7 +96,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Through your patron, you gain glimpses of the future and insight into the ever-woven tapestry of time.\n\n**Spell List** occult  \n**Patron Skill** Occultism  \n**Hex Cantrip** *nudge fate*  \n**Granted Spell** *true strike*"
                         },
                         "Fervor": {
@@ -85,7 +108,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your patron represents a grand ideal or goal, granting you magic to further their mission and bring others to the cause.\n\n**Spell List** divine  \n**Patron Skill** Religion  \n**Hex Cantrip** *stoke the heart*  \n**Granted Spell** *command*"
                         },
                         "Night": {
@@ -95,7 +120,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your patron speaks from the shadows, granting you power over darkness and dreams.\n\n**Spell List** occult  \n**Patron Skill** Occultism  \n**Hex Cantrip** *shroud of night*  \n**Granted Spell** *sleep*"
                         },
                         "Rune": {
@@ -105,7 +132,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your patron is one of sigils and symbols, tomes and texts, words and wisdom.\n\n**Spell List** arcane  \n**Patron Skill** Arcana  \n**Hex Cantrip** *discern secrets*  \n**Granted Spell** *magic weapon*"
                         },
                         "Wild": {
@@ -115,7 +144,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "The wild places of the world feel the touch of your patron.\n\n**Spell List** primal  \n**Patron Skill** Nature  \n**Hex Cantrip** *wilding word*  \n**Granted Spell** your choice of *summon animal* or *summon plant or fungus*"
                         },
                         "Winter": {
@@ -125,7 +156,9 @@
                                 "page": 99,
                                 "prd": "https://2e.aonprd.com/Patrons.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your patron reflects the frozen reaches of the world, bitterly cruel to those who underestimate that power.\n\n**Spell List** primal  \n**Patron Skill** Nature  \n**Hex Cantrip** *clinging ice*  \n**Granted Spell** *gust of wind*"
                         }
                     }
@@ -143,7 +176,10 @@
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
@@ -155,13 +191,19 @@
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Magical Fortitude": {
@@ -173,7 +215,10 @@
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
@@ -191,13 +236,19 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Lightning Reflexes": {
@@ -209,7 +260,10 @@
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
@@ -233,13 +287,19 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Defensive Robes": {
@@ -257,7 +317,10 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
@@ -275,13 +338,19 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Resolve": {
@@ -293,7 +362,10 @@
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
@@ -317,7 +389,10 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

@@ -56,7 +56,31 @@
         },
         "traits": ["General", "Skill"],
         "level": 1,
-        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "bonus": [
+            { "k": "spell", "innate": "arcane", "spell": "detect magic" },
+            {
+                "k": "if",
+                "if": ["skill:arcana,=M"],
+                "bonus": [
+                    {
+                        "k": "bonus",
+                        "category": "TODO",
+                        "text": "heightened 3rd"
+                    }
+                ]
+            },
+            {
+                "k": "if",
+                "if": ["skill:arcana,=L"],
+                "bonus": [
+                    {
+                        "k": "bonus",
+                        "category": "TODO",
+                        "text": "heightened 4th"
+                    }
+                ]
+            }
+        ],
         "description": "**Prerequisites** trained in Arcana\n\n---\n\nYour study of magic allows you to instinctively sense its presence. You can cast 1st-level *detect magic* at will as an arcane innate spell. If you're a master in Arcana, the spell is heightened to 3rd level; if you're legendary, it is heightened to 4th level."
     },
     "Armor Assist": {
@@ -291,7 +315,19 @@
         },
         "traits": ["General", "Skill"],
         "level": 1,
-        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "prerequisites": ["skill:diplomacy,T"],
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "action:Earn Income",
+                "text": "You can Earn Income (page 236) using Diplomacy, spending your days hunting for bargains and reselling at a profit."
+            },
+            {
+                "k": "bonus",
+                "category": "exploration",
+                "text": "You can also spend time specifically sniffing out a great bargain on an item; this works as if you were using Earn Income with Diplomacy, except instead of gaining money, you purchase the item at a discount equal to the money you would have gained, gaining the item for free if your earned income equals or exceeds its cost."
+            }
+        ],
         "description": "**Prerequisites** trained in Diplomacy\n\n---\n\nYou can Earn Income (page 236) using Diplomacy, spending your days hunting for bargains and reselling at a profit. You can also spend time specifically sniffing out a great bargain on an item; this works as if you were using Earn Income with Diplomacy, except instead of gaining money, you purchase the item at a discount equal to the money you would have gained, gaining the item for free if your earned income equals or exceeds its cost. Finally, if you select Bargain Hunter during character creation at 1st level, you start play with an additional 2 gp."
     },
     "Battle Medicine": {

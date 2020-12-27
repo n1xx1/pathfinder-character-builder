@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["CON", "WIS"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "nature", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "Plains", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Plains",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Express Rider" }
     ],
     "description": "In your youth, you galloped on horseback over vast prairies, serving as a vanguard for your settlement, an army, or another group. Seeing so many different lands built a thirst in you to adventure and explore the world instead of just racing past it.\n\nChoose two ability boosts. One must be to **Constitution** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in the Nature skill, and the Plains Lore skill. You gain the Express Rider skill feat."

@@ -74,10 +74,22 @@
                     { "k": "increase_focus", "amount": 1 }
                 ]
             },
-
             { "k": "bonus", "category": "TODO", "text": "" }
         ],
         "description": "**Prerequisites** arcane school\n\n---\n\nYou gain access to a powerful new school spell depending on your arcane school. If you're an abjurer, you gain *energy absorption*; if you're a conjurer, you gain *dimensional steps*; if you're a diviner, you gain *vigilant eye*; if you're an enchanter, you gain *dread aura*; if you're an evoker, you gain *elemental tempest*; if you're an illusionist, you gain *invisibility cloak*; if you're a necromancer, you gain *life siphon*; and if you're a transmuter, you gain *shifting form*. Increase the number of Focus Points in your focus pool by 1."
+    },
+    "Blind-Fight": {
+        "name": "Blind-Fight",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 63,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=388"
+        },
+        "traits": ["Fighter", "Investigator", "Ranger", "Rogue"],
+        "level": 8,
+        "prerequisites": ["feat:Horizon Walker* Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** master in Perception  \n* This archetype offers Blind-Fight at a different level than displayed here.\n\n---\n\nYour battle instincts make you more aware of concealed and invisible opponents. You don't need to succeed at a flat check to target concealed creatures. You're not flat-footed to creatures that are hidden from you (unless you're flat-footed to them for reasons other than the hidden condition), and you need only a successful DC 5 flat check to target a hidden creature.\n\nWhile you're adjacent to an undetected creature of your level or lower, it is instead only hidden from you.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
     },
     "Bond Conservation": {
         "name": "Bond Conservation",
@@ -90,6 +102,18 @@
         "level": 8,
         "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
         "description": "**Prerequisites** arcane bond  \n**Requirements** The last action you used was Drain Bonded Item.\n\n---\n\nBy carefully manipulating the arcane energies stored in your bonded item as you drain it, you can conserve just enough power to cast another, slightly weaker spell. If the next action you use is to Cast a Spell using the energy from Drain Bonded Item, you gain an extra use of Drain Bonded Item. You must use this extra use of Drain Bonded Item before the end of your next turn or you lose it, and you can use this additional use only to cast a spell 2 or more levels lower than the first spell cast with Drain Bonded Item."
+    },
+    "Clue Them All In": {
+        "name": "Clue Them All In",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 63,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1466"
+        },
+        "traits": ["Investigator"],
+        "level": 8,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou can clue in all your allies at once. When you use the Clue In reaction, any of your allies who are attempting the same check to investigate a lead receive the circumstance bonus from Clue In. If you use this ability during an encounter, they must attempt their check within 1 round of when you Clued them In."
     },
     "Form Retention": {
         "name": "Form Retention",
@@ -129,5 +153,17 @@
             { "k": "increase_focus", "amount": 1 }
         ],
         "description": "**Prerequisites** universalist wizard, Hand of the Apprentice\n\n---\n\nYou can access the fundamental abilities of any school of magic. During your daily preparations, choose one of the eight school spells gained by 1st-level specialist wizards. You can use that school spell until your next daily preparations. When you Refocus, you can choose a different school spell from among those eight school spells, replacing the previous one. Increase the number of Focus Points in your focus pool by 1."
+    },
+    "Whodunnit?": {
+        "name": "Whodunnit?",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 63,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1467"
+        },
+        "traits": ["Uncommon", "Investigator"],
+        "level": 8,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Frequency** once per day\n\n---\n\nYou carefully consider your case and narrow down some of the details. When you Pursue a Lead, you can spend 10 minutes instead of 1 minute to ask two questions of the GM as you complete the activity. The GM must answer truthfully with \u201cyes\u201d or \u201cno,\u201d though if the answer would be misleading or have no practical application to your investigation the GM can answer \u201cimmaterial.\u201d You can't use Who Dunnit? more than once for the same lead, even across different days.\n\nYour questions must come from the following list, applying to either the creature or the clue you found: * Was the clue left by a [creature trait]? (Choose a creature trait such as humanoid, undead, or dwarf; this trait must be accurate as of the time the clue was left.)\n* Was this clue left within the last hour?\n* Was this clue left within the last day?\n* Was the creature that left the clue in a heightened emotional state when it left the clue?\n* Did the creature attempt to conceal this clue?\n\n"
     }
 }

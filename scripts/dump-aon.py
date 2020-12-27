@@ -63,6 +63,61 @@ def get_all_classes():
         raise
 
 
+def get_all_archetypes():
+    url = BASE_URL + "Archetypes.aspx"
+    try:
+        res = requests.get(url)
+        soup = BeautifulSoup(fix_html(res.text), "lxml")
+        section = soup.select("#ctl00_MainContent_DetailedOutput>h1.title")
+
+        feats = []
+
+        multiclass = section[0]
+        multiclass_contents, _ = scan_until(
+            multiclass.next_sibling, lambda x: x is not None and x.name != "h1")
+
+        multiclass_contents = to_element(soup, multiclass_contents)
+        links = multiclass_contents.select("u>a")
+
+        for link in links:
+            feats.extend(get_archetype_feats(BASE_URL + link["href"]))
+
+        other = section[1]
+        other_contents, _ = scan_until(
+            other.next_sibling, lambda x: x is not None and x.name != "h1")
+        other_contents = to_element(soup, other_contents)
+
+        titles = other_contents.select("h2.title")
+        for title in titles:
+            contents, _ = scan_until(
+                title.next_sibling, lambda x: x is not None and x.name != "h2")
+            info, contents, source = skip_to_after_source(contents)
+
+            if not source["book"] in ["Advanced Player's Guide", "Core Rulebook"]:
+                continue
+
+            feats.extend(get_archetype_feats(BASE_URL + link["href"]))
+
+        return feats
+    except:
+        print(f"error parsing all archetypes: {url}")
+        raise
+
+
+def get_archetype_feats(url):
+    try:
+        res = requests.get(url)
+        soup = BeautifulSoup(fix_html(res.text), "lxml")
+
+        page_section_titles = soup.select(
+            "#ctl00_MainContent_DetailedOutput>h2.title")
+
+        return [BASE_URL + x.select_one("a:last-of-type")["href"] for x in page_section_titles]
+    except:
+        print(f"error parsing archetype feats: {url}")
+        raise
+
+
 def get_all_ancestry_feats():
     try:
         get_all_ancestries()
@@ -211,6 +266,11 @@ def to_element(soup, element):
     return element
 
 
+def scan_line_to_br(contents):
+    br_index = next(i for i, v in enumerate(contents) if v.name == "br")
+    return contents[:br_index], contents[br_index + 1:]
+
+
 def skip_to_after_source(contents):
     source_index = next(i for i, v in enumerate(contents)
                         if v.name == "b" and v.string == "Source")
@@ -244,6 +304,15 @@ def scan_blocks(section_titles, *elements):
 
         section_name = "".join(s.strings)
         ret[section_name] = contents
+    return ret
+
+
+def scan_blocks_list(section_titles, *elements):
+    ret = []
+    for s in section_titles:
+        contents, _ = scan_until(
+            s.next_sibling, lambda x: x is not None and x.name not in elements)
+        ret.append((s, contents))
     return ret
 
 
@@ -610,7 +679,7 @@ def get_feat_detail(url, all_ancestry_names):
 
         page_title = soup.select_one(
             "#ctl00_MainContent_DetailedOutput>h1.title")
-        contents, ancestry_mechanics = scan_until(
+        contents, _ = scan_until(
             page_title.next_sibling, lambda x: x is not None and x.name != "h1")
 
         info, contents, source = skip_to_after_source(contents)
@@ -623,8 +692,13 @@ def get_feat_detail(url, all_ancestry_names):
         data["source"] = source
         data["traits"] = [
             x.find("a").string for x in info if x.name == "span" and any(c for c in x["class"] if c.startswith("trait"))]
-        data["level"] = int(page_title.find(
-            "span", recursive=False).string[len("Feat "):])
+
+        level = page_title.find(
+            "span", recursive=False).string[len("Feat "):]
+
+        if contents[0].string == "Archetype":
+            archetype, contents = scan_line_to_br(contents[1:])
+            data["archetype"] = "".join(x.string for x in archetype).strip()
 
         action_image = page_title.find("img", recursive=False)
         if action_image != None:
@@ -632,17 +706,19 @@ def get_feat_detail(url, all_ancestry_names):
 
         data["description"] = to_markdown(soup, contents)
 
-        if any(x for x in data["traits"] if x in all_ancestry_names):
-            data["kind"] = "ancestry"
-        elif "Archetype" in data["traits"] or ("Rare" in data["traits"] and len(data["traits"]) == 1):
+        if "Archetype" in data["traits"] or ("Rare" in data["traits"] and len(data["traits"]) == 1) or level.endswith("*"):
             data["kind"] = "archetype"
             data["skill"] = "Skill" in data["traits"]
+            level = level.replace("*", "")
+        elif any(x for x in data["traits"] if x in all_ancestry_names):
+            data["kind"] = "ancestry"
         elif "General" in data["traits"]:
             data["kind"] = "general"
             data["skill"] = "Skill" in data["traits"]
         else:
             data["kind"] = "class"
 
+        data["level"] = int(level)
         return data
     except:
         print(f"error parsing ancestry feat: {url}")
@@ -881,6 +957,11 @@ def create_feat_json(data, old):
     json_data["traits"] = data["traits"]
     json_data["level"] = data["level"]
 
+    if not "prerequisites" in json_data:
+        if "archetype" in data and data["name"] != data["archetype"] + " Dedication":
+            json_data["prerequisites"] = [
+                "feat:" + data["archetype"] + " Dedication"]
+
     if not "bonus" in json_data:
         if "action" in data:
             json_data["bonus"] = [
@@ -947,6 +1028,7 @@ if __name__ == "__main__":
     parser.add_argument("--all-class-feats", "--FC", action="store_true")
     parser.add_argument("--class-feats", "--Fc", action="append")
     parser.add_argument("--all-general-feats", "--FG", action="store_true")
+    parser.add_argument("--all-archetype-feats", "--FH", action="store_true")
     parser.add_argument("--feat", "-f", action="append")
     args = parser.parse_args()
 
@@ -979,8 +1061,13 @@ if __name__ == "__main__":
     elif args.class_feats != None:
         for c in args.class_feats:
             feats.extend(get_ancestry_or_class_feats(c))
-    if args.all_general_feats != None:
+
+    if args.all_general_feats:
         feats.extend(get_feats(BASE_URL + "Feats.aspx"))
+
+    if args.all_archetype_feats:
+        feats.extend(get_all_archetypes())
+        # feats.extend()
 
     stuff_to_do = len(ancestries) + len(backgrounds) + len(classes) + len(feats) + to_int(
         args.print_all_ancestries) + to_int(args.print_all_backgrounds) + to_int(args.print_all_classes)

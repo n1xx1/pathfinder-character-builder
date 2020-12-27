@@ -1,26 +1,53 @@
-import React, { useState, useMemo, useEffect, Dispatch, SetStateAction, useRef } from "react";
+import React, {
+    useState,
+    useMemo,
+    useEffect,
+    Dispatch,
+    SetStateAction,
+    useRef,
+} from "react";
 import { render } from "react-dom";
 import "antd/dist/antd.css";
-import { Select, Form, Input, Layout, Row, Col, InputNumber, Button } from "antd";
-import { pf, ancestries, backgrounds, classes, feats, spells, ancestryList } from "./pathfinder";
+import {
+    Select,
+    Form,
+    Input,
+    Layout,
+    Row,
+    Col,
+    InputNumber,
+    Button,
+} from "antd";
+import {
+    pf,
+    ancestries,
+    backgrounds,
+    classes,
+    feats,
+    spells,
+    ancestryList,
+} from "./pathfinder";
 import {
     Context,
-    BonusMap,
-    BonusList,
-    BonusKindSkillProf,
-    BonusKindAbility,
     profAsNumber,
     computeSkillProficiency,
-    BonusKindFeat,
-    BonusListEntry,
     computeSelectedFeats,
     calculateAbility,
-    BonusKindOption,
 } from "./utils";
 import { CharacterPrinter } from "./character-printer";
 import { renderCharacter } from "./character-render";
 import _ from "lodash";
 import { markdownAction, RenderMarkdown } from "./markdown";
+import {
+    BonusList,
+    BonusListEntry,
+    ChoiceAbility,
+    ChoiceFeat,
+    ChoiceMap,
+    ChoiceOption,
+    ChoiceSkillProf,
+    processCharacter,
+} from "./pathfinder/character-processor";
 
 function sortStrings(a: string, b: string) {
     return a.localeCompare(b);
@@ -41,14 +68,16 @@ interface AppSavedData {
     backgroundName: string;
     className: string;
     level: number;
-    values: BonusMap;
+    values: ChoiceMap;
 }
 
 function saveData(s: AppSavedData) {
     localStorage.setItem("pf-save-data", JSON.stringify(s));
 }
 function loadData(): AppSavedData {
-    const s: Partial<AppSavedData> = JSON.parse(localStorage.getItem("pf-save-data") ?? "{}");
+    const s: Partial<AppSavedData> = JSON.parse(
+        localStorage.getItem("pf-save-data") ?? "{}",
+    );
     return {
         name: s.name ?? "",
         ancestryName: s.ancestryName ?? "",
@@ -69,7 +98,7 @@ function App({}: {}) {
     const [pfBackgroundName, setPfBackgroundName] = useState("");
     const [pfClassName, setPfClassName] = useState("");
     const [level, setLevel] = useState(1);
-    const [values, setValues] = useState({} as BonusMap);
+    const [values, setValues] = useState({} as ChoiceMap);
 
     const pfAncestry = ancestries[pfAncestryName];
     const pfHeritage = pfAncestry?.heritages[pfHeritageName];
@@ -87,7 +116,7 @@ function App({}: {}) {
         name,
         level,
         bonusList: null,
-        bonusMap: values,
+        choices: values,
         pfAncestry,
         pfHeritage,
         pfBackground,
@@ -100,14 +129,19 @@ function App({}: {}) {
         }
     }, [pfHeritage]);
 
-    const [bonusList, bonusMap] = useMemo(() => {
-        const [bonusList, fixSet] = generateBonusList(context);
-        const bonusMap = fixValuesMap(context, fixSet);
-        return [bonusList, bonusMap];
-    }, [pfAncestry, pfHeritage, pfBackground, pfClass, values, level]);
-
+    const bonusList = useMemo(
+        () =>
+            processCharacter({
+                ancestry: pfAncestry,
+                heritage: pfHeritage,
+                background: pfBackground,
+                class: pfClass,
+                choices: context.choices,
+                level,
+            }),
+        [pfAncestry, pfHeritage, pfBackground, pfClass, values, level],
+    );
     context.bonusList = bonusList;
-    context.bonusMap = bonusMap;
 
     const renderedCharacter = useMemo(() => {
         return renderCharacter(context);
@@ -130,7 +164,10 @@ function App({}: {}) {
                     <Col span={10} style={{ padding: "10px" }}>
                         <Form {...formLayout}>
                             <Form.Item label="Name">
-                                <Input value={name} onChange={v => setName(v.target.value)} />
+                                <Input
+                                    value={name}
+                                    onChange={v => setName(v.target.value)}
+                                />
                             </Form.Item>
                             <Form.Item label="Level">
                                 <InputNumber
@@ -214,7 +251,11 @@ function App({}: {}) {
                             rows={20}
                             style={{ marginTop: "20px" }}
                             onChange={e => loadSave(JSON.parse(e.target.value))}
-                            value={JSON.stringify(createSave(), undefined, "  ")}
+                            value={JSON.stringify(
+                                createSave(),
+                                undefined,
+                                "  ",
+                            )}
                         />
                     </Col>
                     <Col span={14} style={{ padding: "0 10px" }}>
@@ -252,7 +293,7 @@ function App({}: {}) {
             backgroundName: pfBackground?.name ?? "",
             className: pfClass?.name ?? "",
             level,
-            values: bonusMap,
+            values: context.choices,
         };
     }
 }
@@ -261,7 +302,7 @@ type FixSet = { [id: string]: 0 | 1 }; // 0 exclude, 1 include
 
 function fixValuesMap(context: Context, fixSet: FixSet) {
     const fixSetList = Object.entries(fixSet);
-    const bonusMap = { ...context.bonusMap };
+    const bonusMap = { ...context.choices };
 
     for (const k of Object.keys(bonusMap)) {
         const inclusions = fixSetList
@@ -277,311 +318,20 @@ function fixValuesMap(context: Context, fixSet: FixSet) {
         if (exclusions.length == 0) {
             continue;
         }
-        const heighestInclusion = inclusions.reduce((prev, fix) => Math.max(prev, fix.length), 0);
-        const heightestExclusion = exclusions.reduce((prev, fix) => Math.max(prev, fix.length), 0);
+        const heighestInclusion = inclusions.reduce(
+            (prev, fix) => Math.max(prev, fix.length),
+            0,
+        );
+        const heightestExclusion = exclusions.reduce(
+            (prev, fix) => Math.max(prev, fix.length),
+            0,
+        );
         if (heighestInclusion > heightestExclusion) {
             continue;
         }
         delete bonusMap[k];
     }
     return bonusMap;
-}
-
-function generateBonusList(context: Context): [BonusList, FixSet] {
-    const fixSet = {} as FixSet;
-    let bonuses = [] as BonusList;
-
-    for (const l of [1, 5, 10, 15, 20]) {
-        if (context.level >= l) {
-            fixSet[`base/${l}`] = 1;
-            for (let i = 0; i < 4; i++) {
-                bonuses.push({
-                    bonus: { k: "ability" },
-                    path: `base/${l}/${i}`,
-                    origin: `from level ${l}`,
-                });
-            }
-        }
-    }
-
-    if (context.pfAncestry) {
-        fixSet[`ancestry/${context.pfAncestry.name}`] = 1;
-        for (let i = 0; i < context.pfAncestry.bonus.length; i++) {
-            const bonus = context.pfAncestry.bonus[i];
-            bonuses.push({
-                bonus,
-                path: `ancestry/${context.pfAncestry.name}/${i}`,
-                origin: `from "${context.pfAncestry.name}" ancestry`,
-            });
-        }
-    }
-    if (context.pfHeritage) {
-        fixSet[`heritage/${context.pfHeritage.name}`] = 1;
-        for (let i = 0; i < context.pfHeritage.bonus.length; i++) {
-            const bonus = context.pfHeritage.bonus[i];
-            bonuses.push({
-                bonus,
-                path: `heritage/${context.pfHeritage.name}/${i}`,
-                origin: `from "${context.pfHeritage.name}" heritage`,
-            });
-        }
-    }
-    if (context.pfBackground) {
-        fixSet[`background/${context.pfBackground.name}`] = 1;
-        for (let i = 0; i < context.pfBackground.bonus.length; i++) {
-            const bonus = context.pfBackground.bonus[i];
-            bonuses.push({
-                bonus,
-                path: `background/${context.pfBackground.name}/${i}`,
-                origin: `from "${context.pfBackground.name}" background`,
-            });
-        }
-    }
-    if (context.pfClass) {
-        const path = `class/${context.pfClass.name}/key`;
-        fixSet[path] = 1;
-        if (Array.isArray(context.pfClass.key)) {
-            bonuses.push({
-                bonus: { k: "ability", choice: context.pfClass.key },
-                path,
-                origin: `from "${context.pfClass.name}" class`,
-            });
-        } else {
-            bonuses.push({
-                bonus: { k: "ability", ability: context.pfClass.key },
-                path,
-                origin: `from "${context.pfClass.name}" class`,
-            });
-        }
-
-        for (const [k, feature] of Object.entries(context.pfClass.features)) {
-            if (feature.level <= context.level) {
-                const path = `class/${context.pfClass.name}/${feature.name}`;
-                fixSet[path] = 1;
-                if (feature.bonus) {
-                    for (let i = 0; i < feature.bonus.length; i++) {
-                        const bonus = feature.bonus[i];
-                        bonuses.push({
-                            bonus,
-                            path: `class/${context.pfClass.name}/${feature.name}/${i}`,
-                            origin: `from "${feature.name}" feature, from "${context.pfClass.name}" class`,
-                        });
-                    }
-                }
-            }
-        }
-    }
-
-    bonuses = computeBonusesRecursive(context, bonuses, fixSet);
-    return [bonuses, fixSet];
-}
-
-function computeBonusesRecursive(context: Context, bonuses: BonusList, fixSet: FixSet) {
-    context.bonusList = bonuses;
-    const oldLen = bonuses.length;
-    computeSkillBonuses(context, bonuses, fixSet);
-    computeFeatBonuses(context, bonuses, fixSet);
-    computeOptionBonuses(context, bonuses, fixSet);
-    computeIfBonuses(context, bonuses, fixSet);
-
-    if (oldLen == bonuses.length) {
-        return bonuses;
-    }
-    return computeBonusesRecursive(context, bonuses, fixSet);
-}
-
-function computeSkillBonuses(context: Context, bonuses: BonusList, fixSet: FixSet) {
-    const skillBonuses: [number, BonusListEntry<pf.BonusProficiency>][] = Array.from(
-        bonuses.entries(),
-    ).filter(
-        ([i, b]) => b.bonus.k === "proficiency" && b.bonus.skill == "any_skill" && b.bonus.count,
-    ) as any;
-
-    for (const [index, { path, bonus: skillBonus, origin }] of skillBonuses) {
-        if (fixSet[`${path}`] !== undefined) {
-            continue;
-        }
-        if (skillBonus.skill == "any_skill" && skillBonus.count) {
-            let count = 0;
-            if (typeof skillBonus.count == "string") {
-                const expr = skillBonus.count.replace(
-                    /(STR|DEX|CON|INT|WIS|CHA)/gi,
-                    m => "" + calculateAbility(m as pf.Ability, context)[1],
-                );
-                count = eval(expr);
-            } else {
-                count = skillBonus.count;
-            }
-
-            fixSet[`${path}`] = 0;
-            for (let i = 0; i < count; i++) {
-                fixSet[`${path}/${i}`] = 1;
-                bonuses.push({
-                    bonus: {
-                        k: "proficiency",
-                        skill: "any_skill",
-                        proficiency: skillBonus.proficiency,
-                        filter: skillBonus.filter,
-                        upgrade: skillBonus.upgrade,
-                    },
-                    path: `${path}/${i}`,
-                    origin,
-                });
-            }
-        }
-    }
-}
-
-function computeFeatBonuses(context: Context, bonuses: BonusList, fixSet: FixSet) {
-    const featBonuses: [number, BonusListEntry<pf.BonusFeat>][] = Array.from(
-        bonuses.entries(),
-    ).filter(([i, b]) => b.bonus.k === "feat") as any;
-
-    for (const [index, { path, bonus, origin: parentOrigin }] of featBonuses) {
-        if (bonus.feat) {
-            const feat = feats[bonus.feat];
-            if (feat == null) {
-                continue;
-            }
-
-            if (fixSet[`feat/${feat.name}`] !== undefined) {
-                continue;
-            }
-
-            fixSet[`feat/${feat.name}`] = 1;
-            if (feat.bonus) {
-                for (let i = 0; i < feat.bonus.length; i++) {
-                    if (bonus.option && feat.bonus[i].k == "option") {
-                        const option = (feat.bonus[i] as pf.BonusOption).options[
-                            bonus.option as string
-                        ];
-                        for (let j = 0; j < option.bonus.length; j++) {
-                            bonuses.splice(index + 1, 0, {
-                                bonus: option.bonus[j],
-                                path: `feat/${feat.name}/${i}/${j}`,
-                                origin: `from "${feat.name}" feat, ${parentOrigin}`,
-                            });
-                        }
-                    } else {
-                        const bonus1 = feat.bonus[i];
-                        bonuses.splice(index + 1, 0, {
-                            bonus: bonus1,
-                            path: `feat/${feat.name}/${i}`,
-                            origin: `from "${feat.name}" feat, ${parentOrigin}`,
-                        });
-                    }
-                }
-            }
-        }
-        if (bonus.filter) {
-            const bValue = context.bonusMap[path];
-            if (bValue?.kind === "feat") {
-                const feat = feats[bValue.value];
-                if (feat == null) {
-                    continue;
-                }
-
-                if (fixSet[`feat/${feat.name}`] !== undefined) {
-                    continue;
-                }
-
-                fixSet[`feat/${feat.name}`] = 1;
-                if (feat.bonus) {
-                    for (let i = 0; i < feat.bonus.length; i++) {
-                        const bonus = feat.bonus[i];
-                        if (bonus.k == "action" && bonus.name == "#self") {
-                            bonus.description = `### ${feat.name} ${markdownAction(
-                                bonus.actions,
-                            )}\n\n; ${feat.traits.join(", ")}\n\n${feat.description}`;
-                        }
-                        bonuses.splice(index + 1, 0, {
-                            bonus,
-                            path: `feat/${feat.name}/${i}`,
-                            origin: `from "${feat.name}" feat, ${parentOrigin}`,
-                        });
-                    }
-                }
-            }
-        }
-    }
-}
-
-function computeOptionBonuses(context: Context, bonuses: BonusList, fixSet: FixSet) {
-    const optionBonuses: [number, BonusListEntry<pf.BonusOption>][] = Array.from(
-        bonuses.entries(),
-    ).filter(([i, b]) => b.bonus.k === "option") as any;
-
-    const additions: [number, BonusListEntry[]][] = [];
-    for (const [index, { path, bonus: optionBonus, origin: parentOrigin }] of optionBonuses) {
-        if (fixSet[`${path}`] !== undefined) {
-            continue;
-        }
-
-        fixSet[`${path}`] = 0;
-        fixSet[`${path}/key`] = 1;
-        const bValue = context.bonusMap[path];
-        if (bValue?.kind === "option") {
-            const selectedOption = optionBonus.options[bValue.value];
-            fixSet[`${path}/${selectedOption.name}`] = 1;
-
-            const newBonuses: BonusListEntry[] = [];
-            for (let i = 0; i < selectedOption.bonus.length; i++) {
-                const bonus = selectedOption.bonus[i];
-                newBonuses.push({
-                    bonus,
-                    path: `${path}/${selectedOption.name}/${i}`,
-                    origin: `from "${selectedOption.name}" option, ${parentOrigin}`,
-                });
-            }
-            additions.push([index, newBonuses]);
-        }
-    }
-    let offset = 0;
-    for (const [index, newBonuses] of additions) {
-        bonuses.splice(offset + index + 1, 0, ...newBonuses);
-        offset += newBonuses.length;
-    }
-}
-
-function computeIfBonuses(context: Context, bonuses: BonusList, fixSet: FixSet) {
-    const ifBonuses: [number, BonusListEntry<pf.BonusIf>][] = Array.from(bonuses.entries()).filter(
-        ([i, b]) => b.bonus.k === "if",
-    ) as any;
-
-    const additions: [number, BonusListEntry[]][] = [];
-    for (const [index, { path, bonus: ifBonus, origin }] of ifBonuses) {
-        if (fixSet[`${path}`] !== undefined) {
-            continue;
-        }
-
-        fixSet[`${path}`] = 0;
-        if (computePrerequisite(context, ifBonus.if)) {
-            fixSet[`${path}/true`] = 1;
-
-            const newBonuses: BonusListEntry[] = [];
-            for (let i = 0; i < ifBonus.bonus.length; i++) {
-                const bonus = ifBonus.bonus[i];
-                newBonuses.push({ bonus, path: `${path}/true/${i}`, origin });
-            }
-            additions.push([index, newBonuses]);
-        } else {
-            if (ifBonus.else_bonus) {
-                fixSet[`${path}/false`] = 1;
-
-                const newBonuses: BonusListEntry[] = [];
-                for (let i = 0; i < ifBonus.else_bonus.length; i++) {
-                    const bonus = ifBonus.else_bonus[i];
-                    newBonuses.push({ bonus, path: `${path}/false/${i}`, origin });
-                }
-                additions.push([index, newBonuses]);
-            }
-        }
-    }
-    let offset = 0;
-    for (const [index, newBonuses] of additions) {
-        bonuses.splice(offset + index + 1, 0, ...newBonuses);
-        offset += newBonuses.length;
-    }
 }
 
 interface AbilitySelectProps {
@@ -594,12 +344,24 @@ function AbilitySelect({ value, onChange, exclude }: AbilitySelectProps) {
     value = exclude?.includes(value) ? null : value;
     return (
         <Select value={value} onChange={onChange} showSearch>
-            {!exclude?.includes("STR") && <Select.Option value="STR">Strength</Select.Option>}
-            {!exclude?.includes("DEX") && <Select.Option value="DEX">Dexterity</Select.Option>}
-            {!exclude?.includes("CON") && <Select.Option value="CON">Constitution</Select.Option>}
-            {!exclude?.includes("INT") && <Select.Option value="INT">Intelligence</Select.Option>}
-            {!exclude?.includes("WIS") && <Select.Option value="WIS">Wisdom</Select.Option>}
-            {!exclude?.includes("CHA") && <Select.Option value="CHA">Charisma</Select.Option>}
+            {!exclude?.includes("STR") && (
+                <Select.Option value="STR">Strength</Select.Option>
+            )}
+            {!exclude?.includes("DEX") && (
+                <Select.Option value="DEX">Dexterity</Select.Option>
+            )}
+            {!exclude?.includes("CON") && (
+                <Select.Option value="CON">Constitution</Select.Option>
+            )}
+            {!exclude?.includes("INT") && (
+                <Select.Option value="INT">Intelligence</Select.Option>
+            )}
+            {!exclude?.includes("WIS") && (
+                <Select.Option value="WIS">Wisdom</Select.Option>
+            )}
+            {!exclude?.includes("CHA") && (
+                <Select.Option value="CHA">Charisma</Select.Option>
+            )}
         </Select>
     );
 }
@@ -632,7 +394,9 @@ function SkillSelect({ value, onChange, exclude }: SkillSelectProps) {
                 <Select.Option value={"diplomacy"}>Diplomacy</Select.Option>
             )}
             {(exclude?.indexOf("intimidation") ?? -1) == -1 && (
-                <Select.Option value={"intimidation"}>Intimidation</Select.Option>
+                <Select.Option value={"intimidation"}>
+                    Intimidation
+                </Select.Option>
             )}
             {(exclude?.indexOf("medicine") ?? -1) == -1 && (
                 <Select.Option value={"medicine"}>Medicine</Select.Option>
@@ -672,28 +436,162 @@ interface CreationBonusFeatProps {
     onChange: (v: string) => void;
 }
 
-function CreationBonusFeat({ context, bonus, path, onChange }: CreationBonusFeatProps) {
-    const { bonusMap } = context;
-    const value = (bonusMap[path] as BonusKindFeat)?.value;
-    const filteredFeats = useMemo(() => computeFilteredFeats(context, bonus.filter, value), [
-        bonus,
-        bonusMap,
-    ]);
+function CreationBonusFeat({
+    context,
+    bonus,
+    path,
+    onChange,
+}: CreationBonusFeatProps) {
+    const { choices } = context;
+    const value = (choices[path] as ChoiceFeat)?.value;
+    const filteredFeats = useMemo(
+        () =>
+            Object.entries(
+                _.groupBy(
+                    computeFilteredFeats(context, bonus.filter, value),
+                    v => v.level,
+                ),
+            ).map(([k, v]) => ({
+                groupName: `Level ${k}`,
+                values: v,
+            })),
+        [bonus, choices],
+    );
     return (
         <Select value={value} onChange={onChange} showSearch>
-            {filteredFeats.map(f => (
-                <Select.Option key={f.name} value={f.name}>
-                    <span
-                        style={{
-                            color:
-                                f.prerequisites && computePrerequisite(context, f.prerequisites)
-                                    ? "#f00"
-                                    : "inherit",
-                        }}
-                    >
-                        {f.name}
-                    </span>
-                </Select.Option>
+            {filteredFeats.map(g => (
+                <Select.OptGroup label={g.groupName} key={g.groupName}>
+                    {g.values.map(f => (
+                        <Select.Option key={f.name} value={f.name}>
+                            <span
+                                style={{
+                                    color:
+                                        f.prerequisites &&
+                                        computePrerequisite(
+                                            context,
+                                            f.prerequisites,
+                                        )
+                                            ? "#f00"
+                                            : "inherit",
+                                }}
+                            >
+                                {f.name}
+                            </span>
+                        </Select.Option>
+                    ))}
+                </Select.OptGroup>
+            ))}
+        </Select>
+    );
+}
+
+interface CreationBonusClassFeatProps {
+    bonus: pf.BonusClassFeat;
+    context: Context;
+    path: string;
+    onChange: (v: string) => void;
+}
+
+function CreationBonusClassFeat({
+    context,
+    bonus,
+    path,
+    onChange,
+}: CreationBonusClassFeatProps) {
+    const { choices } = context;
+    const value = (choices[path] as ChoiceFeat)?.value;
+    const filteredFeats = useMemo(
+        () =>
+            Object.entries(
+                _.groupBy(
+                    computeFilteredClassFeats(context, bonus.level, value),
+                    v => v.level,
+                ),
+            ).map(([k, v]) => ({
+                groupName: `Level ${k}`,
+                values: v,
+            })),
+        [bonus, choices],
+    );
+    return (
+        <Select value={value} onChange={onChange} showSearch>
+            {filteredFeats.map(g => (
+                <Select.OptGroup label={g.groupName} key={g.groupName}>
+                    {g.values.map(f => (
+                        <Select.Option key={f.name} value={f.name}>
+                            <span
+                                style={{
+                                    color:
+                                        f.prerequisites &&
+                                        computePrerequisite(
+                                            context,
+                                            f.prerequisites,
+                                        )
+                                            ? "#f00"
+                                            : "inherit",
+                                }}
+                            >
+                                {f.name}
+                            </span>
+                        </Select.Option>
+                    ))}
+                </Select.OptGroup>
+            ))}
+        </Select>
+    );
+}
+
+interface CreationBonusAncestryFeatProps {
+    bonus: pf.BonusAncestryFeat;
+    context: Context;
+    path: string;
+    onChange: (v: string) => void;
+}
+
+function CreationBonusAncestryFeat({
+    context,
+    bonus,
+    path,
+    onChange,
+}: CreationBonusAncestryFeatProps) {
+    const { choices } = context;
+    const value = (choices[path] as ChoiceFeat)?.value;
+    const filteredFeats = useMemo(
+        () =>
+            Object.entries(
+                _.groupBy(
+                    computeFilteredAncestryFeats(context, bonus.level, value),
+                    v => v.level,
+                ),
+            ).map(([k, v]) => ({
+                groupName: `Level ${k}`,
+                values: v,
+            })),
+        [bonus, choices],
+    );
+    return (
+        <Select value={value} onChange={onChange} showSearch>
+            {filteredFeats.map(g => (
+                <Select.OptGroup label={g.groupName} key={g.groupName}>
+                    {g.values.map(f => (
+                        <Select.Option key={f.name} value={f.name}>
+                            <span
+                                style={{
+                                    color:
+                                        f.prerequisites &&
+                                        computePrerequisite(
+                                            context,
+                                            f.prerequisites,
+                                        )
+                                            ? "#f00"
+                                            : "inherit",
+                                }}
+                            >
+                                {f.name}
+                            </span>
+                        </Select.Option>
+                    ))}
+                </Select.OptGroup>
             ))}
         </Select>
     );
@@ -706,10 +604,18 @@ interface CreationBonusSpellProps {
     onChange: (v: string) => void;
 }
 
-function CreationBonusSpell({ context, bonus, path, onChange }: CreationBonusSpellProps) {
-    const { bonusMap } = context;
-    const filteredFeats = useMemo(() => computeFilteredSpells(context, bonus.filter), [bonus]);
-    const value = (bonusMap[path] as BonusKindFeat)?.value;
+function CreationBonusSpell({
+    context,
+    bonus,
+    path,
+    onChange,
+}: CreationBonusSpellProps) {
+    const { choices } = context;
+    const filteredFeats = useMemo(
+        () => computeFilteredSpells(context, bonus.filter),
+        [bonus],
+    );
+    const value = (choices[path] as ChoiceFeat)?.value;
     return (
         <Select value={value} onChange={onChange} showSearch>
             {filteredFeats.map(f => (
@@ -744,38 +650,57 @@ interface CreationBonusProps {
     context: Context;
     path: string;
     origin: string;
-    setValues: Dispatch<SetStateAction<BonusMap>>;
+    setValues: Dispatch<SetStateAction<ChoiceMap>>;
 }
 
-function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonusProps) {
-    const { bonusMap } = context;
+function CreationBonus({
+    bonus,
+    path,
+    setValues,
+    context,
+    origin,
+}: CreationBonusProps) {
+    const { choices } = context;
     switch (bonus.k) {
         case "ability":
             if (!bonus.ability) {
                 let choice = bonus.choice as pf.Ability[];
                 if (bonus.choice?.includes("OTHER")) {
                     const otherAbility: BonusListEntry<pf.BonusSpecial> = context.bonusList.find(
-                        f => f.bonus.k === "special" && f.bonus.id.startsWith("ability_key_other:"),
+                        f =>
+                            f.bonus.k === "special" &&
+                            f.bonus.id.startsWith("ability_key_other:"),
                     ) as any;
                     if (otherAbility) {
                         const otherKey = trimPrefix(
                             otherAbility.bonus.id,
                             "ability_key_other:",
                         ) as pf.Ability;
-                        choice = bonus.choice.map(c => (c === "OTHER" ? otherKey : c));
+                        choice = bonus.choice.map(c =>
+                            c === "OTHER" ? otherKey : c,
+                        );
                     } else {
-                        choice = bonus.choice.filter(c => c !== "OTHER") as pf.Ability[];
+                        choice = bonus.choice.filter(
+                            c => c !== "OTHER",
+                        ) as pf.Ability[];
                     }
                 }
 
                 return (
                     <Form.Item label="Ability Boost" extra={origin}>
                         <AbilitySelect
-                            value={(bonusMap[path] as BonusKindAbility)?.value}
+                            value={(choices[path] as ChoiceAbility)?.value}
                             onChange={v =>
-                                setValues(v1 => ({ ...v1, [path]: { value: v, kind: "ability" } }))
+                                setValues(v1 => ({
+                                    ...v1,
+                                    [path]: { value: v, kind: "ability" },
+                                }))
                             }
-                            exclude={generateAbilityExcludes(path, context, choice)}
+                            exclude={generateAbilityExcludes(
+                                path,
+                                context,
+                                choice,
+                            )}
                         />
                     </Form.Item>
                 );
@@ -787,7 +712,8 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                     // TODO: implement
                     return null;
                 } else {
-                    const value = (bonusMap[path] as BonusKindSkillProf)?.value?.skill;
+                    const value = (choices[path] as ChoiceSkillProf)?.value
+                        ?.skill;
                     return (
                         <Form.Item
                             label={
@@ -795,7 +721,9 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                                     ? `Improve proficiency up to ${
                                           pf.proficiencyName[bonus.proficiency]
                                       } in`
-                                    : `Become ${pf.proficiencyName[bonus.proficiency]} in`
+                                    : `Become ${
+                                          pf.proficiencyName[bonus.proficiency]
+                                      } in`
                             }
                             extra={origin}
                         >
@@ -807,7 +735,9 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                                         [path]: {
                                             value: {
                                                 skill: v,
-                                                level: profAsNumber(bonus.proficiency),
+                                                level: profAsNumber(
+                                                    bonus.proficiency,
+                                                ),
                                                 upgrade: !!bonus.upgrade,
                                             },
                                             kind: "skill_prof",
@@ -831,8 +761,15 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
             break;
         case "feat":
             if (bonus.filter) {
+                let featKind = "";
+                if (bonus.filter?.some(f => f == "trait:General")) {
+                    featKind = "General ";
+                }
+                if (bonus.filter?.some(f => f == "trait:Skill")) {
+                    featKind = "Skill ";
+                }
                 return (
-                    <Form.Item label="Feat" extra={origin}>
+                    <Form.Item label={`${featKind}Feat`} extra={origin}>
                         <CreationBonusFeat
                             bonus={bonus}
                             context={context}
@@ -840,7 +777,11 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                             onChange={v =>
                                 setValues(v1 => ({
                                     ...v1,
-                                    [path]: { value: v, kind: "feat", option: bonus.option },
+                                    [path]: {
+                                        value: v,
+                                        kind: "feat",
+                                        option: bonus.option,
+                                    },
                                 }))
                             }
                         />
@@ -848,6 +789,38 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                 );
             }
             return null;
+        case "class_feat":
+            return (
+                <Form.Item label="Class Feat" extra={origin}>
+                    <CreationBonusClassFeat
+                        context={context}
+                        bonus={bonus}
+                        onChange={v =>
+                            setValues(v1 => ({
+                                ...v1,
+                                [path]: { value: v, kind: "feat" },
+                            }))
+                        }
+                        path={path}
+                    />
+                </Form.Item>
+            );
+        case "ancestry_feat":
+            return (
+                <Form.Item label="Ancestry Feat" extra={origin}>
+                    <CreationBonusAncestryFeat
+                        context={context}
+                        bonus={bonus}
+                        onChange={v =>
+                            setValues(v1 => ({
+                                ...v1,
+                                [path]: { value: v, kind: "feat" },
+                            }))
+                        }
+                        path={path}
+                    />
+                </Form.Item>
+            );
         case "special":
             switch (bonus.id) {
                 case "familiar":
@@ -867,7 +840,10 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                             context={context}
                             path={path}
                             onChange={v =>
-                                setValues(v1 => ({ ...v1, [path]: { value: v, kind: "spell" } }))
+                                setValues(v1 => ({
+                                    ...v1,
+                                    [path]: { value: v, kind: "spell" },
+                                }))
                             }
                         />
                     </Form.Item>
@@ -876,7 +852,7 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
             return null;
         case "option":
             const key = `${path}/key`;
-            const value = (bonusMap[key] as BonusKindOption)?.value;
+            const value = (choices[key] as ChoiceOption)?.value;
             return (
                 <Form.Item label={"Option"} extra={origin}>
                     <Select
@@ -900,10 +876,18 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
                     </Select>
                 </Form.Item>
             );
+        case "bonus":
+            if (bonus.category == "TODO") {
+                return (
+                    <Form.Item label="Bonus" extra={origin}>
+                        TODO
+                    </Form.Item>
+                );
+            }
+            return null;
         case "ability_flaw":
         case "spellcasting":
         case "action":
-        case "bonus":
         case "if":
         case "remove_action":
         case "starting_focus":
@@ -911,7 +895,9 @@ function CreationBonus({ bonus, path, setValues, context, origin }: CreationBonu
     }
     return (
         <Form.Item label="Unknown bonus" extra={origin}>
-            <pre style={{ maxWidth: 400 }}>unknown bonus {JSON.stringify(bonus)}</pre>
+            <pre style={{ maxWidth: 400 }}>
+                unknown bonus {JSON.stringify(bonus)}
+            </pre>
         </Form.Item>
     );
 }
@@ -923,8 +909,14 @@ function trimPrefix(s: string, prefix: string) {
     return s;
 }
 
-function computeFilteredFeats(context: Context, filter: pf.FeatTrait[], value: string) {
-    const selectedFeats = Object.fromEntries(computeSelectedFeats(context).map(k => [k, true])) as {
+function computeFilteredFeats(
+    context: Context,
+    filter: pf.FeatTrait[],
+    value: string,
+) {
+    const selectedFeats = Object.fromEntries(
+        computeSelectedFeats(context).map(k => [k, true]),
+    ) as {
         [id: string]: true;
     };
 
@@ -932,7 +924,9 @@ function computeFilteredFeats(context: Context, filter: pf.FeatTrait[], value: s
     for (const pre of filter) {
         const preLevel = trimPrefix(pre, "level:");
         if (preLevel.length != pre.length) {
-            filteredFeats = filteredFeats.filter(feat => feat.level <= +preLevel);
+            filteredFeats = filteredFeats.filter(
+                feat => feat.level <= +preLevel,
+            );
             continue;
         }
         const preTraits = trimPrefix(pre, "trait:");
@@ -943,9 +937,76 @@ function computeFilteredFeats(context: Context, filter: pf.FeatTrait[], value: s
             );
             continue;
         }
+        if (preTraits == "todo:skillful") {
+            continue;
+        }
         throw `invalid trait filter ${pre}`;
     }
-    filteredFeats = filteredFeats.filter(feat => !selectedFeats[feat.name] || value == feat.name);
+    filteredFeats = filteredFeats.filter(
+        feat => !selectedFeats[feat.name] || value == feat.name,
+    );
+    return filteredFeats;
+}
+
+function computeFilteredAncestryFeats(
+    context: Context,
+    level: number,
+    value: string,
+) {
+    const selectedFeats = Object.fromEntries(
+        computeSelectedFeats(context).map(k => [k, true]),
+    ) as {
+        [id: string]: true;
+    };
+
+    let filteredFeats = Object.values(feats)
+        .filter(
+            feat =>
+                feat.traits.some(
+                    t => t == "Archetype" || t == context.pfClass.name,
+                ) && feat.level <= level,
+        )
+        .filter(feat => {
+            if (feat.prerequisites) {
+                return computePrerequisite(context, feat.prerequisites);
+            }
+            return true;
+        });
+
+    filteredFeats = filteredFeats.filter(
+        feat => !selectedFeats[feat.name] || value == feat.name,
+    );
+    return filteredFeats;
+}
+
+function computeFilteredClassFeats(
+    context: Context,
+    level: number,
+    value: string,
+) {
+    const selectedFeats = Object.fromEntries(
+        computeSelectedFeats(context).map(k => [k, true]),
+    ) as {
+        [id: string]: true;
+    };
+
+    let filteredFeats = Object.values(feats)
+        .filter(
+            feat =>
+                feat.traits.some(
+                    t => t == "Archetype" || t == context.pfClass.name,
+                ) && feat.level <= level,
+        )
+        .filter(feat => {
+            if (feat.prerequisites) {
+                return computePrerequisite(context, feat.prerequisites);
+            }
+            return true;
+        });
+
+    filteredFeats = filteredFeats.filter(
+        feat => !selectedFeats[feat.name] || value == feat.name,
+    );
     return filteredFeats;
 }
 
@@ -958,7 +1019,9 @@ function computeFilteredSpells(context: Context, filter: pf.SpellTrait[]) {
         }
         const preLevel = trimPrefix(pre, "level:");
         if (preLevel.length != pre.length) {
-            filteredSpells = filteredSpells.filter(spell => spell.level == +preLevel);
+            filteredSpells = filteredSpells.filter(
+                spell => spell.level == +preLevel,
+            );
             continue;
         }
         const preTraits = trimPrefix(pre, "trait:");
@@ -972,19 +1035,21 @@ function computeFilteredSpells(context: Context, filter: pf.SpellTrait[]) {
         const preTradition = trimPrefix(pre, "tradition:");
         if (preTradition.length != pre.length) {
             // TODO: implement "self"
-            const tradition = (preTradition == "self" ? "arcane" : preTradition) as pf.Tradition;
+            const tradition = (preTradition == "self"
+                ? "arcane"
+                : preTradition) as pf.Tradition;
             filteredSpells = filteredSpells.filter(spell =>
                 spell.traditions.includes(tradition as pf.Tradition),
             );
             continue;
         }
-        throw `invalid trait filter ${pre}`;
+        throw `invalid spell filter ${pre}`;
     }
     return filteredSpells;
 }
 
 function computePrerequisite(context: Context, pres: pf.Prerequisite[]) {
-    const { level, bonusList, bonusMap } = context;
+    const { level, bonusList, choices } = context;
     for (const pre of pres) {
         const preLevel = trimPrefix(pre, "level:");
         if (preLevel.length != pre.length) {
@@ -1001,15 +1066,25 @@ function computePrerequisite(context: Context, pres: pf.Prerequisite[]) {
         if (preSkill.length != pre.length) {
             const [skill, proficiency] = preSkill.split(",");
             const level = computeSkillProficiency(context, skill as pf.Skill);
-            if (level < profAsNumber(proficiency as pf.Proficiency)) {
-                return false;
+            const realProficiency = trimPrefix(preSkill, "=");
+            if (realProficiency.length != pre.length) {
+                if (level != profAsNumber(proficiency as pf.Proficiency)) {
+                    return false;
+                }
+            } else {
+                if (level < profAsNumber(proficiency as pf.Proficiency)) {
+                    return false;
+                }
             }
             continue;
         }
         const preAbility = trimPrefix(pre, "ability:");
         if (preAbility.length != pre.length) {
             const [ability, abilityScore] = preSkill.split(",");
-            const [score, mod] = calculateAbility(ability as pf.Ability, context);
+            const [score, mod] = calculateAbility(
+                ability as pf.Ability,
+                context,
+            );
             if (score < +abilityScore) {
                 return false;
             }
@@ -1017,7 +1092,9 @@ function computePrerequisite(context: Context, pres: pf.Prerequisite[]) {
         }
         const preSpecial = trimPrefix(pre, "special:");
         if (preSpecial.length != pre.length) {
-            const found = bonusList.some(f => f.bonus.k === "special" && f.bonus.id === preSpecial);
+            const found = bonusList.some(
+                f => f.bonus.k === "special" && f.bonus.id === preSpecial,
+            );
             if (!found) {
                 return false;
             }
@@ -1030,8 +1107,16 @@ function computePrerequisite(context: Context, pres: pf.Prerequisite[]) {
                     if (f.bonus.feat) {
                         return f.bonus.feat === preFeat;
                     }
-                    const b = bonusMap[f.path];
-                    return b.kind === "feat" && b.value === preFeat;
+                    const b = choices[f.path];
+                    if (b) {
+                        return b.kind === "feat" && b.value === preFeat;
+                    }
+                }
+                if (f.bonus.k == "class_feat") {
+                    const b = choices[f.path];
+                    if (b) {
+                        return b.kind === "feat" && b.value === preFeat;
+                    }
                 }
                 return false;
             });
@@ -1048,21 +1133,23 @@ function computePrerequisite(context: Context, pres: pf.Prerequisite[]) {
 
 function generateAbilityExcludes(
     path: string,
-    { bonusMap }: Context,
-    choices?: pf.Ability[],
+    { choices }: Context,
+    abilities?: pf.Ability[],
     checkDepth = 1,
 ): pf.Ability[] {
     const parts = path.split("/");
-    const checkPath = parts.slice(0, Math.max(parts.length - checkDepth, 0)).join("/");
+    const checkPath = parts
+        .slice(0, Math.max(parts.length - checkDepth, 0))
+        .join("/");
     const excludes = {} as { [k in pf.Ability]: any };
-    for (const [k, bonus] of Object.entries(bonusMap)) {
+    for (const [k, bonus] of Object.entries(choices)) {
         if (k !== path && k.startsWith(checkPath) && bonus.kind === "ability") {
             excludes[bonus.value] = 1;
         }
     }
-    if (choices) {
+    if (abilities) {
         for (const k of ["STR", "DEX", "CON", "INT", "WIS", "CHA"]) {
-            if (choices.indexOf(k as pf.Ability) == -1) {
+            if (abilities.indexOf(k as pf.Ability) == -1) {
                 excludes[k] = 1;
             }
         }
@@ -1072,7 +1159,10 @@ function generateAbilityExcludes(
 
 function computeProficienciesLevels(context: Context) {
     return Object.fromEntries(
-        pf.skills.map(skill => [skill, computeSkillProficiency(context, skill)]),
+        pf.skills.map(skill => [
+            skill,
+            computeSkillProficiency(context, skill),
+        ]),
     );
 }
 
@@ -1080,18 +1170,18 @@ function generateSkillExcludes(
     path: string,
     context: Context,
     prof: pf.Proficiency,
-    choices?: pf.Skill[],
+    skills?: pf.Skill[],
     upgrade?: boolean,
 ) {
-    const { bonusMap } = context;
+    const { choices } = context;
     const profLevels = computeProficienciesLevels(context);
-    const pathSkill = (bonusMap[path] as BonusKindSkillProf)?.value.skill;
+    const pathSkill = (choices[path] as ChoiceSkillProf)?.value.skill;
     return Object.entries(profLevels)
         .filter(([skill, level]) => {
             if (pathSkill == skill) {
                 return false;
             }
-            if (choices && choices.indexOf(skill as pf.Skill) == -1) {
+            if (skills && skills.indexOf(skill as pf.Skill) == -1) {
                 return false;
             }
             if (upgrade) {

@@ -1,0 +1,314 @@
+{
+    "Advanced Arcana": {
+        "name": "Advanced Arcana",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=746"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Arcana\n\n---\n\nYou gain one wizard feat. For the purpose of meeting its prerequisites, your wizard level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another wizard feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Blood Potency": {
+        "name": "Advanced Blood Potency",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=738"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Blood Potency\n\n---\n\nYou gain one sorcerer feat. For the purpose of prerequisites, your sorcerer level is half your character level.\n\n**Special** You can select this feat more than once. Each time you do, you gain another sorcerer feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Concoction": {
+        "name": "Advanced Concoction",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 220,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=668"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Alchemist Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Concoction\n\n---\n\nYou gain one alchemist feat. For the purpose of meeting its prerequisites, your alchemist level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another alchemist feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Dedication": {
+        "name": "Advanced Dedication",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1847"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Investigator Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Deduction\n\n---\n\nYou gain one investigator feat. For the purpose of meeting its prerequisites, your investigator level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time, you gain another investigator feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Devotion": {
+        "name": "Advanced Devotion",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=690"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Devotion\n\n---\n\nYou gain one champion feat. For the purpose of meeting its prerequisites, your champion level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another champion feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Dogma": {
+        "name": "Advanced Dogma",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=697"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Cleric Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Dogma\n\n---\n\nYou gain one cleric feat. For the purpose of meeting its prerequisites, your cleric level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another cleric feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Flair": {
+        "name": "Advanced Flair",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1862"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Swashbuckler Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Flair\n\n---\n\nYou gain one swashbuckler feat. For the purpose of meeting its prerequisites, your swashbuckler level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another swashbuckler feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Fury": {
+        "name": "Advanced Fury",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 221,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=674"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Barbarian Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Fury\n\n---\n\nYou gain one barbarian feat. For the purpose of meeting its prerequisites, your barbarian level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another barbarian feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Hunter's Trick": {
+        "name": "Advanced Hunter's Trick",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 228,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=725"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Ranger Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Hunter's Trick\n\n---\n\nYou gain one ranger feat. For the purpose of meeting its prerequisites, your ranger level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another ranger feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Kata": {
+        "name": "Advanced Kata",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=718"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Monk Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Kata\n\n---\n\nYou gain one monk feat. For the purpose of meeting its prerequisites, your monk level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another monk feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Maneuver": {
+        "name": "Advanced Maneuver",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 226,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=713"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Fighter Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Maneuver\n\n---\n\nYou gain a fighter feat. For the purpose of meeting its prerequisites, your fighter level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another fighter feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Muse's Whispers": {
+        "name": "Advanced Muse's Whispers",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=680"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Muse's Whispers\n\n---\n\nYou gain one bard feat. For the purpose of meeting its prerequisites, your bard level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another bard feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Mysteries": {
+        "name": "Advanced Mysteries",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1855"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Mysteries\n\n---\n\nYou gain one oracle feat. For meeting its prerequisites, your oracle level is equal to half your level.\n\n**Special** You can select this feat more than once. Each time, you gain another oracle feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Trickery": {
+        "name": "Advanced Trickery",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=730"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Rogue Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Trickery\n\n---\n\nYou gain one rogue feat. For the purpose of meeting its prerequisites, your rogue level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another rogue feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Wilding": {
+        "name": "Advanced Wilding",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=705"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Wilding\n\n---\n\nYou gain one druid feat. For the purpose of meeting its prerequisites, your druid level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another druid feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Advanced Witchcraft": {
+        "name": "Advanced Witchcraft",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1869"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Witch Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Witchcraft\n\n---\n\nYou gain one witch feat. For the purpose of meeting its prerequisites, your witch level is equal to half your character level.\n\n**Special** You can select this feat more than once. Each time you select it, you gain another witch feat.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Champion's Reaction": {
+        "name": "Champion's Reaction",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=691"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Champion Dedication\n\n---\n\nYou can use the champion's reaction associated with your cause.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Counter Perform": {
+        "name": "Counter Perform",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=681"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Bard Dedication\n\n---\n\nYou gain the *counter performance* composition spell. If you don't already have one, you gain a focus pool of 1 Focus Point, which you can Refocus by engaging your muse.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Divine Ally": {
+        "name": "Divine Ally",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=692"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Champion Dedication\n\n---\n\nYou gain a divine ally of your choice.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Alchemy": {
+        "name": "Expert Alchemy",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 220,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=669"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Alchemist Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Alchemist Dedication, expert in Crafting\n\n---\n\nYour advanced alchemy level increases to 3. At 10th level, it increases to 5.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Instinct Ability": {
+        "name": "Instinct Ability",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 221,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=675"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Barbarian Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Barbarian Dedication\n\n---\n\nYou gain the instinct ability for the instinct you chose for Barbarian Dedication.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Investigator's Stratagem": {
+        "name": "Investigator's Stratagem",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1846"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Investigator Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Investigator Dedication\n\n---\n\nYou play out battles in your head, allowing you to strike when the time is right. You gain the Devise a Stratagem action; however, when you substitute its result for your attack roll, you can't use your Intelligence modifier in place of your Strength or Dexterity modifier. You also can't use your Intelligence modifier on other rolls from abilities that expand Devise a Stratagem, such as the Athletic Strategist feat.\n\n### Devise a Stratagem :a:\n\n; Concentrate, Fortune, Investigator  \n**Source** *Advanced Player's Guide pg. 56*  \n**Frequency** once per round\n\n---\n\nYou assess a foe's weaknesses in combat and use them to formulate a plan of attack against your enemy. Choose a creature you can see and roll a d20. If you Strike the chosen creature later this round, you must use the result of the roll you made to Devise a Stratagem for your Strike's attack roll instead of rolling. You make this substitution only for the first Strike you make against the creature this round, not any subsequent attacks.\n\nWhen you make this substitution, you can also add your Intelligence modifier to your attack roll instead of your Strength or Dexterity modifier, provided your Strike uses an agile or finesse melee weapon, an agile or finesse unarmed attack, a ranged weapon (which must be agile or finesse if it's a melee weapon with the thrown trait), or a sap. \n\nIf you're aware that the creature you choose is the subject of a lead you're pursuing, you can use this ability as a free action.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Keen Recollection": {
+        "name": "Keen Recollection",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1848"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Investigator Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Investigator Dedication\n\n---\n\nYou can recall all sorts of information. You gain the keen recollection class feature.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Swashbuckler's Riposte": {
+        "name": "Swashbuckler's Riposte",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1863"
+        },
+        "traits": ["Archetype"],
+        "level": 6,
+        "prerequisites": ["feat:Swashbuckler Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Swashbuckler Dedication\n\n---\n\nYou've learned to riposte against ill-conceived attacks. You gain the Opportune Riposte reaction.\n\n### Opportune Riposte :r:\n\n; Swashbuckler  \n**Source** *Advanced Player's Guide pg. 86*  \n**Trigger** A foe within your reach critically fails a Strike against you.\n\n---\n\nYou take advantage of an opening from your enemy's fumbled attack. You either make a melee Strike against the triggering foe or attempt to Disarm it of the weapon it used for the Strike.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

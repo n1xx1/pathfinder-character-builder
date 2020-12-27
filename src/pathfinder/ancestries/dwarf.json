@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "CON" },
         { "k": "ability", "ability": "WIS" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "DEX", "INT", "CHA"] },
         { "k": "ability_flaw", "ability": "CHA" },
-        { "k": "feat", "filter": ["trait:Dwarf", "level:1"] },
+
         { "k": "special", "id": "darkvision" },
         { "k": "item", "name": "clan dagger" }
     ],
@@ -47,8 +47,20 @@
                 {
                     "k": "if",
                     "if": ["skill:crafting,T"],
-                    "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }],
-                    "else_bonus": [{ "k": "proficiency", "skill": "crafting", "proficiency": "T" }]
+                    "bonus": [
+                        {
+                            "k": "proficiency",
+                            "skill": "any_skill",
+                            "proficiency": "T"
+                        }
+                    ],
+                    "else_bonus": [
+                        {
+                            "k": "proficiency",
+                            "skill": "crafting",
+                            "proficiency": "T"
+                        }
+                    ]
                 },
                 { "k": "feat", "feat": "Specialty Crafting" }
             ],
@@ -142,7 +154,11 @@
                 "prd": "https://2e.aonprd.com/Heritages.aspx?ID=3"
             },
             "bonus": [
-                { "k": "bonus", "category": "resistance", "text": "fire {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "fire {ceil(level/2)}"
+                },
                 {
                     "k": "bonus",
                     "category": "resistance",
@@ -201,7 +217,11 @@
                 "prd": "https://2e.aonprd.com/Heritages.aspx?ID=5"
             },
             "bonus": [
-                { "k": "bonus", "category": "resistance", "text": "poison {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "poison {ceil(level/2)}"
+                },
                 {
                     "k": "bonus",
                     "category": "resistance",

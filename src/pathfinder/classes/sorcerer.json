@@ -12,11 +12,24 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "2+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "2+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -24,7 +37,11 @@
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 { "k": "bonus", "category": "TODO", "text": "" }
             ],
             "description": "Level 1"
@@ -43,7 +60,9 @@
                                 "page": 195,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Something speaks to you from beyond the stars or below the earth. Ancient and unknowable, this alien influence presses against your mind.\n\n**Spell List** occult  \n**Bloodline Skills** Intimidation, Occultism  \n**Granted Spells** cantrip: *daze*, 1st: *spider sting*, 2nd: *touch of idiocy*, 3rd: *vampiric touch*, 4th: *confusion*, 5th: *black tentacles*, 6th: *feeblemind*, 7th: *warp mind*, 8th: *uncontrollable dance*, 9th: *unfathomable song*  \n**Bloodline Spells** initial: *tentacular limbs*, advanced: *aberrant whispers*, greater: *unusual anatomy*  \n**Blood Magic** Aberrant whispers shield one target's mind or your own, granting a +2 status bonus to Will saving throws for 1 round."
                         },
                         "Angelic": {
@@ -53,7 +72,9 @@
                                 "page": 195,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "One of your forebears hailed from a celestial realm, or your ancestors' devotion led to their lineage being blessed.\n\n**Spell List** divine  \n**Bloodline Skills** Diplomacy, Religion  \n**Granted Spells** cantrip: *light*, 1st: *heal*, 2nd: *spiritual weapon*, 3rd: *searing light*, 4th: *divine wrath*, 5th: *flame strike*, 6th: *blade barrier*, 7th: *divine decree*, 8th: *divine aura*, 9th: *foresight*  \n**Bloodline Spells** initial: *angelic halo*, advanced: *angelic wings*, greater: *celestial brand*  \n**Blood Magic** An angelic aura protects you or one target, granting a +1 status bonus to saving throws for 1 round."
                         },
                         "Demonic": {
@@ -63,7 +84,9 @@
                                 "page": 195,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Demons debase all they touch. One of your ancestors fell victim to their corruption, and you are burdened by that sin.\n\n**Spell List** divine  \n**Bloodline Skills** Intimidation, Religion  \n**Granted Spells** cantrip: *acid splash*, 1st: *fear*, 2nd: *enlarge*, 3rd: *slow*, 4th: *divine wrath*, 5th: *abyssal plague*, 6th: *disintegrate*, 7th: *divine decree*, 8th: *divine aura*, 9th: *implosion*  \n**Bloodline Spells** initial: *glutton's jaw*, advanced: *swamp of sloth*, greater: *abyssal wrath*  \n**Blood Magic** The corruption of sin weakens a target's defenses or makes you more imposing. Either a target takes a \u20131 status penalty to AC for 1 round, or you gain a +1 status bonus to Intimidation checks for 1 round."
                         },
                         "Diabolic": {
@@ -73,7 +96,9 @@
                                 "page": 196,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Devils are evil with a silver tongue, and one of your ancestors dallied in darkness or made an infernal pact.\n\n**Spell List** divine  \n**Bloodline Skills** Deception, Religion  \n**Granted Spells** cantrip: *produce flame*, 1st: *charm*, 2nd: *flaming sphere*, 3rd: *enthrall*, 4th: *suggestion*, 5th: *crushing despair*, 6th: *true seeing*, 7th: *divine decree*, 8th: *divine aura*, 9th: *meteor swarm*  \n**Bloodline Spells** initial: *diabolic edict*, advanced: *embrace the pit*, greater: *hellfire plume*  \n**Blood Magic** Hellfire scorches a target or fills your tongue with lies. Either a target takes 1 fire damage per spell level (if the spell already deals initial fire damage, combine this with the spell's initial damage before determining weaknesses and resistances), or you gain a +1 status bonus to Deception checks for 1 round."
                         },
                         "Draconic": {
@@ -83,7 +108,9 @@
                                 "page": 196,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "The blood of dragons flows through your veins. These beasts are both fearsome in combat and skilled at magic.\n\n**Spell List** arcane  \n**Bloodline Skills** Arcana, Intimidation  \n**Granted Spells** cantrip: *shield*, 1st: *true strike*, 2nd: *resist energy*, 3rd: *haste*, 4th: *spell immunity*, 5th: *chromatic wall*, 6th: *dragon form*, 7th: *mask of terror*, 8th: *prismatic wall*, 9th: *overwhelming presence*  \n**Bloodline Spells** initial: *dragon claws*, advanced: *dragon breath*, greater: *dragon wings*  \n**Blood Magic** Draconic scales grow briefly on you or one target, granting a +1 status bonus to AC for 1 round.  \n\n### Dragon Type\n\nAt 1st level, choose the type of dragon that influenced your bloodline. You can't change your dragon type later. This affects how some of your bloodline spells function. The good metallic dragons and their damage types are brass (fire), bronze (electricity), copper (acid), gold (fire), and silver (cold). The evil chromatic dragons and their damage types are black (acid), blue (electricity), green (poison), red (fire), and white (cold)."
                         },
                         "Elemental": {
@@ -93,7 +120,9 @@
                                 "page": 196,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "A genie ancestor or some other elemental influence has imbued your blood with primal fury, affecting how the bloodline spells and granted spells marked with an asterisk (*), as well as your blood magic, function.\n\n**Spell List** primal  \n**Bloodline Skills** Intimidation, Nature  \n**Granted Spells** cantrip: *produce flame**, 1st: *burning hands**, 2nd: *resist energy*, 3rd: *fireball**, 4th: *freedom of movement*, 5th: *elemental form*, 6th: *repulsion*, 7th: *energy aegis*, 8th: *prismatic wall*, 9th: *storm of vengeance*  \n**Bloodline Spells** initial: *elemental toss**, advanced: *elemental motion*, greater: *elemental blast**  \n**Blood Magic** Elemental energy surrounds you or a target. Either you gain a +1 status bonus to Intimidation checks for 1 round, or a target takes 1 damage per spell level. The damage is bludgeoning or fire, according to your elemental type (see below). If the spell already deals that type of damage, combine it with the spell's initial damage before determining weaknesses and resistances.  \n\n### Elemental Type\n\nAt 1st level, choose the type of elemental that influenced your bloodline: air, earth, fire, or water. If your element is air, you buffet your foes with powerful winds; if it's earth, you toss huge chunks of rock; if it's fire, you incinerate your foes with flame; and if it's water, you inundate your foes with torrents of water. For fire, all marked spells deal fire damage. For other elements, they deal bludgeoning damage. Replace any existing elemental traits with the trait of the element you chose."
                         },
                         "Fey": {
@@ -103,7 +132,9 @@
                                 "page": 197,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Fey whimsy or a tryst in a moonlit grove put the bewitching magic of the First World into your family's bloodline.\n\n**Spell List** primal  \n**Bloodline Skills** Deception, Nature  \n**Granted Spells** cantrip: *ghost sound*, 1st: *charm*, 2nd: *hideous laughter*, 3rd: *enthrall*, 4th: *suggestion*, 5th: *cloak of colors*, 6th: *mislead*, 7th: *visions of danger*, 8th: *uncontrollable dance*, 9th: *resplendent mansion*  \n**Bloodline Spells** initial: *faerie dust*, advanced: *fey disappearance*, greater: *fey glamour*  \n**Blood Magic** Colorful fey glamours dance around you or one target, causing them to be concealed for 1 round. Such obvious concealment can't be used to Hide."
                         },
                         "Genie": {
@@ -113,7 +144,9 @@
                                 "page": 138,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Through lineage, magic, or wishes made real, the blood of a noble genie flows through your veins.\n\n**Spell List** arcane  \n**Bloodline Skills** Arcana, Deception  \n**Granted Spells** cantrip: *detect magic*, 1st: *illusory disguise*, 2nd: variable, 3rd: *enthrall*, 4th: *creation*, 5th: variable, 6th: *true seeing*, 7th: *energy aegis*, 8th: variable, 9th: *resplendent mansion*  \n**Bloodline Spells** initial: *genie's veil*, advanced: *heart's desire*, greater: *wish-twisted form*  \n**Blood Magic** Your spellcasting warps reality and distracts your foes. Either you gain a +1 status bonus to Deception checks for 1 round, or a target takes a \u20131 status penalty to Perception for 1 round.  \n\n### Genie Type\n\nAt 1st level, choose the type of genie that influenced your bloodline: janni, djinni, efreeti, marid, or shaitan. You can't change your genie type later. This determines what granted spells you receive at 2nd, 5th, and 8th level. * **Janni** 2nd: *create food*; 5th: *banishment*; 8th: *scintillating pattern*\n* **Djinni** 2nd: *invisibility*; 5th: *illusory scene*; 8th: *punishing winds*\n* **Efreeti** 2nd: *enlarge*; 5th: *elemental form* (fire only); 8th: *maze*\n* **Marid** 2nd: *water walk*; 5th: *control water*; 8th: *horrid wilting*\n* **Shaitan** 2nd: *glitterdust*; 5th: *wall of stone*; 8th: *earthquake*\n\n"
                         },
                         "Hag": {
@@ -123,7 +156,9 @@
                                 "page": 197,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "A hag long ago cursed your family, or you are a descendant of a hag or changeling, and their accursed corruption infests your blood and soul.\n\n**Spell List** occult  \n**Bloodline Skills** Deception, Occultism  \n**Granted Spells** cantrip: *daze*, 1st: *illusory disguise*, 2nd: *touch of idiocy*, 3rd: *blindness*, 4th: *outcast's curse*, 5th: *mariner's curse*, 6th: *baleful polymorph*, 7th: *warp mind*, 8th: *spiritual epidemic*, 9th: *nature's enmity*  \n**Bloodline Spells** initial: *jealous hex*, advanced: *horrific visage*, greater: *you're mine*  \n**Blood Magic** Spiteful curses punish your foes. The first creature that deals damage to you before the end of your next turn takes 2 mental damage per spell level and must attempt a basic Will save."
                         },
                         "Imperial": {
@@ -133,7 +168,9 @@
                                 "page": 198,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "One of your ancestors was a mortal who mastered magic. Such magical blood can remain latent for generations, but in you it manifested in full.\n\n**Spell List** arcane  \n**Bloodline Skills** Arcana, Society  \n**Granted Spells** cantrip: *detect magic*, 1st: *magic missile*, 2nd: *dispel magic*, 3rd: *haste*, 4th: *dimension door*, 5th: *prying eye*, 6th: *disintegrate*, 7th: *prismatic spray*, 8th: *maze*, 9th: *prismatic sphere*  \n**Bloodline Spells** initial: *ancestral memories*, advanced: *extend spell*, greater: *arcane countermeasure*  \n**Blood Magic** A surge of ancestral memories grants you or one target a +1 status bonus to skill checks for 1 round."
                         },
                         "Nymph": {
@@ -143,7 +180,9 @@
                                 "page": 138,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "One of your ancestors was inspired by a nymph, or perhaps was a nymph themself, and now the beauty of nature lives in you.\n\n**Spell List** primal  \n**Bloodline Skills** Diplomacy, Nature  \n**Granted Spells** cantrip: *tanglefoot*, 1st: *charm*, 2nd: *calm emotions*, 3rd: *animal vision*, 4th: *vital beacon*, 5th: *crushing despair*, 6th: *repulsion*, 7th: *unfettered pack*, 8th: *moment of renewal*, 9th: *overwhelming presence*  \n**Bloodline Spells** initial: *nymph's token*, advanced: *blinding beauty*, greater: *establish ward*  \n**Blood Magic** Nymph grace accentuates your movements and distracts your foes, either granting you a +1 status bonus to Diplomacy checks for 1 round or imposing a \u20131 status penalty on one target's Will saves for 1 round."
                         },
                         "Psychopomp": {
@@ -153,7 +192,9 @@
                                 "page": 138,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "For good or ill, your ancestors' deeds drew the attention of psychopomps, or you might somehow count one in your family tree. The presence of these shepherds of souls and enemies of undeath has left an indelible mark on you.\n\n**Spell List** divine  \n**Bloodline Skills** Intimidation, Religion  \n**Granted Spells** cantrip: *disrupt undead*, 1st: *heal*, 2nd: *calm emotions*, 3rd: *searing light*, 4th: *dimensional anchor*, 5th: *death ward*, 6th: *spirit blast*, 7th: *finger of death*, 8th: *spirit song*, 9th: *massacre*  \n**Bloodline Spells** initial: *sepulchral mask*, advanced: *spirit veil*, greater: *shepherd of souls*  \n**Blood Magic** The border between life and death becomes blurred to you. Either you gain a +2 status bonus to Fortitude saving throws for 1 round, or a target takes 1 damage per spell level. The damage is negative if the target is living or positive if the target is undead. If the spell already deals that type of damage, combine it with the spell's initial damage before determining weaknesses and resistances."
                         },
                         "Shadow": {
@@ -163,7 +204,9 @@
                                 "page": 138,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Whether due to a velstrac's manipulations or a planar jaunt gone horribly wrong, your bloodline was infused with a vein of shadow.\n\n**Spell List** occult  \n**Bloodline Skills** Occultism, Stealth  \n**Granted Spells** cantrip: *chill touch*, 1st: *grim tendrils*, 2nd: *darkness*, 3rd: *chilling darkness*, 4th: *phantasmal killer*, 5th: *shadow siphon*, 6th: *collective transposition*, 7th: *duplicate foe*, 8th: *disappearance*, 9th: *weird*  \n**Bloodline Spells** initial: *dim the light*, advanced: *steal shadow*, greater: *consuming darkness*  \n**Blood Magic** Shadows grow deeper around you or one target, either granting a +1 status bonus to Stealth or imposing a \u20131 status penalty to Perception for 1 round."
                         },
                         "Undead": {
@@ -173,7 +216,9 @@
                                 "page": 198,
                                 "prd": "https://2e.aonprd.com/Bloodlines.aspx?ID="
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "The touch of undeath runs through your blood. Your family tree might contain powerful undead, like a vampire, or perhaps you died and returned a bit different.\n\n**Spell List** divine  \n**Bloodline Skills** Intimidation, Religion  \n**Granted Spells** cantrip: *chill touch*, 1st: *harm*, 2nd: *false life*, 3rd: *bind undead*, 4th: *talking corpse*, 5th: *cloudkill*, 6th: *vampiric exsanguination*, 7th: *finger of death*, 8th: *horrid wilting*, 9th: *wail of the banshee*  \n**Bloodline Spells** initial: *undeath's blessing*, advanced: *drain life*, greater: *grasping grave*  \n**Blood Magic** Necromantic energy flows through you or one target. Either you gain temporary Hit Points equal to the spell's level for 1 round, or a target takes 1 negative damage per spell level (if the spell already deals initial negative damage, combine this with the spell's initial damage before determining weaknesses and resistances)."
                         }
                     }
@@ -197,7 +242,10 @@
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
@@ -215,13 +263,19 @@
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Magical Fortitude": {
@@ -233,7 +287,10 @@
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
@@ -251,13 +308,19 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Lightning Reflexes": {
@@ -269,7 +332,10 @@
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
@@ -293,13 +359,19 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Defensive Robes": {
@@ -317,7 +389,10 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
@@ -335,13 +410,19 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Resolve": {
@@ -353,7 +434,10 @@
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
@@ -377,7 +461,10 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

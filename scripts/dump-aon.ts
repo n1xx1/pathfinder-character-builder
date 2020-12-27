@@ -1,26 +1,26 @@
 import { fetch, parseDom } from "./utils/fetch";
-import { create$, QueryDOM, scanUntil, TagA, TagH1, TagH2, TagSpan } from "./utils/dom";
 import yargs from "yargs";
 import cheerio from "cheerio";
+
+import Root = cheerio.Root;
 import Cheerio = cheerio.Cheerio;
-import CheerioAPI = cheerio.CheerioAPI;
 
 const BASE_URL = "https://2e.aonprd.com/";
 
 const regexFixPFS = /(<a .*?"PFS\.aspx"><span.*?><img alt="PFS .*?>)<\/a><\/span>/g;
 const regexFixPFSReplace = "$1</span></a>";
 
-async function readAon(url) {
+async function readAon(url: string) {
     const res = await fetch(url);
     const text = await res.text();
-    return text.replace(regexFixPFS, regexFixPFSReplace);
+    return cheerio.load(text.replace(regexFixPFS, regexFixPFSReplace));
 }
 
 async function getAllAncestries() {
-    const $ = cheerio.load(await readAon(`${BASE_URL}Ancestries.aspx`));
+    const $ = await readAon(`${BASE_URL}Ancestries.aspx`);
 
     const links = $("h2.title>a:last-of-type");
-    return links.map(l => ({
+    return links.toArray().map(l => ({
         url: BASE_URL + $(l).attr("href"),
         name: $(l).text(),
     }));
@@ -32,7 +32,7 @@ interface BookInfo {
     prd?: string;
 }
 
-function skipToAfterSource(contents: Cheerio): [ChildNode[], ChildNode[], BookInfo] {
+function skipToAfterSource(contents: Cheerio): [Cheerio, Cheerio, BookInfo] {
     const preContents = contents.nextUntil("b:contains('Source')");
     const sourceContents = preContents.last().next().nextUntil("br");
 
@@ -53,22 +53,11 @@ function skipToAfterSource(contents: Cheerio): [ChildNode[], ChildNode[], BookIn
     // return [preContents, restContents, { book, page: +page }];
 }
 
-function createElement(dom: Document, contents: ChildNode[]) {
-    const div = dom.createElement("div");
-    for (const c of contents) {
-        div.appendChild(c);
-    }
-    return div;
-}
-
-function getTraits(info: ChildNode[]) {
+function getTraits($: Root, info: Cheerio) {
     return info
-        .filter(
-            x =>
-                x.nodeName == "span" &&
-                Array.from((<TagSpan>x).classList).some(c => c.startsWith("trait")),
-        )
-        .map(x => (<TagSpan>x).querySelector("a").innerText);
+        .filter((i, x) => x.tagName == "span" && (x.attribs["class"]?.includes("trait") ?? false))
+        .toArray()
+        .map(x => $(x).find("a").text());
 }
 
 function getActionKind(url: string) {
@@ -89,7 +78,7 @@ function getActionKind(url: string) {
 
 const hMatcher = /^h[1-6]$/;
 
-function toMarkdown($: CheerioAPI, el: Cheerio, out = "") {
+function toMarkdown($: Root, el: Cheerio, out = "") {
     let skipToBr = false;
     el.each((i, e) => {
         if (skipToBr) {
@@ -183,10 +172,10 @@ function toMarkdown($: CheerioAPI, el: Cheerio, out = "") {
                             " |\n";
                     }
                 });
-        } else if (e.nodeName == "hr") {
+        } else if (e.tagName == "hr") {
             out += "\n\n---\n\n";
-        } else if (e.nodeName.match(hMatcher)) {
-            out += "\n\n" + "#".repeat(+e.nodeName[1]) + " ";
+        } else if (e.tagName.match(hMatcher)) {
+            out += "\n\n" + "#".repeat(+e.tagName[1]) + " ";
             out = toMarkdown($, $(e).contents(), out);
             out += "\n\n";
         } else {
@@ -197,16 +186,25 @@ function toMarkdown($: CheerioAPI, el: Cheerio, out = "") {
     return out;
 }
 
+function debugCheerio($: Root, c: Cheerio) {
+    console.log(
+        c
+            .toArray()
+            .map(e => $(e).clone().wrap("<container />").parent().html())
+            .join("; "),
+    );
+}
+
 async function getAncestryDetail(url: string) {
-    const $ = cheerio.load(await readAon(url));
+    const $ = await readAon(url);
 
     const data = {} as any;
 
-    const pageTitle = $("#ctl00_MainContent_DetailedOutput>h1.title");
+    const pageTitle = $("#ctl00_MainContent_DetailedOutput>h1.title").eq(0);
 
-    const contents = pageTitle.nextUntil("h1");
-    console.log(pageTitle.html());
-    console.log(contents.html());
+    const contents = pageTitle.next().nextUntil("h1");
+    debugCheerio($, pageTitle);
+    debugCheerio($, contents);
 
     const contentsStart = $("<div>").append(contents).children().first();
     const anchestryMechanics = contents.last();
@@ -214,9 +212,9 @@ async function getAncestryDetail(url: string) {
     const [info, ancestryInfo, source] = skipToAfterSource(contentsStart);
     source.prd = url;
 
-    data.name = pageTitle.find<TagA>("a:last-of-type").text();
+    data.name = pageTitle.find("a:last-of-type").text();
     data.source = source;
-    data.traits = getTraits(info);
+    data.traits = getTraits($, info);
     //
     // const [ancestryMechanicsContents] = scanUntil(ancestryMechanics, x => !!x);
     // ancestryMechanics = createElement(dom, ancestryMechanicsContents);
@@ -273,33 +271,36 @@ async function getAncestryDetail(url: string) {
 
 async function getAncestryHeritages(url: string, name: string) {
     url = url.replace("Ancestries.aspx?ID=", "Heritages.aspx?Ancestry=");
-    const $ = cheerio.load(await readAon(url));
+    const $ = await readAon(url);
     const data = {};
 
-    const firstHeritage = $<TagH2>("#ctl00_MainContent_DetailedOutput>h2.title")[0];
+    const firstHeritage = $("#ctl00_MainContent_DetailedOutput>h2.title");
     const contents = firstHeritage.nextUntil("h1");
-    const titles = $("<div>").append(contents).find<TagH2>(">h2.title");
+    const titles = $("<div>").append(contents).find(">h2.title");
+
+    console.log(titles);
 }
 
 async function getAllBackgrounds() {
-    const $ = cheerio.load(await readAon(`${BASE_URL}Backgrounds.aspx`));
+    const $ = await readAon(`${BASE_URL}Backgrounds.aspx`);
 
-    const links = $<TagA>("h2.title>a:last-of-type");
-    return links.map(l => ({
-        url: l.attr("href"),
-        name: l.text(),
+    const links = $("h2.title>a:last-of-type");
+    return links.toArray().map(l => ({
+        url: $(l).attr("href"),
+        name: $(l).text(),
     }));
 }
 
 async function getAllClasses() {
-    const $ = cheerio.load(await readAon(`${BASE_URL}Classes.aspx`));
+    const $ = await readAon(`${BASE_URL}Classes.aspx`);
 
-    const links = $<TagA>("#ctl00_MainContent_Navigation>h1>a");
+    const links = $("#ctl00_MainContent_Navigation>h1>a");
     return links
-        .filter(l => l.attr("href")?.startsWith("Classes.aspx"))
+        .filter((i, l) => $(l).attr("href")?.startsWith("Classes.aspx"))
+        .toArray()
         .map(l => ({
-            url: l.attr("href"),
-            name: l.text(),
+            url: $(l).attr("href"),
+            name: $(l).text(),
         }));
 }
 

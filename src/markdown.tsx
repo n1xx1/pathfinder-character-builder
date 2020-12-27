@@ -1,5 +1,8 @@
 import React, { ReactNode, ReactType } from "react";
-import ReactMarkdown, { MarkdownAbstractSyntaxTree, RenderProps } from "react-markdown";
+import ReactMarkdown, {
+    MarkdownAbstractSyntaxTree,
+    RenderProps,
+} from "react-markdown";
 import htmlParser from "react-markdown/plugins/html-parser";
 import visit from "unist-util-visit";
 import classnames from "classnames";
@@ -104,10 +107,20 @@ export function Action({ value }: ActionProps) {
 }
 
 type Tree = MarkdownAbstractSyntaxTree;
-type VisitReturnType = void | true | false | "skip" | number | [true | false | "skip", number];
+type VisitReturnType =
+    | void
+    | true
+    | false
+    | "skip"
+    | number
+    | [true | false | "skip", number];
 type TreeVisitor = (node: Tree, index: number, parent: Tree) => VisitReturnType;
 
-function visitTree(tree: Tree, fnOrSearch: TreeVisitor | string, fn?: TreeVisitor) {
+function visitTree(
+    tree: Tree,
+    fnOrSearch: TreeVisitor | string,
+    fn?: TreeVisitor,
+) {
     if (fn !== undefined) {
         const fn1 = (node: Tree, index: number, parent: Tree) => {
             return fn(node, index, parent);
@@ -164,7 +177,9 @@ function splitNodes(nodes: Tree[]) {
             retNode[0].value = retNode[0].value.trimLeft();
         }
         if (retNode.length > 0 && retNode[retNode.length - 1].type == "text") {
-            retNode[retNode.length - 1].value = retNode[retNode.length - 1].value.trimRight();
+            retNode[retNode.length - 1].value = retNode[
+                retNode.length - 1
+            ].value.trimRight();
         }
     }
     return ret;
@@ -190,7 +205,10 @@ function traitParser(tree: Tree, renderProps: RenderProps) {
         if (node.children?.length && node.children[0].type == "text") {
             const firstNode = node.children[0];
             if (firstNode.value.startsWith("; ")) {
-                const len = scanUntil(node.children.slice(1), v => v.type == "break");
+                const len = scanUntil(
+                    node.children.slice(1),
+                    v => v.type == "break",
+                );
                 firstNode.value = firstNode.value.substr(2); // skip "; "
                 const split = splitNodes(node.children.slice(0, 1 + len));
 
@@ -214,7 +232,12 @@ function traitParser(tree: Tree, renderProps: RenderProps) {
                                 className,
                             } as any;
                         }),
-                        () => ({ type: "text", position: node.position, value: " " } as Tree),
+                        () =>
+                            ({
+                                type: "text",
+                                position: node.position,
+                                value: " ",
+                            } as Tree),
                     ),
                 } as any);
                 return index + 1;

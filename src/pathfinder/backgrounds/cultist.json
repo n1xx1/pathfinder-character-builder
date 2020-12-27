@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["INT", "CHA"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "occultism", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "TODO",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Schooled in Secrets" }
     ],
     "description": "You were (or still are) a member of a cult whose rites may involve sacred dances to ensure a strong harvest or dire rituals that call upon dark powers. You might have taken up adventuring to further your cult's aims, to initiate yourself into the world's grander mysteries, or to flee unsavory practices or strictures.\n\nChoose two ability boosts. One must be to **Intelligence** or **Charisma**, and one is a free ability boost.\n\nYou're trained in the Occultism skill, and a Lore skill related to your deity or cult. You gain the Schooled in Secrets skill feat."

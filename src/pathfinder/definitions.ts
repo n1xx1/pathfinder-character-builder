@@ -69,7 +69,11 @@ export namespace pf {
 
     export type WeaponKind = "unarmed" | "weapon_simple" | "weapon_martial";
 
-    export type ArmorKind = "unarmored" | "armor_light" | "armor_medium";
+    export type ArmorKind =
+        | "unarmored"
+        | "armor_light"
+        | "armor_medium"
+        | "armor_heavy";
 
     export type Tradition = "arcane" | "divine" | "primal" | "occult";
 
@@ -116,12 +120,22 @@ export namespace pf {
         filter?: SpellTrait[];
     }
 
-    export type BonusFeat = {
+    export interface BonusFeat {
         k: "feat";
         feat?: string;
         option?: string | string[];
         filter?: FeatTrait[];
-    };
+    }
+
+    export interface BonusClassFeat {
+        k: "class_feat";
+        level: number;
+    }
+
+    export interface BonusAncestryFeat {
+        k: "ancestry_feat";
+        level: number;
+    }
 
     export type BonusProficiency = {
         k: "proficiency";
@@ -169,7 +183,7 @@ export namespace pf {
         k: "bonus";
         category: string; // ???
         text: string;
-        arg: string;
+        arg?: string;
     }
 
     export interface BonusSpeed {
@@ -209,6 +223,8 @@ export namespace pf {
         | BonusRemoveAction
         | BonusSpell
         | BonusFeat
+        | BonusClassFeat
+        | BonusAncestryFeat
         | BonusProficiency
         | BonusAbilityFlaw
         | BonusAbility

@@ -180,7 +180,14 @@
             "page": 266,
             "prd": "https://2e.aonprd.com/Feats.aspx?ID=837"
         },
-        "traits": ["Death", "Emotion", "Fear", "General", "Incapacitation", "Skill"],
+        "traits": [
+            "Death",
+            "Emotion",
+            "Fear",
+            "General",
+            "Incapacitation",
+            "Skill"
+        ],
         "level": 15,
         "bonus": [
             { "k": "action", "name": "#self", "actions": 1 },

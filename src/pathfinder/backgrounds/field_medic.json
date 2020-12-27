@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["CON", "WIS"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "medicine", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "Warfare", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Warfare",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Battle Medicine" }
     ],
     "description": "In the chaotic rush of battle, you learned to adapt to rapidly changing conditions as you administered to battle casualties. You patched up soldiers, guards, or other combatants, and learned a fair amount about the logistics of war.\n\nChoose two ability boosts. One must be to **Constitution** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in the Medicine skill, and the Warfare Lore skill. You gain the Battle Medicine skill feat."

@@ -12,12 +12,25 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "E" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "E"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "E" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
                 { "k": "proficiency", "skill": "stealth", "proficiency": "T" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "7+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "7+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -31,9 +44,24 @@
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
-                { "k": "proficiency", "skill": "class_dc", "class": "Rogue", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "armor_light",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "class_dc",
+                    "class": "Rogue",
+                    "proficiency": "T"
+                },
+                { "k": "ancestry_feat", "level": 1 },
+                { "k": "class_feat", "level": 1 },
                 { "k": "bonus", "category": "TODO", "text": "" }
             ],
             "description": "Level 1"
@@ -52,7 +80,9 @@
                                 "page": 134,
                                 "prd": "https://2e.aonprd.com/Rackets.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "When it comes to a big heist, every rogue worth their salt knows that magic can throw meticulous plans into chaos, whether in the form of arcane wards or pesky divinations. You dabble in magic just enough to help handle these problems by jury-rigging spells and throwing a bit of your own magic into the mix. You might be a solitary thief, performing burglaries that can't be explained by skill alone, or a specialist called in by other rogues to deal with magical security measures. You might even be on the up-and-up, hired to test magical defenses or even build them yourself.\n\nChoose a multiclass archetype that has a basic, expert, and master spellcasting feat. You gain that archetype's dedication feat as a bonus feat even though you don't meet its level prerequisite, though you must meet its other prerequisites. For you, the Magical Trickster rogue feat has a prerequisite of 2nd level instead of 4th level. You can choose the spellcasting ability score for the multiclass archetype you chose as your key ability score."
                         },
                         "Mastermind": {
@@ -64,11 +94,20 @@
                             },
                             "bonus": [
                                 { "k": "special", "id": "rogue_key_INT" },
-                                { "k": "proficiency", "skill": "society", "proficiency": "T" },
+                                {
+                                    "k": "proficiency",
+                                    "skill": "society",
+                                    "proficiency": "T"
+                                },
                                 {
                                     "k": "proficiency",
                                     "skill": "any_skill",
-                                    "filter": ["arcana", "nature", "occultism", "religion"],
+                                    "filter": [
+                                        "arcana",
+                                        "nature",
+                                        "occultism",
+                                        "religion"
+                                    ],
                                     "proficiency": "T"
                                 },
                                 {
@@ -103,7 +142,9 @@
                                 "page": 180,
                                 "prd": "https://2e.aonprd.com/Rackets.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You use fast-talking, flattery, and a silver tongue to avoid danger and escape tricky situations. You might be a grifter or con artist, traveling from place to place with a new story or scheme. Your racket is also ideal for certain reputable professions, like barrister, diplomat, or politician.\n\nWhen you successfully Feint, the target is flat-footed against melee attacks you attempt against it until the end of your next turn. On a critical success, the target is flat-footed against all melee attacks until the end of your next turn, not just yours.\n\nYou're trained in Deception and Diplomacy. You can choose Charisma as your key ability score."
                         },
                         "Thief": {
@@ -113,7 +154,9 @@
                                 "page": 180,
                                 "prd": "https://2e.aonprd.com/Rackets.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Nothing beats the thrill of taking something that belongs to someone else, especially if you can do so completely unnoticed. You might be a pickpocket working the streets, a cat burglar sneaking through windows and escaping via rooftops, or a safecracker breaking into carefully guarded vaults. You might even work as a consultant, testing clients' defenses by trying to steal something precious.\n\nWhen a fight breaks out, you prefer swift, lightweight weapons, and you strike where it hurts. When you attack with a finesse melee weapon, you can add your Dexterity modifier to damage rolls instead of your Strength modifier.\n\nYou are trained in Thievery."
                         }
                     }
@@ -137,7 +180,10 @@
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
@@ -155,13 +201,19 @@
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Weapon Tricks": {
@@ -173,7 +225,10 @@
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
@@ -203,13 +258,19 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Debilitating Strikes": {
@@ -227,7 +288,10 @@
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
@@ -245,13 +309,19 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Improved Evasion": {
@@ -281,7 +351,10 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
@@ -305,13 +378,19 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Slippery Mind": {
@@ -323,7 +402,10 @@
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
@@ -347,7 +429,10 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

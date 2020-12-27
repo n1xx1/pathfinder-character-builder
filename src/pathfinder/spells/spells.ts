@@ -2229,7 +2229,13 @@ export const spells: { [key: string]: pf.Spell } = {
     },
     possession: {
         name: "possession",
-        traits: ["Uncommon", "Incapacitation", "Mental", "Necromancy", "Possession"],
+        traits: [
+            "Uncommon",
+            "Incapacitation",
+            "Mental",
+            "Necromancy",
+            "Possession",
+        ],
         level: 7,
         traditions: ["occult"],
         description: "",
@@ -2537,7 +2543,13 @@ export const spells: { [key: string]: pf.Spell } = {
     },
     "overwhelming presence": {
         name: "overwhelming presence",
-        traits: ["Auditory", "Enchantment", "Incapacitation", "Mental", "Visual"],
+        traits: [
+            "Auditory",
+            "Enchantment",
+            "Incapacitation",
+            "Mental",
+            "Visual",
+        ],
         level: 9,
         traditions: ["divine", "occult"],
         description: "",
@@ -2586,7 +2598,14 @@ export const spells: { [key: string]: pf.Spell } = {
     },
     "unfathomable song": {
         name: "unfathomable song",
-        traits: ["Auditory", "Emotion", "Enchantment", "Fear", "Incapacitation", "Mental"],
+        traits: [
+            "Auditory",
+            "Emotion",
+            "Enchantment",
+            "Fear",
+            "Incapacitation",
+            "Mental",
+        ],
         level: 9,
         traditions: ["occult"],
         description: "",
@@ -2628,7 +2647,16 @@ export const spells: { [key: string]: pf.Spell } = {
     },
     cataclysm: {
         name: "cataclysm",
-        traits: ["Acid", "Air", "Cold", "Earth", "Electricity", "Evocation", "Fire", "Water"],
+        traits: [
+            "Acid",
+            "Air",
+            "Cold",
+            "Earth",
+            "Electricity",
+            "Evocation",
+            "Fire",
+            "Water",
+        ],
         level: 10,
         traditions: ["arcane", "primal"],
         description: "",

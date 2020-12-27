@@ -1,47 +1,11 @@
 import { pf } from "./pathfinder";
-
-export interface BonusKindAbility {
-    kind: "ability";
-    value: pf.Ability;
-}
-export interface BonusKindSkillProf {
-    kind: "skill_prof";
-    value: { skill: pf.Skill; level: number; upgrade: boolean };
-}
-export interface BonusKindFeat {
-    kind: "feat";
-    value: string;
-    option?: string | string[];
-}
-export interface BonusKindSpell {
-    kind: "spell";
-    value: string;
-}
-export interface BonusKindOption {
-    kind: "option";
-    value: string;
-}
-export type Bonus =
-    | BonusKindAbility
-    | BonusKindSkillProf
-    | BonusKindFeat
-    | BonusKindSpell
-    | BonusKindOption;
-
-export type BonusMap = { [path: string]: Bonus };
-export interface BonusListEntry<T extends pf.Bonus = pf.Bonus> {
-    bonus: T;
-    origin: string;
-    path: string;
-    arg?: string;
-}
-export type BonusList<T extends pf.Bonus = pf.Bonus> = BonusListEntry<T>[];
+import { BonusList, ChoiceMap } from "./pathfinder/character-processor";
 
 export interface Context {
     name: string;
     level: number;
     bonusList: BonusList;
-    bonusMap: BonusMap;
+    choices: ChoiceMap;
     pfAncestry: pf.Ancestry;
     pfHeritage: pf.Heritage;
     pfBackground: pf.Background;
@@ -65,7 +29,7 @@ export function addFlaw(score: number) {
 
 export function calculateAbility(
     ability: pf.Ability,
-    { bonusMap, bonusList }: Context,
+    { choices, bonusList }: Context,
 ): [number, number] {
     let score = 10;
     for (const { bonus } of bonusList) {
@@ -76,7 +40,7 @@ export function calculateAbility(
             score = addFlaw(score);
         }
     }
-    for (const [k, { value, kind }] of Object.entries(bonusMap)) {
+    for (const [k, { value, kind }] of Object.entries(choices)) {
         if (kind === "ability" && value == ability) {
             score = addBonus(score);
         }
@@ -93,15 +57,26 @@ export function profFromNumber(prof: number) {
     return ["U", "T", "E", "M", "L"][prof] as pf.Proficiency;
 }
 
-export function computeSkillProficiency({ bonusList, bonusMap }: Context, skill: pf.Skill): number {
+export function computeSkillProficiency(
+    { bonusList, choices }: Context,
+    skill: pf.Skill,
+): number {
     let level = 0;
     for (const { bonus } of bonusList) {
-        if (bonus.k === "proficiency" && bonus.skill == skill && !bonus.upgrade) {
+        if (
+            bonus.k === "proficiency" &&
+            bonus.skill == skill &&
+            !bonus.upgrade
+        ) {
             level = Math.max(level, profAsNumber(bonus.proficiency));
         }
     }
-    for (const [k, value] of Object.entries(bonusMap)) {
-        if (value.kind === "skill_prof" && value.value.skill == skill && !value.value.upgrade) {
+    for (const [k, value] of Object.entries(choices)) {
+        if (
+            value.kind === "skill_prof" &&
+            value.value.skill == skill &&
+            !value.value.upgrade
+        ) {
             level = Math.max(level, value.value.level);
         }
     }
@@ -115,7 +90,7 @@ export function computeSkillProficiency({ bonusList, bonusMap }: Context, skill:
             level += 1;
         }
     }
-    for (const [k, value] of Object.entries(bonusMap)) {
+    for (const [k, value] of Object.entries(choices)) {
         if (
             value.kind === "skill_prof" &&
             value.value.skill == skill &&
@@ -128,12 +103,23 @@ export function computeSkillProficiency({ bonusList, bonusMap }: Context, skill:
     return level;
 }
 
-type NormalSkillProficiencies = "perception" | pf.WeaponKind | pf.ArmorKind | pf.SavingThrow;
+type NormalSkillProficiencies =
+    | "perception"
+    | pf.WeaponKind
+    | pf.ArmorKind
+    | pf.SavingThrow;
 
-export function computeProficiency({ bonusList }: Context, skill: NormalSkillProficiencies) {
+export function computeProficiency(
+    { bonusList }: Context,
+    skill: NormalSkillProficiencies,
+) {
     let level = 0;
     for (const { bonus } of bonusList) {
-        if (bonus.k === "proficiency" && bonus.skill == skill && !bonus.upgrade) {
+        if (
+            bonus.k === "proficiency" &&
+            bonus.skill == skill &&
+            !bonus.upgrade
+        ) {
             level = Math.max(level, profAsNumber(bonus.proficiency));
         }
     }
@@ -147,7 +133,19 @@ export function computeSelectedFeats(context: Context) {
                 if (bonus.feat) {
                     return bonus.feat;
                 }
-                const v = context.bonusMap[path];
+                const v = context.choices[path];
+                if (v?.kind === "feat") {
+                    return v.value;
+                }
+            }
+            if (bonus.k === "class_feat") {
+                const v = context.choices[path];
+                if (v?.kind === "feat") {
+                    return v.value;
+                }
+            }
+            if (bonus.k === "ancestry_feat") {
+                const v = context.choices[path];
                 if (v?.kind === "feat") {
                     return v.value;
                 }

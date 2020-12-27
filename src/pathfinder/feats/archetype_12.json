@@ -1,0 +1,197 @@
+{
+    "Diverse Weapon Expert": {
+        "name": "Diverse Weapon Expert",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 226,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=714"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Fighter Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Fighter Dedication, expert in any kind of weapon or unarmed attack\n\n---\n\nYour proficiency ranks for simple weapons and martial weapons increase to expert, and your proficiency rank for advanced weapons increases to trained.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Evasiveness (Rogue)": {
+        "name": "Evasiveness (Rogue)",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=733"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Rogue Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Rogue Dedication, expert in Reflex saves\n\n---\n\nYour proficiency rank for Reflex saves increases to master.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Evasiveness (Swashbuckler)": {
+        "name": "Evasiveness (Swashbuckler)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1865"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Swashbuckler Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Swashbuckler Dedication, expert in Reflex saves\n\n---\n\nYour proficiency rank for Reflex saves increases to master.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Bard Spellcasting": {
+        "name": "Expert Bard Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=684"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Bard Spellcasting, master in Occultism\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Cleric Spellcasting": {
+        "name": "Expert Cleric Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=699"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Cleric Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Cleric Spellcasting, master in Religion\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Druid Spellcasting": {
+        "name": "Expert Druid Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=707"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Druid Spellcasting, master in Nature\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Oracle Spellcasting": {
+        "name": "Expert Oracle Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1857"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Oracle Spellcasting, master in Religion\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Sorcerer Spellcasting": {
+        "name": "Expert Sorcerer Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=740"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Sorcerer Spellcasting; master in Arcana, Nature, Occultism, or Religion, depending on bloodline\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Witch Spellcasting": {
+        "name": "Expert Witch Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1871"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Witch Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Witch Spellcasting, master in the skill associated with your patron's tradition\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Expert Wizard Spellcasting": {
+        "name": "Expert Wizard Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=748"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Wizard Spellcasting, master in Arcana\n\n---\n\nYou gain the expert spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Juggernaut's Fortitude": {
+        "name": "Juggernaut's Fortitude",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 221,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=676"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Barbarian Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Barbarian Dedication, expert in Fortitude saves\n\n---\n\nYour proficiency rank in Fortitude saves increases to master.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Spotter (Investigator)": {
+        "name": "Master Spotter (Investigator)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1850"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Investigator Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Investigator Dedication, expert in Perception\n\n---\n\nYour proficiency rank in Perception increases to master.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Spotter (Ranger)": {
+        "name": "Master Spotter (Ranger)",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 228,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=726"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Ranger Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Ranger Dedication, expert in Perception\n\n---\n\nYour proficiency rank in Perception increases to master.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Mastery Alchemy": {
+        "name": "Mastery Alchemy",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 220,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=670"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Alchemist Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Alchemy, master in Crafting\n\n---\n\nYour advanced alchemy level increases to 7. For every level you gain beyond 12th, your advanced alchemy level increases by 1.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Perfection's Path": {
+        "name": "Perfection's Path",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=721"
+        },
+        "traits": ["Archetype"],
+        "level": 12,
+        "prerequisites": ["feat:Monk Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Monk Dedication, expert in at least one saving throw\n\n---\n\nChoose one saving throw (Fortitude, Reflex, or Will) in which you are an expert. Your proficiency rank in the chosen saving throw increases to master.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

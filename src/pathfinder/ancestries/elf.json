@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "DEX" },
         { "k": "ability", "ability": "INT" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "CON", "WIS", "CHA"] },
         { "k": "ability_flaw", "ability": "CON" },
-        { "k": "feat", "filter": ["trait:Elf", "level:1"] },
+
         { "k": "special", "id": "lowlight_vision" }
     ],
     "heritages": {
@@ -28,7 +28,11 @@
             "bonus": [
                 {
                     "k": "feat",
-                    "filter": ["trait:Multiclass", "trait:Dedication", "trait:Archetype"]
+                    "filter": [
+                        "trait:Multiclass",
+                        "trait:Dedication",
+                        "trait:Archetype"
+                    ]
                 }
             ],
             "description": "In your long life, you've dabbled in many paths and many styles. Choose a class other than your own. You gain the multiclass dedication feat for that class, even though you don't meet its level prerequisite. You must still meet its other prerequisites to gain the feat.  \n"
@@ -41,7 +45,11 @@
                 "prd": "https://2e.aonprd.com/Heritages.aspx?ID=6"
             },
             "bonus": [
-                { "k": "bonus", "category": "resistance", "text": "cold {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "cold {ceil(level/2)}"
+                },
                 {
                     "k": "bonus",
                     "category": "resistance",
@@ -68,7 +76,11 @@
                 "prd": "https://2e.aonprd.com/Heritages.aspx?ID=35"
             },
             "bonus": [
-                { "k": "bonus", "category": "resistance", "text": "fire {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "fire {ceil(level/2)}"
+                },
                 {
                     "k": "bonus",
                     "category": "resistance",

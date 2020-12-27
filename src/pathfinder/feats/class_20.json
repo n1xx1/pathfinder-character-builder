@@ -11,6 +11,30 @@
         "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
         "description": "**Prerequisites** archwizard's spellcraft\n\n---\n\nYou have mastered the greatest secrets of arcane magic. You gain an additional 10th-level spell slot."
     },
+    "Everyone's a Suspect": {
+        "name": "Everyone's a Suspect",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1481"
+        },
+        "traits": ["Investigator"],
+        "level": 20,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou are so suspicious of everyone you meet that you keep mental notes on how to defeat them all\u2014even your own allies. After interacting with a creature for at least 1 minute, you automatically Pursue a Lead with that creature as the subject. You can have any number of such leads at any given time, and when you Pursue a Lead again, you don't give up any of these automatic subjects."
+    },
+    "Just the Facts": {
+        "name": "Just the Facts",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1482"
+        },
+        "traits": ["Investigator"],
+        "level": 20,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Thorough Research\n\n---\n\nYou fundamentally understand everything to the point where your research can't possibly be wrong. You are permanently quickened and can use the extra action to Recall Knowledge. Your checks to Recall Knowledge are no longer secret. When you Recall Knowledge, you use the outcome for one degree of success better than the result of your check, and if an effect (such as Dubious Knowledge) would give you inaccurate information from your Recall Knowledge check, you know which information is inaccurate. When one of your allies Recalls Knowledge and gains false information, you also know that information is inaccurate if they share it with you."
+    },
     "Metamagic Mastery": {
         "name": "Metamagic Mastery",
         "source": {

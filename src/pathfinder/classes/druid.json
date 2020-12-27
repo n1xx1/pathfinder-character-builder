@@ -12,12 +12,25 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
                 { "k": "proficiency", "skill": "nature", "proficiency": "T" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "2+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "2+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -25,9 +38,21 @@
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
-                { "k": "proficiency", "skill": "armor_medium", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "armor_light",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "armor_medium",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 {
                     "k": "proficiency",
                     "skill": "spell_attack",
@@ -40,7 +65,12 @@
                     "tradition": "primal",
                     "proficiency": "T"
                 },
-                { "k": "proficiency", "skill": "class_dc", "class": "Druid", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "class_dc",
+                    "class": "Druid",
+                    "proficiency": "T"
+                },
                 { "k": "bonus", "category": "TODO", "text": "" }
             ],
             "description": "Level 1"
@@ -71,7 +101,9 @@
                                 "page": 131,
                                 "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You have a strong connection to beasts, and you are allied with a beast companion. You are trained in Athletics. You also gain the Animal Companion druid feat. You gain the *heal animal* order spell. Committing wanton cruelty to animals or killing animals unnecessarily is anathema to your order. (This doesn't prevent you from defending yourself against animals or killing them cleanly for food.)"
                         },
                         "Leaf": {
@@ -81,7 +113,9 @@
                                 "page": 131,
                                 "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You revere plants and the bounty of nature, acting as both a gardener and warden for the wilderness, teaching sustainable techniques to communities, and helping areas regrow after disasters or negligent humanoid expansion. You are trained in Diplomacy. You also gain the Leshy Familiar druid feat. You gain the *goodberry* order spell, and you increase the number of Focus Points in your focus pool by 1. Committing wanton cruelty to plants or killing plants unnecessarily is anathema to your order. (This doesn't prevent you from defending yourself against plants or harvesting them when necessary for survival.)"
                         },
                         "Storm": {
@@ -91,7 +125,9 @@
                                 "page": 132,
                                 "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You carry the fury of the storm within you, channeling it to terrifying effect and riding the winds through the sky. You are trained in Acrobatics. You also gain the Storm Born druid feat. You gain the *tempest surge* order spell, and you increase the number of Focus Points in your focus pool by 1. Polluting the air or allowing those who cause major air pollution or climate shifts to go unpunished is anathema to your order. (This doesn't force you to take action against merely potential harm to the environment or to sacrifice yourself against an obviously superior foe.)"
                         },
                         "Wild": {
@@ -101,7 +137,9 @@
                                 "page": 132,
                                 "prd": "https://2e.aonprd.com/DruidicOrders.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "The savage, uncontrollable call of the natural world infuses you, granting you the ability to change your shape and take on the ferocious form of a wild creature. You are trained in Intimidation. You also gain the Wild Shape druid feat. You gain the *wild morph* order spell. Becoming fully domesticated by the temptations of civilization is anathema to your order. (This doesn't prevent you from buying and using processed goods or staying in a city for an adventure, but you can never come to rely on these conveniences or truly call such a place your permanent home.)"
                         }
                     }
@@ -131,7 +169,10 @@
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
@@ -155,13 +196,19 @@
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Lightning Reflexes": {
@@ -173,7 +220,10 @@
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
@@ -191,19 +241,28 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
@@ -227,13 +286,19 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Medium Armor Expertise": {
@@ -251,7 +316,10 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
@@ -269,19 +337,28 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
@@ -305,7 +382,10 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "DEX" },
         { "k": "ability", "ability": "INT" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "CON", "WIS", "CHA"] },
         { "k": "ability_flaw", "ability": "STR" },
-        { "k": "feat", "filter": ["trait:Ratfolk", "level:1"] },
+
         { "k": "special", "id": "lowlight_vision" }
     ],
     "heritages": {
@@ -67,7 +67,11 @@
                 "prd": "https://2e.aonprd.com/Heritages.aspx?ID=74"
             },
             "bonus": [
-                { "k": "bonus", "category": "sense", "text": "scent (imprecise) 30 feet" },
+                {
+                    "k": "bonus",
+                    "category": "sense",
+                    "text": "scent (imprecise) 30 feet"
+                },
                 {
                     "k": "bonus",
                     "category": "sense",
@@ -103,9 +107,19 @@
                 {
                     "k": "if",
                     "if": ["skill:intimidation,T"],
-                    "bonus": [{ "k": "proficiency", "proficiency": "T", "skill": "any_skill" }],
+                    "bonus": [
+                        {
+                            "k": "proficiency",
+                            "proficiency": "T",
+                            "skill": "any_skill"
+                        }
+                    ],
                     "else_bonus": [
-                        { "k": "proficiency", "proficiency": "T", "skill": "intimidation" }
+                        {
+                            "k": "proficiency",
+                            "proficiency": "T",
+                            "skill": "intimidation"
+                        }
                     ]
                 },
                 {

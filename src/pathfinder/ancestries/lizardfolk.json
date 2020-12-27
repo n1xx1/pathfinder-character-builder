@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "STR" },
         { "k": "ability", "ability": "WIS" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["DEX", "CON", "INT", "CHA"] },
         { "k": "ability_flaw", "ability": "INT" },
-        { "k": "feat", "filter": ["trait:Lizardfolk", "level:1"] },
+
         {
             "k": "bonus",
             "category": "TODO Aquatic Adaptation",

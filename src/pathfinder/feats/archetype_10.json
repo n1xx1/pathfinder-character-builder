@@ -1,0 +1,27 @@
+{
+    "Monk's Flurry": {
+        "name": "Monk's Flurry",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=720"
+        },
+        "traits": ["Archetype"],
+        "level": 10,
+        "prerequisites": ["feat:Monk Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Monk Dedication\n\n---\n\nYou gain the Flurry of Blows action. \n\n### Flurry of Blows :a:\n\n; Flourish, Monk  \n**Source** *Core Rulebook pg. 156* <sup>1.1</sup>\n\n---\n\nMake two unarmed Strikes. If both hit the same creature, combine their damage for the purpose of resistances and weaknesses. Apply your multiple attack penalty to the Strikes normally. As it has the flourish trait, you can use Flurry of Blows only once per turn.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Uncanny Dodge": {
+        "name": "Uncanny Dodge",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=732"
+        },
+        "traits": ["Archetype"],
+        "level": 10,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Archetypes** Rogue, Shadowdancer  \n**Prerequisites** Rogue Dedication\n\n---\n\nYou gain the deny advantage class feature.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

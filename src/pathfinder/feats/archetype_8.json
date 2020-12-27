@@ -1,0 +1,158 @@
+{
+    "Arcane Breadth": {
+        "name": "Arcane Breadth",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=747"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Wizard Spellcasting\n\n---\n\nYou can cast more arcane spells each day. Increase the spell slots you gain from wizard archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Bloodline Breadth": {
+        "name": "Bloodline Breadth",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=739"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Sorcerer Spellcasting\n\n---\n\nYour repertoire expands, and you can cast more spells of your bloodline's tradition each day. Increase the number of spells in your repertoire and number of spell slots you gain from sorcerer archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Divine Breadth": {
+        "name": "Divine Breadth",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=698"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Cleric Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Cleric Spellcasting\n\n---\n\nYou can cast more divine spells each day. Increase the spell slots you gain from cleric archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Inspirational Performance": {
+        "name": "Inspirational Performance",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=682"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Bard Dedication\n\n---\n\nYou gain the *inspire courage* composition cantrip.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Monk Moves": {
+        "name": "Monk Moves",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 227,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=719"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Monk Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Monk Dedication\n\n---\n\nYou gain a +10-foot status bonus to your Speed when you're not wearing armor.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Mysterious Breadth": {
+        "name": "Mysterious Breadth",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1856"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Oracle Spellcasting\n\n---\n\nIncrease the spell slots you gain from oracle archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Occult Breadth": {
+        "name": "Occult Breadth",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=683"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Bard Spellcasting\n\n---\n\nYour repertoire expands, and you can cast more occult spells each day. Increase the number of spells in your repertoire and the number of spell slots you gain from bard archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Patron's Breadth": {
+        "name": "Patron's Breadth",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1870"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Witch Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Witch Spellcasting\n\n---\n\nYou can cast more spells each day. Increase the spell slots you gain from witch archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Primal Breadth": {
+        "name": "Primal Breadth",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=706"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Basic Druid Spellcasting\n\n---\n\nIncrease the spell slots you gain from druid archetype feats by 1 for each spell level other than your two highest spell levels.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Skill Mastery (Investigator)": {
+        "name": "Skill Mastery (Investigator)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 151,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1849"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Investigator Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Investigator Dedication, trained in at least one skill and expert in at least one skill\n\n---\n\nIncrease your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose.\n\n**Special** You can select this feat up to five times.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Skill Mastery (Rogue)": {
+        "name": "Skill Mastery (Rogue)",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 229,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=731"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Rogue Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Rogue Dedication, trained in at least one skill and expert in at least one skill\n\n---\n\nIncrease your proficiency rank in one of your skills from expert to master and in another of your skills from trained to expert. You gain a skill feat associated with one of the skills you chose.\n\n**Special** You can select this feat up to five times.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Swashbuckler's Speed": {
+        "name": "Swashbuckler's Speed",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 153,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1864"
+        },
+        "traits": ["Archetype"],
+        "level": 8,
+        "prerequisites": ["feat:Swashbuckler Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Swashbuckler Dedication\n\n---\n\nYou move faster, with or without panache. Increase the status bonus to your Speeds when you have panache to a +10-foot status bonus; you also gain a +5-foot status bonus to your Speeds when you don't have panache.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

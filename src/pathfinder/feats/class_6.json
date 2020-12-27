@@ -1,4 +1,16 @@
 {
+    "Connect the Dots": {
+        "name": "Connect the Dots",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 62,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1462"
+        },
+        "traits": ["Uncommon", "Concentrate", "Investigator", "Secret"],
+        "level": 6,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Requirements** You must be pursuing at least two leads.\n\n---\n\nEphemeral connections between people, places, and concepts are invisible to most, but seeing them is your stock and trade. You spend 10 minutes considering two different leads you're pursuing. You then attempt a check to investigate how connected the two are. Unless the GM determines otherwise, this is a Crafting check if they're both items or a Society check for other combinations of leads. If any subjects are creatures, this check usually uses the highest DC among their Deception and Will DCs. If no subjects are creatures, but at least one is an item, the DC is usually a hard DC for the level of the highest-level item. If neither case applies, the DC is usually a hard expert or hard master DC (22 or 32). Once you try to Connect the Dots between two particular leads, you can never try to Connect the Dots between those same leads again unless the GM allows it after you've learned a substantial amount of new information. \n\n**Critical Success** The GM tells you how connected the two leads are to one another: highly connected, somewhat connected, tangentially connected, or not connected. The GM also tells you one specific way in which they're connected, if they are.  \n**Success** As critical success, but the GM doesn't tell you a specific connection.  \n**Failure** Your results are inconclusive.  \n**Critical Failure** You misconstrue the information. As success, but the GM provides an incorrect degree of connection."
+    },
     "Convincing Illusion": {
         "name": "Convincing Illusion",
         "source": {
@@ -11,6 +23,18 @@
         "prerequisites": ["skill:deception,E"],
         "bonus": [{ "k": "action", "name": "#self", "actions": "reaction" }],
         "description": "**Prerequisites** expert in Deception  \n**Requirements** You are within 30 feet of the observer and the illusion.  \n**Trigger** A creature succeeded, but didn't critically succeed, at a Perception check or Will save to disbelieve an illusion from a spell that you cast.\n\n---\n\nYou use your deceptive skills to make your illusions seem even more real. Attempt a Deception check against the target's Perception DC. If you succeed, the target fails to disbelieve the illusion."
+    },
+    "Predictive Purchase (Investigator)": {
+        "name": "Predictive Purchase (Investigator)",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 63,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1463"
+        },
+        "traits": ["Investigator"],
+        "level": 6,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou have just the thing for the situation. You gain the Prescient Planner and Prescient Consumable feats. When using Prescient Planner, you can pull out the item as a 2-action activity to remove your backpack (or a similar container) and draw the item, rather than taking 1 minute."
     },
     "Spell Penetration": {
         "name": "Spell Penetration",
@@ -49,7 +73,15 @@
             "page": 80,
             "prd": "https://2e.aonprd.com/Feats.aspx?ID=194"
         },
-        "traits": ["Bard", "Cleric", "Druid", "Oracle", "Sorcerer", "Witch", "Wizard"],
+        "traits": [
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Oracle",
+            "Sorcerer",
+            "Witch",
+            "Wizard"
+        ],
         "level": 6,
         "bonus": [
             {
@@ -59,5 +91,17 @@
             }
         ],
         "description": "\n\n---\n\nConfident in your technique, you don't easily lose your concentration when you Cast a Spell. If a reaction would disrupt your spellcasting action, attempt a DC 15 flat check. If you succeed, your action isn't disrupted."
+    },
+    "Thorough Research": {
+        "name": "Thorough Research",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 63,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1464"
+        },
+        "traits": ["Investigator"],
+        "level": 6,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhen you succeed at a Recall Knowledge check, you learn an additional fact about the subject. When you critically succeed at a Recall Knowledge check, you can gain even more additional information or context than normal, at the GM's discretion."
     }
 }

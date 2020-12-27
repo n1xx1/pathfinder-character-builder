@@ -1,0 +1,93 @@
+{
+    "Master Bard Spellcasting": {
+        "name": "Master Bard Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 222,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=685"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Bard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Bard Spellcasting, legendary in Occultism\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Cleric Spellcasting": {
+        "name": "Master Cleric Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 224,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=700"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Cleric Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Cleric Spellcasting, legendary in Religion\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Druid Spellcasting": {
+        "name": "Master Druid Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 225,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=708"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Druid Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Druid Spellcasting, legendary in Nature\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Oracle Spellcasting": {
+        "name": "Master Oracle Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 152,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1858"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Oracle Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Oracle Spellcasting, legendary in Religion\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Sorcerer Spellcasting": {
+        "name": "Master Sorcerer Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 230,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=741"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Sorcerer Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Sorcerer Spellcasting; legendary in Arcana, Nature, Occultism, or Religion, depending on bloodline\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Witch Spellcasting": {
+        "name": "Master Witch Spellcasting",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 154,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1872"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Witch Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Witch Spellcasting, legendary in the skill associated with your patron's tradition\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Master Wizard Spellcasting": {
+        "name": "Master Wizard Spellcasting",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 231,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=749"
+        },
+        "traits": ["Archetype"],
+        "level": 18,
+        "prerequisites": ["feat:Wizard Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Expert Wizard Spellcasting, legendary in Arcana\n\n---\n\nYou gain the master spellcasting benefits.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

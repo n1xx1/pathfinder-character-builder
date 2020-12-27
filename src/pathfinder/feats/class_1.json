@@ -41,6 +41,18 @@
         "bonus": [{ "k": "special", "id": "familiar" }],
         "description": "\n\n---\n\nYou make a pact with creature that serves you and assists your spellcasting. You gain a familiar (page 217)."
     },
+    "Flexible Studies": {
+        "name": "Flexible Studies",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1446"
+        },
+        "traits": ["Investigator"],
+        "level": 1,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've collected a cross-section of information on various disciplines you can refer to when preparing for various tasks. During your daily preparations, you can cram on a certain subject to become temporarily trained in one skill of your choice. This proficiency lasts until you prepare again. As this proficiency is temporary, you can't use it as a prerequisite for a skill increase or a permanent character option like a feat."
+    },
     "Hand of the Apprentice": {
         "name": "Hand of the Apprentice",
         "source": {
@@ -56,6 +68,24 @@
             { "k": "spell", "spell": "hand of the apprentice" }
         ],
         "description": "**Prerequisites** universalist wizard\n\n---\n\nYou can magically hurl your weapon at your foe. You gain the *hand of the apprentice* universalist spell. Universalist spells are a type of focus spell, much like school spells. You start with a focus pool of 1 Focus Point. See Arcane Schools on page 207 for more information about focus spells."
+    },
+    "Known Weaknesses": {
+        "name": "Known Weaknesses",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1447"
+        },
+        "traits": ["Investigator"],
+        "level": 1,
+        "bonus": [
+            {
+                "k": "bonus",
+                "category": "action:Devise a Stratagem",
+                "text": "Whenever you Devise a Stratagem, you can also attempt a check to Recall Knowledge as part of that action. If you critically succeed at the Recall Knowledge check, you notice a weakness and gain a +1 circumstance bonus to your attack roll from Devise a Stratagem. If you immediately convey this information to your allies as part of the check, each ally gains a +1 circumstance bonus to their next attack roll against the subject, as long as their attack is made before the beginning of your next turn."
+            }
+        ],
+        "description": "\n\n---\n\nWhenever you Devise a Stratagem, you can also attempt a check to Recall Knowledge as part of that action. If you critically succeed at the Recall Knowledge check, you notice a weakness and gain a +1 circumstance bonus to your attack roll from Devise a Stratagem. If you immediately convey this information to your allies as part of the check, each ally gains a +1 circumstance bonus to their next attack roll against the subject, as long as their attack is made before the beginning of your next turn."
     },
     "Reach Spell": {
         "name": "Reach Spell",
@@ -103,6 +133,55 @@
         ],
         "description": "**Prerequisites** trained in Arcana\n\n---\n\nYou are particularly adept at learning spells to add to your spellbook. You can Learn a Spell in half the time it normally takes. Further, when you roll a critical failure on your check to Learn a Spell, you get a failure instead. When you roll a failure, you can try again after 1 week."
     },
+    "Takedown Expert": {
+        "name": "Takedown Expert",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1448"
+        },
+        "traits": ["Investigator"],
+        "level": 1,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYou've mastered combat practices that let you get up close and bring down perpetrators alive. You can use your Intelligence modifier on attack rolls when you Devise a Stratagem if you're using a weapon of the club group in one hand (like a club, staff, or sap), in addition to the usual weapons, and those Strikes qualify for your strategic strike. Additionally, you can make any of your Strikes nonlethal without taking the normal \u20132 penalty."
+    },
+    "That's Odd": {
+        "name": "That's Odd",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1449"
+        },
+        "traits": ["Investigator"],
+        "level": 1,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nWhen you enter a new location, such as a room or corridor, you immediately notice one thing out of the ordinary. The GM determines what it is, or whether there's nothing reasonable to pick up, skipping obvious clues that can be easily noticed without a check or specifically looking for them. You learn only that an area or object is suspicious, but not why it's suspicious. For example, if you entered a study with a large bloodstain on the ground, the bloodstain is so obviously suspicious it's evident to you already, so the GM might note that there's something suspicious about the desk drawer instead. You would then need to investigate the drawer further to find out what specifically is out of the ordinary. That's Odd doesn't reveal whether creatures are suspicious.\n\nYou don't typically get any benefit when you leave and come back to a place, though if a major change has happened there and time has passed, the GM might determine that you do."
+    },
+    "Trap Finder": {
+        "name": "Trap Finder",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=551"
+        },
+        "traits": ["Investigator", "Rogue"],
+        "level": 1,
+        "prerequisites": ["feat:Archaeologist* Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "* This archetype offers Trap Finder at a different level than displayed here.\n\n---\n\nYou have an intuitive sense that alerts you to the dangers and presence of traps. You gain a +1 circumstance bonus to Perception checks to find traps, to AC against attacks made by traps, and to saves against traps. Even if you aren't Searching, you get a check to find traps that normally require you to be Searching. You still need to meet any other requirements to find the trap.\n\nYou can disable traps that require a proficiency rank of master in Thievery. If you have master proficiency in Thievery, you can disable traps that require a proficiency rank of legendary instead, and your circumstance bonuses against traps increase to +2.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    },
+    "Underworld Investigator": {
+        "name": "Underworld Investigator",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 60,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1451"
+        },
+        "traits": ["Investigator"],
+        "level": 1,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "\n\n---\n\nYour work as an investigator makes you familiar with the criminal element. You might be a criminal yourself, or you might have gained an understanding of how they operate from the outside. You become trained in Underworld Lore, and you gain your Pursue a Lead circumstance bonus to Thievery checks to investigate the subject of your lead (such as checks to Steal a clue from a suspect or Pick a Lock to open a safe with damning documents)."
+    },
     "Widen Spell": {
         "name": "Widen Spell",
         "source": {
@@ -110,7 +189,15 @@
             "page": 79,
             "prd": "https://2e.aonprd.com/Feats.aspx?ID=315"
         },
-        "traits": ["Druid", "Manipulate", "Metamagic", "Oracle", "Sorcerer", "Witch", "Wizard"],
+        "traits": [
+            "Druid",
+            "Manipulate",
+            "Metamagic",
+            "Oracle",
+            "Sorcerer",
+            "Witch",
+            "Wizard"
+        ],
         "level": 1,
         "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
         "description": "\n\n---\n\nYou manipulate the energy of your spell, causing it to spread out and affect a wider area. If the next action you use is to Cast a Spell that has an area of a burst, cone, or line and does not have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line."

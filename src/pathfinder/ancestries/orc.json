@@ -11,8 +11,8 @@
     "traits": ["Uncommon", "Humanoid", "Orc"],
     "bonus": [
         { "k": "ability", "ability": "STR" },
-        { "k": "ability" },
-        { "k": "feat", "filter": ["trait:Orc", "level:1"] },
+        { "k": "ability", "choice": ["DEX", "CON", "INT", "WIS", "CHA"] },
+
         { "k": "special", "id": "darkvision" }
     ],
     "heritages": {

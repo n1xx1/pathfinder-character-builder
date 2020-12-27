@@ -1,0 +1,15 @@
+{
+    "Diverse Armor Expert": {
+        "name": "Diverse Armor Expert",
+        "source": {
+            "book": "Core Rulebook",
+            "page": 223,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=693"
+        },
+        "traits": ["Archetype"],
+        "level": 14,
+        "prerequisites": ["feat:Champion Dedication"],
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Champion Dedication, expert in unarmored defense or one or more types of armor\n\n---\n\nYour proficiency ranks for light armor, medium armor, heavy armor, and unarmored defense increase to expert.\n\n## Archetype Use\n\nThis feat can be used for one or more Archetypes in addition to the listed Classes. When selected this way, the feat is not considered to have its class traits."
+    }
+}

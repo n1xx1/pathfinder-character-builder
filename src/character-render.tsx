@@ -56,7 +56,10 @@ export function renderCharacter(context: Context): RenderedCharacter {
     };
 
     const skillProfs = _.fromPairs(
-        pf.skills.map(skill => [skill, computeSkillProficiency(context, skill)]),
+        pf.skills.map(skill => [
+            skill,
+            computeSkillProficiency(context, skill),
+        ]),
     ) as {
         [k in pf.Skill]: number;
     };
@@ -92,8 +95,9 @@ export function renderCharacter(context: Context): RenderedCharacter {
 
     let spellcasting: RenderedSpellcasting = undefined;
 
-    const spellcasterBonus = context.bonusList.find(b => b.bonus.k === "spellcasting")
-        ?.bonus as pf.BonusSpellcasting;
+    const spellcasterBonus = context.bonusList.find(
+        b => b.bonus.k === "spellcasting",
+    )?.bonus as pf.BonusSpellcasting;
     if (spellcasterBonus) {
         spellcasting = {
             slots: spellcasterBonus.slots[level],
@@ -116,7 +120,11 @@ export function renderCharacter(context: Context): RenderedCharacter {
             CHA: { score: scores.CHA[0], mod: scores.CHA[1] },
         },
         skills: _.mapValues(skillProfs, (prof, skill) => ({
-            mod: calculateSkillMod(context, prof, scores[pf.skillAbility[skill]][1]),
+            mod: calculateSkillMod(
+                context,
+                prof,
+                scores[pf.skillAbility[skill]][1],
+            ),
             prof: profFromNumber(prof),
         })),
         perception: {
@@ -142,7 +150,11 @@ export function renderCharacter(context: Context): RenderedCharacter {
     };
 }
 
-function calculateSkillMod({ level }: Context, prof: number, abilityMod: number) {
+function calculateSkillMod(
+    { level }: Context,
+    prof: number,
+    abilityMod: number,
+) {
     if (prof == 0) {
         return abilityMod;
     }

@@ -8,7 +8,10 @@
         },
         "traits": ["Wizard"],
         "level": 12,
-        "prerequisites": ["feat:Counterspell (Prepared)", "feat:Quick Recognition"],
+        "prerequisites": [
+            "feat:Counterspell (Prepared)",
+            "feat:Quick Recognition"
+        ],
         "bonus": [
             {
                 "k": "bonus",
@@ -48,6 +51,21 @@
         "bonus": [{ "k": "action", "name": "#self", "actions": 1 }],
         "description": "\n\n---\n\nYou perform complex manipulations to make the energy from your spells so powerful that your enemies remain vulnerable to it afterward. If your next action is to Cast a Spell that deals acid, electricity, fire, or sonic damage, you can select one target that was damaged to gain weakness 5 to that damage type until the end of your next turn. If a spell deals multiple types of energy damage, choose one that the target gains weakness to. This has no effect on creatures with resistance or immunity to the energy type you choose."
     },
+    "Foresee Danger": {
+        "name": "Foresee Danger",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 64,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1471"
+        },
+        "traits": ["Concentrate", "Investigator"],
+        "level": 12,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Trigger** A creature targets you with an attack and you can see the attacker.\n\n---\n\nYou perceive every possible way your foe's attack could land and attempt to avoid them all. The triggering attack roll targets your Perception DC instead of your AC. Though this allows you to avoid taking penalties to your AC, it doesn't remove any conditions or other effects causing such penalties. For example, an enemy with sneak attack would still deal extra damage to you for being flat-footed, even though you wouldn't take the \u20132 circumstance penalty when defending against the attack."
+    },
     "Magic Sense": {
         "name": "Magic Sense",
         "source": {
@@ -65,5 +83,20 @@
             }
         ],
         "description": "\n\n---\n\nYou have a literal sixth sense for ambient magic in your vicinity. You can sense the presence of magic auras as though you were always using a 1st-level *detect magic* spell. This detects magic in your field of vision only. When you Seek, you gain the benefits of a 3rd-level *detect magic* spell on things you see (in addition to the normal benefits of Seeking). You can turn this sense off and on with a free action at the start or the end of your turn.\n\n**Special** This feat has the trait corresponding to the tradition of spells you cast (arcane, divine, natural, or occult)."
+    },
+    "Reason Rapidly": {
+        "name": "Reason Rapidly",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 64,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1472"
+        },
+        "traits": ["Investigator"],
+        "level": 12,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": 1 },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "\n\n---\n\nYour mind works through clues at an unbelievable speed. You instantly use up to five Recall Knowledge actions. If you have any special abilities or free actions that would normally be triggered when you Recall Knowledge, you can't use them for these actions."
     }
 }

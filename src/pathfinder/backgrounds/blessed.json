@@ -8,14 +8,25 @@
     "bonus": [
         { "k": "ability", "choice": ["WIS", "CHA"] },
         { "k": "ability" },
-        { "k": "proficiency", "skill": "lore", "kind": "TODO", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "TODO",
+            "proficiency": "T"
+        },
         {
             "k": "option",
             "options": {
                 "guidance": {
                     "name": "guidance",
                     "description": "You can cast *guidance* as a divine innate spell at will",
-                    "bonus": [{ "k": "spell", "spell": "guidance", "innate": "divine" }]
+                    "bonus": [
+                        {
+                            "k": "spell",
+                            "spell": "guidance",
+                            "innate": "divine"
+                        }
+                    ]
                 },
                 "GM Determined": {
                     "name": "GM Determined",

@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["CON", "CHA"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "diplomacy", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "Alcohol", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Alcohol",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Hobnobber" }
     ],
     "description": "You have five specialties: hefting barrels, drinking, polishing steins, drinking, and drinking. You worked in a bar, where you learned how to hold your liquor and rowdily socialize.\n\nChoose two ability boosts. One must be to **Constitution** or **Charisma**, and one is a free ability boost.\n\nYou're trained in the Diplomacy skill, and the Alcohol Lore skill. You gain the Hobnobber skill feat."

@@ -12,12 +12,25 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "E" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "E"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "E" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
                 { "k": "proficiency", "skill": "society", "proficiency": "T" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "4+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "4+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -25,14 +38,23 @@
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "armor_light",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 {
                     "k": "proficiency",
                     "skill": "class_dc",
                     "class": "Investigator",
                     "proficiency": "T"
-                }
+                },
+                { "k": "class_feat", "level": 1 }
             ],
             "description": "Level 1"
         },
@@ -144,9 +166,17 @@
                                 "prd": "https://2e.aonprd.com/Methodologies.aspx"
                             },
                             "bonus": [
-                                { "k": "proficiency", "skill": "crafting", "proficiency": "T" },
+                                {
+                                    "k": "proficiency",
+                                    "skill": "crafting",
+                                    "proficiency": "T"
+                                },
                                 { "k": "feat", "feat": "Alchemical Crafting" },
-                                { "k": "special", "id": "formulabook", "value": "TODO" },
+                                {
+                                    "k": "special",
+                                    "id": "formulabook",
+                                    "value": "TODO"
+                                },
                                 {
                                     "k": "bonus",
                                     "category": "Daily Preparations",
@@ -172,7 +202,12 @@
                                 {
                                     "k": "proficiency",
                                     "skill": "any_skill",
-                                    "filter": ["crafting", "society", "arcana", "occultism"],
+                                    "filter": [
+                                        "crafting",
+                                        "society",
+                                        "arcana",
+                                        "occultism"
+                                    ],
                                     "proficiency": "T"
                                 },
                                 { "k": "feat", "feat": "That's Odd" },
@@ -193,7 +228,11 @@
                                 "prd": "https://2e.aonprd.com/Methodologies.aspx"
                             },
                             "bonus": [
-                                { "k": "proficiency", "skill": "medicine", "proficiency": "T" },
+                                {
+                                    "k": "proficiency",
+                                    "skill": "medicine",
+                                    "proficiency": "T"
+                                },
                                 { "k": "feat", "feat": "Battle Medicine" }
                             ],
                             "description": "You've learned that in most cases, especially murders, criminals tend to leave more evidence of the crime on the body than they'd like to believe. Information from bruising, bone fractures, blood spatters, and even the life cycle of carrion insects can provide valuable clues that help reconstruct the scene.\n\nYou're trained in Medicine and gain the Forensic Acumen and Battle Medicine skill feats. When you use Battle Medicine, on a success the target recovers additional Hit Points equal to your level, and the target becomes temporarily immune for only 1 hour, not 1 day."
@@ -205,25 +244,48 @@
                                 "page": 58,
                                 "prd": "https://2e.aonprd.com/Methodologies.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "People can't help but trust you, whether through your inherent likableness or your firm insistence on sticking to the truth. You have a way about you that gets others talking, and you've developed interrogative techniques to help you get to the truth of your investigations.\n\nYou are trained in Diplomacy. You gain the No Cause for Alarm skill feat. You can also Pursue a Lead over the course of a conversation rather than spending dedicated time looking into the lead, provided the conversation lasts 1 minute or longer. For example, while trying to Make an Impression, you could pursue the creature you're conversing with as a lead, and you could Pursue a Lead about an object while someone is telling you information about that object. You also gain the Pointed Question action.\n\n### Pointed Question :a:\n\n; Auditory, Concentrate, Investigator, Linguistic, Mental  \n**Source** *Advanced Player's Guide pg. 58*\n\n---\n\nYou ask a question that charms or needles someone in just the right way. Ask a question of a non-allied creature that you can see and have been conversing with. Attempt a Diplomacy check against the creature's Will DC. The creature is then temporarily immune for 1 hour.\n\n**Critical Success** The target must directly answer your question. It doesn't have to answer truthfully, but you gain a +4 circumstance bonus to your Perception DC if the creature attempts to Lie to you.  \n**Success** As critical success, but the circumstance bonus is +2.  \n**Failure** The target can refuse to answer you as normal.  \n**Critical Failure** The target can refuse to answer you as normal, and its attitude toward you decreases by one step due to your aggravating attention."
                         }
                     }
-                },
-                { "k": "bonus", "category": "TODO", "text": "" }
+                }
             ],
             "description": "Your studies have made you savvy in many areas, but one in particular drew your intense interest. Choose a methodology. The methodologies presented in this book are as follows.  \n"
         },
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:2"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
             "name": "Level 3",
             "level": 3,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:3", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                },
+                { "k": "feat", "filter": ["trait:General", "level:3"] }
+            ],
             "description": "Level 3"
         },
         "Keen Recollection": {
@@ -232,22 +294,39 @@
             "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
             "description": "You can recall pertinent facts on topics that aren't your specialty. Your proficiency bonus to untrained skill checks to Recall Knowledge is equal to your level instead of +0.  \n"
         },
-        "Skillful Lessons": {
-            "name": "Skillful Lessons",
-            "level": 3,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
-            "description": "At 3rd level and every odd-numbered level thereafter, you gain a skill feat. This feat must be for an Intelligence-, Wisdom-, or Charisma-based skill, or for the skill you gained from your methodology.  \n"
-        },
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:4"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:5", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                },
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Weapon Expertise": {
@@ -259,13 +338,35 @@
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:6"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
             "name": "Level 7",
             "level": 7,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:7", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "feat", "filter": ["trait:General", "level:7"] }
+            ],
             "description": "Level 7"
         },
         "Vigilant Senses": {
@@ -283,13 +384,36 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:8"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:9", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Great Fortitude": {
@@ -307,13 +431,35 @@
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:10"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
             "name": "Level 11",
             "level": 11,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:11", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "feat", "filter": ["trait:General", "level:11"] }
+            ],
             "description": "Level 11"
         },
         "Deductive Improvisation": {
@@ -331,19 +477,54 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:12"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:13", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Incredible Senses": {
             "name": "Incredible Senses",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:13", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "You notice things that are almost impossible for an ordinary person to detect. Your proficiency rank for Perception increases to legendary.  \n"
         },
         "Light Armor Expertise": {
@@ -361,13 +542,35 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:14"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
             "name": "Level 15",
             "level": 15,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:15", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                },
+                { "k": "feat", "filter": ["trait:General", "level:15"] }
+            ],
             "description": "Level 15"
         },
         "Evasion": {
@@ -385,13 +588,36 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:16"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:17", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                },
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Greater Resolve": {
@@ -403,13 +629,35 @@
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:18"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
             "name": "Level 19",
             "level": 19,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                {
+                    "k": "feat",
+                    "filter": ["trait:Skill", "level:19", "todo:skillful"]
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                },
+                { "k": "feat", "filter": ["trait:General", "level:19"] }
+            ],
             "description": "Level 19"
         },
         "Light Armor Mastery": {
@@ -427,7 +675,17 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "feat", "filter": ["trait:Skill", "level:20"] },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                },
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

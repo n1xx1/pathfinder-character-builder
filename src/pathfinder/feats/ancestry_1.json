@@ -1241,14 +1241,38 @@
             {
                 "k": "if",
                 "if": ["skill:acrobatics,T"],
-                "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }],
-                "else_bonus": [{ "k": "proficiency", "skill": "acrobatics", "proficiency": "T" }]
+                "bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "any_skill",
+                        "proficiency": "T"
+                    }
+                ],
+                "else_bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "acrobatics",
+                        "proficiency": "T"
+                    }
+                ]
             },
             {
                 "k": "if",
                 "if": ["skill:stealth,T"],
-                "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }],
-                "else_bonus": [{ "k": "proficiency", "skill": "stealth", "proficiency": "T" }]
+                "bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "any_skill",
+                        "proficiency": "T"
+                    }
+                ],
+                "else_bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "stealth",
+                        "proficiency": "T"
+                    }
+                ]
             },
             {
                 "k": "proficiency",
@@ -1606,8 +1630,20 @@
             {
                 "k": "if",
                 "if": ["skill:crafting,T"],
-                "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }],
-                "else_bonus": [{ "k": "proficiency", "skill": "crafting", "proficiency": "T" }]
+                "bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "any_skill",
+                        "proficiency": "T"
+                    }
+                ],
+                "else_bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "crafting",
+                        "proficiency": "T"
+                    }
+                ]
             },
             {
                 "k": "bonus",
@@ -1843,8 +1879,20 @@
             {
                 "k": "if",
                 "if": ["skill:survival,T"],
-                "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }],
-                "else_bonus": [{ "k": "proficiency", "skill": "survival", "proficiency": "T" }]
+                "bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "any_skill",
+                        "proficiency": "T"
+                    }
+                ],
+                "else_bonus": [
+                    {
+                        "k": "proficiency",
+                        "skill": "survival",
+                        "proficiency": "T"
+                    }
+                ]
             },
             {
                 "k": "bonus",

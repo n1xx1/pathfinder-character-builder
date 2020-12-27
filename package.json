@@ -34,5 +34,10 @@
         "typescript-json-schema": "^0.43.0",
         "unist-util-visit": "^2.0.3",
         "yargs": "^15.4.1"
+    },
+    "prettier": {
+        "arrowParens": "avoid",
+        "trailingComma": "all",
+        "tabWidth": 4
     }
 }

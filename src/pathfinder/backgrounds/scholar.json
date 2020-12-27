@@ -15,7 +15,11 @@
                     "name": "Arcana",
                     "description": "Arcana",
                     "bonus": [
-                        { "k": "proficiency", "skill": "arcana", "proficiency": "T" },
+                        {
+                            "k": "proficiency",
+                            "skill": "arcana",
+                            "proficiency": "T"
+                        },
                         { "k": "feat", "feat": "Assurance", "option": "Arcana" }
                     ]
                 },
@@ -23,7 +27,11 @@
                     "name": "Nature",
                     "description": "Nature",
                     "bonus": [
-                        { "k": "proficiency", "skill": "nature", "proficiency": "T" },
+                        {
+                            "k": "proficiency",
+                            "skill": "nature",
+                            "proficiency": "T"
+                        },
                         { "k": "feat", "feat": "Assurance", "option": "Nature" }
                     ]
                 },
@@ -31,21 +39,42 @@
                     "name": "Occultism",
                     "description": "Occultism",
                     "bonus": [
-                        { "k": "proficiency", "skill": "occultism", "proficiency": "T" },
-                        { "k": "feat", "feat": "Assurance", "option": "Occultism" }
+                        {
+                            "k": "proficiency",
+                            "skill": "occultism",
+                            "proficiency": "T"
+                        },
+                        {
+                            "k": "feat",
+                            "feat": "Assurance",
+                            "option": "Occultism"
+                        }
                     ]
                 },
                 "Religion": {
                     "name": "Religion",
                     "description": "Religion",
                     "bonus": [
-                        { "k": "proficiency", "skill": "religion", "proficiency": "T" },
-                        { "k": "feat", "feat": "Assurance", "option": "Religion" }
+                        {
+                            "k": "proficiency",
+                            "skill": "religion",
+                            "proficiency": "T"
+                        },
+                        {
+                            "k": "feat",
+                            "feat": "Assurance",
+                            "option": "Religion"
+                        }
                     ]
                 }
             }
         },
-        { "k": "proficiency", "skill": "lore", "kind": "Accademia", "proficiency": "T" }
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Accademia",
+            "proficiency": "T"
+        }
     ],
     "description": "You have a knack for learning, and sequestered yourself from the outside world to learn all you could. You read about so many wondrous places and things in your books, and always dreamed about one day seeing the real things. Eventually, that curiosity led you to leave your studies and become an adventurer.\n\nChoose two ability boosts. One must be to **Intelligence** or **Wisdom**, and one is a free ability boost.\n\nYou're trained in your choice of the Arcana, Nature, Occultism, or Religion skill,, and the Academia Lore skill. You gain the Assurance skill feat in your chosen skill."
 }

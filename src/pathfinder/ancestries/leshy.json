@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "CON" },
         { "k": "ability", "ability": "WIS" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "DEX", "INT", "CHA"] },
         { "k": "ability_flaw", "ability": "INT" },
-        { "k": "feat", "filter": ["trait:Leshy", "level:1"] },
+
         { "k": "special", "id": "lowlight_vision" },
         {
             "k": "bonus",

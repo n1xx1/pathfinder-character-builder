@@ -150,7 +150,14 @@
             "page": 201,
             "prd": "https://2e.aonprd.com/Feats.aspx?ID=1210"
         },
-        "traits": ["Auditory", "General", "Linguistic", "Mental", "Skill", "Stamina"],
+        "traits": [
+            "Auditory",
+            "General",
+            "Linguistic",
+            "Mental",
+            "Skill",
+            "Stamina"
+        ],
         "level": 2,
         "bonus": [
             { "k": "action", "name": "#self", "actions": 1 },

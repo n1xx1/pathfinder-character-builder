@@ -9,7 +9,11 @@
         { "k": "ability", "choice": ["STR", "DEX", "CON"] },
         { "k": "proficiency", "skill": "nature", "proficiency": "T" },
         { "k": "proficiency", "skill": "survival", "proficiency": "T" },
-        { "k": "bonus", "category": "sense", "text": "scent (imprecise) 30 feet" },
+        {
+            "k": "bonus",
+            "category": "sense",
+            "text": "scent (imprecise) 30 feet"
+        },
         { "k": "feat", "feat": "Forager" },
         {
             "k": "if",

@@ -11,6 +11,18 @@
         "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
         "description": "\n\n---\n\nYou've found a way to prepare a spell slot that exists in your mind as many different possibilities at once. Once during your daily preparations, you can use a spell slot to hold that infinite potential, rather than using it to prepare a spell. You can use this spell slot to cast any spell from your spellbook that's at least 2 levels lower than the slot you designate; the spell acts in all ways as a spell of 2 levels lower. You don't have any particular spell prepared in that slot until you cast it."
     },
+    "Lead Investigator": {
+        "name": "Lead Investigator",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=1479"
+        },
+        "traits": ["Exploration", "Investigator"],
+        "level": 18,
+        "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+        "description": "**Prerequisites** Clue Them All In\n\n---\n\nYou spend 1 minute briefing up to four allies about one lead you're pursuing. Those allies gain the same circumstance bonus you do from Pursue a Lead to checks to investigate that lead. This bonus lasts until you cease pursing that lead or for 1 day, whichever comes first. This doesn't confer any other benefits of pursuing a lead, such as adding the circumstance bonus to your saves with Detective's Readiness."
+    },
     "Reprepare Spell": {
         "name": "Reprepare Spell",
         "source": {
@@ -34,5 +46,20 @@
         "level": 18,
         "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
         "description": "\n\n---\n\nWhen your target proves resilient to your magical deceptions, you can try them again on someone else. When you cast an enchantment spell that targets one creature and that creature critically succeeds at its Will save, you can Cast the Spell again before the end of your next turn on a different creature without expending an additional spell slot. The second casting doesn't grant you any benefits that you would normally gain for Casting a Spell from a spell slot."
+    },
+    "Trickster's Ace": {
+        "name": "Trickster's Ace",
+        "source": {
+            "book": "Advanced Player's Guide",
+            "page": 65,
+            "prd": "https://2e.aonprd.com/Feats.aspx?ID=598"
+        },
+        "traits": ["Concentrate", "Investigator", "Rogue"],
+        "level": 18,
+        "bonus": [
+            { "k": "action", "name": "#self", "actions": "reaction" },
+            { "k": "bonus", "category": "TODO", "text": "" }
+        ],
+        "description": "**Requirements** When you make your daily preparations, you must specify a trigger for this reaction using the same restrictions as the triggers for the Ready action. You also choose a single spell from the arcane, divine, occult, or primal list of 4th level or lower. The spell can't have a cost, nor can its casting time be more than 10 minutes. The spell must be able to target a single creature, and you must be a valid target for it.  \n**Trigger** You specify the trigger when you make your daily preparations (see Requirements below).\n\n---\n\nWhether from jury-rigged magic items, stolen magical essence, or other means, you have a contingency in your back pocket for desperate situations. When the trigger occurs, you cause the spell to come into effect. The spell targets only you, no matter how many creatures it would affect normally. If you define particularly complicated conditions, as determined by the GM, the trigger might fail. Once the contingency is triggered, the spell is expended until your next daily preparations."
     }
 }

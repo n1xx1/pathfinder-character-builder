@@ -9,7 +9,12 @@
         { "k": "ability", "choice": ["DEX", "INT"] },
         { "k": "ability" },
         { "k": "proficiency", "skill": "stealth", "proficiency": "T" },
-        { "k": "proficiency", "skill": "lore", "kind": "Underworld", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Underworld",
+            "proficiency": "T"
+        },
         { "k": "feat", "feat": "Experienced Smuggler" }
     ],
     "description": "As an unscrupulous independent or as a member of an underworld organization, you lived a life of crime. You might have become an adventurer to seek redemption, to escape the law, or simply to get access to bigger and better loot.\n\nChoose two ability boosts. One must be to **Dexterity** or **Intelligence**, and one is a free ability boost.\n\nYou're trained in the Stealth skill, and the Underworld Lore skill. You gain the Experienced Smuggler skill feat."

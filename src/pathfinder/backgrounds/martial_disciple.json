@@ -8,7 +8,12 @@
     "bonus": [
         { "k": "ability", "choice": ["STR", "DEX"] },
         { "k": "ability" },
-        { "k": "proficiency", "skill": "lore", "kind": "Warfare", "proficiency": "T" },
+        {
+            "k": "proficiency",
+            "skill": "lore",
+            "kind": "Warfare",
+            "proficiency": "T"
+        },
         {
             "k": "option",
             "options": {
@@ -16,7 +21,11 @@
                     "name": "Acrobatics",
                     "description": "Become trained in Acrobatics",
                     "bonus": [
-                        { "k": "proficiency", "skill": "acrobatics", "proficiency": "T" },
+                        {
+                            "k": "proficiency",
+                            "skill": "acrobatics",
+                            "proficiency": "T"
+                        },
                         { "k": "feat", "feat": "Cat Fall" }
                     ]
                 },
@@ -24,7 +33,11 @@
                     "name": "Athletics",
                     "description": "Become trained in Athletics",
                     "bonus": [
-                        { "k": "proficiency", "skill": "athletics", "proficiency": "T" },
+                        {
+                            "k": "proficiency",
+                            "skill": "athletics",
+                            "proficiency": "T"
+                        },
                         { "k": "feat", "feat": "Quick Jump" }
                     ]
                 }

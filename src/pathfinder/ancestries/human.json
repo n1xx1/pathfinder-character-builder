@@ -9,11 +9,7 @@
     "size": "medium",
     "speed": 25,
     "traits": ["Human", "Humanoid"],
-    "bonus": [
-        { "k": "ability" },
-        { "k": "ability" },
-        { "k": "feat", "filter": ["trait:Human", "level:1"] }
-    ],
+    "bonus": [{ "k": "ability" }, { "k": "ability" }],
     "heritages": {
         "Skilled Heritage": {
             "name": "Skilled Heritage",
@@ -26,8 +22,20 @@
                 {
                     "k": "if",
                     "if": ["level:5"],
-                    "bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "E" }],
-                    "else_bonus": [{ "k": "proficiency", "skill": "any_skill", "proficiency": "T" }]
+                    "bonus": [
+                        {
+                            "k": "proficiency",
+                            "skill": "any_skill",
+                            "proficiency": "E"
+                        }
+                    ],
+                    "else_bonus": [
+                        {
+                            "k": "proficiency",
+                            "skill": "any_skill",
+                            "proficiency": "T"
+                        }
+                    ]
                 }
             ],
             "description": "Your ingenuity allows you to train in a wide variety of skills. You become trained in one skill of your choice. At 5th level, you become an expert in the chosen skill.  \n"
@@ -50,7 +58,11 @@
                 "prd": "https://2e.aonprd.com/Heritages.aspx?ID=30"
             },
             "bonus": [
-                { "k": "bonus", "category": "resistance", "text": "cold {ceil(level/2)}" },
+                {
+                    "k": "bonus",
+                    "category": "resistance",
+                    "text": "cold {ceil(level/2)}"
+                },
                 {
                     "k": "bonus",
                     "category": "resistance",

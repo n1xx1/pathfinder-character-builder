@@ -606,7 +606,13 @@
             "page": 26,
             "prd": "https://2e.aonprd.com/Feats.aspx?ID=1316"
         },
-        "traits": ["Concentrate", "Polymorph", "Primal", "Tengu", "Transmutation"],
+        "traits": [
+            "Concentrate",
+            "Polymorph",
+            "Primal",
+            "Tengu",
+            "Transmutation"
+        ],
         "level": 5,
         "bonus": [
             { "k": "action", "name": "#self", "actions": 1 },

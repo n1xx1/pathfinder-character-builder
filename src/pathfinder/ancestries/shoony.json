@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "DEX" },
         { "k": "ability", "ability": "CHA" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "CON", "INT", "WIS"] },
         { "k": "ability_flaw", "ability": "CON" },
-        { "k": "feat", "filter": ["trait:Shoony", "level:1"] },
+
         { "k": "special", "id": "lowlight_vision" },
         {
             "k": "bonus",

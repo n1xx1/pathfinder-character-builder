@@ -12,20 +12,43 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "T"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "T" },
                 { "k": "proficiency", "skill": "will", "proficiency": "E" },
                 { "k": "proficiency", "skill": "arcana", "proficiency": "T" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "2+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "2+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
-                    "weapons": ["club", "crossbow", "dagger", "heavy crossbow", "staff"],
+                    "weapons": [
+                        "club",
+                        "crossbow",
+                        "dagger",
+                        "heavy crossbow",
+                        "staff"
+                    ],
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 {
                     "k": "proficiency",
                     "skill": "spell_attack",
@@ -72,10 +95,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Abjuration", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Abjuration",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "protective ward" },
-                                { "k": "special", "id": "arcane_school_abjuration" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_abjuration"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As an abjurer, you master the art of protection, strengthening defenses, preventing attacks, and even turning magic against itself. You understand that an ounce of prevention is worth a pound of cure. You add one 1st-level abjuration spell (such as *feather fall*) to your spellbook. You learn the *protective ward* school spell."
@@ -90,10 +120,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Conjuration", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Conjuration",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "augment summoning" },
-                                { "k": "special", "id": "arcane_school_conjuration" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_conjuration"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As a conjurer, you summon creatures and objects from places beyond, and use magic to transport to distant locales. You understand that the true key to victory is strength in numbers. You add one 1st-level conjuration spell (such as *summon animal*) to your spellbook. You learn the *augment summoning* school spell."
@@ -108,10 +145,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Divination", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Divination",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "diviner's sight" },
-                                { "k": "special", "id": "arcane_school_divination" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_divination"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As a diviner, you master remote viewing and prescience, learning information that can transform investigations, research, and battle strategies. You understand that knowledge is power. You add one 1st-level divination spell (such as *true strike*) to your spellbook. You learn the *diviner's sight* school spell."
@@ -126,10 +170,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Enchantment", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Enchantment",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "charming words" },
-                                { "k": "special", "id": "arcane_school_enchantment" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_enchantment"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As an enchanter, you use magic to manipulate others' minds. You might use your abilities to subtly influence others or seize control over them. You understand that the mind surpasses matter. You add one 1st-level enchantment spell (such as *charm*) to your spellbook. You learn the *charming words* school spell."
@@ -144,10 +195,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Evocation", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Evocation",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "force bolt" },
-                                { "k": "special", "id": "arcane_school_evocation" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_evocation"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As an evoker, you revel in the raw power of magic, using it to create and destroy with ease. You can call forth elements, forces, and energy to devastate your foes or to assist you in other ways. You understand that the most direct approach is the most elegant. You add one 1st-level evocation spell (such as *shocking grasp*) to your spellbook. You learn the *force bolt* school spell."
@@ -162,10 +220,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Illusion", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Illusion",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "warped terrain" },
-                                { "k": "special", "id": "arcane_school_illusion" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_illusion"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As an illusionist, you use magic to create images, figments, and phantasms to baffle your enemies. You understand that perception is reality. You add one 1st-level illusion spell (such as *illusory object*) to your spellbook. You learn the *warped terrain* school spell."
@@ -180,10 +245,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Necromancy", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Necromancy",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "call of the grave" },
-                                { "k": "special", "id": "arcane_school_necromancy" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_necromancy"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As a necromancer, you call upon the powers of life and death. While your school is often vilified for its association with raising the undead, you understand that control over life also means control over healing. You add one 1st-level necromancy spell (such as *grim tendrils*) to your spellbook. You learn the *call of the grave* school spell."
@@ -198,10 +270,17 @@
                             "bonus": [
                                 {
                                     "k": "spell",
-                                    "filter": ["level:1", "trait:Transmutation", "tradition:arcane"]
+                                    "filter": [
+                                        "level:1",
+                                        "trait:Transmutation",
+                                        "tradition:arcane"
+                                    ]
                                 },
                                 { "k": "spell", "spell": "physical boost" },
-                                { "k": "special", "id": "arcane_school_transmutation" },
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_transmutation"
+                                },
                                 { "k": "special", "id": "arcane_school" }
                             ],
                             "description": "As a transmuter, you alter the physical properties of things, transforming creatures, objects, the natural world, and even yourself at your whim. You understand that change is inevitable. You add one 1st-level transmutation spell (such as *magic weapon*) to your spellbook. You learn the *physical boost* school spell."
@@ -219,9 +298,18 @@
                                     "category": "TODO",
                                     "text": "For each level of spell you can cast, you can use Drain Bonded item once per day to recall a spell of that level"
                                 },
-                                { "k": "special", "id": "arcane_school_universalist" },
-                                { "k": "spell", "filter": ["level:1", "tradition:arcane"] },
-                                { "k": "feat", "filter": ["trait:Wizard", "level:1"] }
+                                {
+                                    "k": "special",
+                                    "id": "arcane_school_universalist"
+                                },
+                                {
+                                    "k": "spell",
+                                    "filter": ["level:1", "tradition:arcane"]
+                                },
+                                {
+                                    "k": "feat",
+                                    "filter": ["trait:Wizard", "level:1"]
+                                }
                             ],
                             "description": "Instead of specializing narrowly in an arcane school, you can become a universalist wizard\u2014by studying all the schools equally, you devote yourself to understanding the full breadth of the arcane arts. For each level of spell you can cast, you can use Drain Bonded item once per day to recall a spell of that level (instead of using it only once per day in total). You gain an extra wizard class feat, and you add one 1st-level spell of your choice to your spellbook."
                         }
@@ -280,8 +368,15 @@
                             },
                             "bonus": [
                                 { "k": "feat", "feat": "Familiar" },
-                                { "k": "special", "id": "familiar_extra_ability", "value": 1 },
-                                { "k": "remove_action", "name": "Drain Bonded Item" },
+                                {
+                                    "k": "special",
+                                    "id": "familiar_extra_ability",
+                                    "value": 1
+                                },
+                                {
+                                    "k": "remove_action",
+                                    "name": "Drain Bonded Item"
+                                },
                                 {
                                     "k": "action",
                                     "name": "Drain Familiar",
@@ -334,7 +429,11 @@
                             "bonus": [
                                 {
                                     "k": "feat",
-                                    "filter": ["trait:Wizard", "trait:Metamagic", "level:1"]
+                                    "filter": [
+                                        "trait:Wizard",
+                                        "trait:Metamagic",
+                                        "level:1"
+                                    ]
                                 },
                                 {
                                     "k": "bonus",
@@ -383,7 +482,9 @@
                                 "page": 142,
                                 "prd": "https://2e.aonprd.com/ArcaneThesis.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "Your thesis maintains that early and intense adoption of staves from the first days of study can create a symbiotic bond between spellcaster and staff, allowing them to create remarkable magic together. You've formed such a connection with a makeshift staff you built, and you are ready to infuse any staff you encounter with greater power.\n\nYou begin play with a makeshift staff of your own invention. It contains one cantrip and one 1st-level spell, both from your spellbook, but it gains no charges normally during your preparations; you must expend a spell slot to grant it charges in the same way you would add additional charges to a normal staff. You can Craft your makeshift staff into any other type of staff for the new staff's usual cost, adding the two spells you originally chose to the staff you Craft.\n\nAt 8th level, you can expend two spells instead of one when preparing your staff, adding additional charges equal to the combined levels of the expended spells. At 16th level, you can expend up to a total of three spells to add charges to the staff, adding additional charges equal to the combined levels of all three spells."
                         }
                     }
@@ -396,7 +497,7 @@
             "level": 2,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:2"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:2"] }
+                { "k": "class_feat", "level": 2 }
             ],
             "description": "Level 2"
         },
@@ -405,7 +506,12 @@
             "level": 3,
             "bonus": [
                 { "k": "feat", "filter": ["trait:General", "level:3"] },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "E", "upgrade": true }
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                }
             ],
             "description": "Level 3"
         },
@@ -414,7 +520,7 @@
             "level": 4,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:4"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:4"] }
+                { "k": "class_feat", "level": 4 }
             ],
             "description": "Level 4"
         },
@@ -422,14 +528,22 @@
             "name": "Level 5",
             "level": 5,
             "bonus": [
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "E", "upgrade": true }
+                { "k": "ancestry_feat", "level": 5 },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "E",
+                    "upgrade": true
+                }
             ],
             "description": "Level 5"
         },
         "Lightning Reflexes": {
             "name": "Lightning Reflexes",
             "level": 5,
-            "bonus": [{ "k": "proficiency", "skill": "reflex", "proficiency": "E" }],
+            "bonus": [
+                { "k": "proficiency", "skill": "reflex", "proficiency": "E" }
+            ],
             "description": "Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.  \n"
         },
         "Level 6": {
@@ -437,7 +551,7 @@
             "level": 6,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:6"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:6"] }
+                { "k": "class_feat", "level": 6 }
             ],
             "description": "Level 6"
         },
@@ -446,7 +560,12 @@
             "level": 7,
             "bonus": [
                 { "k": "feat", "filter": ["trait:General", "level:7"] },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "M", "upgrade": true }
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                }
             ],
             "description": "Level 7"
         },
@@ -474,7 +593,7 @@
             "level": 8,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:8"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:8"] }
+                { "k": "class_feat", "level": 8 }
             ],
             "description": "Level 8"
         },
@@ -482,14 +601,22 @@
             "name": "Level 9",
             "level": 9,
             "bonus": [
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "M", "upgrade": true }
+                { "k": "ancestry_feat", "level": 9 },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                }
             ],
             "description": "Level 9"
         },
         "Magical Fortitude": {
             "name": "Magical Fortitude",
             "level": 9,
-            "bonus": [{ "k": "proficiency", "skill": "fortitude", "proficiency": "E" }],
+            "bonus": [
+                { "k": "proficiency", "skill": "fortitude", "proficiency": "E" }
+            ],
             "description": "Magical power has improved your body's resiliency. Your proficiency rank for Fortitude saves increases to expert.  \n"
         },
         "Level 10": {
@@ -497,7 +624,7 @@
             "level": 10,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:10"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:10"] }
+                { "k": "class_feat", "level": 10 }
             ],
             "description": "Level 10"
         },
@@ -506,14 +633,25 @@
             "level": 11,
             "bonus": [
                 { "k": "feat", "filter": ["trait:General", "level:11"] },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "M", "upgrade": true }
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                }
             ],
             "description": "Level 11"
         },
         "Alertness": {
             "name": "Alertness",
             "level": 11,
-            "bonus": [{ "k": "proficiency", "skill": "perception", "proficiency": "E" }],
+            "bonus": [
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "E"
+                }
+            ],
             "description": "You remain alert to threats around you. Your proficiency rank for Perception increases to expert.  \n"
         },
         "Wizard Weapon Expertise": {
@@ -523,7 +661,13 @@
                 {
                     "k": "proficiency",
                     "skill": "weapons",
-                    "weapons": ["club", "crossbow", "dagger", "heavy crossbow", "staff"],
+                    "weapons": [
+                        "club",
+                        "crossbow",
+                        "dagger",
+                        "heavy crossbow",
+                        "staff"
+                    ],
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "E" }
@@ -535,7 +679,7 @@
             "level": 12,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:12"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:12"] }
+                { "k": "class_feat", "level": 12 }
             ],
             "description": "Level 12"
         },
@@ -543,14 +687,22 @@
             "name": "Level 13",
             "level": 13,
             "bonus": [
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "M", "upgrade": true }
+                { "k": "ancestry_feat", "level": 13 },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "M",
+                    "upgrade": true
+                }
             ],
             "description": "Level 13"
         },
         "Defensive Robes": {
             "name": "Defensive Robes",
             "level": 13,
-            "bonus": [{ "k": "proficiency", "skill": "unarmed", "proficiency": "E" }],
+            "bonus": [
+                { "k": "proficiency", "skill": "unarmed", "proficiency": "E" }
+            ],
             "description": "The flow of magic and your training combine to help you avoid attacks. Your proficiency rank in unarmored defense increases to expert.  \n"
         },
         "Weapon Specialization": {
@@ -564,7 +716,7 @@
             "level": 14,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:14"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:14"] }
+                { "k": "class_feat", "level": 14 }
             ],
             "description": "Level 14"
         },
@@ -573,7 +725,12 @@
             "level": 15,
             "bonus": [
                 { "k": "feat", "filter": ["trait:General", "level:15"] },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "L", "upgrade": true }
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                }
             ],
             "description": "Level 15"
         },
@@ -601,7 +758,7 @@
             "level": 16,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:16"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:16"] }
+                { "k": "class_feat", "level": 16 }
             ],
             "description": "Level 16"
         },
@@ -609,7 +766,13 @@
             "name": "Level 17",
             "level": 17,
             "bonus": [
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "L", "upgrade": true }
+                { "k": "ancestry_feat", "level": 17 },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                }
             ],
             "description": "Level 17"
         },
@@ -631,7 +794,7 @@
             "level": 18,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:18"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:18"] }
+                { "k": "class_feat", "level": 18 }
             ],
             "description": "Level 18"
         },
@@ -640,7 +803,12 @@
             "level": 19,
             "bonus": [
                 { "k": "feat", "filter": ["trait:General", "level:19"] },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "L", "upgrade": true }
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "L",
+                    "upgrade": true
+                }
             ],
             "description": "Level 19"
         },
@@ -674,7 +842,7 @@
             "level": 20,
             "bonus": [
                 { "k": "feat", "filter": ["trait:Skill", "level:20"] },
-                { "k": "feat", "filter": ["trait:Wizard", "level:20"] }
+                { "k": "class_feat", "level": 20 }
             ],
             "description": "Level 20"
         }

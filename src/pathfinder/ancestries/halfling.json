@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "DEX" },
         { "k": "ability", "ability": "WIS" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "CON", "INT", "CHA"] },
         { "k": "ability_flaw", "ability": "STR" },
-        { "k": "feat", "filter": ["trait:Halfling", "level:1"] },
+
         {
             "k": "bonus",
             "category": "TODO Keen Eyes",

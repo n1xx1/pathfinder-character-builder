@@ -12,12 +12,25 @@
             "name": "Level 1",
             "level": 1,
             "bonus": [
-                { "k": "proficiency", "skill": "perception", "proficiency": "T" },
-                { "k": "proficiency", "skill": "fortitude", "proficiency": "E" },
+                {
+                    "k": "proficiency",
+                    "skill": "perception",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "fortitude",
+                    "proficiency": "E"
+                },
                 { "k": "proficiency", "skill": "reflex", "proficiency": "E" },
                 { "k": "proficiency", "skill": "will", "proficiency": "T" },
                 { "k": "proficiency", "skill": "crafting", "proficiency": "T" },
-                { "k": "proficiency", "skill": "any_skill", "proficiency": "T", "count": "3+INT" },
+                {
+                    "k": "proficiency",
+                    "skill": "any_skill",
+                    "proficiency": "T",
+                    "count": "3+INT"
+                },
                 {
                     "k": "proficiency",
                     "skill": "weapons",
@@ -31,14 +44,24 @@
                     "proficiency": "T"
                 },
                 { "k": "proficiency", "skill": "unarmed", "proficiency": "T" },
-                { "k": "proficiency", "skill": "armor_light", "proficiency": "T" },
-                { "k": "proficiency", "skill": "unarmored", "proficiency": "T" },
+                {
+                    "k": "proficiency",
+                    "skill": "armor_light",
+                    "proficiency": "T"
+                },
+                {
+                    "k": "proficiency",
+                    "skill": "unarmored",
+                    "proficiency": "T"
+                },
                 {
                     "k": "proficiency",
                     "skill": "class_dc",
                     "class": "Alchemist",
                     "proficiency": "T"
                 },
+                { "k": "ancestry_feat", "level": 1 },
+                { "k": "class_feat", "level": 1 },
                 { "k": "bonus", "category": "TODO", "text": "" }
             ],
             "description": "Level 1"
@@ -69,7 +92,9 @@
                                 "page": 73,
                                 "prd": "https://2e.aonprd.com/ResearchFields.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You specialize in explosions and other violent alchemical reactions. You start with the formulas for two 1st-level alchemical bombs in your formula book, in addition to your other formulas.\n\nWhen throwing an alchemical bomb with the splash trait, you can deal splash damage to only your primary target instead of the usual splash area.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make bombs during your daily preparations, you can use a batch of reagents to create any three bombs instead of just two of the same bomb.\n\n## Perpetual Infusions -- Level 7\n\nChoose two of the following formulas: lesser acid flask, lesser alchemist's fire, lesser bottled lightning, lesser frost vial, lesser tanglefoot bag, lesser thunderstone.\n\n## Perpetual Potency -- Level 11\n\nThe moderate versions of the bombs you chose for perpetual infusions.\n\n## Greater Field Discovery -- Level 13\n\nYou can increase the splash on your bombs to damage creatures within 10 feet, or 15 feet if you have Expanded Splash.\n\n## Perpetual Perfection -- Level 17\n\nThe greater versions of the bombs you chose for perpetual infusions."
                         },
                         "Chirurgeon": {
@@ -79,7 +104,9 @@
                                 "page": 73,
                                 "prd": "https://2e.aonprd.com/ResearchFields.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You concentrate on healing others with alchemy. You start with the formulas for two of the following in your formula book, in addition to your other formulas: lesser antidote, lesser antiplague, or minor elixir of life.\n\nAs long as your proficiency rank in Medicine is trained or better, you can attempt a Crafting check instead of a Medicine check for any of Medicine's untrained and trained uses.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make elixirs of life during your daily preparations, you can create three elixirs with each batch of reagents instead of two.\n\n## Perpetual Infusions -- Level 7\n\nLesser antidote and lesser antiplague.\n\n## Perpetual Potency -- Level 11\n\nModerate antidote and antiplague.\n\n## Greater Field Discovery -- Level 13\n\nWhen you use Quick Alchemy to create any type of elixir of life, the creature drinking the elixir gains the maximum Hit Points possible for that elixir, instead of rolling to determine the number of Hit Points regained.\n\n## Perpetual Perfection -- Level 17\n\nGreater antidote and antiplague."
                         },
                         "Mutagenist": {
@@ -89,7 +116,9 @@
                                 "page": 73,
                                 "prd": "https://2e.aonprd.com/ResearchFields.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You focus on bizarre mutagenic transformations that sacrifice one aspect of a creature's physical or psychological being in order to strengthen another. You start with the formulas for two 1st-level mutagens in your formula book, in addition to your other formulas.\n\nYou gain the following free action.\n\n### Mutagenic Flashback :f:\n\n; Alchemist  \n**Source** *Core Rulebook pg. 73* <sup>1.1</sup>  \n**Frequency** once per day\n\n---\n\nYou experience a brief resurgence of a mutagen. Choose one mutagen you've consumed since your last daily preparations. You gain the effects of that mutagen for 1 minute.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make mutagens during your daily preparations, you can use a batch of reagents to create any three mutagens instead of just two of the same mutagen.\n\n## Perpetual Infusions -- Level 7\n\nChoose two of the following formulas: lesser bestial mutagen, lesser bullheaded mutagen, lesser cognitive mutagen, lesser juggernaut mutagen, lesser quicksilver mutagen, lesser silvertongue mutagen.\n\n## Perpetual Potency -- Level 11\n\nThe moderate versions of the mutagens you chose for perpetual infusions.\n\n## Greater Field Discovery -- Level 13\n\nIf you imbibe another mutagen while you are under the effects of a mutagen that you created, you can gain the benefits and the drawbacks of both mutagens at once, despite the fact that they both have the polymorph trait and would not normally function together. If you come under the effects of any further mutagens while benefiting from two mutagens, you lose the benefit of one of the former mutagens of your choice, while retaining the drawbacks of all the mutagens. If you are under the effects of two mutagens and you come under the effect of a non-mutagen polymorph effect, you lose the benefits of the mutagens while retaining the drawbacks of both.\n\n## Perpetual Perfection -- Level 17\n\nThe greater versions of the mutagens you chose for perpetual infusions."
                         },
                         "Toxicologist": {
@@ -99,7 +128,9 @@
                                 "page": 106,
                                 "prd": "https://2e.aonprd.com/ResearchFields.aspx"
                             },
-                            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+                            "bonus": [
+                                { "k": "bonus", "category": "TODO", "text": "" }
+                            ],
                             "description": "You specialize in toxins and venoms of all types. You start with the formulas for two common 1st-level alchemical poisons in your formula book, in addition to your other formulas. You can apply an injury poison you're holding to a weapon you're wielding as a single action, rather than as a 2-action activity, and you can change the DCs of your infused poisons to your class DC if it's higher.\n\n## Field Discovery -- Level 5\n\nWhen using advanced alchemy to make poisons during your daily preparations, you can spend one batch of reagents to create three poisons in any combination, instead of just two of the same poison.\n\n## Perpetual Infusions -- Level 7\n\nChoose two common 1st-level alchemical poisons.\n\n## Perpetual Potency -- Level 11\n\nChoose two common 5th-level or lower alchemical poisons.\n\n## Greater Field Discovery -- Level 13\n\nYou can apply two different injury poisons to the same weapon, though not to a piece of ammunition. The two poisons can be up to six levels lower than your level, and you can't use the poisons made without spending a batch of infused reagents via perpetual infusions. Applying the two poisons requires a separate action to apply each poison. Once completed, you combine the two poisons on the weapon into a double poison with the lower of the two poisons' DCs. This double poison is only virulent if both poisons were virulent, and if the poisons have a different number of stages, the double poison has a number of stages equal to the poison with the lower number of stages. The target takes the effects of both poisons for its current stage.\n\n## Perpetual Perfection -- Level 17\n\nChoose two common 11th-level or lower alchemical poisons."
                         }
                     }
@@ -111,7 +142,10 @@
         "Level 2": {
             "name": "Level 2",
             "level": 2,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 2 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 2"
         },
         "Level 3": {
@@ -123,13 +157,19 @@
         "Level 4": {
             "name": "Level 4",
             "level": 4,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 4 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 4"
         },
         "Level 5": {
             "name": "Level 5",
             "level": 5,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 5 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 5"
         },
         "Field Discovery": {
@@ -141,13 +181,19 @@
         "Level 6": {
             "name": "Level 6",
             "level": 6,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 6 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 6"
         },
         "Level 7": {
             "name": "Level 7",
             "level": 7,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 7 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 7"
         },
         "Alchemical Weapon Expertise": {
@@ -171,13 +217,19 @@
         "Level 8": {
             "name": "Level 8",
             "level": 8,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 8 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 8"
         },
         "Level 9": {
             "name": "Level 9",
             "level": 9,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 9 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 9"
         },
         "Alchemical Expertise": {
@@ -201,7 +253,10 @@
         "Level 10": {
             "name": "Level 10",
             "level": 10,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 10 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 10"
         },
         "Level 11": {
@@ -225,13 +280,19 @@
         "Level 12": {
             "name": "Level 12",
             "level": 12,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 12 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 12"
         },
         "Level 13": {
             "name": "Level 13",
             "level": 13,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 13 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 13"
         },
         "Greater Field Discovery": {
@@ -255,7 +316,10 @@
         "Level 14": {
             "name": "Level 14",
             "level": 14,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 14 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 14"
         },
         "Level 15": {
@@ -279,13 +343,19 @@
         "Level 16": {
             "name": "Level 16",
             "level": 16,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 16 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 16"
         },
         "Level 17": {
             "name": "Level 17",
             "level": 17,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "ancestry_feat", "level": 17 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 17"
         },
         "Alchemical Mastery": {
@@ -303,7 +373,10 @@
         "Level 18": {
             "name": "Level 18",
             "level": 18,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 18 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 18"
         },
         "Level 19": {
@@ -321,7 +394,10 @@
         "Level 20": {
             "name": "Level 20",
             "level": 20,
-            "bonus": [{ "k": "bonus", "category": "TODO", "text": "" }],
+            "bonus": [
+                { "k": "class_feat", "level": 20 },
+                { "k": "bonus", "category": "TODO", "text": "" }
+            ],
             "description": "Level 20"
         }
     },

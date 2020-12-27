@@ -555,7 +555,13 @@
             "page": 23,
             "prd": "https://2e.aonprd.com/Feats.aspx?ID=1308"
         },
-        "traits": ["Concentrate", "Polymorph", "Primal", "Ratfolk", "Transmutation"],
+        "traits": [
+            "Concentrate",
+            "Polymorph",
+            "Primal",
+            "Ratfolk",
+            "Transmutation"
+        ],
         "level": 9,
         "bonus": [
             { "k": "action", "name": "#self", "actions": 1 },

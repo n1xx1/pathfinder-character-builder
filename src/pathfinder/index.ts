@@ -156,12 +156,24 @@ export const generalFeats: { [id: string]: pf.Feat } = Object.assign(
     require("./feats/general_19.json"),
 );
 
+export const archetypeFeats: { [id: string]: pf.Feat } = Object.assign(
+    {},
+    require("./feats/archetype_2.json"),
+    require("./feats/archetype_4.json"),
+    require("./feats/archetype_6.json"),
+    require("./feats/archetype_8.json"),
+    require("./feats/archetype_10.json"),
+    require("./feats/archetype_12.json"),
+    require("./feats/archetype_14.json"),
+    require("./feats/archetype_18.json"),
+);
+
 export const feats: { [id: string]: pf.Feat } = Object.assign(
     {},
     ancestryFeats,
     classFeats,
     generalFeats,
-    //archetypeFeats,
+    archetypeFeats,
 );
 
 export { spells } from "./spells/spells";

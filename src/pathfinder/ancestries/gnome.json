@@ -12,9 +12,9 @@
     "bonus": [
         { "k": "ability", "ability": "CON" },
         { "k": "ability", "ability": "CHA" },
-        { "k": "ability" },
+        { "k": "ability", "choice": ["STR", "DEX", "INT", "WIS"] },
         { "k": "ability_flaw", "ability": "STR" },
-        { "k": "feat", "filter": ["trait:Gnome", "level:1"] },
+
         { "k": "special", "id": "lowlight_vision" }
     ],
     "heritages": {
